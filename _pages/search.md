@@ -6,7 +6,7 @@ permalink: /search/
 
 <div id="search-container">
     <input type="text" id="search-input" placeholder="Szukaj w postach i na stronach...">
-    <ul id="results-container"></ul>
+    <div id="results-container"></div>
 </div>
 
 <script src="{{ site.baseurl }}/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
@@ -15,7 +15,7 @@ permalink: /search/
     SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    searchResultTemplate: '<div style="text-align: left !important;"><a href="{url}"><h1 style="text-align:left !important;">{title}</h1></a><span style="text-align:left !important;">{date}</span></div>',
+    searchResultTemplate: '<div style="text-align: left !important;" class="search_result"><a href="{url}"><h1 style="text-align:left !important;">{title}</h1></a><div class="post_date">{date}</spa  n></div>',
     json: '{{ site.baseurl }}/search.json'
     });
 </script>

@@ -698,7 +698,10 @@ Modules - reusable parts of our design
     margin-bottom: 5px;
     margin-right: 5px;
 }
-
+.results-container .search_result {
+  position: relative;
+  border-top:1px solid #c5c5c5;
+}
 .yellow.lighten-2 {
     background-color: #efd3f9 !important;
 }
