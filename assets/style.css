@@ -774,7 +774,7 @@ Modules - reusable parts of our design
   margin-right: 5px;
 }
 
-.results-container .search_result {
+.search_result {
   position: relative;
   border-top: 1px solid #c5c5c5;
 }
