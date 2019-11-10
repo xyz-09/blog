@@ -220,23 +220,19 @@ a:before, a:after {
   top: 50%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
-  transition: top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
-  transition: transform .15s .25s ease-out, top .15s .3s ease-out;
-  transition: transform .15s .25s ease-out, top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
+  -webkit-transition: top .15s .8s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: top .15s .8s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: transform .15s .25s ease-out, top .15s .8s ease-out;
+  transition: transform .15s .25s ease-out, top .15s .8s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
 a:hover:before, a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  -webkit-transition-delay: .25s, 0s;
-          transition-delay: .25s, 0s;
 }
 
 a:hover:before {
   top: 0;
-  -webkit-transition-delay: .25s, 0s;
-          transition-delay: .25s, 0s;
 }
 
 a:hover:after {
