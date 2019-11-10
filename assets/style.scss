@@ -152,6 +152,7 @@ table tr td :last-child {
 }
 a{
   text-decoration: none;
+  color: $darkGray;
 }
 
 .post a,.read-more{
@@ -331,9 +332,7 @@ p > img {
     margin: 3px 0;
   }
 }
-a{
-  color: $darkGray;
-}
+
 nav {
 	a {
 		margin: 0 20px;
@@ -424,7 +423,6 @@ nav {
   }
 
   a {
-
     @include mobile {
       margin: 0 10px;
       color: $blue;

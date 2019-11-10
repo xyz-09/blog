@@ -204,6 +204,7 @@ table tr td :last-child {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 .post a, .read-more {
@@ -385,10 +386,6 @@ p > img {
   .site-description {
     margin: 3px 0;
   }
-}
-
-a {
-  color: #333;
 }
 
 nav a {
