@@ -363,11 +363,11 @@ p > img {
 				content: "";
 				position: absolute;
         right: 0;
-        top:0;
+        top:auto;
+        left:auto;
         bottom: 0;
 				transition: .1s .2s;
 				transform: translateX(100%);
-
 			}
 		}
 		&::before {
@@ -388,7 +388,9 @@ p > img {
 			background: $black;
 			content: "";
 			position: absolute;
-			right: 0px;
+      right: 0px;
+      left:auto;
+      top:auto;
 			bottom: 0;
 			transform: translateY(-100%);
 			transition:.1s .1s;
