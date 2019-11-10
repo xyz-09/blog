@@ -614,6 +614,7 @@ body:after {
   background: #4183C4;
   padding: 3px 8px;
   position: absolute;
+  font-size: .75em;
   top: -28px;
   -webkit-box-shadow: -3px -3px 0px #c1c1c1;
           box-shadow: -3px -3px 0px #c1c1c1;
