@@ -423,6 +423,7 @@ p > img {
   content: "";
   position: absolute;
   right: 0;
+  top: 0;
   bottom: 0;
   -webkit-transition: .1s .2s;
   transition: .1s .2s;

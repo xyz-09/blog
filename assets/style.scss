@@ -362,8 +362,9 @@ p > img {
 				background: $black;
 				content: "";
 				position: absolute;
-				right: 0;
-				bottom: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
 				transition: .1s .2s;
 				transform: translateX(100%);
 
