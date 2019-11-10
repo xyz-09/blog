@@ -203,14 +203,14 @@ table tr td :last-child {
   color: #222;
 }
 
-p a {
+.post a, .read-more {
   color: #4183C4;
   position: relative;
   text-decoration: none;
   display: inline-block;
 }
 
-p a:before, p a:after {
+.post a:before, .post a:after, .read-more:before, .read-more:after {
   content: '';
   background-color: #4183C4;
   height: 2px;
@@ -226,16 +226,16 @@ p a:before, p a:after {
   transition: transform .15s .25s ease-out, top .15s .8s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-p a:hover:before, p a:hover:after {
+.post a:hover:before, .post a:hover:after, .read-more:hover:before, .read-more:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-p a:hover:before {
+.post a:hover:before, .read-more:hover:before {
   top: 0;
 }
 
-p a:hover:after {
+.post a:hover:after, .read-more:hover:after {
   top: 100%;
 }
 
