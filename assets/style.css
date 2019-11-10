@@ -859,16 +859,16 @@ Modules - reusable parts of our design
 
 .post-tags {
   text-align: center;
-  line-height: 35px;
 }
 
 .post-tags a {
-  font-size: 14.5px;
-  padding: 2px 13px;
+  font-size: 10px;
+  padding: 0px 13px;
   border: none;
   background-color: #4CAF50;
   border-radius: 50px;
   color: #fff;
+  line-height: 2em;
 }
 
 .pagination a, .pagination span {
