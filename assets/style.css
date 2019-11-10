@@ -203,14 +203,14 @@ table tr td :last-child {
   color: #222;
 }
 
-a {
+p a {
   color: #4183C4;
   position: relative;
   text-decoration: none;
   display: inline-block;
 }
 
-a:before, a:after {
+p a:before, p a:after {
   content: '';
   background-color: #4183C4;
   height: 2px;
@@ -226,16 +226,16 @@ a:before, a:after {
   transition: transform .15s .25s ease-out, top .15s .8s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-a:hover:before, a:hover:after {
+p a:hover:before, p a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-a:hover:before {
+p a:hover:before {
   top: 0;
 }
 
-a:hover:after {
+p a:hover:after {
   top: 100%;
   -webkit-transition-delay: .25s, 0s;
           transition-delay: .25s, 0s;
