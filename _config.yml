@@ -24,7 +24,7 @@ footer-links:
   email: jozdowska.edyta@protonmail.com
   facebook:
   flickr:
-  github: capo1/reverie
+  github: capo1/jekyll
   instagram:
   linkedin: edyta-jozdowska-tyrlik
   pinterest:
@@ -52,7 +52,7 @@ enforce_ssl: http://zuvpsndv.wirt08.biznes-host.pl/folio/
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/reverie"
+baseurl: "/jekyll"
 
 #
 # !! You don't need to change any of the configuration flags below !!
