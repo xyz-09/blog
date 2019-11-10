@@ -210,7 +210,7 @@ a {
   display: block;
 }
 
-a--lines:before, a--lines:after {
+a:before, a:after {
   content: '';
   background-color: #4183C4;
   height: 4px;
@@ -226,18 +226,18 @@ a--lines:before, a--lines:after {
   transition: top .15s 0s ease-out, transform .15s .25s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-a--lines:hover:before, a--lines:hover:after {
+a:hover:before, a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition-delay: .25s, 0s;
           transition-delay: .25s, 0s;
 }
 
-a--lines:hover:before {
+a:hover:before {
   top: 0;
 }
 
-a--lines:hover:after {
+a:hover:after {
   top: 100%;
 }
 

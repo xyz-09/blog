@@ -157,7 +157,6 @@ a {
   position: relative;
   text-decoration: none;
   display: block;
-  &--lines {
     &:before,
     &:after {
       content: '';
@@ -186,7 +185,7 @@ a {
         top: 100%;
       }
     }
-  }
+
 }
 
 ul, ol {
