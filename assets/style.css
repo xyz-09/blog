@@ -234,7 +234,7 @@ a {
 }
 
 .post a:hover:before, .read-more:hover:before {
-  top: -5px;
+  top: 0;
 }
 
 .post a:hover:after, .read-more:hover:after {
@@ -533,6 +533,7 @@ nav {
 .post .read-more {
   text-transform: uppercase;
   font-size: 15px;
+  line-height: 2em;
 }
 
 .wrapper-container {

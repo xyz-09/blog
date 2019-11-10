@@ -178,7 +178,7 @@ a{
       }
 
       &:before {
-        top: -5px;
+        top: 0;
       }
 
       &:after {
@@ -473,6 +473,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    line-height: 2em;
   }
 }
 
