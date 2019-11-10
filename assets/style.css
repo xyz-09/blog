@@ -207,13 +207,13 @@ a {
   color: #333;
 }
 
-.post a, .read-more {
+.post a, .read-more, .page a {
   color: #4183C4;
   position: relative;
   display: inline-block;
 }
 
-.post a:before, .post a:after, .read-more:before, .read-more:after {
+.post a:before, .post a:after, .read-more:before, .read-more:after, .page a:before, .page a:after {
   content: '';
   background-color: #4183C4;
   height: 2px;
@@ -229,16 +229,16 @@ a {
   transition: transform .15s .25s ease-out, top .15s .5s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-.post a:hover:before, .post a:hover:after, .read-more:hover:before, .read-more:hover:after {
+.post a:hover:before, .post a:hover:after, .read-more:hover:before, .read-more:hover:after, .page a:hover:before, .page a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.post a:hover:before, .read-more:hover:before {
+.post a:hover:before, .read-more:hover:before, .page a:hover:before {
   top: 0;
 }
 
-.post a:hover:after, .read-more:hover:after {
+.post a:hover:after, .read-more:hover:after, .page a:hover:after {
   top: 100%;
 }
 
