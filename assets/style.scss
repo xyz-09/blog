@@ -155,7 +155,7 @@ table tr td :last-child {
 a {
   padding: 0 10px;
   margin: 0 20px;
-  color: #797878;
+  color:$blue;
   text-shadow: none;
   position: relative;
   // @include transition(.3s);
@@ -165,16 +165,16 @@ a {
     left: 0;
     overflow: hidden;
     padding: 0 10px;
-    color: #fff;
+    color: $blue;
     content: attr(data-hover);
-    @include transition(.3s ease-out);
-    @include scale(1.4);
+    transition:.3s ease-out;
+    transform:scale(1.4);
     opacity: 0;
     
   }
   &:hover{
     &::before{
-      @include scale(1);
+      transform:scale(1);
       opacity: 1;
     }
   }

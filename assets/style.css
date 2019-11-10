@@ -204,13 +204,32 @@ table tr td :last-child {
 }
 
 a {
+  padding: 0 10px;
+  margin: 0 20px;
   color: #4183C4;
-  text-decoration: none;
-  cursor: pointer;
+  text-shadow: none;
+  position: relative;
 }
 
-a:hover, a:active {
+a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0 10px;
   color: #4183C4;
+  content: attr(data-hover);
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  opacity: 0;
+}
+
+a:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 ul, ol {
@@ -359,7 +378,7 @@ p > img {
   }
 }
 
-.link-effect a {
+a {
   margin: 0 20px;
   padding: 10px;
   position: relative;
@@ -370,7 +389,7 @@ p > img {
   color: #333;
 }
 
-.link-effect a span::before {
+a span::before {
   width: 100%;
   height: 2px;
   background: #000;
@@ -384,7 +403,7 @@ p > img {
           transform: translateX(-100%);
 }
 
-.link-effect a span::after {
+a span::after {
   width: 100%;
   height: 2px;
   background: #000;
@@ -398,7 +417,7 @@ p > img {
           transform: translateX(100%);
 }
 
-.link-effect a::before {
+a::before {
   width: 2px;
   height: 100%;
   background: #000;
@@ -412,7 +431,7 @@ p > img {
   transition: .1s .3s;
 }
 
-.link-effect a::after {
+a::after {
   width: 2px;
   height: 100%;
   background: #000;
@@ -426,16 +445,16 @@ p > img {
   transition: .1s .1s;
 }
 
-.link-effect a:hover {
+a:hover {
   color: #000;
 }
 
-.link-effect a:hover::before, .link-effect a:hover::after {
+a:hover::before, a:hover::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.link-effect a:hover span::before, .link-effect a:hover span::after {
+a:hover span::before, a:hover span::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
