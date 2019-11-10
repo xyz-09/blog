@@ -204,32 +204,44 @@ table tr td :last-child {
 }
 
 a {
-  padding: 0 10px;
-  margin: 0 20px;
   color: #4183C4;
-  text-shadow: none;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.33333;
   position: relative;
+  text-decoration: none;
+  display: block;
 }
 
-a::before {
+a--lines:before, a--lines:after {
+  content: '';
+  background-color: #4183C4;
+  height: 4px;
+  width: 100%;
   position: absolute;
-  top: 0;
   left: 0;
-  overflow: hidden;
-  padding: 0 10px;
-  color: #4183C4;
-  content: attr(data-hover);
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  opacity: 0;
+  top: 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: top .15s 0s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: top .15s 0s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: top .15s 0s ease-out, transform .15s .25s ease-out;
+  transition: top .15s 0s ease-out, transform .15s .25s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-a:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
+a--lines:hover:before, a--lines:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-delay: .25s, 0s;
+          transition-delay: .25s, 0s;
+}
+
+a--lines:hover:before {
+  top: 0;
+}
+
+a--lines:hover:after {
+  top: 100%;
 }
 
 ul, ol {
