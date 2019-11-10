@@ -123,7 +123,7 @@ h2 {
     margin-left: 0;
     margin-right: 30px;
   }
-  .post h2::before {
+  .post h2::after {
     margin-left: 30px;
     margin-right: 0px;
   }
