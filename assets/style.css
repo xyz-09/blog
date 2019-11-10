@@ -119,6 +119,14 @@ h2 {
     background: #c0d3da;
     margin: 0px 0px;
   }
+  .post h2::before {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .post h2::before {
+    margin-left: 30px;
+    margin-right: 0px;
+  }
 }
 
 h3 {

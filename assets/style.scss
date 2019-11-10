@@ -67,7 +67,16 @@ h2 {
 	    height: 1px;
 	    background: rgb(192, 211, 218);
 	    margin: 0px 0px;
-	}
+  }
+  .post h2::before{
+    margin-left:0;
+    margin-right:30px
+  }
+  .post h2::before{
+    margin-left:30px;
+    margin-right:0px
+  }
+  
 }
 
 h3 {
