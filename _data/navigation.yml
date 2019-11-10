@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+- name: O mnie
+  link: /o-mnie
+- name: Folio
+  link: "http://zuvpsndv.wirt08.biznes-host.pl/folio/"
+  target: "_blank"
+- name: Szukaj
+  link: /search

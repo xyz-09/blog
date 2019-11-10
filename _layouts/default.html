@@ -27,10 +27,15 @@
             </div>
 
             <nav class="link-effect">
-              <a href="{{ site.baseurl }}/"><span>Home</span></a>
+                    {% for item in site.data.navigation %}
+                      <a href="{{ item.link }}" {% id page.target%} tagre="{{item.target}}"{%endif %} {% if page.url == item.link %}style="color: #c5c5c5;"{% endif %}>
+                        {{ item.name }}
+                      </a>
+                    {% endfor %}
+               <a href="{{ site.baseurl }}/"><span>Home</span></a>
                <a href="{{ site.baseurl }}/search"><span>Szukaj</span></a>
               <a href="{{ site.baseurl }}/o-mnie"><span>O mnie</span></a>
-              <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/" target="_blank"><span>Folio</span></a>
+              <a href="" target="_blank"><span>Folio</span></a>
             </nav>
           </header>
         </div>
