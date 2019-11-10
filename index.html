@@ -5,7 +5,7 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+        <p class="post_date">{% include date.html date=post.date %}</p>
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1>{{ post.title }}</h1>
       </a>
@@ -13,7 +13,7 @@ layout: default
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Czytaj więcej</a>
     </article>
   {% endfor %}
 
