@@ -189,7 +189,6 @@ a {
   }
 }
 
-
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -334,6 +333,7 @@ p > img {
   }
 }
 
+.link-effect{
 	a {
 		margin: 0 20px;
 		padding: 10px;
@@ -405,7 +405,7 @@ p > img {
 			}
 		}
 	}
-
+}
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
