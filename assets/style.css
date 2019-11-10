@@ -237,8 +237,6 @@ p a:hover:before {
 
 p a:hover:after {
   top: 100%;
-  -webkit-transition-delay: .25s, 0s;
-          transition-delay: .25s, 0s;
 }
 
 ul, ol {
