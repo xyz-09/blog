@@ -152,16 +152,17 @@ table tr td :last-child {
   color: #222;
 }
 
+
 a {
   color: $blue;
   position: relative;
   text-decoration: none;
-  display: block;
+  display: inline-block;
     &:before,
     &:after {
       content: '';
       background-color: $blue;
-      height: 4px;
+      height: 2px;
       width: 100%;
       position: absolute;
       left: 0;
@@ -179,10 +180,12 @@ a {
 
       &:before {
         top: 0;
+        transition-delay: .25s, 0s;
       }
 
       &:after {
         top: 100%;
+        transition-delay: .25s, 0s;
       }
     }
 
