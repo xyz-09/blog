@@ -301,6 +301,8 @@ p > img {
 
 .site-avatar {
   float: left;
+  width: 70px;
+  margin-top: 13px;
   margin-right: 15px;
 }
 
@@ -425,7 +427,7 @@ p > img {
 }
 
 .link-effect a:hover {
-  color: white;
+  color: #000;
 }
 
 .link-effect a:hover::before, .link-effect a:hover::after {

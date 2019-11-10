@@ -255,6 +255,8 @@ p > img {
 
 .site-avatar {  
   float: left;
+  width:70px;
+  margin-top:13px;
   margin-right: 15px;
 
   @include mobile {
@@ -303,7 +305,6 @@ p > img {
   }
 }
 
-.link-effect{
 	a {
 		margin: 0 20px;
 		padding: 10px;
@@ -362,7 +363,7 @@ p > img {
 
 		}
 		&:hover{
-			color: white;
+			color:  $black;
 			&::before,
 			&::after {
 				transform: translateX(0);
@@ -375,7 +376,7 @@ p > img {
 			}
 		}
 	}
-}
+
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
@@ -397,7 +398,33 @@ nav {
     }
   }
 }
-
+	a {
+		padding: 0 10px;
+		margin: 0 20px;
+		color: #797878;
+		text-shadow: none;
+		position: relative;
+		// @include transition(.3s);
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			padding: 0 10px;
+			color: #fff;
+			content: attr(data-hover);
+			@include transition(.3s ease-out);
+			@include scale(1.4);
+			opacity: 0;
+			
+		}
+		&:hover{
+			&::before{
+				@include scale(1);
+				opacity: 1;
+			}
+		}
+	}
 //
 // .main
 //
