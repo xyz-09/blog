@@ -387,7 +387,7 @@ p > img {
   }
 }
 
-.link-effect a {
+nav a {
   margin: 0 20px;
   padding: 10px;
   position: relative;
@@ -398,7 +398,7 @@ p > img {
   color: #333;
 }
 
-.link-effect a span::before {
+nav a span::before {
   width: 100%;
   height: 2px;
   background: #000;
@@ -412,7 +412,7 @@ p > img {
           transform: translateX(-100%);
 }
 
-.link-effect a span::after {
+nav a span::after {
   width: 100%;
   height: 2px;
   background: #000;
@@ -428,7 +428,7 @@ p > img {
           transform: translateX(100%);
 }
 
-.link-effect a::before {
+nav a::before {
   width: 2px;
   height: 100%;
   background: #000;
@@ -442,7 +442,7 @@ p > img {
   transition: .1s .3s;
 }
 
-.link-effect a::after {
+nav a::after {
   width: 2px;
   height: 100%;
   background: #000;
@@ -458,16 +458,16 @@ p > img {
   transition: .1s .1s;
 }
 
-.link-effect a:hover {
+nav a:hover {
   color: #000;
 }
 
-.link-effect a:hover::before, .link-effect a:hover::after {
+nav a:hover::before, nav a:hover::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.link-effect a:hover span::before, .link-effect a:hover span::after {
+nav a:hover span::before, nav a:hover span::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
