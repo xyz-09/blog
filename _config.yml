@@ -75,7 +75,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:
@@ -83,11 +83,27 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-archives
 
 include: ['_pages']
 
 paginate: 6
 paginate_path: /page:num/
+
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  layouts:
+    year: year-archive
+    month: month-archive
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/tag/:name/'
+    category: '/kategoria/:name/'
 
 # Exclude these files from your production _site
 exclude:
@@ -97,6 +113,3 @@ exclude:
   - README.md
   - CNAME
 
-
-
-theme: jekyll-theme-hacker

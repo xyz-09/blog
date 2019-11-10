@@ -15,7 +15,7 @@
 
   <body>
     <div id="bar"></div>
-    <div class="wrapper-container">
+    <div class="wrapper-container" id="top">
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
@@ -23,28 +23,27 @@
 
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">* {{ site.description }} *</p> 
+              <p class="site-description">{{ site.description }}</p> 
             </div>
 
             <nav class="link-effect">
                     {% for item in site.data.navigation %}
-                      <a href="{{ item.link }}" {% id page.target%} tagre="{{item.target}}"{%endif %} {% if page.url == item.link %}style="color: #c5c5c5;"{% endif %}>
-                        {{ item.name }}
+                      <a {% if item.link contains '://' %}href="{{item.link}}" {% else %} href="{{ site.baseurl }}/{{ item.link  }}"{% endif %} {% if item.target%} target="{{item.target}}"{%endif %} {% if page.url == item.link %}style="color: #c5c5c5;"{% endif %}>
+                        <span>{{ item.name }}</span>
                       </a>
-                    {% endfor %}
-               <a href="{{ site.baseurl }}/"><span>Home aaa- </span></a>
-               <a href="{{ site.baseurl }}/search"><span>Szukaj</span></a>
-              <a href="{{ site.baseurl }}/o-mnie"><span>O mnie</span></a>
-              <a href="" target="_blank"><span>Folio</span></a>
+                    {% endfor %}               
             </nav>
           </header>
         </div>
       </div>
 
       <div class="wrapper-main">
+          
         <div id="main" role="main" class="container">
-          {{ content }}
+           {{ content }}
+          <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
         </div>
+       
       </div>
 
       <div class="wrapper-footer">
@@ -57,5 +56,69 @@
     </div>
 
     {% include analytics.html %}
+    <script>
+        window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame    ||
+                function( callback ){
+                  window.setTimeout(callback, 1000 / 60);
+                };
+      })();
+      
+      function scrollToY(scrollTargetY, speed, easing) {
+        // https://stackoverflow.com/questions/8917921/cross-browser-javascript-not-jquery-scroll-to-top-animation
+          var scrollY = window.scrollY || document.documentElement.scrollTop,
+              scrollTargetY = scrollTargetY || 0,
+              speed = speed || 2000,
+              easing = easing || 'easeOutSine',
+              currentTime = 0;
+      
+          var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+      
+          // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+          var easingEquations = {
+                  easeOutSine: function (pos) {
+                      return Math.sin(pos * (Math.PI / 2));
+                  },
+                  easeInOutSine: function (pos) {
+                      return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+                  },
+                  easeInOutQuint: function (pos) {
+                      if ((pos /= 0.5) < 1) {
+                          return 0.5 * Math.pow(pos, 5);
+                      }
+                      return 0.5 * (Math.pow((pos - 2), 5) + 2);
+                  }
+              };
+      
+      
+          function tick() {
+              currentTime += 1 / 60;
+      
+              var p = currentTime / time;
+              var t = easingEquations[easing](p);
+      
+              if (p < 1) {
+                  requestAnimFrame(tick);
+      
+                  window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+              } else {
+                  window.scrollTo(0, scrollTargetY);
+              }
+          }
+      
+          tick();
+      }
+      
+      let classname = document.getElementsByClassName("archive-top-link");
+      let topEl = document.getElementById('top');
+      
+      for (let i = 0; i < classname.length; i++) {
+          classname[i].addEventListener('click', ()=>{scrollToY(topEl.offsetTop, 1500, 'easeInOutQuint');});
+      }
+      
+      
+      </script>
   </body>
 </html>

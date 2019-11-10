@@ -30,7 +30,10 @@ layout: default
   <div>
     <p><span class="share-box">Podziel się:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
   </div>
-
+<div class="related">
+  <h4>Powiązane posty:</h4>
+    {% include related.html %}
+</div>
   <!--<div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>-->
