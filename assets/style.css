@@ -205,9 +205,6 @@ table tr td :last-child {
 
 a {
   color: #4183C4;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 1.33333;
   position: relative;
   text-decoration: none;
   display: block;
