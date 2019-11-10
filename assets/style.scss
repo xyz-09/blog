@@ -331,7 +331,9 @@ p > img {
     margin: 3px 0;
   }
 }
-
+a{
+  color: $darkGray;
+}
 nav {
 	a {
 		margin: 0 20px;
@@ -339,8 +341,8 @@ nav {
 		position: relative;
 		overflow: hidden;
 		display: inline-block;
-    transition: .3s ease-out .1s;
-    color: $darkGray;
+    transition:color .3s ease-out .1s;
+    
 		span{
 			&::before{
 				width: 100%;
