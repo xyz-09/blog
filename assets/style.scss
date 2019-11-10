@@ -168,7 +168,7 @@ a {
       left: 0;
       top: 50%;
       transform: scaleX(0);
-      transition: top .15s 0s ease-out, transform .15s .25s ease-out;
+      transition: transform .15s .25s ease-out, top .15s .3s ease-out;
     }
   
     &:hover {

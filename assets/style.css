@@ -220,10 +220,10 @@ a:before, a:after {
   top: 50%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: top .15s 0s ease-out, -webkit-transform .15s .25s ease-out;
-  transition: top .15s 0s ease-out, -webkit-transform .15s .25s ease-out;
-  transition: top .15s 0s ease-out, transform .15s .25s ease-out;
-  transition: top .15s 0s ease-out, transform .15s .25s ease-out, -webkit-transform .15s .25s ease-out;
+  -webkit-transition: top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
+  transition: transform .15s .25s ease-out, top .15s .3s ease-out;
+  transition: transform .15s .25s ease-out, top .15s .3s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
 a:hover:before, a:hover:after {
