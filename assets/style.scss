@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-  text-align: center;
 
   @include mobile {
     line-height: 1.4;
@@ -151,12 +150,13 @@ table tr td :last-child {
   font-weight: bold;
   color: #222;
 }
-
+a{
+  text-decoration: none;
+}
 
 .post a,.read-more{
   color: $blue;
   position: relative;
-  text-decoration: none;
   display: inline-block;
     &:before,
     &:after {
@@ -168,7 +168,7 @@ table tr td :last-child {
       left: 0;
       top: 50%;
       transform: scaleX(0);
-      transition: transform .15s .25s ease-out, top .15s .8s ease-out;
+      transition: transform .15s .25s ease-out, top .15s .5s ease-out;
     }
   
     &:hover {
@@ -178,7 +178,7 @@ table tr td :last-child {
       }
 
       &:before {
-        top: 0;
+        top: -5px;
       }
 
       &:after {
@@ -530,7 +530,6 @@ body:after {
 
 .page h1{
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -545,7 +544,14 @@ body:after {
 
 .post_date{
   text-align: center;
-  color: #939aa1;
+  color: $white;
+  display: inline-block;
+  background:$blue;
+  padding:3px 8px;
+  position: absolute;
+  top:-28px;
+  box-shadow: -3px -3px 0px #c1c1c1;
+  right:0;
 }
 
 .cd-container a {
