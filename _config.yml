@@ -98,3 +98,5 @@ exclude:
   - CNAME
 
 
+
+theme: jekyll-theme-hacker
