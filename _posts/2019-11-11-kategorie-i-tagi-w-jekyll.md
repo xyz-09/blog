@@ -14,7 +14,7 @@ Możemy jednak skorzystać z wewnetrznych pluginów, które sami możemy napisa�
 
 ## Prosty przepis na Kategorie i Tagi w Jekyll
 
-1. Tworzymy plik _blog_by_category.html_  w katalogu _./_layouts_. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. 
+1. Tworzymy plik ```html _blog_by_category.html_```  w katalogu _./_layouts_. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. 
 {%raw%}
 ```html
 <h1>Artykuły według kategorii: {{page.category | upcase}}</h1>
