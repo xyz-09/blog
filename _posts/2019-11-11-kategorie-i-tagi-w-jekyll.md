@@ -9,13 +9,13 @@ summary:
 excerpt: Krótki opis jak stworzyć oddzielne podstrony dla kategorii i tagów w Jekyll'u. 
 ---
 
-Jekyll jest całkiem fajnym narzędziem. Z tego jednak powodu, że przeznaczony jest dla programistów wiele rzeczy musimy napisać sami. W dodatku, jesli hostujemy nasze stronki na Github Pages pozbawieni jesteśmy niektórych gemów jak np. [jekyll-archive](https://github.com/jekyll/jekyll-archives/){:target="_blank"}, które napisali inni.
+Jekyll jest całkiem fajnym narzędziem. Z tego jednak powodu, że przeznaczony jest dla programistów wiele rzeczy musimy napisać sami. W dodatku, jeśli hostujemy nasze stronki na Github Pages pozbawieni jesteśmy niektórych gemów jak np. [jekyll-archive](https://github.com/jekyll/jekyll-archives/){:target="_blank"}, które napisali inni.
 
-Możemy jednak skorzystać z wewnetrznych pluginów, które sami możemy napisać. Tak więc jak dodać automatycznie strony Kategorii i Tagów do naszego Jekyll'a.
+Możemy jednak skorzystać z wewnętrznych pluginów, które sami możemy napisać. Tak więc jak dodać automatycznie strony Kategorii i Tagów do naszego Jekyll'a.
 
 ## Prosty przepis na Kategorie i Tagi w Jekyll
 
-Tworzymy plik ```_blog_by_category.html_```  w katalogu ```./_layouts_```. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. Więcej na ten temat we wpisie [i18ln w Jekyll dla daty]. 
+Tworzymy plik ```_blog_by_category.html_```  w katalogu ```./_layouts_```. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. Więcej na ten temat we wpisie [i18ln w Jekyll dla daty](../i18ln-w-Jekyll-dla-daty). 
 {%raw%}
 ```html
 ---
