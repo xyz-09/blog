@@ -121,7 +121,8 @@ module Jekyll
               if !File.exists?(category_dir + '/' + i[0] + '.md')
                   puts "Creating category page for: " + i[0]
                   category_file = File.new(category_dir + '/' + i[0] + '.md', "w")
-                  category_file.puts("---\nlayout: blog_by_category\ncategory: " + i[0] + "\npermalink: /kategoria/" + i[0] + "/\n---")
+                  category_file.puts("---\nlayout: blog_by_category\ncategory: " + 
+                  i[0] + "\npermalink: /kategoria/" + i[0] + "/\n---")
                   category_file.close  
                   regenerate_flag = true
               end
