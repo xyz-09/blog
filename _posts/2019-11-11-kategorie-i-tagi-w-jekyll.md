@@ -72,7 +72,7 @@ layout: default
 {%endraw%}
 
 Tworzymy plik w katalogu ```_plugins``` o nazwie np. ```categories_tags_gen.rb```
-a w nim wklejamy kod:
+i w nim wklejamy kod:
 ```rb
 module Jekyll
     class TagsGenerator < Generator
