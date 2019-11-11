@@ -31,8 +31,7 @@
 
             <nav class="link-effect">
               {% for item in site.data.navigation %}
-                <a {% if item.link contains '://' %}href="{{item.link}}" {% else %}href="{{ site.baseurl }}/{{ item.link  }}" {% endif %}{% if item.target%} target="{{item.target}}"
-                {%endif %}{% assign url = item.link  | append:"/" | prepend:"/" %}{% if page.url == url %}style="color: #c5c5c5;"{% endif %}>
+                <a {% if item.link contains '://' %}href="{{item.link}}" {% else %}href="{{ site.baseurl }}/{{ item.link  }}" {% endif %}{% if item.target%} target="{{item.target}}" {%endif %}{% assign url = item.link  | append:"/" | prepend:"/" %}{% if page.url == url %}style="color: #c5c5c5;"{% endif %}>
                 <span>{{ item.name }}</span>
               </a>
               {% endfor %}

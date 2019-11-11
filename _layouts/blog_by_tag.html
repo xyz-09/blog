@@ -6,7 +6,16 @@ layout: default
 <div class="search_result">
         {% if site.tags[page.tag] %}
             {% for post in site.tags[page.tag] %}
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="archive-meta"><time class="archive-date post_date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{% include date.html date=post.date %}</time></span></h3>
+            <h3>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                </a> 
+                <span class="archive-meta">
+                    <time class="archive-date post_date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+                        {% include date.html date=post.date %}
+                    </time>
+                </span>
+            </h3>
             {% endfor %}
         {% else %}
             <p>Brak wpisów o tym tagu.</p>
