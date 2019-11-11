@@ -118,6 +118,16 @@
           classname[i].addEventListener('click', ()=>{scrollToY(topEl.offsetTop, 1500, 'easeInOutQuint');});
       }
       
+
+      let codeBlock = document.querySelectorAll("div.highlighter-rouge")
+      for (let i = 0; i < codeBlock.length; i++) {
+        let lang = codeBlock[i].className.split(' ')[0].replace('language-','');
+        let div = document.createElement('div');
+        div.className="lang"
+        div.innerHTML = lang;
+        codeBlock[i].appendChild(div);
+      }
+      console.log() 
       
       </script>
   </body>

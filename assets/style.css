@@ -194,9 +194,26 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-.highlight table, .highlight tr, .highlight td {
+.highlight table,
+.highlight tr,
+.highlight td {
   border: 1px solid transparent;
   background: none;
+}
+
+.highlighter-rouge {
+  position: relative;
+}
+
+.highlighter-rouge .lang {
+  position: absolute;
+  background: #282a36;
+  top: -19px;
+  right: 17px;
+  padding: 5px 12px;
+  color: #fff;
+  border: 1px solid #676b82;
+  text-transform: uppercase;
 }
 
 /*.detailed .entry p:first-of-type:first-letter {
@@ -209,7 +226,18 @@ table tr td :last-child {
   margin-bottom: 30px;
 }
 
-.entry ol, .entry ul {
+code.highlighter-rouge {
+  padding: 5px 9px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.entry {
+  margin-bottom: 30px;
+}
+
+.entry ol,
+.entry ul {
   padding: 15px;
   margin: 0 30px;
 }
@@ -356,6 +384,13 @@ p > img {
 
 .gmnoprint img {
   max-width: none;
+}
+
+.share {
+  padding: 5px;
+  border-top: 1px solid #c5c5c5;
+  font-size: .75em;
+  text-align: center;
 }
 
 .date {
@@ -717,7 +752,9 @@ body:after {
   padding: 0px 25px;
 }
 
-.category, .tags, .tags_cnt {
+.category,
+.tags,
+.tags_cnt {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -725,7 +762,9 @@ body:after {
   margin: 0;
 }
 
-.category li, .tags li, .tags_cnt li {
+.category li,
+.tags li,
+.tags_cnt li {
   list-style: none;
   text-transform: uppercase;
 }
@@ -1015,12 +1054,14 @@ Modules - reusable parts of our design
   font-size: .85em;
 }
 
-.cat, .tags {
+.cat,
+.tags {
   width: 50%;
 }
 
 @media screen and (max-width: 640px) {
-  .cat, .tags {
+  .cat,
+  .tags {
     width: 100%;
   }
 }
@@ -1393,8 +1434,13 @@ Modules - reusable parts of our design
 .highlight {
   background-color: #1e1c3f;
   padding: 7px 7px 7px 10px;
-  overflow: auto;
+  overflow: hidden;
   font-size: 95%;
+}
+
+pre.highlight {
+  max-height: 500px;
+  overflow: auto;
 }
 
 code {

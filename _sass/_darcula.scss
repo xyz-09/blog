@@ -1,8 +1,14 @@
 .highlight {
     background-color: #1e1c3f;
     padding: 7px 7px 7px 10px;
-    overflow: auto;
+    overflow:hidden;   
     font-size: 95%;
+
+    @at-root pre.highlight {
+        max-height:500px;
+        overflow:auto;
+    }
+ 
 }
 
 code {

@@ -143,26 +143,58 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
-.highlight{
-  table,tr,td{
-    border:1px solid transparent;
-    background:none
+
+.highlight {
+
+  table,
+  tr,
+  td {
+    border: 1px solid transparent;
+    background: none
   }
 }
+
+.highlighter-rouge {
+  position: relative;
+
+  .lang {
+    position: absolute;
+    background: #282a36;
+    top: -19px;
+    right: 17px;
+    padding: 5px 12px;
+    color: #fff;
+    border: 1px solid #676b82;
+    text-transform: uppercase;
+  }
+}
+
 /*.detailed .entry p:first-of-type:first-letter {
     float: left;
     margin: 0.13em 0.05em 0 -0.05em;
     font-size: 3.333em;
     line-height: 0.75em;
 }*/
-.highlighter-rouge{margin-bottom:30px;}
+.highlighter-rouge {
+  margin-bottom: 30px;
+}
+
+code.highlighter-rouge {
+  padding: 5px 9px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
 .entry {
-  ol,ul{
-    padding:15px;
-    margin:0 30px ;
+  margin-bottom: 30px;
+  ol,
+  ul {
+    padding: 15px;
+    margin: 0 30px;
   }
-  li{
-    margin-bottom:30px;
+
+  li {
+    margin-bottom: 30px;
   }
 }
 
@@ -281,6 +313,13 @@ p>img {
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
+}
+
+.share {
+  padding: 5px;
+  border-top: 1px solid #c5c5c5;
+  font-size: .75em;
+  text-align: center;
 }
 
 .date {
@@ -604,10 +643,11 @@ body:after {
   letter-spacing: 2px;
 }
 
-.post .tags.main a{
+.post .tags.main a {
   text-transform: uppercase;
-  font-size:.85em
+  font-size: .85em
 }
+
 .post_date {
   text-align: center;
   color: $white;
@@ -637,18 +677,22 @@ body:after {
   font-size: 2em;
   padding: 0px 25px;
 }
-.category, .tags, .tags_cnt{
 
-  display:inline-flex;
-  padding:0;
-  margin:0;
+.category,
+.tags,
+.tags_cnt {
 
-  li{
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+
+  li {
     list-style: none;
     text-transform: uppercase;
   }
-  
+
 }
+
 .category {
   padding: 0 0 30px 0;
 
@@ -663,28 +707,33 @@ body:after {
       transition: background .2s linear, color .55s ease-in-out;
       text-transform: uppercase;
 
-      &:hover{
+      &:hover {
         background: $white;
-        color:$gray
+        color: $gray
       }
     }
 
   }
 }
 
-.related{
-  border-top:3px dotted lighten($gray,50%);
-  background:lighten($gray,68%);
-  padding:15px;
-  margin-top:30px;
-  margin-bottom:30px;
-  color:$white;
-  h4{text-transform: uppercase;}
-  a{
-    border-top:1px solid lighten($gray,50%);
-    display:block
+.related {
+  border-top: 3px dotted lighten($gray, 50%);
+  background: lighten($gray, 68%);
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: $white;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  a {
+    border-top: 1px solid lighten($gray, 50%);
+    display: block
   }
 }
+
 .cd-container img {
   max-width: 100%;
 }
@@ -922,14 +971,15 @@ Modules - reusable parts of our design
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size:.85em;
+  font-size: .85em;
 }
 
-.cat, .tags{
-  width:50%;
+.cat,
+.tags {
+  width: 50%;
 
   @include mobile {
-    width:100%;
+    width: 100%;
   }
 }
 
