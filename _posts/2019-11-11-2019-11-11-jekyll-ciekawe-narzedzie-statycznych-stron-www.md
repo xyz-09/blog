@@ -24,28 +24,28 @@ Sama instalacja Jekyll'a jest bardzo prosta. Przedstawię sposób instalacji na 
 
 1. Otwieramy terminal
 2. Wpisujemy komendę:
-```
+```shell
 sudo apt install ruby-full build-essential
-```
+```shell
 3. Po zainstalowaniu powyższego, dodajemy zmienne środowiskowe do _~/.bashrc_
-```
+```shell
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 4. No i instalujemy Jekyll'a:
-```
+```shell
 gem install jekyll bundler
 ```
 5. Następnie możemy skolonować repo jendego z wielu themów jekyll'a np [Reverie](https://github.com/amitmerchant1990/reverie) - ten templet użyłam do tego bloga, lub też rozpocząć z nową czystą instalacją. 
 
 6. Po skolonowaniu lokalnie templeta uruchamiamy polecenie:
-```
+```shell
 bundle exec jekyll serve
 ```
 7. Powinniśmy otrzymać komunikat na terminalu:
-```
+```shell 
 Configuration file: path_to_jekyll_template/_config.yml
             Source: path_to_jekyll_template
        Destination: path_to_jekyll_template/_site
