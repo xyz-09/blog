@@ -26,7 +26,7 @@ Sama instalacja Jekyll'a jest bardzo prosta. Przedstawię sposób instalacji na 
 2. Wpisujemy komendę:
 ```shell
 sudo apt install ruby-full build-essential
-```shell
+```
 3. Po zainstalowaniu powyższego, dodajemy zmienne środowiskowe do _~/.bashrc_
 ```shell
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
