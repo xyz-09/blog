@@ -120,6 +120,146 @@ h2 {
   margin-bottom: 20px;
 }
 
+#toast {
+  visibility: hidden;
+  max-width: 50px;
+  margin: auto;
+  background-color: #282a36;
+  border: 1px solid #333545;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  color: #fafbfc;
+  text-align: center;
+  border-radius: 2px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  font-size: .85em;
+  white-space: nowrap;
+}
+
+#toast #desc {
+  color: #a3a6ba;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+          animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+#toast.show #desc {
+  opacity: 1;
+  -webkit-transition: .5s 1s linear;
+  transition: .5s 1s linear;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expand {
+  from {
+    min-width: 50px;
+  }
+  to {
+    min-width: 350px;
+  }
+}
+
+@keyframes expand {
+  from {
+    min-width: 50px;
+  }
+  to {
+    min-width: 350px;
+  }
+}
+
+@-webkit-keyframes stay {
+  from {
+    min-width: 350px;
+  }
+  to {
+    min-width: 350px;
+  }
+}
+
+@keyframes stay {
+  from {
+    min-width: 350px;
+  }
+  to {
+    min-width: 350px;
+  }
+}
+
+@-webkit-keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+  to {
+    min-width: 50px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+  to {
+    min-width: 50px;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}
+
 @media (min-width: 769px) {
   .post h2::before,
   .post h2::after {
@@ -205,15 +345,30 @@ table tr td :last-child {
   position: relative;
 }
 
-.highlighter-rouge .lang {
+.highlighter-rouge .lang,
+.highlighter-rouge .copy {
   position: absolute;
   background: #282a36;
   top: -19px;
-  right: 17px;
+  right: 30px;
   padding: 5px 12px;
   color: #fff;
   border: 1px solid #676b82;
   text-transform: uppercase;
+}
+
+.highlighter-rouge .copy {
+  background: #333545;
+  top: auto;
+  bottom: -15px;
+  cursor: pointer;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+  will-change: background;
+}
+
+.highlighter-rouge .copy:hover {
+  background: #494c62;
 }
 
 /*.detailed .entry p:first-of-type:first-letter {
@@ -273,6 +428,7 @@ a {
   color: #333;
 }
 
+.search_result a,
 .post a,
 .read-more,
 .category a,
@@ -283,7 +439,9 @@ a {
   display: inline-block;
 }
 
-.post a:before, .post a:after,
+.search_result a:before, .search_result a:after,
+.post a:before,
+.post a:after,
 .read-more:before,
 .read-more:after,
 .category a:before,
@@ -307,7 +465,9 @@ a {
   transition: transform .15s .25s ease-out, top .15s .5s ease-out, -webkit-transform .15s .25s ease-out;
 }
 
-.post a:hover:before, .post a:hover:after,
+.search_result a:hover:before, .search_result a:hover:after,
+.post a:hover:before,
+.post a:hover:after,
 .read-more:hover:before,
 .read-more:hover:after,
 .category a:hover:before,
@@ -320,6 +480,7 @@ a {
           transform: scaleX(1);
 }
 
+.search_result a:hover:before,
 .post a:hover:before,
 .read-more:hover:before,
 .category a:hover:before,
@@ -328,6 +489,7 @@ a {
   top: 0;
 }
 
+.search_result a:hover:after,
 .post a:hover:after,
 .read-more:hover:after,
 .category a:hover:after,
@@ -952,6 +1114,21 @@ Modules - reusable parts of our design
   position: relative;
   border-top: 1px solid #c5c5c5;
   margin-top: 2em;
+}
+
+.search_result h3 {
+  padding: 5px;
+  position: relative;
+  border-top: 1px solid #e5e5e5;
+}
+
+.search_result h3 a {
+  color: #333;
+}
+
+.search_result h3 .post_date {
+  font-size: .65em;
+  font-weight: normal;
 }
 
 .yellow.lighten-2 {

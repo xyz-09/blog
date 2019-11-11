@@ -7,8 +7,7 @@ module Jekyll
               puts "Creating tags dir"
               Dir.mkdir(tags_dir)
           end
-          regenerate_flag = false
-  
+          regenerate_flag = false  
           site.tags.each do |i|
               tag_name = i[0]
   
@@ -38,7 +37,7 @@ module Jekyll
   
           if !Dir.exists?(category_dir)
               puts "Creating kategoria dir"
-              
+
               Dir.mkdir(category_dir)
           end
           regenerate_flag = false

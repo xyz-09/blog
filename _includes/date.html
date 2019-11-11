@@ -1,17 +1,8 @@
 {{ include.date | date: "%d" }}
-{% assign m = include.date | date: "%-m" %}
-    {% case m %}
-            {% when  '1' %}Styczeń
-            {% when  '2' %}Luty
-            {% when  '3' %}Marzec
-            {% when  '4' %}Kwiecień
-            {% when  '5' %}Maj
-            {% when  '6' %}Czerwiec
-            {% when  '7' %}Lipiec
-            {% when  '8' %}Sierpień
-            {% when  '9' %}Wrzesień
-            {% when '10' %}Październik
-            {% when '11' %}Listopad
-            {% when '12' %}Grudzień
-    {% endcase %}
+
+{% assign months = "Styczeń,Luty,Marzec,Kwiecień,
+                    Maj,Czerwiec,Lipiec,Sierpień,
+                    Wrzesień,Październik,Listopad,Grudzień" | split: ',' %}
+{% assign m = include.date | date: "%-m" | plus: 0 %}
+    {{ months[m] }}
 {{ include.date | date: "%Y" }}

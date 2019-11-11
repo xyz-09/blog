@@ -66,6 +66,99 @@ h2 {
   margin-bottom: 20px;
 }
 
+#toast {
+  visibility: hidden;
+  max-width: 50px;
+  margin: auto;
+  background-color: $darkPurple;
+  border: 1px solid lighten($darkPurple, 5);
+  box-shadow: 0 0 5px darken($darkPurple, 100);
+  color: lighten($darkPurple, 80);
+  text-align: center;
+  border-radius: 2px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  font-size: .85em;
+  white-space: nowrap;
+
+  #desc {
+    color: lighten($darkPurple, 50);
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    text-transform: uppercase;
+  }
+
+  &.show {
+    visibility: visible;
+    animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+
+    #desc {
+      opacity: 1;
+      transition: .5s 1s linear;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    min-width: 50px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@keyframes stay {
+  from {
+    min-width: 350px
+  }
+
+  to {
+    min-width: 350px
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 350px;
+  }
+
+  to {
+    min-width: 50px;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 60px;
+    opacity: 0;
+  }
+}
+
 @media (min-width: 769px) {
 
   .post h2::before,
@@ -157,15 +250,30 @@ table tr td :last-child {
 .highlighter-rouge {
   position: relative;
 
-  .lang {
+  .lang,
+  .copy {
     position: absolute;
-    background: #282a36;
+    background: $darkPurple;
     top: -19px;
-    right: 17px;
+    right: 30px;
     padding: 5px 12px;
     color: #fff;
     border: 1px solid #676b82;
     text-transform: uppercase;
+  }
+
+  .copy {
+    background: lighten($darkPurple, 5);
+    top: auto;
+    bottom: -15px;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    will-change: background;
+
+    &:hover {
+      background: lighten($darkPurple, 15);
+    }
+
   }
 }
 
@@ -187,6 +295,7 @@ code.highlighter-rouge {
 
 .entry {
   margin-bottom: 30px;
+
   ol,
   ul {
     padding: 15px;
@@ -224,6 +333,7 @@ a {
   color: $darkGray;
 }
 
+.search_result a,
 .post a,
 .read-more,
 .category a,
@@ -701,7 +811,7 @@ body:after {
 
     a {
       margin-right: 10px;
-      border-bottom:1px dotted $gray;
+      border-bottom: 1px dotted $gray;
       padding: 5px 10px;
       color: $gray;
       transition: background .2s linear, color .55s ease-in-out;
@@ -878,6 +988,22 @@ Modules - reusable parts of our design
   position: relative;
   border-top: 1px solid #c5c5c5;
   margin-top: 2em;
+
+  h3 {
+    padding: 5px;
+    position: relative;
+    border-top: 1px solid #e5e5e5;
+
+    a {
+      color: $darkGray
+    }
+
+    .post_date {
+      font-size: .65em;
+      font-weight: normal
+    }
+  }
+
 }
 
 .yellow.lighten-2 {

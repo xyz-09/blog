@@ -5,7 +5,8 @@ date: 2019-11-11 06:31
 category: [programowanie, jekyll]
 author: Edyta Jozdowska
 tags: [jekyll, ruby, yaml]
-summary: Jekyll jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak Markdown, Liquid, HTML i CSS.
+summary:
+excerpt: Jekyll jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak Markdown, Liquid, HTML i CSS. 
 ---
 
 **Jekyll** jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak [Markdown](https://pl.wikipedia.org/wiki/Markdown), [Liquid](https://github.com/Shopify/liquid/wiki), HTML i CSS.
