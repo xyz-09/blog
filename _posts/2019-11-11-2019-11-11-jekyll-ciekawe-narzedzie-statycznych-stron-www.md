@@ -38,7 +38,7 @@ source ~/.bashrc
 ```shell
 gem install jekyll bundler
 ```
-5. Następnie możemy skolonować repo jendego z wielu themów jekyll'a np [Reverie](https://github.com/amitmerchant1990/reverie) - ten templet użyłam do tego bloga, lub też rozpocząć z nową czystą instalacją. 
+5. Następnie możemy skolonować repo jendego z wielu themów Jekyll'a np [Reverie](https://github.com/amitmerchant1990/reverie) - ten templet użyłam do tego bloga, lub też rozpocząć z nową czystą instalacją. 
 
 6. Po skolonowaniu lokalnie templeta uruchamiamy polecenie:
 ```shell
