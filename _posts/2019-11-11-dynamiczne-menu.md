@@ -16,7 +16,7 @@ Stawiając tego bloga, spotkałam się z Jekyll'em po raz pierwszy. Jednak nie b
 
 Do dzieła zatem.
 ## Prosty przepis na dynamiczne menu w Jekyll'u
-Tutaj śpieszę z wyjaśnieniami, dynamiczny, ponieważ generowane z kodu. Można je zrobić w dwojaki sposób. Możemy ustawić menu w pliku konfiguracyjnym, wiele templetów właśnie tak skonstruowanych widziałam. Wolę jednak sposób z wykorzystaniem katalogu ```_data``` i ten też opiszę. Wydaj mi się on bardziej modułowy.
+Tutaj śpieszę z wyjaśnieniami, dynamiczne, ponieważ generowane z kodu. Można je zrobić w dwojaki sposób. Możemy ustawić menu w pliku konfiguracyjnym, wiele templetów właśnie tak skonstruowanych widziałam. Wolę jednak sposób z wykorzystaniem katalogu ```_data``` i ten też opiszę. Wydaj mi się on bardziej modułowy.
 
 1. Jeśli nie mamy w swojej instalacji, tworzymy katalog ```_data```
 2. W katalogu ```_data``` tworzymy plik o nazwie np. ```navigation.yml```
