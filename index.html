@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
-Kateorie: <ul class="category">
-    {% for category in site.categories %}
-      {% assign category_name = category[0] %}
-      <li>
-        <a href="./kategoria/{{ category_name | slugify }}/">{{ category_name | replace: "-", " " }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<h3><a href="categories">Kategorie:</a></h3>
+<ul class="category"> 
+  {% for category in site.categories %}
+  <li>
+        <a href="./kategoria/{{ category | first}}/">
+            {{ category | first }}
+        </a></li>
+      
+
+{% endfor %}
+</ul>
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
@@ -16,11 +19,13 @@ Kateorie: <ul class="category">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <h1>{{ post.title }}</h1>
       </a>
-      <div class="tags">
-
+      <br/>
+      <div class="tags main">
+        
         {% for tag in post.tags %}
 
-        <a href="./tag/{{tag}}">#{{tag}}</a> 
+        <a href="./tags/{{tag}}">#{{tag}}{% unless forloop.last %},&nbsp;{% endunless %}</a> 
+       
         {% endfor %}
       </div>
       <div class="entry">

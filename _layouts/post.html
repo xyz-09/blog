@@ -10,17 +10,34 @@ layout: default
     {% if page.last_modified_at %}
     <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
     {% endif %}
-    <div class="post-tags">
+    <div class="post-meta">
+      <div class="cat">
       {% if post %}
         {% assign categories = post.categories %}
       {% else %}
         {% assign categories = page.categories %}
       {% endif %}
+      Kategorie:&nbsp;&nbsp;
+      <ul class="category">
       {% for category in categories %}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
+        <li><a href="{{site.baseurl}}/kategoria/{{category|slugize}}">{{category}}</a>
+        </li>
       {% endfor %}
+    </ul>
     </div>
+    <div class="tags">
+      Tagi:&nbsp;&nbsp;
+      {% if post %}
+       {% assign tags = post.tags %}
+      {% else %}
+        {% assign tags = page.tags %}
+      {% endif %}
+      <ul class="tags_cnt">
+      {% for tag in tags %}
+      <li><a href="{{site.baseurl}}/tags/{{tag|slugize}}">#{{tag}}{% unless forloop.last %},&nbsp;&nbsp;{% endunless %}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
   </div>
     
   <div class="entry">

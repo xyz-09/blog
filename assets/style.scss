@@ -143,13 +143,28 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
-
+.highlight{
+  table,tr,td{
+    border:1px solid transparent;
+    background:none
+  }
+}
 /*.detailed .entry p:first-of-type:first-letter {
     float: left;
     margin: 0.13em 0.05em 0 -0.05em;
     font-size: 3.333em;
     line-height: 0.75em;
 }*/
+.highlighter-rouge{margin-bottom:30px;}
+.entry {
+  ol,ul{
+    padding:15px;
+    margin:0 30px ;
+  }
+  li{
+    margin-bottom:30px;
+  }
+}
 
 #search-container {
   text-align: center;
@@ -179,7 +194,9 @@ a {
 
 .post a,
 .read-more,
-.page a {
+.category a,
+.page a,
+.tags a {
   color: $blue;
   position: relative;
   display: inline-block;
@@ -587,10 +604,10 @@ body:after {
   letter-spacing: 2px;
 }
 
-.tags a {
-  font-size: .75em
+.post .tags.main a{
+  text-transform: uppercase;
+  font-size:.85em
 }
-
 .post_date {
   text-align: center;
   color: $white;
@@ -620,9 +637,20 @@ body:after {
   font-size: 2em;
   padding: 0px 25px;
 }
+.category, .tags, .tags_cnt{
 
+  display:inline-flex;
+  padding:0;
+  margin:0;
+
+  li{
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+}
 .category {
-  padding: 0;
+  padding: 0 0 30px 0;
 
   li {
     list-style: none;
@@ -633,6 +661,7 @@ body:after {
       padding: 5px 10px;
       color: $white;
       transition: background .2s linear, color .55s ease-in-out;
+      text-transform: uppercase;
 
       &:hover{
         background: $white;
@@ -888,18 +917,20 @@ Modules - reusable parts of our design
   line-height: 0;
 }
 
-.post-tags {
-  text-align: center;
+.post-meta {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size:.85em;
 }
 
-.post-tags a {
-  font-size: 10px;
-  padding: 0px 13px;
-  border: none;
-  background-color: #4CAF50;
-  border-radius: 50px;
-  color: #fff;
-  line-height: 2em;
+.cat, .tags{
+  width:50%;
+
+  @include mobile {
+    width:100%;
+  }
 }
 
 .pagination a,
