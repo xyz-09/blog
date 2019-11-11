@@ -20,7 +20,10 @@ layout: default
       Kategorie:&nbsp;&nbsp;
       <ul class="category">
       {% for category in categories %}
-        <li><a href="{{site.baseurl}}/kategoria/{{category|slugize}}">{{category}}</a>
+        <li>
+          <a href="{{site.baseurl}}/kategoria/{{category|slugize}}">
+            {{category}}
+          </a>
         </li>
       {% endfor %}
     </ul>
@@ -34,7 +37,11 @@ layout: default
       {% endif %}
       <ul class="tags_cnt">
       {% for tag in tags %}
-      <li><a href="{{site.baseurl}}/tags/{{tag|slugize}}">#{{tag}}{% unless forloop.last %},&nbsp;&nbsp;{% endunless %}</a></li>
+        <li>
+          <a href="{{site.baseurl}}/tags/{{tag|slugize}}">
+            #{{tag}}{% unless forloop.last %},&nbsp;&nbsp;{% endunless %}
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </div>
@@ -45,7 +52,11 @@ layout: default
   </div>
 
   <div class="share">
-    <p><span class="share-box">Podziel się:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
+    <p>
+      <span class="share-box">Podziel się:</span> 
+      <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, 
+      <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a>
+    </p>
   </div>
 <div class="related">
   <h4>Powiązane posty:</h4>
