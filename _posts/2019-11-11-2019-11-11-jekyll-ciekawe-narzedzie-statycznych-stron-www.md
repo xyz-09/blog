@@ -59,5 +59,5 @@ Configuration file: path_to_jekyll_template/_config.yml
 ```
 8. Server działa. Otwieramy przeglądarkę i sprawdzamy  nasz adres: 127.0.0.1:4000
 
-Proste i wydajne. W nastepnym [wpisie](../kategorie-i-tagi-w-jekyll/) opiszę jak dodać prosty system powiązania postów według kategorii i tagów, tak aby działał dla github Pages.
+Proste i wydajne. W nastĘpnym [wpisie](../kategorie-i-tagi-w-jekyll/) opiszę jak dodać prosty system powiązania postów według kategorii i tagów, tak aby działał dla github Pages.
 
