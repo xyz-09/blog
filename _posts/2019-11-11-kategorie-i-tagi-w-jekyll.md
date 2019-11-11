@@ -15,7 +15,7 @@ Możemy jednak skorzystać z wewnętrznych pluginów, które sami możemy napisa
 
 ## Prosty przepis na Kategorie i Tagi w Jekyll
 
-Tworzymy plik ```_blog_by_category.html_```  w katalogu ```./_layouts_```. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. Więcej na ten temat we wpisie [i18ln w Jekyll dla daty](../i18ln-w-Jekyll-dla-daty). 
+Tworzymy plik ```_blog_by_category.html_```  w katalogu ```./_layouts```. Tutaj moja uwaga, dla daty używam tłumaczenia, dlatego jest inlcude. Więcej na ten temat we wpisie [i18ln w Jekyll dla daty](../i18ln-w-Jekyll-dla-daty). 
 {%raw%}
 ```html
 ---
@@ -43,7 +43,7 @@ layout: default
 ```
 {%endraw%}
 
-Tworzymy plik ```_blog_by_tags.html_```  w katalogu ```./_layouts_```.
+Tworzymy plik ```_blog_by_tags.html_```  w katalogu ```./_layouts```.
 {%raw%}
 ```html
 ---
