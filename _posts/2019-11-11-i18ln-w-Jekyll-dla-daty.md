@@ -69,6 +69,6 @@ Sposób użycia w plikach Jekyll'a jest następujący:
 
 Wynik jet taki, jak mam na blogu np:
 ```
-10 listopad 2019
+10 Listopad 2019
 ```
 Jekyll i jego prostota zaczyna mi się podobać coraz bardziej :).
