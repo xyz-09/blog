@@ -51,7 +51,7 @@ używanie splitów i innych wymysłów jest po to aby się popisać i zaburza pr
                     Maj,Czerwiec,Lipiec,Sierpień,
                     Wrzesień,Październik,Listopad,Grudzień" | split: ',' %}
 
-{% assign m = include.date | date: "%-m" | plus: 0 %}
+{% assign m = include.date | date: "%-m" | mminus: 1 %}
 {{ months[m] }}
 
 {{ include.date | date: "%Y" }}
