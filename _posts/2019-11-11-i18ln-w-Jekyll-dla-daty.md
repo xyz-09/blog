@@ -61,7 +61,7 @@ używanie splitów i innych wymysłów jest po to aby się popisać i zaburza pr
 Serio, to całość. Nic innego nie potrzeba.  
 
 ## Sposób użycia
-Sposób użycia w plikach jekyll'a jest następujący:
+Sposób użycia w plikach Jekyll'a jest następujący:
 {%-raw-%}
 ```liquid
 {% include date.html date=post.date %}

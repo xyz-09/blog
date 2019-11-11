@@ -13,11 +13,11 @@ excerpt: Jekyll jest to prosty, modułowy, generator stron statycznych. Do swoje
 
 Długie lata system blogowy kojarzył mi się z Wordpressem. No bo jak najszybciej postawić stronę z bazą danych, która będzie dość użyteczna do pisania swoich notatek i przemyśleń, nie będzie wymagała specjalnych zabiegów, które w miarę czasu zniechęcają do napisania czegokolwiek, gdyż by opublikować jakiś wpis, trzeba wykonać mnóstwo innych czynności - tylko wordpress lub inny opensource CMS. Logujesz się, siadasz i piszesz. Zapewne wiele ludzi myśli podobnie.
 
-Otóż jak się okazuje, że do tak prostych zadań można wykorzystać trochę mniejsze środowisko - i tu na scenę wkracza jekyll. 
+Otóż jak się okazuje, do tak prostych zadań można wykorzystać trochę mniejsze środowisko - i tu na scenę wkracza Jekyll. 
 
-Pewnego dnia mój facet wysłał mi linka do jekyll'a. W pierwszym momencie stwierdziłam - ot ciekawostka. Naciskał na mnie "forkuj ten templet", "sforkowałaś już?" itp. Stwierdziłam "ok", skoro nie daje spokoju, coś musi być na rzeczy. 
+Pewnego dnia mój facet wysłał mi linka do Jekyll'a. W pierwszym momencie stwierdziłam - ot ciekawostka. Naciskał na mnie "forkuj ten templet", "sforkowałaś już?" itp. Stwierdziłam "ok", skoro nie daje spokoju, coś musi być na rzeczy. 
 
-Sklonowałam repo wskazanego templeta z jekyll'a i... mi się spodobało. Naprawdę jest to dobre narzędzie. Zastanawiam się jedynie nad jego wydajnością w miarę wzrostu wpisów i notatek. Rozrost treści zazwyczaj ma wpływ na szybkość działania systemu. Zobaczymy jak ta instalacja poradzi sobie z tym zadaniem. Moje obawy dotyczą głównie generacji feed'a dla postów - teraz gdy mam tylko kilka wpisów zajmuje to 0.629 sekund. To bardzo dużo. Zobaczymy jak będzie dalej.
+Sklonowałam repo wskazanego templeta z Jekyll'a i... mi się spodobało. Naprawdę jest to dobre narzędzie. Zastanawiam się jedynie nad jego wydajnością w miarę wzrostu wpisów i notatek. Rozrost treści zazwyczaj ma wpływ na szybkość działania systemu. Zobaczymy jak ta instalacja poradzi sobie z tym zadaniem. Moje obawy dotyczą głównie generacji feed'a dla postów - teraz gdy mam tylko kilka wpisów zajmuje to 0.629 sekund. To bardzo dużo. Zobaczymy jak będzie dalej.
 
 ## Instalacja
 Sama instalacja Jekyll'a jest bardzo prosta. Przedstawię sposób instalacji na dystrybucji linux'a Bunsen, gdyż tego właśnie środowiska używam. Instalacja Jekyll'a na innym środowisku opisana jest na stronie www projektu [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/){:target="_blank"}
