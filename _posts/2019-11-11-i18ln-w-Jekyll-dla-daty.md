@@ -37,7 +37,7 @@ Utwórz plik w katalogu ```_includes``` o nazwie ```date.html``` i wprowadź do 
 ```
 {%endraw%}
 
-Liquid jest interpreterem szablonów dlatego jak w Smarty stosowanie w nim nowych zmiennych nie jest zalecane, ale istnieje inny sposób zapisu powyższego kodu. Może nie jest do końca elegancki.  ```Liquid``` nie ma metody na utworzenie tablicy, więc jest to swego rodzaju obejście. 
+Liquid jest interpreterem szablonów dlatego jak w Smarty, stosowanie w nim nowych zmiennych, nie jest zalecane, ale istnieje inny sposób zapisu powyższego kodu. Może nie jest do końca elegancki.  ```Liquid``` nie ma metody na utworzenie tablicy, więc jest to swego rodzaju obejście. 
 
 W dodatku 'mój mężczyzna' twierdzi, że 
 używanie splitów i innych wymysłów jest po to aby się popisać i zaburza przejrzystość. **Cóż, nie dla mnie :)**  
