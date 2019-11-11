@@ -701,9 +701,9 @@ body:after {
 
     a {
       margin-right: 10px;
-      background: $gray;
+      border-bottom:1px dotted $gray;
       padding: 5px 10px;
-      color: $white;
+      color: $gray;
       transition: background .2s linear, color .55s ease-in-out;
       text-transform: uppercase;
 
