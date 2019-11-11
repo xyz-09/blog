@@ -12,7 +12,7 @@ Stawiając tego bloga, spotkałam się z Jekyll'em po raz pierwszy. Jednak nie b
 * [Dynamiczne menu](../dynamiczne-menu/)
 * Dodanie opcji "Kopiuj" i oznaczenie kodu dla generowanych fragmentów kodu tzw. highlight
 * Tłumaczenie daty z języka angielskiego na polski - **ten wpis właśnie czytasz**
-## Prosty przepis na dodanie i18Ln na poddstawie daty
+## Prosty przepis na dodanie i18Ln na podstawie daty
 
 Utwórz plik w katalogu ```_includes``` o nazwie ```date.html``` i wprowadź do niego poniższy kod:
 {%raw%}
