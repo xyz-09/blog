@@ -62,7 +62,6 @@ Serio, to całość. Nic innego nie potrzeba.
 
 ## Sposób użycia
 Sposób użycia w plikach Jekyll'a jest następujący:
-{%-raw-%}
 ```liquid
 {% include date.html date=post.date %}
 ```
