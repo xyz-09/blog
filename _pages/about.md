@@ -14,4 +14,6 @@ Sam blog zrobiony jest z połączenia [Github Pages](https://pages.github.com/){
 
 Właśnie, mimo, że jestem FullStackiem - to zabawa frontem chyba najbardziej mi się podoba. Kiedyś, jak zaczynałam swoją przygodę z programowaniem trzeba było umieć wszystko: począwszy od obsługi programów graficznych jak Photoshop, Gimp, Inkscape itp, poprzez obsługę frontu (HTML, JS, CSS), kończąc na backu czyli np. PHP i MYSQL. A... no i trzeba było umieć ustawić Apatch'a, popisać parę komend w htaccess, wziąć pod uwagę optymalizację obrazów i wszystkich resource, ale o tym w moim [pierwszym poście - jak w ogóle zaczeła się moja przygoda](../2019-10-11-poczatek-przygody).
 
+Poza pisaniem kodu, uczę osoby 35+ obsługi komputera i posługiwania się pakietem Windows Office na poziomie podstawowym i zaawansowanym w ramach certyfikatu [ECDL](https://ecdl.pl/)
+
 
