@@ -8,10 +8,10 @@ tags: [php]
 summary: Prosta, naprawdę banalna klasa do sprawdzenia czy dany punkt jest w kwadracie.
 ---
 
-Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypułym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.  
+Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.  
 Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić.
 
-Ten fragment, który własnie czytasz dotyczny znacznie prostszego przypadku, gdy szukamy naszego punktu w kwadracie. Rozpatrzenie tego przypadku, pozwoli nam lepiej zrozumieć sam zapis kodu w trudniejszych wariantach.
+Ten fragment, który właśnie czytasz dotyczy znacznie prostszego przypadku, gdy szukamy naszego punktu w kwadracie. Rozpatrzenie tego przypadku, pozwoli nam lepiej zrozumieć sam zapis kodu w trudniejszych wariantach.
 
 Do czego to może mieć odniesienie? Choćby do pracy z danymi na mapach, które często wykonuję. 
 
@@ -24,9 +24,11 @@ Pierwsze nie znam go, a drugie podobno jest baaaardzo długi ;)
 Ze szkoły powinniśmy wiedzieć też, jaki jest zapis współrzędnych obiektów w układzie kartezjańskim. Jeśli nie, niech poniższy obrazek *(Rysunek 1)* posłuży jako wytłumaczenie.  
 
 {:.center}
-![Rysunek 1](/blog/images/pointInSquare.jpg)<br/>
-*Rysunek 1 - Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków*
-
+{%
+    include image.html 
+    src="/blog/images/pointInSquare.jpg" 
+    caption="Rysunek 1. Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków"
+%}
 
 Ogólne założenie jest takie. Należy sprawdzić, czy współrzędne punktu **P** oznaczone jako `[px, py]` są większe lub równe od początku obszaru oznaczonego jako `[x1, y1]`, a mniejsze lub równe od końca obszaru w układzie oznaczone jako `[x2, y2]`. 
 
@@ -54,7 +56,9 @@ class pointInSquare {
        $this->point =  $p;
     }
     
-   function init(){            
+   function init(){  
+       // return boolean
+
         if($this->valiParameters()){
             return $this->checkPointInSquare();
         }else{
@@ -65,7 +69,8 @@ class pointInSquare {
     }       
 
     function checkPointInSquare(){
-    // main body of class, the essential check that point by px and py is in square
+        //return boolean
+        // main body of class, the essential check that point by px and py is in square
     
         return   $this->point[0] >= $this->vertexA[0] &&
                  $this->point[0] <= $this->vertexB[0] &&
@@ -74,6 +79,8 @@ class pointInSquare {
     }
 
     function valiParameters(){    
+        //return boolean
+
         return  $this->arrayOfTwo($this->vertexA) && 
                 $this->arrayOfTwo($this->vertexB) && 
                 $this->arrayOfTwo($this->point);
@@ -81,6 +88,8 @@ class pointInSquare {
 
     
     function arrayOfTwo($el){
+        // retun boolean
+
         // validation for values
         
         return is_array($el) && count($el) == 2;
