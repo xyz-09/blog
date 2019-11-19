@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sprzawdzenie czy punkt jest zawarty w kwadracie
+title: Sprawdzenie czy punkt jest zawarty w kwadracie
 date: 2019-11-19 14:04
 category: [programowanie, php]
 author: Edyta Jozdowska
