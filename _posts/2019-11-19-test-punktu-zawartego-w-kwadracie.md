@@ -58,7 +58,8 @@ class pointInSquare {
         if($this->valiParameters()){
             return $this->checkPointInSquare();
         }else{
-            echo "Some parameters are invalid. Check, that they are an arrays of only two elements (x,y) values";
+            echo "Some parameters are invalid.\n
+                  Check, that they are an arrays of only two elements (x,y) values";
             exit;
         }
     }       
