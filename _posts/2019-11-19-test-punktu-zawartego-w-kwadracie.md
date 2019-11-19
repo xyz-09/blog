@@ -89,7 +89,6 @@ class pointInSquare {
     
     function arrayOfTwo($el){
         // retun boolean
-
         // validation for values
         
         return is_array($el) && count($el) == 2;
