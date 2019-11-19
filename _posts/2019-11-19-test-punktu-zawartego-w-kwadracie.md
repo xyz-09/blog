@@ -24,7 +24,7 @@ Pierwsze nie znam go, a drugie podobno jest baaaardzo długi ;)
 Ze szkoły powinniśmy wiedzieć też, jaki jest zapis współrzędnych obiektów w układzie kartezjańskim. Jeśli nie, niech poniższy obrazek *(Rysunek 1)* posłuży jako wytłumaczenie.  
 
 {:.center}
-![Rysunek 1](/images/pointInSquare.jpg)<br/>
+![Rysunek 1](/blog/images/pointInSquare.jpg)<br/>
 *Rysunek 1 - Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków*
 
 
