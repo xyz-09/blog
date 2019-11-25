@@ -2104,7 +2104,10 @@ pre{
 }
 pre.highlight {
     padding: 0;
-    white-space: pre;
+}
+pre.lineno {
+    word-break: break-word;
+    WHITE-SPACE: pre;
 }
 /* Literal.Number.Integer.Long */
 .svg-icon {
