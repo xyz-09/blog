@@ -1547,7 +1547,7 @@ pre{
 }
 pre.highlight {
     padding: 0;
-    white-space: normal;
+    white-space: pre;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
