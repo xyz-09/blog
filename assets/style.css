@@ -2098,17 +2098,12 @@ code {
 pre{
     background: #282a36;
     padding: 15px;
-    overflow: hidden;
-    white-space: pre-wrap;
-    word-break: break-all;
+    overflow: AUTO;
 }
 pre.highlight {
     padding: 0;
 }
-pre.lineno {
-    word-break: break-word;
-    WHITE-SPACE: pre;
-}
+
 /* Literal.Number.Integer.Long */
 .svg-icon {
   width: 40px;
