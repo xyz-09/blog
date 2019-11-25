@@ -2094,7 +2094,16 @@ code {
 .highlight .il {
   color: #bd93f9;
 }
-
+pre{
+    background: #282a36;
+    padding: 15px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+pre.highlight {
+    padding: 0;
+}
 /* Literal.Number.Integer.Long */
 .svg-icon {
   width: 40px;
