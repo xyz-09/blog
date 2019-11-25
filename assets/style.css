@@ -2104,7 +2104,7 @@ pre{
 }
 pre.highlight {
     padding: 0;
-    white-space: normal;
+    white-space: pre;
 }
 /* Literal.Number.Integer.Long */
 .svg-icon {
