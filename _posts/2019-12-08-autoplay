@@ -1,0 +1,22 @@
+---
+layout: post
+title: Autoplay i polityka przeglądarek
+date: 2019-12-02 19:01
+category: [programowanie, front]
+author: Edyta Jozdowska
+tags: [php, front, js]
+excerpt: Autoplay z punktu widzenia dev'a i użytkownika
+---
+
+## Autoplay dla video
+Jak mocno uciążliwe są filmy odtwarzane z automatu, wie każdy, co więcej użytkuje sieci. 
+
+Mnie osobiście denerwują filmy, które nie dość, że dają dźwięk (tego nienawidzę najbardziej), to jeszcze umieszczają mi się zmniejszone w rogu ekranu i w pozycji `fixed` przemieszczają się ze scrollem....wrrrr - ukatrupić tego, kto to pisał. Mogą być wyciszone - ale i tak wnerwiają.   
+
+
+Umówmy się, filmy są ok w serwisie filmowym. Na stronie, mnie jako użytkownikowi jedynie przeszkadzają. Tylko jak to wytłumaczyć klientowi, który zapłacił za montaż filmu by w lepszy sposób przedstawić swój produkt - wierzcie mi ciężki orzech do zgryzienia. A jak jeszcze rozmawiamy z kimś z działu marketingu - no, nie da się. 
+
+Załóżmy, że film jest odtwarzany na żądanie.
+
+## EDGE - zmora
+Współczesne przeglądarki (Chrome i Firefox) umożliwiają developerom aby film odtworzyć z js - po kliknięciu `video.play()` puszczę film, zablokuję jedynie na załadowanie się strony `autoplay is disabled`. Mam swój `customowy` przycisk, po kliknięciu, którego odtworzę film. Ale czy w Edge - **NIE**. Film musi być uruchomiony z ich kontorlek "play" - a ja nie chce ich kontrolek. Szukam rozwiązania....
