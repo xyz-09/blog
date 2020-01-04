@@ -4,7 +4,7 @@ title: Walidacja formularza
 date: 2019-12-30 08:30
 category: [js, frontend, php]
 author: Edyta Jozdowska
-tags: [js, forntend, form, validation]
+tags: [js, forntend, form, validation, php]
 excerpt: Krótki skrypt js mający za zadanie zwalidować formularz po stronie użytkownika i po stronie serwera.
 ---
 
