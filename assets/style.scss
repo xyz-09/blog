@@ -1540,11 +1540,13 @@ figcaption {
     font-size: .8em;
     font-style: italic;
 }
-pre{
+
+pre {
     background: #282a36;
     padding: 15px;
     overflow: AUTO;
 }
+
 pre.highlight {
     padding: 0;
 }
@@ -1554,3 +1556,18 @@ pre.highlight {
 //@import "highlights";
 @import "../_sass/darcula";
 @import "../_sass/svg-icons";
+sub {
+    vertical-align: sub!important;
+    font-size: smaller!important;
+}
+
+sup {
+    vertical-align: super!important;
+    font-size: smaller!important;
+    &:before {
+        content: "["
+    }
+    &:after {
+        content: "]"
+    }
+}
