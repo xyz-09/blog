@@ -30,9 +30,7 @@ I to wszystko :relaxed:
 ## Spis emotoikonek
 Spis dostępnych emotoikonek i ich wartości tekstowych znajdziemy na stronie [webfx.com](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
-Podam tylko niektóre, które najczęściej używam:
-
-
+Podam tylko te, które najczęściej używam:
 | buźka                          | kod                              | buźka         | kod                                     |
 |--------------------------------|----------------------------------|---------------|-----------------------------------------|
 | :smile:                        | `:smile:`                        | :blush:       | `:blush:`                               |
