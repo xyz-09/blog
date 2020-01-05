@@ -46,7 +46,9 @@ i uruchamiamy go:
 ```bash
 pytest test.py
 ```
-otrzymamy odpowiedź:
+otrzymamy odpowiedź na konsoli:
 ![Odpowiedź pierwszego testu]( {{ site.baseurl }}/images/blog_images/testy/1wszytest.png "Odpowiedź pierwszego testu")
+
+Natomiast jako oddzielne okno uruchomi się przeglądarka Chrome ze wskazanym w `.get()` linkiem.
 
 W ten oto sposób mamy przygotowane środowisko do naszych testów. **Można zacząć pierwszetestowanie swojej aplikacji**. :trollface:
