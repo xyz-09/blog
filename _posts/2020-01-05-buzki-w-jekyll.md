@@ -5,7 +5,7 @@ date: 2020-01-05 20:22
 category: [jekyll]
 author: Edyta Jozdowska
 tags: [jekyll, smiles, emoji]
-excerpt: Zakochałam się. W emotoikonach.
+excerpt: Zakochałam się. W emotikonach.
 ---
 ## Emotikony
 Każdy współczesny człowiek wie co to są emotikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się [pod tym linkiem na wikipedii](https://pl.wikipedia.org/wiki/Emotikon). 
