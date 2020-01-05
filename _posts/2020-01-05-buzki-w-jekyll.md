@@ -17,17 +17,16 @@ Sama bardzo często w komunikacji z innymi ludźmi, zwłaszcza tymi bliskimi, lu
 Pod powyższym linkiem napisane jest jak je zainstalować w jekyll'u. Napiszę jednak po swojemu.
 
 ## Jemoji w jekyll
-1. w pliku `Gemfile` dodajemy 
+1. W pliku `Gemfile` dodajemy 
    ```ruby
    gem 'jemoji'
    ```
-2. a w pliku `_config.yml` w sekcji plugins wpisujemy `- jemoji`
+2. A w pliku `_config.yml` w sekcji plugins wpisujemy `- jemoji`
 ```yml
 plugins:
 - jemoji
   ```
 I to wszystko :relaxed:
-
 ## Spis emotoikonek
 Spis dostępnych emotoikonek i ich wartości tekstowych znajdziemy na stronie [webfx.com](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
