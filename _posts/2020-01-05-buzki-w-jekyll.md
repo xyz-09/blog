@@ -27,8 +27,8 @@ plugins:
 - jemoji
   ```
 I to wszystko :relaxed:
-## Spis emotoikonek
-Spis dostępnych emotoikonek i ich wartości tekstowych znajdziemy na stronie [webfx.com](https://www.webfx.com/tools/emoji-cheat-sheet/)  
+## Spis emotikonek
+Spis dostępnych emotikonek i ich wartości tekstowych znajdziemy na stronie [webfx.com](https://www.webfx.com/tools/emoji-cheat-sheet/)  
 Podam tylko te, które najczęściej używam:
 
 | buźka                          | kod                              | buźka         | kod                                     |
