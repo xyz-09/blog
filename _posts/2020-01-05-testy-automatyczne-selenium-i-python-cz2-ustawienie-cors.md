@@ -29,13 +29,14 @@ Wpierw w jaki sposób można uruchomić przeglądarkę `Chrome` bez SOP i CORS. 
 1. Uruchamiamy terminal. 
 2. Sprawdzamy gdzie jesteśmy poprzez wpisanie 
    ```shell
-   pwd
-   #odpowiedź na terminalu np:  /home/nazwa użytkownika
+   pwd # (PrintWorkingDirectory)
+
+   # odpowiedź na terminalu np:  /home/nazwa użytkownika
    ```
    czyli wyświetl ścieżkę do obecnego (tu gdzie jest terminal) katalogu. 
 3. Wpisujemy
    ```shell
-   mkdir tmp
+   mkdir tmp # (Make Directory)
    ```
    by utworzyć w miejscu gdzie jesteśmy folder o nazwie tmp. Możemy sprawdzić wpisując np `ls -a | grep tmp`. Jeśli wyświetli nam `tmp` katalog został utworzony. A po co ten katalog? Podczas uruchamiania przeglądarki Chrome z nieaktywnymi zabezpieczeniami wymagane jest wskazanie katalogu. I ten nowo utworzony katalog wskażemy w kolejnym kroku.
 4. Komenda służąca do uruchomienia z terminala Chrome to `google-chrome`. Aby uruchomić ją w trybie bez zabezpieczeń musimy użyć flagi **- -disable-web-security** i wskazać **- -user-data-dir** katalog na dane (ten co utworzyliśmy w kroku 3). Cała komenda wygląda następująco:
@@ -68,7 +69,7 @@ driver = webdriver.Chrome('/ścieżka/do/rozpakowanego/drivera',options=chrome_o
 driver.get("http://link.jaki.chcemy testować ")
 driver.quit() # zamknij przeglądarkę po wykonaniu testów
 
-#----- Możemy jeszcze dodać inne opcje np. otwórz okno w określonym rozmiarze:
+# ----- Możemy jeszcze dodać inne opcje np. otwórz okno w określonym rozmiarze:
 chrome_options.add_argument("--window-size=1920,1080")
 ...
 ```
