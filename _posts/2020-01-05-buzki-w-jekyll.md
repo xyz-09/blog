@@ -21,13 +21,11 @@ Pod powyższym linkiem napisane jest jak je zainstalować w jekyll'u. Napiszę j
    ```ruby
    gem 'jemoji'
    ```
-2. a w pliku `_config.yml` w sekcji plugins wpisujemy `- jemoji`   
-  ```YML
-   plugins:
-   ...
-   - jemoji
-   ...
-   ```
+2. a w pliku `_config.yml` w sekcji plugins wpisujemy `- jemoji`
+```yml
+plugins:
+- jemoji
+  ```
 I to wszystko :relaxed:
 
 ## Spis emotoikonek
