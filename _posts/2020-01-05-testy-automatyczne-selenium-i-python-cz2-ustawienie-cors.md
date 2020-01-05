@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testy automatyczne selenium i python cz2. - Ustawienie CORS
+title: Testy automatyczne selenium i python cz2. - ustawienie CORS
 date: 2020-01-05 18:20
 category: [python, selenium]
 author: Jozdowska Edyta
@@ -18,7 +18,7 @@ Przyjżyjmy się kilku adresom:
 - **http://domena.com****:4000**{:style="color:red"} i **http://domena.com** - mają **różne porty**, a zarazem **różne pochodzenie** :x:
 - **http://domena.com** i **http://****subdomena**{:style="color:red"}**.domena.com** - mają **różne hosty**, a zarazem **różne pochodzenie** :x:
 
-Dzięki CORS i odpowiedniemu ustawieniu serwera możemy dopuścić do określonych źródeł danych wskazanych w polityce CORS serwery/domeny i pozwolić im na komunikację. Czyli zamiast :x: byłoby :green_heart:. Tak to się odbywa na produkcji a na developmencie?
+Dzięki CORS i odpowiedniemu ustawieniu serwera możemy dopuścić do określonych źródeł danych wskazanych w polityce CORS serwery/domeny i pozwolić im na komunikację. Czyli zamiast :x: byłoby :green_heart:. Tak to się odbywa na produkcji, a na developmencie?
 
 Uruchamiając w odpowiedni sposób przeglądarkę lub uruchamiając odpowiedni dodatek do przeglądarki cały ten mechanizm (SOP/CORS) zostaje "pominięty". **Nie polegajmy więc jedynie na SOP i CORS jako zabezpieczeniu**, ale to poza tematem.
 
