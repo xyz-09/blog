@@ -10,7 +10,7 @@ excerpt: Zakochałam się. W emotoikonach.
 ## Emotoikony
 Każdy współczesny człowiek wie co to są emotoikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się [pod tym linkiem na wikipedii](https://pl.wikipedia.org/wiki/Emotikon). 
 
-Jesteśmy przyzwyczajeni z popularnych komunikatorów jak Messanger, Signal, WhatsApp do używania obrazków, mających wskazać nastawienie lub podkreślić dane zdanie bądź związane z nim emocje. 
+Jesteśmy przyzwyczajeni z popularnych komunikatorów jak Messanger, Signal, WhatsApp do używania obrazków, mających wskazać nastawienie lub podkreślić dane zdanie bądź związane z nim emocje. Ba, nawet GaduGadu i Spik (jedne z pierwszych polskich komunikatorów) miały buźki.
 
 Sama bardzo często w komunikacji z innymi ludźmi, zwłaszcza tymi bliskimi, lub z którymi mi się dobrze rozmawia, używam obrazków. Brakowało mi tego tutaj, na blogu. Jednak od 3 wpisów w tył w moich tekstach pojawiają się już emotki. Wszystko dzięki dodatkowi [jemoji](https://github.com/jekyll/jemoji){:target="_blank"} :yum:.
 

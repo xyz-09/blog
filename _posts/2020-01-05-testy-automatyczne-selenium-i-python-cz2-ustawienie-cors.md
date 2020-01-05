@@ -50,8 +50,8 @@ OH MY GOSH :flushed: straszny komunikat. No cóż ten tryb jest przydatny :sungl
 
 ## WebDriver bez CORS i SOP
 Musimy wziąć jedno pod uwagę. Uruchamiając przeglądarkę z `Pythona` poprzez driver do testów `Selenium` musimy wskazać w jakim trybie ta przeglądarka ma się uruchomić.  
-**Domyślnie uruchomiona zostanie w trybie normalnym**, czyli mechanizmy zabezpieczeń będą funkcjonować normalnie. Czasem jednak faktycznie przydaje się uruchomienie z pominięciem zabezpieczeń (**tylko do celów testowych**, można sobie nieźle namieszać i koniec końców zostanie nam jedynie stwierdzenie:
-> "ale jak to u mnie działa" :laughing:
+**Domyślnie uruchomiona zostanie w trybie normalnym**, czyli mechanizmy zabezpieczeń będą funkcjonować normalnie. Czasem jednak faktycznie przydaje się uruchomienie z pominięciem zabezpieczeń (**tylko do celów testowych**, można sobie nieźle namieszać i koniec końców zostanie nam jedynie stwierdzenie):
+> "ale jak to, u mnie działa" :laughing:
 
 ### Środowisko testowe bez SOP
 Wróćmy jednak jak to zrobić, czyli środowisko testowe bez SOP.  
@@ -68,7 +68,7 @@ driver = webdriver.Chrome('/ścieżka/do/rozpakowanego/drivera',options=chrome_o
 driver.get("http://link.jaki.chcemy testować ")
 driver.quit() # zamknij przeglądarkę po wykonaniu testów
 
-#----- Możemy jeszcze dodać inne opcje np otwórz okno w określonym rozmiarze:
+#----- Możemy jeszcze dodać inne opcje np. otwórz okno w określonym rozmiarze:
 chrome_options.add_argument("--window-size=1920,1080")
 ...
 ```
@@ -78,4 +78,4 @@ chrome_options.add_argument("--window-size=1920,1080")
 ## Słowem końcowym
 **Wyłączenie zabezpieczeń przeglądarki wydaje się słabym pomysłem.**  
 Tak, wiem. Nie jest to tryb do surfowania po sieci :smiley:  
-Także w testowaniu może nam utrudnić. Musimy pamiętać w jakim celu wyłączamy zabezpieczenia. Po sprawdzeni, co chcieliśmy, **powinniśmy wrócić do trybu normalnego** :cop:.
+Także w testowaniu może nam utrudnić. Musimy pamiętać w jakim celu wyłączamy zabezpieczenia. Po sprawdzeniu tego, co chcieliśmy, **powinniśmy wrócić do trybu normalnego** :cop:.
