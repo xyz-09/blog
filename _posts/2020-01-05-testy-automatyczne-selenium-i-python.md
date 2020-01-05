@@ -22,7 +22,7 @@ Do instalacji potrzebujemy:
   Pytest jest opcjonalne, ale dzięki niemu na przykład mamy na konsoli kolory. To dość ważne przy dużej ilości testów. Zresztą sam dodatek pytest służy do pisania testów aplikacji python lub testowania np. plików tekstowych. Aby poznać pełne możliwości pytest najlepiej zajrzeć do dokumentacji.
 
 ### Komendy instalacji pytest i selenium:
-```bash
+```shell
 sudo python3 -m pip install -U selenium
 sudo pip3 install -U pytest
 ```
@@ -43,7 +43,7 @@ driver.get("http://link.jaki.chcemy testować ") #Może to być też localhost
 ```
 
 i uruchamiamy go:
-```bash
+```shell
 pytest test.py
 ```
 otrzymamy odpowiedź na konsoli:
