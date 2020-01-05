@@ -51,4 +51,4 @@ otrzymamy odpowiedź na konsoli:
 
 Natomiast jako oddzielne okno uruchomi się przeglądarka Chrome ze wskazanym w `.get()` linkiem.
 
-W ten oto sposób mamy przygotowane środowisko do naszych testów. **Można zacząć pierwszetestowanie swojej aplikacji**. :trollface:
+W ten oto sposób mamy przygotowane środowisko do naszych testów. **Można zacząć pierwsze testowanie swojej aplikacji**, o czym napiszę w następnym poście :trollface:
