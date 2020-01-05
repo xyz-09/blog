@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dodanie emotikon w jeykyll'u
+title: Dodanie emotikon w jekyll'u
 date: 2020-01-05 20:22
 category: [jekyll]
 author: Edyta Jozdowska
