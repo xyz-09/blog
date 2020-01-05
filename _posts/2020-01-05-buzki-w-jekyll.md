@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dodanie emotoikon w jeykyll'u
+title: Dodanie emotikon w jeykyll'u
 date: 2020-01-05 20:22
 category: [jekyll]
 author: Edyta Jozdowska
 tags: [jekyll, smiles, emoji]
 excerpt: Zakochałam się. W emotoikonach.
 ---
-## Emotoikony
-Każdy współczesny człowiek wie co to są emotoikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się [pod tym linkiem na wikipedii](https://pl.wikipedia.org/wiki/Emotikon). 
+## Emotikony
+Każdy współczesny człowiek wie co to są emotikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się [pod tym linkiem na wikipedii](https://pl.wikipedia.org/wiki/Emotikon). 
 
 Jesteśmy przyzwyczajeni z popularnych komunikatorów jak Messanger, Signal, WhatsApp do używania obrazków, mających wskazać nastawienie lub podkreślić dane zdanie bądź związane z nim emocje. Ba, nawet GaduGadu i Spik (jedne z pierwszych polskich komunikatorów) miały buźki.
 
