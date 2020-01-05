@@ -2189,4 +2189,12 @@ sup:before {
 sup:after {
   content: "]";
 }
+
+img.emoji {
+  display: inline-block !important;
+}
+
+small {
+  font-size: smaller;
+}
 /*# sourceMappingURL=style.css.map */
