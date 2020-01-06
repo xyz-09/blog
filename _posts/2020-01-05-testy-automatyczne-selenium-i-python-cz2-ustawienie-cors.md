@@ -7,7 +7,17 @@ author: Jozdowska Edyta
 tags: [python, selenium, pytest]
 excerpt: 
 ---
-## SOP
+<!-- TOC -->
+
+- [1 SOP](#1-sop)
+- [2 Chrome bez SOP i CORS](#2-chrome-bez-sop-i-cors)
+- [3 WebDriver bez CORS i SOP](#3-webdriver-bez-cors-i-sop)
+  - [3.1 Środowisko testowe bez SOP](#31-%c5%9arodowisko-testowe-bez-sop)
+- [4 Słowem końcowym](#4-s%c5%82owem-ko%c5%84cowym)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1 SOP
 **S**ame **O**rigin **P**olicy (**SOP**) - czyli natywny mechanizm przeglądarki polegający na zabezpieczeniu wymiany danych przez aplikację (stronę) w obrębie tej samej i tylko tej samej domeny (origin - tego samego pochodzenia). 
 
 **C**ross-**O**rigin **R**esource **S**haring (**CORS**) jest mechanizmem umożliwiającym współdzielenie danych pomiędzy różnymi serwerami/aplikacjami/stronami, czyli między źródłami/biorcami o różnym pochodzeniu.  
@@ -24,7 +34,7 @@ Uruchamiając w odpowiedni sposób przeglądarkę lub uruchamiając odpowiedni d
 
 Czemu o tym wspominam. Cóż mam trochę pomieszane instalacje i serwer apatche mam gdzie indziej, generowane strony np. z Jekyll'a mam gdzie indziej, a jakoś muszę łączyć ze sobą np. hosty na różnych portach http://localhost i http://localhost:4000. Oczywiście mogłabym ustawić wszystko w jednym miejscu, dostosować porty etc. Mogłabym, ale wiem, że nie muszę. Wyłączenie CORS :japanese_goblin: sprawia, że nie muszę w ogóle o tym myśleć. Ma to swoje plusy i minusy, nad którymi nie będę się pochylać. 
 
-## Chrome bez SOP i CORS
+# 2 Chrome bez SOP i CORS
 Wpierw w jaki sposób można uruchomić przeglądarkę `Chrome` bez SOP i CORS. Okazuje się, że w bardzo prosty sposób. 
 1. Uruchamiamy terminal. 
 2. Sprawdzamy gdzie jesteśmy poprzez wpisanie 
@@ -49,12 +59,12 @@ Uruchomi nam się nowa instacja Chrome z uwagą, że
 
 OH MY GOSH :flushed: straszny komunikat. No cóż ten tryb jest przydatny :sunglasses:. 
 
-## WebDriver bez CORS i SOP
+# 3 WebDriver bez CORS i SOP
 Musimy wziąć jedno pod uwagę. Uruchamiając przeglądarkę z `Pythona` poprzez driver do testów `Selenium` musimy wskazać w jakim trybie ta przeglądarka ma się uruchomić.  
 **Domyślnie uruchomiona zostanie w trybie normalnym**, czyli mechanizmy zabezpieczeń będą funkcjonować normalnie. Czasem jednak faktycznie przydaje się uruchomienie z pominięciem zabezpieczeń (**tylko do celów testowych**, można sobie nieźle namieszać i koniec końców zostanie nam jedynie stwierdzenie):
 > "ale jak to, u mnie działa" :laughing:
 
-### Środowisko testowe bez SOP
+## 3.1 Środowisko testowe bez SOP
 Wróćmy jednak jak to zrobić, czyli środowisko testowe bez SOP.  
 [W poprzednim wpisie](../testy-automatyczne-selenium-i-python/) wskazywałam jak uruchomić z poziomu pythona środowisko do testów.  
 Rozszerzymy trochę kod z tego posta poprzez dodanie do drivera odpowiednich flag:
@@ -76,7 +86,7 @@ chrome_options.add_argument("--window-size=1920,1080")
 
 [Spis dostępnych flag dla chromium](https://cs.chromium.org/chromium/src/base/base_switches.cc?l=115-121){:target="_blank"}
 
-## Słowem końcowym
+# 4 Słowem końcowym
 **Wyłączenie zabezpieczeń przeglądarki wydaje się słabym pomysłem.**  
 Tak, wiem. Nie jest to tryb do surfowania po sieci :smiley:  
 Także w testowaniu może nam utrudnić. Musimy pamiętać w jakim celu wyłączamy zabezpieczenia. Po sprawdzeniu tego, co chcieliśmy, **powinniśmy wrócić do trybu normalnego** :cop:.

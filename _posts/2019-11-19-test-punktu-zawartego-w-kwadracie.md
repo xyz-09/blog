@@ -17,7 +17,7 @@ Do czego to może mieć odniesienie? Choćby do pracy z danymi na mapach, które
 
 Od czego zaczynamy? Jak zazwyczaj, bez teorii nie ruszymy dalej.
 
-## Teoria
+# Teoria
 Nie będę przytaczać definicji punktu, ani kwadratu. To jak tłumaczyć, że 2 + 2 jest 4. Nie mam zamiaru wypisywać tutaj na to dowodu matematycznego. 
 Pierwsze nie znam go, a drugie podobno jest baaaardzo długi ;)
 
@@ -26,7 +26,7 @@ Ze szkoły powinniśmy wiedzieć też, jaki jest zapis współrzędnych obiektó
 {:.center}
 {%
     include image.html 
-    src="/blog/images/pointInSquare.jpg" 
+    src="/images/pointInSquare.jpg" 
     caption="Rysunek 1. Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków"
 %}
 

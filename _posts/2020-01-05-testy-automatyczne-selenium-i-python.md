@@ -7,12 +7,23 @@ author: Jozdowska Edyta
 tags: [python, selenium, pytest]
 excerpt: Jak zacząć przygodę z testami automatycznymi Selenium w Pythonie
 ---
-## Testy automatyczne
+
+<!-- TOC -->
+
+- [1 Testy automatyczne](#1-testy-automatyczne)
+- [2 Instalacja](#2-instalacja)
+  - [2.1 Komendy instalacji pytest i selenium:](#21-komendy-instalacji-pytest-i-selenium)
+    - [2.1.1 Kilka słów o instalacji](#211-kilka-s%c5%82%c3%b3w-o-instalacji)
+- [3 Uruchomienie środowiska testu](#3-uruchomienie-%c5%9brodowiska-testu)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1 Testy automatyczne
 **Testy automatyczne** to inaczej sprawdzanie poprawności działania aplikacji w sposób zautomatyzowany. 
 
 Wykształciła się osobna rola w świecie IT określana jako **Tester**, który pisze testy automatyczne lub przeprowadza testy manualne. W moim przekonaniu testy automatyczne nie zastąpią ludzkiego oka, ale dla najczęściej powtarzających się czynności jak np. wypełnienie formularza i sprawdzenie odpowiedzi są bardzo przydatne i co najważniejsze **SZYBKIE** :yum:
 
-## Instalacja
+# 2 Instalacja
 Do instalacji potrzebujemy:
 - [selenium pod pythona](https://selenium-python.readthedocs.io){:target="_blank"} (must have), 
 - [driver'a Chrome](https://chromedriver.chromium.org){:target="_blank"} (must have):  
@@ -21,20 +32,20 @@ Do instalacji potrzebujemy:
 - [pytest](https://docs.pytest.org/en/latest/contents.html){:target="_blank"} (optional):  
   Pytest jest opcjonalne, ale dzięki niemu na przykład mamy na konsoli kolory. To dość ważne przy dużej ilości testów. Zresztą sam dodatek pytest służy do pisania testów aplikacji python lub testowania np. plików tekstowych. Aby poznać pełne możliwości pytest najlepiej zajrzeć do dokumentacji.
 
-### Komendy instalacji pytest i selenium:
+## 2.1 Komendy instalacji pytest i selenium:
 ```shell
 sudo python3 -m pip install -U selenium
 sudo pip3 install -U pytest
 ```
 
-##### Kilka słów o instalacji
+### 2.1.1 Kilka słów o instalacji
 W powyższych komendach flaga **-U** oznacza, aby zaktualizować wszystkie zależności do najnowszych wersji.  
 Obie komendy są zamienne tzn. używając pierwszej wskazujemy pythonowi w wersji 3, aby użył modułu `pip` (_moduł zarządzania dodatkami do Pythona_) ze wspomnianą już flagą `-U` i wskazaniem dodatku `selenium`.  
 Drugi przypadek = użyj `pip3` (_dla pythona 3_) i zainstaluj `pytest`.
 
 <small>Zakładam, że zarówno python3 jak i pip3 jest zainstalowany w systemie, dlatego u siebie ich nie instaluję. Podpowiem, że Pythona instalujemy poprzez np. `apt get install python3`.</small>
 
-## Uruchomienie środowiska testu
+# 3 Uruchomienie środowiska testu
 Tworzymy plik np. `test.py` i wpisujemy:
 ```python
 from selenium import webdriver
@@ -47,8 +58,14 @@ i uruchamiamy go:
 pytest test.py
 ```
 otrzymamy odpowiedź na konsoli:
-[![Odpowiedź pierwszego testu]({{ site.baseurl }}/images/blog_images/testy/1wszytest.png "Odpowiedź pierwszego testu")]({{ site.baseurl }}/images/blog_images/testy/1wszytest.png){:class="glightbox"}
 
+{:.center}
+{%
+    include image.html 
+    src="/images/blog_images/testy/1wszytest.png" 
+    href="/images/blog_images/testy/1wszytest.png"
+    caption="Rysunek 1. Odpowiedź pierwszego testu"
+%}
 
 
 Natomiast jako oddzielne okno uruchomi się przeglądarka Chrome ze wskazanym w `.get()` linkiem.

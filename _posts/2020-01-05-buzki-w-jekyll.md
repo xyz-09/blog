@@ -7,7 +7,16 @@ author: Edyta Jozdowska
 tags: [jekyll, smiles, emoji]
 excerpt: Zakochałam się. W emotikonach.
 ---
-## Emotikony
+
+<!-- TOC -->
+
+- [1 Emotikony](#1-emotikony)
+- [2 Jemoji w jekyll](#2-jemoji-w-jekyll)
+  - [Spis emotikonek](#spis-emotikonek)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1 Emotikony
 Każdy współczesny człowiek wie co to są emotikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się [na wikipedii](https://pl.wikipedia.org/wiki/Emotikon). 
 
 Jesteśmy przyzwyczajeni z popularnych komunikatorów jak Messanger, Signal, WhatsApp do używania obrazków, mających wskazać nastawienie lub podkreślić dane zdanie bądź związane z nim emocje. Ba, nawet GaduGadu i Spik (jedne z pierwszych polskich komunikatorów) miały buźki.
@@ -16,7 +25,7 @@ Sama bardzo często w komunikacji z innymi ludźmi, zwłaszcza tymi bliskimi, lu
 
 Pod powyższym linkiem napisane jest jak je zainstalować w jekyll'u. Napiszę jednak po swojemu.
 
-## Jemoji w jekyll
+# 2 Jemoji w jekyll
 1. W pliku `Gemfile` dodajemy 
    ```ruby
    gem 'jemoji'
@@ -27,6 +36,7 @@ plugins:
 - jemoji
   ```
 I to wszystko :relaxed:
+
 ## Spis emotikonek
 Spis dostępnych emotikonek i ich wartości tekstowych znajdziemy na stronie [webfx.com](https://www.webfx.com/tools/emoji-cheat-sheet/)  
 Podam tylko te, które najczęściej używam:

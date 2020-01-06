@@ -7,15 +7,22 @@ author: Edyta Jozdowska
 tags: [php]
 excerpt: Skrypt php mający za zadanie wygenerowanie załącznika, który zostanie dołączony do wiadomości bez zapisywania czegokolwiek na serwerze. 
 ---
+<!-- TOC -->
 
-## 1. Wysyłanie maila z php
+- [1 Wysyłanie maila z php](#1-wysy%c5%82anie-maila-z-php)
+- [2 Klasa do wysyłania maila](#2-klasa-do-wysy%c5%82ania-maila)
+- [3 Użycie](#3-u%c5%bcycie)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1 Wysyłanie maila z php
 
 Temat bardzo prosty. Bo co to znaczy wysłać maila w php? Mamy funkcję `mail`. Każdy co ma styczność z php powinien ją znać. Jeśli nie w [dokumentacji PHP można o niej przeczytać więcej](https://www.php.net/manual/en/function.mail.php){:target="_blank"}. Można też użyć klasy [PHPMailer](https://github.com/PHPMailer/PHPMailer){:target="_blank"} [^1]. Rozwiązań jest dużo. 
 
 W momencie, gdy mamy załączyć plik nie zapisany nigdzie musimy go wygenerować. Poniższa klasa służy właśnie do wygenerowania załącznika z tablicy danych i załączenia go w pamięci do naszego maila.
 
 
-## 2. Klasa do wysyłania @
+# 2 Klasa do wysyłania maila
 
 ```php
 class SendMail{
@@ -113,7 +120,7 @@ class SendMail{
 }
 ```
 
-## 3. Użycie
+# 3 Użycie
 ```php
 
 $o = new SendMail();

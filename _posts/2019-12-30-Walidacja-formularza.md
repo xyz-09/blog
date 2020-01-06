@@ -7,11 +7,19 @@ author: Edyta Jozdowska
 tags: [js, forntend, form, validation, php]
 excerpt: Krótki skrypt js mający za zadanie zwalidować formularz po stronie użytkownika i po stronie serwera.
 ---
+<!-- TOC -->
 
-## Walidacja formularza
+- [1 Walidacja formularza](#1-walidacja-formularza)
+- [2 Wbudowany mechanizm](#2-wbudowany-mechanizm)
+- [3 Walidacja formularza FrontEnd](#3-walidacja-formularza-frontend)
+- [4 Walidacja formularza BackEnd](#4-walidacja-formularza-backend)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1 Walidacja formularza
 Jeszcze kilka lat temu aby zwalidować poprawność wypełnienia formularza trzeba było się trochę natrudzić. W czasach, gdy `jQuery` zaczynał swoją karierę w sieci powstawały dodatki, które developerowi ułatwiały walidację pól formularza wypełnionego przez użytkownika. Nigdy nie lubiłam tych dodatkowych skryptów. Były one duże, a ich wdrożenie kosztowało trochę czasu. Nie tyle co pisanie walidacji od nowa, ale jednak. W dodatku wszystko odbywało się jedynie z poziomu JS (wydzielam tutaj walidację po stronie serwera, **którą zawsze należy wdrażać osobno**). Podobnie jest dzisiaj, z drobną zmianą. 
 
-## Wbudowany mechanizm
+# 2 Wbudowany mechanizm
 Większość przeglądarek ma już wbudowany mechanizm walidacji pól formularza. Jeśli któreś z pól określimy jako `required` chrome lub ff nie wyślą danych z formularza na serwer. Użytkownik otrzyma komunikat, że to pole jest wymagane i ani 1 linijka kod JS nie jest tutaj wymagana.
 
 Mechanizm ten jest wydajny, ma jednak jedną podstawową wadę(?) UI jest przeglądarkowe. Dlaczego słowo "wadę" oznaczyłam znakiem zapytania? Tutaj należałoby się zastanowić, czy jest to faktycznie wada. Moim zdaniem warto wykorzystywać UI wbudowane, jednak nie zawsze mamy taką możliwość. 
@@ -20,7 +28,7 @@ Jeśli mamy zaprojektowany graficznie formularz z przemyślaną obsługą błęd
 
 Poniżej zamieszczam pełną walidację `js` z wykorzystaniem wbudowanego mechanizmu z przeglądarki z możliwością nadania własnego wyglądu.
 
-## Walidacja formularza FrontEnd
+# 3 Walidacja formularza FrontEnd
 <p class="codepen" data-height="670" data-theme-id="dark" data-default-tab="html,result" data-user="ejo" data-slug-hash="YzPxmbJ" style="height: 670px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YzPxmbJ">
   <span>See the Pen <a href="https://codepen.io/ejo/pen/YzPxmbJ">
   YzPxmbJ</a> by ejo (<a href="https://codepen.io/ejo">@ejo</a>)
@@ -28,7 +36,7 @@ Poniżej zamieszczam pełną walidację `js` z wykorzystaniem wbudowanego mechan
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-## Walidacja formularza BackEnd
+# 4 Walidacja formularza BackEnd
 Potrzebny plik z podstawowymi funkcjami dla obsługi formularza po stronie serwera w `PHP`
 
 ```php
