@@ -437,6 +437,7 @@ a {
   color: #4183C4;
   position: relative;
   display: inline-block;
+  line-height: 2em;
 }
 
 .search_result a:before, .search_result a:after,
@@ -742,6 +743,11 @@ nav a:hover span::before, nav a:hover span::after {
           transform: translateX(0);
 }
 
+a.glightbox:before,
+a.glightbox:after {
+  display: none;
+}
+
 nav {
   float: right;
   margin-top: 23px;
@@ -769,6 +775,11 @@ nav {
   position: relative;
   padding-bottom: 2em;
   border-top: 1px solid #eee;
+}
+
+.posts > .post h1 {
+  text-align: left;
+  margin: 15px 0;
 }
 
 .posts > .post:last-child {
@@ -1264,6 +1275,16 @@ Modules - reusable parts of our design
 
 .pagination {
   text-align: center;
+}
+
+.pagination span {
+  display: none;
+}
+
+span.webjeda {
+  display: inline-block;
+  background: #444444;
+  color: #fff;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 759px) {
@@ -2196,5 +2217,108 @@ img.emoji {
 
 small {
   font-size: smaller;
+}
+
+/*svg animation*/
+.animIcon {
+  position: absolute;
+  right: 0px;
+  padding: 4px 15px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: .3;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+a.glightbox:hover .animIcon {
+  opacity: 1;
+}
+
+.mountain,
+.sun,
+.innerlineBox1 {
+  stroke-dasharray: 859 861;
+  stroke-dashoffset: 860;
+}
+
+.innerlineBox2,
+.innerlineBox3 {
+  stroke-dasharray: 5000 5000;
+  stroke-dashoffset: 5000;
+}
+
+.innerlineBox1 {
+  -webkit-animation: animLine 4s linear 0s forwards;
+          animation: animLine 4s linear 0s forwards;
+}
+
+.innerlineBox2 {
+  -webkit-animation: animLineShort 1s linear 4s forwards;
+          animation: animLineShort 1s linear 4s forwards;
+}
+
+.innerlineBox3 {
+  -webkit-animation: animLineShort 1s linear 4s forwards;
+          animation: animLineShort 1s linear 4s forwards;
+}
+
+.mountain {
+  -webkit-animation: animLine 4s linear 1.5s forwards;
+          animation: animLine 4s linear 1.5s forwards;
+}
+
+.sun {
+  fill: transparent;
+  -webkit-animation: animLine 3s linear 3s forwards, fill_draw 3s cubic-bezier(1, 0.29, 0, 1.14) 3s forwards;
+          animation: animLine 3s linear 3s forwards, fill_draw 3s cubic-bezier(1, 0.29, 0, 1.14) 3s forwards;
+}
+
+@-webkit-keyframes animLine {
+  100% {
+    stroke-dashoffset: 750;
+  }
+}
+
+@keyframes animLine {
+  100% {
+    stroke-dashoffset: 750;
+  }
+}
+
+@-webkit-keyframes animLineShort {
+  100% {
+    stroke-dashoffset: 4997;
+  }
+}
+
+@keyframes animLineShort {
+  100% {
+    stroke-dashoffset: 4997;
+  }
+}
+
+@-webkit-keyframes fill_draw {
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes fill_draw {
+  100% {
+    fill: white;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon.ico">
     <script async src="{{ site.baseurl }}/assets/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   </head>
 
   <body>
@@ -57,6 +58,14 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      var lightbox = GLightbox({
+                 touchNavigation: true,
+                 loop: true
+             });
+
+     </script>
     <div id="toast"><div id="desc">A notification message..</div></div>
     {% include analytics.html %}
 

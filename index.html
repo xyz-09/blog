@@ -49,14 +49,14 @@ layout: default
       {% if page == paginator.page %}
         <span class="webjeda">{{ page }}</span>
       {% elsif page == 1 %}
-        <a href="/">{{ page }}</a>
+        <a href="{{site.baseurl}}/">{{ page }}</a>
       {% else %}
         <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Następna &raquo;</a>
     {% else %}
       <span>Następna &raquo;</span>
     {% endif %}

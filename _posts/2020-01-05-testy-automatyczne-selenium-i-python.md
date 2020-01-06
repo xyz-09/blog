@@ -3,7 +3,7 @@ layout: post
 title: Testy automatyczne w Selenium i Pythonie - cz1. Uruchomienie środowiska testowego
 date: 2020-01-05 15:00
 category: [python, selenium]
-author: 
+author: Jozdowska Edyta
 tags: [python, selenium, pytest]
 excerpt: Jak zacząć przygodę z testami automatycznymi Selenium w Pythonie
 ---
@@ -47,7 +47,9 @@ i uruchamiamy go:
 pytest test.py
 ```
 otrzymamy odpowiedź na konsoli:
-![Odpowiedź pierwszego testu]( {{ site.baseurl }}/images/blog_images/testy/1wszytest.png "Odpowiedź pierwszego testu")
+[![Odpowiedź pierwszego testu]({{ site.baseurl }}/images/blog_images/testy/1wszytest.png "Odpowiedź pierwszego testu")]({{ site.baseurl }}/images/blog_images/testy/1wszytest.png){:class="glightbox"}
+
+
 
 Natomiast jako oddzielne okno uruchomi się przeglądarka Chrome ze wskazanym w `.get()` linkiem.
 
