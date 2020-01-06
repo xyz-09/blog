@@ -671,6 +671,12 @@ ul.content_list {
     }
 }
 
+#search-container {
+    h1 {
+        max-width: 920px;
+    }
+}
+
 .posts>.post:last-child {
     padding-bottom: 1em;
     border-bottom: none;
