@@ -5,7 +5,7 @@ date: 2020-01-05 18:20
 category: [python, selenium]
 author: Jozdowska Edyta
 tags: [python, selenium, pytest]
-excerpt: 
+excerpt: Krótko o SOP i CORS oraz o tym jak na linux'sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych.
 ---
 <!-- TOC -->
 

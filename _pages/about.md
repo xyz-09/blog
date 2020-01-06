@@ -4,6 +4,11 @@ title: O mnie
 permalink: /o-mnie/
 ---
 
+<div class="avatar page-avatar">
+  <a href="{{ site.baseurl }}{{ site.me }}" class="glightbox">
+    <figure style="background-image: url('{{ site.baseurl }}{{ site.me }}');"></figure>
+    </a>
+</div>
 Cześć, mam na imię **Edyta**. Na tym blogu zamieszczam krótkie informacje z programowania.
 
 Głównie interesuje mnie **HTML, PHP, JS, PYTHON** i właśnie z tych tematów znajdziesz tutaj posty.

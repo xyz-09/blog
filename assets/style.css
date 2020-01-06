@@ -1746,7 +1746,7 @@ span.webjeda {
   margin-top: 5px;
 }
 
-.author .avatar {
+.avatar {
   width: 140px;
   height: 140px;
   border: 5px solid #fff;
@@ -1756,11 +1756,23 @@ span.webjeda {
   overflow: hidden;
 }
 
-.author .avatar figure {
+.avatar a {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar figure {
   width: 100%;
   height: 100%;
   background-size: cover;
   margin: 0;
+}
+
+.page-avatar {
+  width: 250px;
+  height: 250px;
+  margin: 0 15px 0 15px;
+  float: right;
 }
 
 .center {
