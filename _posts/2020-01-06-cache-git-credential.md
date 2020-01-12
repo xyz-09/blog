@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tymczasowe zapisanie loginu i hasła dla gita - Linux
+title: Tymczasowe zapisanie loginu i hasła dla gita
 date: 2020-01-06 11:13
 category: [git]
 author: Jozdowska Edyta
