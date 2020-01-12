@@ -9,20 +9,20 @@ excerpt: Skrypt php mający za zadanie wygenerowanie załącznika, który zostan
 ---
 <!-- TOC -->
 
-- [1 Wysyłanie maila z php](#1-wysy%c5%82anie-maila-z-php)
-- [2 Klasa do wysyłania maila](#2-klasa-do-wysy%c5%82ania-maila)
-- [3 Użycie](#3-u%c5%bcycie)
+- [1.Wysyłanie maila z php](#1wysy%c5%82anie-maila-z-php)
+- [2.Klasa do wysyłania maila](#2klasa-do-wysy%c5%82ania-maila)
+- [3.Użycie](#3u%c5%bcycie)
 {:class='content_list'}
 <!-- /TOC -->
 
-# 1 Wysyłanie maila z php
+# 1.Wysyłanie maila z php
 
 Temat bardzo prosty. Bo co to znaczy wysłać maila w php? Mamy funkcję `mail`. Każdy co ma styczność z php powinien ją znać. Jeśli nie w [dokumentacji PHP można o niej przeczytać więcej](https://www.php.net/manual/en/function.mail.php){:target="_blank"}. Można też użyć klasy [PHPMailer](https://github.com/PHPMailer/PHPMailer){:target="_blank"} [^1]. Rozwiązań jest dużo. 
 
 W momencie, gdy mamy załączyć plik nie zapisany nigdzie musimy go wygenerować. Poniższa klasa służy właśnie do wygenerowania załącznika z tablicy danych i załączenia go w pamięci do naszego maila.
 
 
-# 2 Klasa do wysyłania maila
+# 2.Klasa do wysyłania maila
 
 ```php
 class SendMail{
@@ -59,11 +59,22 @@ class SendMail{
 
   function sendMail($data){
 
-    $this->attachment = chunk_split(base64_encode($this->array2csv($data['data'])));
+    /* input :
+      $data = [
+        'to'=> String e-mail
+        'data'=> Max two dimensional Array
+        'message'=> String
+        'subject'=> String
+      ];
+    */
+
+    extract($data);
+
+    $this->attachment = chunk_split(base64_encode($this->array2csv($to)));
     
     if(empty($this->attachment)) return false;
     
-    $subject = '=?UTF-8?q?' . quoted_printable_encode($data['subject']) . '?=';	
+    $subject = '=?UTF-8?q?' . quoted_printable_encode($subject) . '?=';	
 
     $csvName= $this->attachmentName.date("Y_m_d_H_i_s").'.csv';
 
@@ -71,7 +82,7 @@ class SendMail{
       . "Content-Type: text/html; charset=utf-8; format=flowed\r\n"
       . "Content-Transfer-Encoding: 7bit\r\n"
       . "\r\n"
-      . $data['message']."\r\n"
+      . $message."\r\n"
       . "--$this->multipartSep\r\n"
       //. "Content-Type: application/vnd.ms-excel\r\n"
       . "Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n"
@@ -83,7 +94,7 @@ class SendMail{
       
       try {
         
-        mail($data['to'], $subject, $body, implode("\r\n", $this->headers));
+        mail($to, $subject, $body, implode("\r\n", $this->headers));
 
         echo 'Mail wysłany';
 
@@ -101,18 +112,14 @@ class SendMail{
     //nasze dane są jako tablica
     foreach ($data as $key => $item) {		
       
-      if(is_array($item)){
-          
-          foreach ($item as $k=>$i) {
-            
-              array_push($data,$i);
-          
+      if(is_array($item)){          
+          foreach ($item as $k=>$i) {            
+              array_push($data,$i);          
           }
-
           unset($data[$key]);	
-        }
-        
-      }
+      }        
+    }
+
     fputcsv($f, $data, $delimiter, chr(0), $escape_char);
     rewind($f); //wróć do początku pliku
     return rtrim(stream_get_contents($f));
@@ -120,7 +127,7 @@ class SendMail{
 }
 ```
 
-# 3 Użycie
+# 3.Użycie
 ```php
 
 $o = new SendMail();
