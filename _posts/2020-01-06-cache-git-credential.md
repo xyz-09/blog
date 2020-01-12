@@ -15,7 +15,7 @@ excerpt: Krótka informacja jak tymczasowo zapamiętać hasło i login dla githu
 <!-- /TOC -->
 
 # 1.Zapamiętanie loginu i hasła - słowa wstępu
-Jakiś czas temu odbyłam z moim przyjacielem rozmowę na temat mojego podejścia do bezpieczeństwa. Według niego bardzo lekko traktuję bezpieczeństwo niektórych usług, jak prywatne konto dla githuba :blush:.  
+Jakiś czas temu odbyłam z przyjacielem rozmowę na temat mojego podejścia do bezpieczeństwa. Według niego bardzo lekko traktuję bezpieczeństwo niektórych usług, jak prywatne konto dla githuba :blush:.  
 Stwierdził to na podstawie, między innymi, faktu, że swoje hasło i login miałam na trwałe zapisane w pliku, z którego podczas wysyłania aktualizacji korzystałam w skrypcie. 
 
 Choć tego nie lubię :unamused: muszę przyznać mu rację. Owy plik miałam jedynie na swoim komputerze, na innych musiałam wpisywać z tzw. "ręki" dane logowania. Nie zmienia to faktu, że dane logowania były dostępne.  
