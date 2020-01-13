@@ -51,4 +51,6 @@ Podam tylko te, które najczęściej używam:
 | :scream:                       | `:scream:`                       | :sunglasses:  | `:sunglasses:`                          |
 | :yum:                          | `:yum:`                          | :joy:         | `:joy:`                                 |
 
+Innym dodatkiem do jekyll'a, choć nie tylko, bo można zaimplementować go jako zewnętrzną bibliotekę JS, związanym z emotikonami jest [Twemoji](https://github.com/JuanitoFatas/jekyll-twemoji){:target="_blank"}. Jest nowocześniejszy, do ikon używa SVG, czyli wielkość dopasuje się do tekstu - jest jedno ale: otóż z komórki jestem przyzwyczajona do ikonek samsunga :blush:
+
 Bez obrazków świat byłby nudny :wink::smirk: 
