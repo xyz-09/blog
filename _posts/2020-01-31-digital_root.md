@@ -2,7 +2,7 @@
 layout: post
 title: Digital root
 date: 2020-01-31 19:18
-category: ['programowanie', inne]
+category: ['programowanie', inne, 'php', 'js', 'python']
 author: 
 tags: [math,python,js,ruby]
 excerpt: Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.
