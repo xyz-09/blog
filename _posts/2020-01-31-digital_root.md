@@ -126,6 +126,7 @@ Drążąc temat znalazłam **równanie matematyczne**, które w bardzo prosty i 
 1+(n-1)%9
 ```
 Krócej już się na pewno nie da :heart_eyes:  
+
 I bez dwóch zdań, używając jedynie wzoru matematycznego `Ruby` i tak wygra w tym zestawieniu :joy: 
 ```rb
 p 1+(n-1)%9.to_i
