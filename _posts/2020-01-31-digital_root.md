@@ -103,6 +103,7 @@ n=n.chars.map(&:to_i).sum.to_s end`.length)
 console.log("Javascript", 
 `while(n.length>1)
 n=n.split"".reduce((a,b)=>a*1+b*1+'')`.length)
+//split`` powyżej powinno wyglądać tak, ale wolałam wstawić cudzysłów niż slashe
 
 //PHP => 55
 console.log("PHP", 
