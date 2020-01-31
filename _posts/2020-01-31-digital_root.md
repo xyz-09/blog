@@ -5,22 +5,22 @@ date: 2020-01-31 19:18
 category: ['programowanie', inne]
 author: 
 tags: [math,python,js,ruby]
-excerpt: Porównanie kodu dla digital root i o tym jak matma bije każdego z nas
+excerpt: Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.
 ---
 
 # Digital Root
-Ostatnio przystąpiłam do zadania, które brzmiało: "W dowolnym języku programowania wykonaj digital root dla liczby plus 5 testów sprawdzających kod". Tak wiem, dziwne mam rozrywki :smile:  
+Dzisiaj przystąpiłam do zadania, które brzmiało: "W dowolnym języku programowania wykonaj digital root dla liczby plus 5 testów sprawdzających kod". Tak wiem, dziwne mam rozrywki :smile:  
 Kodowanie było na czas więc nie przypadło mi to do gustu, jednak sam temat mnie zainteresował.
 
 Wpierw należałoby się zapoznać z teorią. Co to digital root?  
-**Digital root** jest to suma poszczególnych cyfr, które składają się na daną liczbę, do momentu, gdy otrzymamy liczbę od 0 do 9. 
+**Digital root** jest to suma poszczególnych cyfr, które składają się na daną liczbę, do momentu, gdy otrzymamy cyfrę od 0 do 9. 
 
 Całkiem dobrze tematyka digital root wyjaśniona jest na [Wolfram Math World](http://mathworld.wolfram.com/DigitalRoot.html).  
 Zawody przegrałam :smile: . Na tym jednak nie poprzestałam. Ponieważ sam temat mnie zainteresował bardziej, zaczęłam się bawić.
 
-Ułożyłam trzy kody jeden w `js`, `php` i jeden w `py`, dołożę jeszcze 4 w `ruby` dla porównania (ten w ruby został ułożony przez osobę, która zawody wygrała). Ogólnie w tych zawodach chodzi o to by ułożyć w mniej niż 15 minut kod, który będzie jak najkrótszy. Liczy się czas, ale ważniejsza jest długość kodu. I ta idea, ułożyć jak najkrótszy kod mi właśnie przyświecała.
+Ułożyłam trzy kody jeden w `js`, `php` i jeden w `py`, dołożę jeszcze 4 w `ruby` dla porównania *(ten w ruby został ułożony przez osobę, która zawody wygrała)*. Ogólnie w tych zawodach chodzi o to, by ułożyć w mniej niż 15 minut kod, który będzie jak najkrótszy. Liczy się czas, ale ważniejsza jest długość kodu. I ta idea, ułożyć jak najkrótszy kod mi właśnie przyświecała.
 
-Popatrzmy jakie kroki trzeba wykonać:
+Popatrzmy jakie kroki trzeba wykonać do obliczenia **digital root**:
 1. Wpierw zsumować wszystkie cyfry
 2. Jeśli wynik jest większy niż 2 cyfry, sumujemy je dalej
 3. Jeśli wynik jest znów dwu lub więcej cyfrowy, sumujemy poszczególne cyfry
@@ -39,7 +39,7 @@ Znamy już kroki przystąpmy do kodowania wpierw kod w `php`. W zawodach daną w
 
 ```php
 $n = '941'; //input
-while (strlen($n) > 1)
+while (strlen($n) > 1) //loop until one digit
   $n = (string)array_sum(str_split($n)); //the magic sum
 print_r($n); //output
 ```
@@ -79,21 +79,25 @@ A dlaczego piszę z hakami, ponieważ konwersja w `js` stringa na liczbę odbywa
 ## Porównanie długości kodu
 Zobaczmy w takim razie wyniki długości kodu *(potraktowałam wszelkie odstępy pomiędzy znakami używane dla czytelności, jako zbędne - i dostanę za to pewnie od przyjaciela po głowie, że to nie po pythonowsku :relaxed: :grin:)*:
 ```js
-//RUBY =>51 \n jako przjście do nowej lini
+//RUBY =>51
 console.log("Ruby", 
-"while n.length>1\nn=n.chars.map(&:to_i).sum.to_s end".length)
+`while n.length>1
+n=n.chars.map(&:to_i).sum.to_s end`.length)
 
 //JS=>54
 console.log("Javascript", 
-"while(n.length>1)n=n.split``.reduce((a,b)=>a*1+b*1+'')".length)
-
-//PYTHON=>63 //4 spacje oznaczające wcięcia i \n jako wymagane przejście do nowej lini
-console.log("Python", 
-"while len(list(n))>1:\n    n=str(sum([int(i) for i in list(n)]))".length)
+`while(n.length>1)
+n=n.split"".reduce((a,b)=>a*1+b*1+'')`.length)
 
 //PHP => 55
 console.log("PHP", 
-"while(strlen($n)>1)$n=(string)array_sum(str_split($n));".length);
+`while(strlen($n)>1)
+$n=(string)array_sum(str_split($n));`.length);
+
+//PYTHON=>63
+console.log("Python", 
+`while len(list(n))>1:
+    n=str(sum([int(i) for i in list(n)]))`.length)
 ```
 
 
