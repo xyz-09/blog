@@ -120,7 +120,7 @@ console.log("Python",
 I wydawało by się, że już nic z tego tematu nie można wyciągnąć więcej. Otóż, dokładnie, wydawałoby się. 
 
 ## 1.6.Math
-Drążąc temat znalazłam **równanie matematyczne**, które w bardzo prosty i krótki sposób oblicza digital root. Całą teorię można przeczytać, wraz z warunkami na [Wolfram Math World](http://mathworld.wolfram.com/DigitalRoot.html)
+Drążąc temat znalazłam **równanie matematyczne**, które w bardzo prosty i krótki sposób oblicza digital root. Całą teorię można przeczytać, wraz z warunkami na [Wolfram Math World](http://mathworld.wolfram.com/DigitalRoot.html).
 ```Math
 //math
 1+(n-1)%9
