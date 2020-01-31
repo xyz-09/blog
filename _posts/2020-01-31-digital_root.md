@@ -31,7 +31,7 @@ Całkiem dobrze tematyka digital root wyjaśniona jest na [Wolfram Math World](h
 
 Zawody przegrałam :smile: . Na tym jednak nie poprzestałam. Ponieważ sam temat mnie zainteresował bardziej, zaczęłam się bawić.
 
-Napisałam trzy skrypty. Jeden w `js`, drugi w `php` i trzeci w `py`. Do tego posta dołożę jeszcze 4 w `ruby` dla porównania *(ten w ruby został ułożony przez osobę, która zawody wygrała)*. Ogólnie w tych zawodach chodzi o to, by ułożyć w mniej niż 15 minut kod, który będzie jak najkrótszy. Liczy się czas, ale ważniejsza jest długość kodu. I ta idea, ułożyć jak najkrótszy kod mi właśnie przyświecała.
+Napisałam trzy skrypty. Jeden w `js`, drugi w `php` i trzeci w `py`. Do tego posta dołączę jeszcze 4 w `ruby` dla porównania *(ten w ruby został ułożony przez osobę, która zawody wygrała)*. Ogólnie w tych zawodach chodzi o to, by ułożyć w mniej niż 15 minut kod, który będzie jak najkrótszy. Liczy się czas, ale ważniejsza jest długość kodu. I ta idea, ułożyć jak najkrótszy kod mi właśnie przyświecała.
 
 Popatrzmy jakie kroki trzeba wykonać do obliczenia **digital root**:
 1. Wpierw zsumować wszystkie cyfry
