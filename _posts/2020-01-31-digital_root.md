@@ -8,7 +8,19 @@ tags: [math,python,js,ruby]
 excerpt: Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.
 ---
 
-# Digital Root
+<!-- TOC -->
+
+- [1.Digital Root](#1digital-root)
+  - [1.1.PHP](#11php)
+  - [1.2.Python](#12python)
+  - [1.3.Ruby](#13ruby)
+  - [1.4.Javascript](#14javascript)
+  - [1.5.Porównanie długości kodu](#15por%c3%b3wnanie-d%c5%82ugo%c5%9bci-kodu)
+  - [1.6.Math](#16math)
+{:class='content_list'}
+<!-- /TOC -->
+
+# 1.Digital Root
 Dzisiaj przystąpiłam do zadania, które brzmiało: "W dowolnym języku programowania wykonaj digital root dla liczby plus 5 testów sprawdzających kod". Tak wiem, dziwne mam rozrywki :smile:  
 Kodowanie było na czas więc nie przypadło mi to do gustu, jednak sam temat mnie zainteresował.
 
@@ -34,7 +46,8 @@ Przykład:
 //digital_root(132189); // 1 + 3 + 2 + 1 + 8 + 9 = 24, 2 + 4 = 6
 //digital_root(493193); // 4 + 9 + 3 + 1 + 9 + 3 = 29, 2 + 9 = 11, 1 + 1 = 2
 ```
-## PHP
+
+## 1.1.PHP
 Znamy już kroki przystąpmy do kodowania wpierw kod w `php`. W zawodach daną wejściową był string i tego typy danych będę się trzymać w każdym kodzie.
 
 ```php
@@ -45,7 +58,7 @@ print_r($n); //output
 ```
 Całkiem fajnie prawda :smile: 
 
-## Python 
+## 1.2.Python 
 To teraz `py`:
 
 ```python
@@ -56,7 +69,8 @@ print(n)
 ```
 Nie jest zbyt podobnie :rofl:  
 Za to lubię Python'a. Składnia `x for x in list` jest jedną z najlepszych z jakimi się spotkałam :yum:
-## Ruby
+
+## 1.3.Ruby
 Teraz porównanie z `Ruby`
 ```rb
 n = gets
@@ -67,7 +81,7 @@ p n.to_i
 ```
 Ze wszystkich języków wyżej wymienionych `Ruby` jest najkrótsze. Nie pobije go nawet `js` z hakami :joy:
 
-## Javascript
+## 1.4.Javascript
 ```js
 let n = '941'
 while(n.length > 1)
@@ -76,7 +90,7 @@ console.log(n)
 ```
 A dlaczego piszę z hakami, ponieważ konwersja w `js` stringa na liczbę odbywa się poprzez `*1` gdzie w języku dostępna jest funkcja `parseInt`, natomiast z powrotem na string poprzez `+''` gdzie jest dostępna funkcja `toSring()`, ale ile to znaków więcej :sweat_smile:
 
-## Porównanie długości kodu
+## 1.5.Porównanie długości kodu
 Zobaczmy w takim razie wyniki długości kodu *(potraktowałam wszelkie odstępy pomiędzy znakami używane dla czytelności, jako zbędne - i dostanę za to pewnie od przyjaciela po głowie, że to nie po pythonowsku :relaxed: :grin:)*:
 ```js
 //RUBY =>51
@@ -103,7 +117,7 @@ console.log("Python",
 
 I wydawało by się, że już nic z tego tematu nie można wyciągnąć więcej. Otóż, dokładnie, wydawałoby się. 
 
-## Math
+## 1.6.Math
 Drążąc temat i docierając do teorii znalazłam **równanie matematyczne**, które w bardzo prosty i krótki sposób oblicza digital root.
 ```Math
 //math
