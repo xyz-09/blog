@@ -28,6 +28,7 @@ Wpierw należałoby się zapoznać z teorią. Co to digital root?
 **Digital root** jest to suma poszczególnych cyfr, które składają się na daną liczbę, do momentu, gdy otrzymamy cyfrę od 0 do 9. 
 
 Całkiem dobrze tematyka digital root wyjaśniona jest na [Wolfram Math World](http://mathworld.wolfram.com/DigitalRoot.html).  
+
 Zawody przegrałam :smile: . Na tym jednak nie poprzestałam. Ponieważ sam temat mnie zainteresował bardziej, zaczęłam się bawić.
 
 Ułożyłam trzy kody jeden w `js`, `php` i jeden w `py`, dołożę jeszcze 4 w `ruby` dla porównania *(ten w ruby został ułożony przez osobę, która zawody wygrała)*. Ogólnie w tych zawodach chodzi o to, by ułożyć w mniej niż 15 minut kod, który będzie jak najkrótszy. Liczy się czas, ale ważniejsza jest długość kodu. I ta idea, ułożyć jak najkrótszy kod mi właśnie przyświecała.
