@@ -2,9 +2,9 @@
 layout: post
 title: Digital root
 date: 2020-01-31 19:18
-category: ['programowanie', inne, 'php', 'js', 'python']
-author: 
-tags: [math,python,js,ruby]
+category: ['bitwy programowania', 'php', 'js', 'python']
+author: Edyta Jozdowska
+tags: [math,python,js,ruby,php,battle]
 excerpt: Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.
 ---
 
@@ -41,12 +41,16 @@ Napisałam trzy skrypty. Jeden w `js`, drugi w `php` i trzeci w `py`. Do tego po
 
 Popatrzmy jakie kroki trzeba wykonać do obliczenia **digital root**:
 
-{:.center}
-{%
-    include image.html 
-    src="/images/blog_images/digital_root/diagram.jpg" 
-    caption="Rysunek 1. Schemat blokowy obliczania digital root"
-%}
+```flow
+st=>start: Input: Liczba jako String
+op=>operation: Zsumuj wszystkie cyfry składające się na liczbę|current
+cond=>condition: Wynik jest jedną cyfrą?
+e=>end: Wypisz wynik
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
    
 ### 1.1.Przykład
 ```
@@ -165,7 +169,7 @@ Zauważcie:
 ```rb
 p 1+(n-1)%9.to_i
 ```
-
+Tym postem zapoczątkowałam nową kategorię na swoim blogu ["Bitwy programowania"](../kategoria/bitwy%20programowania) gdzie będę zamieszczać co ciekawsze zadania :smile: 
 **Notatki:**
 
 [^1]: [Dokumentacja PHP - array_sum](https://www.php.net/manual/en/function.array-sum.php)
