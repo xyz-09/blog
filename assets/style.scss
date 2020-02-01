@@ -684,13 +684,15 @@ ul.content_list {
 
 .post {
     blockquote {
-        margin: 1.8em .8em;
         /*border-left: 2px solid $gray;*/
         padding: 0.1em 1em;
         color: $gray;
-        font-size: 22px;
         font-style: italic;
         background-color: #ede1ff;
+        &.error {
+            background: #ffd5d5;
+            color: #983a3a;
+        }
     }
     .you-may-like {
         margin: 1.8em .8em;
@@ -1743,6 +1745,20 @@ a.glightbox:hover {
 .sun {
     fill: transparent;
     animation: animLine 3s linear 3s forwards, fill_draw 3s cubic-bezier(1, 0.29, 0, 1.14) 3s forwards
+}
+
+.footnotes {
+    font-size: smaller;
+    padding: 3px;
+    background: #f5f5f5;
+    border: 1px solid #c5c5c5;
+    ol {
+        padding: 0;
+        li {
+            padding: 0 5px;
+            margin: 0;
+        }
+    }
 }
 
 @keyframes animLine {
