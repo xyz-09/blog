@@ -165,6 +165,9 @@ Zauważcie:
 ```rb
 p 1+(n-1)%9.to_i
 ```
+
+**Notatki:**
+
 [^1]: [Dokumentacja PHP - array_sum](https://www.php.net/manual/en/function.array-sum.php)
 [^2]: Języki `js` i `php` właśnie poprzez te osobliwości traktowane są jako słabotypowane, przez co  niektórzy zajmujący się kodem uważają je jako języki gorsze.
 
