@@ -47,7 +47,7 @@ Weź ciąg znaków, zamień go na tablicę i dla poszczególnych liter wstaw cyf
 Kolej na Pythona:
 ```python
 s = "heLlo wOrlD, my Name is Edith"
-print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG','0123456789'*2)))
+print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG','0123456789'*2))))
 
 # OUTPUT: h3110 w0r1D, my N4m3 i5 3di7h
 ```
