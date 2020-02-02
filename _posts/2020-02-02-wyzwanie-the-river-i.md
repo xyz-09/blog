@@ -38,7 +38,7 @@ the meeting point.
 
 (Idea : BIO'99)
 ```
-{:class="w50"}
+{.w50}
 
 ```config
 # INPUT:
@@ -70,10 +70,10 @@ the meeting point.
 09 Even bigger
 
 ```
-{:class="w50"}
+{.w50}
 
 Na pierwszy rzut oka do zastosowania jest [digital root](../digital_root), jednak tylko w swojej pierwszej części odpowiedzialnej za sumowanie więc efektywny wzór matematyczny nie zda nam się na nic.
-{:class="clear"}
+{.clear}
 
 Zastanówmy się jak możemy wykonać zadanie:
 ```graph
