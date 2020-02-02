@@ -41,10 +41,7 @@ echo str_ireplace(str_split('olzeasgtbg'),str_split('0123456789'), $s);
 Sam kod wygląda bardzo prosto prawda :smile:.  
 Weź ciąg znaków, zamień go na tablicę i dla poszczególnych liter wstaw cyfry. Zastosowana funkcja `str_ireplcae()`[^1], jest wersją funkcji `str_replace()`, jednak jest określaną jako *case-insesitive*. Co można przetłumaczyć, że w tym wypadku nie będzie rozróżniała, czy zamienia dużą, czy małą literę. Dla niej i jedna, i druga jest taka sama.  
 >Funkcje w `php` oznaczone jako case-insesitive należy używać z głową, bo można otrzymać niespodziewane wyniki!
-{:class="error"}
-
-
-
+{:.error}
 
 ## Python
 Kolej na Pythona:
@@ -54,7 +51,7 @@ print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG','0123456789'*2)))
 
 # OUTPUT: h3110 w0r1D, my N4m3 i5 3di7h
 ```
-`Dict()`[^2] w `python` to tworzenie "słownika" - obiektu, `zip()`[^3] natomiast tworzy iterator, który agreguje elementy. W powyższym połączenie dict i zip stworzy nam: `{"o":1,"l":2,"z":3...}`,  Zabieg `'0123456789'*2` ma za zadanie skrócenie kodu, ot kazdy programista ułatwia sobie życie :smile: Powyższy kod, został poprawiony przez mojego przyjaciela. W historii git'a można spradzić jak wyglądał poprzedni, używał on `maketrans()`. Zawsze można nauczyć się nowego.
+`Dict()`[^2] w `python` to tworzenie "słownika" - obiektu, `zip()`[^3] natomiast tworzy iterator, który agreguje elementy. W&nbsp;powyższym połączenie dict i zip stworzy nam: `{"o":1,"l":2,"z":3...}`. Niestety, znaki te są zapisane w kodzie ASCII, co zostanie ignorowane przez `translate`, dlatego są przekształcane na bajty poprzez `b` dodane na początku. Zabieg `'0123456789'*2` ma za zadanie skrócenie kodu, ot każdy programista ułatwia sobie życie :smile: Powyższy kod, został poprawiony przez mojego przyjaciela. W historii git'a można sprawdzić jak wyglądał poprzedni, używał on `maketrans()`. Zawsze można nauczyć się nowego.
 
 ## JS
 No to został mi jedynie Javascript:
