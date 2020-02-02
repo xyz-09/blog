@@ -51,7 +51,7 @@ print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG','0123456789'*2)))
 
 # OUTPUT: h3110 w0r1D, my N4m3 i5 3di7h
 ```
-`Dict()`[^2] w `python` to tworzenie "słownika" - obiektu, `zip()`[^3] natomiast tworzy iterator, który agreguje elementy. W&nbsp;powyższym połączenie dict i zip stworzy nam: `{"o":1,"l":2,"z":3...}`. Niestety, znaki te są zapisane w kodzie ASCII, co zostanie ignorowane przez `translate`, dlatego są przekształcane na bajty poprzez `b` dodane na początku. Zabieg `'0123456789'*2` ma za zadanie skrócenie kodu, ot każdy programista ułatwia sobie życie :smile: Powyższy kod, został poprawiony przez mojego przyjaciela. W historii git'a można sprawdzić jak wyglądał poprzedni, używał on `maketrans()`. Zawsze można nauczyć się nowego.
+`Dict()`[^2] w `python` to tworzenie "słownika" - obiektu, `zip()`[^3] natomiast tworzy iterator, który agreguje elementy. W&nbsp;powyższym połączenie dict i zip stworzy nam: `{"o":1,"l":2,"z":3...}`. Niestety, znaki te są zapisane w kodzie ASCII, co zostanie zignorowane przez `translate`, dlatego są przekształcane na bajty poprzez `b` dodane na początku. Zabieg `'0123456789'*2` ma za zadanie skrócenie kodu, ot każdy programista ułatwia sobie życie :smile: Powyższy kod, został poprawiony przez mojego przyjaciela. W historii git'a można sprawdzić jak wyglądał poprzedni, używał on `maketrans()`. Zawsze można nauczyć się nowego.
 
 ## JS
 No to został mi jedynie Javascript:
