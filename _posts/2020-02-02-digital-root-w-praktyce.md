@@ -2,9 +2,9 @@
 layout: post
 title: Wyzwanie? The River I
 date: 2020-02-02 06:03
-category: ['bitwy programowania', 'php', 'js', 'python']
+category: ['bitwy programowania', 'php' ]
 author: Edta Jozdowska
-tags: [math,python,js,ruby,php,battle]
+tags: [php,battle]
 excerpt: 
 published: true
 ---
