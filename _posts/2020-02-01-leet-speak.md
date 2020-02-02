@@ -85,7 +85,7 @@ To sprawdzamy długość:
 ```javascript
 // PYTHON => 68
 console.log(`print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG',
-'0123456789'*2)))`.length)
+'0123456789'*2))))`.length)
 
 // PHP => 70
 console.log(`echo str_ireplace(str_split('olzeasgtbg'),
