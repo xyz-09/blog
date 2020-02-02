@@ -9,7 +9,7 @@ excerpt:
 published: true
 ---
 
-[Ostatnie zadanie w codingGame](https://www.codingame.com/ide/puzzle/the-river-i-) o tytule **River-I** uświadomiło mi jedną, ważną rzecz. Czasem przekombinowanie prowadzi na manowce. Treść zadania brzmiała tak:
+[Ostatnie zadanie w codingGame](https://www.codingame.com/ide/puzzle/the-river-i-){:target="_blank"} o tytule **River-I** uświadomiło mi jedną, ważną rzecz. Czasem przekombinowanie prowadzi na manowce. Treść zadania brzmiała tak:
 
 ```config
 # TREŚĆ ZADANIA 
