@@ -6,15 +6,16 @@ category: ["jekyll", "js"]
 author: Edyta Jozdowska
 tags: ["jekyll","gulp","node","npm","js","javascript"]
 excerpt: Automatyzacja Jekyll'a przy użyciu gulp'a. Bo życie należy sobie upraszczać.
+published: true
 ---
 
 <!-- TOC -->
 
-- [1 Synchronizacja](#1-synchronizacja)
-- [2 Uwaga na wersje narzędzi](#2-uwaga-na-wersje-narz%c4%99dzi)
-- [3 Ustawienie package'ów dla npm](#3-ustawienie-package%c3%b3w-dla-npm)
-  - [3.1 Krótki przepis na Gulpa z Jekyll'em - w 10 krokach](#31-kr%c3%b3tki-przepis-na-gulpa-z-jekyllem---w-10-krokach)
-    - [3.1.1 Final Step No 10](#311-final-step-no-10)
+- [1.Synchronizacja](#1synchronizacja)
+- [2.Uwaga na wersje narzędzi](#2uwaga-na-wersje-narz%c4%99dzi)
+- [3.Ustawienie package'ów dla npm](#3ustawienie-package%c3%b3w-dla-npm)
+  - [3.1.Krótki przepis na Gulpa z Jekyll'em - w 10 krokach](#31kr%c3%b3tki-przepis-na-gulpa-z-jekyllem---w-10-krokach)
+    - [3.1.1.Final Step No 10](#311final-step-no-10)
 {:class='content_list'}
 <!-- /TOC -->
 
@@ -31,7 +32,7 @@ Wdrożyłam:
 * kompresję obrazów,
 * synchronizację.
   
-# 1 Synchronizacja
+# 1.Synchronizacja
 **Synchronizacja** była moim początkowym założeniem. W momencie jak udało się ją ustawić, stwierdziłam, że to mało.<br/>
 Nigdy nie umiałam poprzestać tylko na drobnych rzeczach, trzeba korzystać z dostępnych narzędzi w pełni.
 
@@ -40,12 +41,12 @@ Wersja oznaczona numerem 4.0.2 weszła w maju 2019 r. Czy to ma znaczenie? Troch
 
 <br/>
 
-# 2 Uwaga na wersje narzędzi
+# 2.Uwaga na wersje narzędzi
 Jeśli szukasz rozwiązania jakiegoś problemu w necie dużo informacji będzie miało odniesienie do starszych wersji.<br/>A tutaj psikus - w wersji 4 zmieniono sposób "exportu" zadań jakie mają być wykonane przez gulp'a. Dla osoby nowej w temacie może być to trochę mylące. Dlatego tak ważne jest sprawdzenie jaką wersję narzędzia wykorzystujemy. 
 
 <br/>
 
-# 3 Ustawienie package'ów dla npm
+# 3.Ustawienie package'ów dla npm
 Aby ustawić wszystko potrzeba [Noda](https://nodejs.org/en/), i [npm](https://pl.wikipedia.org/wiki/Npm_(manager_pakiet%C3%B3w)) zainstalowanego na naszym systemie.
 Przykładowy spis zależności dla npm to (to są packag'e, które ja wykorzystałam):
 ```json
@@ -66,7 +67,7 @@ Przykładowy spis zależności dla npm to (to są packag'e, które ja wykorzysta
 ```
 Po zainstalowaniu tych zależności możemy zacząć pisać plik konfiguracyjny dla gulp'a. Ja mam go nazwany `gulpfile.babel.js` i jest on przeznaczony pod instalację Jekyll'a.
 
-## 3.1 Krótki przepis na Gulpa z Jekyll'em - w 10 krokach 
+## 3.1.Krótki przepis na Gulpa z Jekyll'em - w 10 krokach 
 1. Import zależności
 ```js 
 import gulp from "gulp";
@@ -192,7 +193,7 @@ const startServer = () => {
 };
 ```
 
-### 3.1.1 Final Step No 10
+### 3.1.1.Final Step No 10
 Zbuduj wszystkie zależności, rozpocznij obserwowanie zmian w folderach i  synchronizację. Połącz też ze sobą wszystkie akcje i wyeksportuj.  
 
 ```js

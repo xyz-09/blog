@@ -6,6 +6,7 @@ category: [programowanie, php]
 author: Edyta Jozdowska
 tags: [php]
 summary: Prosta, naprawdę banalna klasa do sprawdzenia czy dany punkt jest w kwadracie.
+published: true
 ---
 
 Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.  

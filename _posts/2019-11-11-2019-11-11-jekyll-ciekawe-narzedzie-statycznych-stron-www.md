@@ -7,11 +7,12 @@ author: Edyta Jozdowska
 tags: [jekyll, ruby, yaml]
 summary:
 excerpt: Jekyll jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak Markdown, Liquid, HTML i CSS. 
+published: true
 ---
 
 <!-- TOC -->
 
-- [1 Instalacja](#1-instalacja)
+- [1.Instalacja](#1instalacja)
 {:class='content_list'}
 <!-- /TOC -->
 **Jekyll** jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak [Markdown](https://pl.wikipedia.org/wiki/Markdown), [Liquid](https://github.com/Shopify/liquid/wiki), HTML i CSS.
@@ -24,7 +25,7 @@ Pewnego dnia mój facet wysłał mi linka do Jekyll'a. W pierwszym momencie stwi
 
 Sklonowałam repo wskazanego templeta z Jekyll'a i... mi się spodobało. Naprawdę jest to dobre narzędzie. Zastanawiam się jedynie nad jego wydajnością w miarę wzrostu wpisów i notatek. Rozrost treści zazwyczaj ma wpływ na szybkość działania systemu. Zobaczymy jak ta instalacja poradzi sobie z tym zadaniem. Moje obawy dotyczą głównie generacji feed'a dla postów - teraz gdy mam tylko kilka wpisów zajmuje to 0.629 sekund. To bardzo dużo. Zobaczymy jak będzie dalej.
 
-# 1 Instalacja
+# 1.Instalacja
 Sama instalacja Jekyll'a jest bardzo prosta. Przedstawię sposób instalacji na dystrybucji linux'a Bunsen, gdyż tego właśnie środowiska używam. Instalacja Jekyll'a na innym środowisku opisana jest na stronie www projektu [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/){:target="_blank"}
 
 1. Otwieramy terminal

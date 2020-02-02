@@ -6,6 +6,7 @@ category:  ['bitwy programowania', 'php', 'js', 'python']
 author: Edyta Jozdowska
 tags: [python, js, php, battle]
 excerpt: 
+published: true
 ---
 Jak wspominałam we wpisie [Digital root](../digital_root) biorę udział w zawodach programowania na czas i długość kodu. Przyznam, że z&nbsp;czasem jest u mnie kiepsko, muszę się dobrze zastanowić co mam zrobić i jak to zrobić, a sekundy, niestety, lecą.  
 
@@ -39,7 +40,8 @@ echo str_ireplace(str_split('olzeasgtbg'),str_split('0123456789'), $s);
 ```
 Sam kod wygląda bardzo prosto prawda :smile:.  
 Weź ciąg znaków, zamień go na tablicę i dla poszczególnych liter wstaw cyfry. Zastosowana funkcja `str_ireplcae()`[^1], jest wersją funkcji `str_replace()`, jednak jest określaną jako *case-insesitive*. Co można przetłumaczyć, że w tym wypadku nie będzie rozróżniała, czy zamienia dużą, czy małą literę. Dla niej i jedna, i druga jest taka sama.  
-Funkcje w `php` oznaczone jako case-insesitive należy używać z głową, bo można otrzymać niespodziewane wyniki!
+>Funkcje w `php` oznaczone jako case-insesitive należy używać z głową, bo można otrzymać niespodziewane wyniki!
+{:class="error"}
 
 
 
@@ -47,15 +49,12 @@ Funkcje w `php` oznaczone jako case-insesitive należy używać z głową, bo mo
 ## Python
 Kolej na Pythona:
 ```python
-import string
 s = "heLlo wOrlD, my Name is Edith"
-a = 'olzeasgtbg'
-print(s.translate(str.maketrans(a + a.upper(),'0123456789' * 2)))
+print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG','0123456789'*2)))
 
 # OUTPUT: h3110 w0r1D, my N4m3 i5 3di7h
 ```
-Zabiegi jak `a+a.upper()` oraz `'0123456789'*2` mają za zadanie skrócenie kodu. Obliczenia wykorzystują funckję `maketrans()` należącą do stringa. Ważne przy jej użyciu, jeśli podajemy jedynie dwa argumenty: znaki jakie mają być zamienione i znaki na jakie mają być zamienione - **ważne jest aby oba argumenty miały taką samą długość**. Stąd podwoiłam ciąg `0123...` aby było zamieniane też dla znaków dużych. Kod ten nie należy jednak do przejrzystych, chociaż gdyby się uprzeć, to będzie czytelny :sweat_smile:
-
+`Dict()`[^2] w `python` to tworzenie "słownika" - obiektu, `zip()`[^3] natomiast tworzy iterator, który agreguje elementy. W powyższym połączenie dict i zip stworzy nam: `{"o":1,"l":2,"z":3...}`,  Zabieg `'0123456789'*2` ma za zadanie skrócenie kodu, ot kazdy programista ułatwia sobie życie :smile: Powyższy kod, został poprawiony przez mojego przyjaciela. W historii git'a można spradzić jak wyglądał poprzedni, używał on `maketrans()`. Zawsze można nauczyć się nowego.
 
 ## JS
 No to został mi jedynie Javascript:
@@ -87,13 +86,13 @@ console.log(s)
 
 To sprawdzamy długość:
 ```javascript
+// PYTHON => 68
+console.log(`print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG',
+'0123456789'*2)))`.length)
+
 // PHP => 70
 console.log(`echo str_ireplace(str_split('olzeasgtbg'),
 str_split('0123456789'),$s);`.length)
-
-// PYTHON => 76
-console.log(`a='olzeasgtbg' 
-print(s.translate(str.maketrans(a+a.upper(),'0123456789'*2)))`.length)
 
 //Javascript odlway => 93
 console.log(`m='olzeasgtbg'.split``;
@@ -106,10 +105,13 @@ console.log(`console.log('olzeasgtbg'.split"".reduce((a,b,i)=>
 a.replace(new RegExp(b,"ig"),'0123456789'.split""[i])
 ,s))`.length)
 ```
-W tym zestawieniu wygrywa, jak dla mnie **PHP :1st_place_medal: :1st_place_medal: :1st_place_medal:**, ale tylko dlatego przoduje przed pythonem, ponieważ nie trzeba nic powtarzać, ani stosować hacków.
+<strike>W tym zestawieniu wygrywa, jak dla mnie **PHP :1st_place_medal: :1st_place_medal: :1st_place_medal:**, ale tylko dlatego przoduje przed pythonem, ponieważ nie trzeba nic powtarzać, ani stosować hacków.</strike>
+Po poprawkach jakie zostały zgłoszone do kodu "węża", znów **Python** obejmuje prowadzenie  :1st_place_medal: :1st_place_medal: :1st_place_medal:
 
 
 [^1]: `str_ireplace()` w [dokumentacji PHP](https://www.php.net/manual/en/function.str-ireplace.php){:target="_blank"}
+[^2]: [Dokumentacja Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries){:target="_blank"}
+[^3]: [Dokumentacja zip](https://docs.python.org/3.3/library/functions.html#zip){:target="_blank"}
 
 
 

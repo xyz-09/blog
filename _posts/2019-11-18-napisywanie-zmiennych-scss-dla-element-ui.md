@@ -6,12 +6,13 @@ category: ["scss", "vue", "js"]
 author: Edyta Jozdowska
 tags: ["scss", "vue", "npm", "frontend", "js", "javascript"]
 excerpt: Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów.
+published: true
 ---
 <!-- TOC -->
 
-- [1 Trochę teorii scss i budowy package'a Element UI](#1-troch%c4%99-teorii-scss-i-budowy-packagea-element-ui)
-    - [1.1 Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.](#11-uzbrojeni-w-podstawow%c4%85-wiedz%c4%99-mo%c5%bcemy-zabra%c4%87-si%c4%99-do-zadania)
-- [2 Import wybranych tylko styli scss dla Element UI](#2-import-wybranych-tylko-styli-scss-dla-element-ui)
+- [1.Trochę teorii scss i budowy package'a Element UI](#1troch%c4%99-teorii-scss-i-budowy-packagea-element-ui)
+    - [1.1.Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.](#11uzbrojeni-w-podstawow%c4%85-wiedz%c4%99-mo%c5%bcemy-zabra%c4%87-si%c4%99-do-zadania)
+- [2.Import wybranych tylko styli `scss` dla Element UI](#2import-wybranych-tylko-styli-scss-dla-element-ui)
 {:class='content_list'}
 <!-- /TOC -->
 
@@ -36,7 +37,7 @@ W dodatku chciałabym zmienić `breakpoints` (punkty łamania układu i zachowyw
 
 Po krótkim researchu w necie, wielu próbach, w końcu się udało. Należało zrobić mniej więcej tak:
 
-# 1 Trochę teorii scss i budowy package'a Element UI
+# 1.Trochę teorii scss i budowy package'a Element UI
 
 Jak to w node wszystkie package z jakich korzysta nasz projekt znajdziemy w folderze `node_modules`. Każdy, kto miał choć chwilę styczności z Node i npm o tym wie.
 
@@ -75,9 +76,9 @@ W momencie jeśli usuniemy deklarację tła jako `#000` nasz element zakoloruje 
 
 Będzie on żółty również wtedy, gdy zmienimy kolejność, czyli wpierw zdefiniujemy zmienną jako `!default`, użyjemy jej przypisując do elementu `.div`, a następnie zdefiniujemy jako zwykłą zmienną - naturalny cykl. Dopiero nadpisując ponownie przypisanie tła do elementu znów zakoloruje nam go na `#000`.
 
-### 1.1 Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.
+### 1.1.Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.
 
-# 2 Import wybranych tylko styli `scss` dla Element UI
+# 2.Import wybranych tylko styli `scss` dla Element UI
 
 1. W naszym głównym pliku ze stylami nazwijmy go jako `base.scss` definiujemy zmienną z czcionką o wartości `~element-ui/packages/theme-chalk/src/fonts`, inaczej wyskoczy nam błąd:
 

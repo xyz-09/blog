@@ -6,6 +6,7 @@ category: [git]
 author: Jozdowska Edyta
 tags: [git]
 excerpt: Krótka informacja jak tymczasowo zapamiętać hasło i login dla githuba.
+published: true
 ---
 <!-- TOC -->
 

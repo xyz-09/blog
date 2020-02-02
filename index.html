@@ -14,6 +14,7 @@ layout: default
 </ul>
 <div class="posts">
   {% for post in paginator.posts %}
+  {%if post.published==true %}
     <article class="post">
         <time class="post_date">{% include date.html date=post.date %}</time>
       <a href="{{ post.url | prepend: site.baseurl }}">
@@ -33,6 +34,7 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Czytaj więcej</a>
+      {% endif %}
     </article>
   {% endfor %}
 

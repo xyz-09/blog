@@ -6,6 +6,7 @@ category: php
 author: Edyta Jozdowska
 tags: [php]
 excerpt: Skrypt php mający za zadanie wygenerowanie załącznika, który zostanie dołączony do wiadomości bez zapisywania czegokolwiek na serwerze. 
+published: true
 ---
 <!-- TOC -->
 

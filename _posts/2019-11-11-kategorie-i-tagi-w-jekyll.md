@@ -7,6 +7,7 @@ author: Edyta Jozdowska
 tags: ['jekyll','ruby']
 summary:
 excerpt: Krótki opis jak stworzyć oddzielne podstrony dla kategorii i tagów w Jekyll'u. 
+published: true
 ---
 
 <!-- TOC -->

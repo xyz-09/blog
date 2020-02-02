@@ -6,6 +6,7 @@ category: ['bitwy programowania', 'php', 'js', 'python']
 author: Edyta Jozdowska
 tags: [math,python,js,ruby,php,battle]
 excerpt: Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.
+published: true
 ---
 
 <!-- TOC -->
@@ -41,15 +42,16 @@ Napisałam trzy skrypty. Jeden w `js`, drugi w `php` i trzeci w `py`. Do tego po
 
 Popatrzmy jakie kroki trzeba wykonać do obliczenia **digital root**:
 
-```flow
-st=>start: Input: Liczba jako String
-op=>operation: Zsumuj wszystkie cyfry składające się na liczbę|current
-cond=>condition: Wynik jest jedną cyfrą?
-e=>end: Wypisz wynik
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
+```graph
+graph TD
+A(Input:<br/>Liczba jako String)-->B[Zsumuj wszystkie cyfry<br/>składające się na liczbę]
+B-->C{Wynik jest<br/>jedną cyfrą?}
+C.->|NIE|A
+C.->|TAK|D(Wypisz wynik)
+classDef decision fill:#fbfbd4,stroke:#444,stroke-width:1px
+classDef inp fill:#f7f7f7,stroke:#444,stroke-width:1px
+class A,D inp;
+class C decision;
 ```
    
 ### 1.1.Przykład

@@ -6,10 +6,11 @@ category: [jekyll, programowanie]
 author: Edyta Jozdowska
 tags: [liquid, ruby, yaml]
 excerpt: Jak stworzyć dynamiczne menu w templecie Jekyll'a. Jak wszystko w tym generatorze jest proste i przyjemne. Tym razem wykorzystamy Yaml.
+published: true
 ---
 <!-- TOC -->
 
-- [1 Prosty przepis na dynamiczne menu w Jekyll'u](#1-prosty-przepis-na-dynamiczne-menu-w-jekyllu)
+- [1.Prosty przepis na dynamiczne menu w Jekyll'u](#1prosty-przepis-na-dynamiczne-menu-w-jekyllu)
 {:class='content_list'}
 <!-- /TOC -->
 Stawiając tego bloga, spotkałam się z Jekyll'em po raz pierwszy. Jednak nie byłabym sobą, gdybym nie rozszerzyła templeta jakiego zainstalowałam o własne funkcjonalności. Są to między innymi:
@@ -20,7 +21,7 @@ Stawiając tego bloga, spotkałam się z Jekyll'em po raz pierwszy. Jednak nie b
 
 Do dzieła zatem.
 
-# 1 Prosty przepis na dynamiczne menu w Jekyll'u
+# 1.Prosty przepis na dynamiczne menu w Jekyll'u
 Tutaj śpieszę z wyjaśnieniami, dynamiczne, ponieważ generowane z kodu. Można je zrobić w dwojaki sposób. Możemy ustawić menu w pliku konfiguracyjnym, wiele templetów właśnie tak skonstruowanych widziałam. Wolę jednak sposób z wykorzystaniem katalogu ```_data``` i ten też opiszę. Wydaj mi się on bardziej modułowy.
 
 1. Jeśli nie mamy w swojej instalacji, tworzymy katalog ```_data```

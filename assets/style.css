@@ -2432,6 +2432,81 @@ a.glightbox:hover .animIcon {
   }
 }
 
+.w50 {
+  width: 49%;
+  float: left;
+  margin-right: 1%;
+}
+
+.w50:last-of-type {
+  width: 50%;
+  margin-right: 0%;
+}
+
+@media screen and (max-width: 640px) {
+  .w50 {
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+  }
+}
+
+.language-config.w50 code,
+.language-mosel.w50 code {
+  width: 100%;
+  left: 0;
+  position: relative;
+  font-family: 'Oxygen Mono';
+  font-size: .885em;
+}
+
+.language-config.w50 code td.rouge-gutter.gl,
+.language-mosel.w50 code td.rouge-gutter.gl {
+  display: none;
+}
+
+#graphDiv1 .cluster rect {
+  fill: #bfbcbc00 !important;
+  stroke: none !important;
+}
+
+.noteCnt foreignObject {
+  overflow: visible;
+}
+
+.cluster .label {
+  display: none;
+}
+
+.language-config.w50 pre {
+  max-height: initial !important;
+}
+
+.language-config.w50 .n {
+  color: #d4da92;
+}
+
+.language-config.w50 .c {
+  color: #889bd6;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+code.language-Zadanie {
+  font-size: 0.85em !important;
+  font-family: inherit !important;
+  line-height: 0.85em !important;
+}
+
+pre.zadanie {
+  line-height: 1.3em;
+}
+
 pre.hasDiagram {
   background: none;
   text-align: center;
@@ -2439,10 +2514,6 @@ pre.hasDiagram {
   background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   background-image: linear-gradient(#e0e0e04d 1px, transparent 1px), linear-gradient(90deg, #dcdcdc4d 1px, transparent 1px), linear-gradient(#dcdcdc4d 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-}
-
-pre.hasDiagram code {
-  display: none;
 }
 
 pre.hasDiagram .end-element {
