@@ -83,7 +83,7 @@ console.log(s)
 
 To sprawdzamy długość:
 ```javascript
-// PYTHON => 68
+// PYTHON => 69
 console.log(`print(s.translate(dict(zip(b'olzeasgtbgOLZEASGTBG',
 '0123456789'*2))))`.length)
 
