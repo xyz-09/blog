@@ -123,7 +123,7 @@ const imHappy = (n) => {
 
 console.log(imHappy(n) ? `${n} :)` : `${n} :(`);
 ```
-Tutaj wyjaśnienia może wymagać jedynie **0** w reduce. Otórz na starcie interacji po tablicy `reduce()` pobiera  `a` i `b` jako pierwszy i drugi indeks tablicy, czyli `a = arr[0]` a `b = arr[1]`. Jeśli natomiast zainicjujemy ją z wartością np. 0, to na starcie naszych obliczeń zmienna `a = 0` a `b = arr[1]`.
+Tutaj wyjaśnienia może wymagać jedynie **0** w reduce. Otórz na starcie interacji po tablicy `reduce()` pobiera  `a` i `b` jako pierwszy i drugi indeks tablicy, czyli `a = arr[0]` a `b = arr[1]`. Jeśli natomiast zainicjujemy ją z wartością np. 0, to na starcie naszych obliczeń zmienna `a = 0` a `b = arr[0]`.
 
 ## Błąd dużych liczb? Nie tylko.
 Przy rozwiązywaniu tego zadania natknęłam się na pewien błąd. Warto takie rzeczy sobie zapisywać w pamięci. 
