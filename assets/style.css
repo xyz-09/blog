@@ -849,8 +849,10 @@ ul.content_list ul {
 }
 
 .error {
+  padding: 1em 1em;
   background: #ffd5d5;
   color: #983a3a;
+  font-weight: bold;
 }
 
 .post blockquote {
