@@ -94,7 +94,7 @@ for (let i = 0; i < classname.length; i++) {
 }
 
 
-let codeBlock = document.querySelectorAll(".highlighter-rouge")
+let codeBlock = document.querySelectorAll("div.highlighter-rouge")
 for (let i = 0; i < codeBlock.length; i++) {
     let lang = codeBlock[i].className.split(' ')[0].replace('language-', '');
     let div = document.createElement('div');
