@@ -53,8 +53,9 @@ classDef wynik fill:#d2e5fb,stroke:#96c5fb
 class H wynik;
 ```
 Algorytm postępowania jest dość prosty. Co ciekawe, powyższe działania matematyczne na liczbach niewesołych doprowadzą nas do wyniku 4. Jeśli nie wierzysz, wypróbuj.  
-Suma kwadratów liczb niewesołych doprowadzając je do kwadratu 1 cyfry będzie równa **4**. A ponieważ cyfra 4 jest liczbą niewesołą, możemy opuścić w tym momencie nasze obliczenia z wnioskiem, że liczba jest niewesoła.
+Suma kwadratów liczb niewesołych doprowadzając je do kwadratu 1 cyfry będzie równa **4**. Ponieważ cyfra 4 jest liczbą niewesołą, możemy opuścić w tym momencie nasze obliczenia z wnioskiem, że liczba jest niewesoła.
 Należałoby to uwzględnić w naszym algorytmie.
+
 
 {% include _posts/_examples/happyNumber.html %}
 
