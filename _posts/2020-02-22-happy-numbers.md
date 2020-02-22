@@ -127,7 +127,7 @@ Tutaj wyjaśnienia może wymagać jedynie **0** w reduce. Otórz na starcie inte
 
 ## Błąd dużych liczb? Nie tylko
 Przy rozwiązywaniu tego zadania natknęłam się na pewien błąd. Warto takie rzeczy sobie zapisywać w pamięci. 
-Błąd odnosi się w tym przypadku do dużych liczb podawanych zarówno w `js` i w `php`. Ale o tym w moim wpisie odnośnie ["Double precision"](/double-precision.html)
+Błąd odnosi się w tym przypadku do dużych liczb podawanych zarówno w `js` i w `php`. Ale o tym w moim wpisie odnośnie ["Double precision"](../double-precision.html)
 <br/><br/>
 
 
