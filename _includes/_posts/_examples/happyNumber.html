@@ -1,0 +1,96 @@
+<div class="happyNumber">
+    <div class="form">
+        <h3 style="padding-top:0">Wesołe liczby - live</h3>
+        <p>Sprawdź czy liczba jest wesoła:</p>
+        <input type="number" id="n" class="input" value="12587789" placeholder="Wpisz liczbę">
+        <button id="button" class="button">Oblicz</button>
+    </div>
+    <div id="result"><small>Wynik obliczeń</small></div>
+</div>
+{% raw %}
+<script type="text/javascript">
+    let result = document.getElementById('result');
+    const imHappy = (n) => {
+        arr = [];
+        while (n) {
+            subarr = [];
+            if (n == 1) return [true, arr];
+            n = (n + '').split ``.reduce((a, b) => {
+                subarr.push(`${b}*${b}`);
+                return a + (b * b)
+            }, 0);
+            arr.push(subarr.join ` + ` + " = " + n);
+            if (n > 1 && (n + ``).length == 1) return [false, arr]
+        }
+        return [false, arr]
+    };
+    const button = document.getElementById('button');
+    button.addEventListener('click', function(e) {
+        result.innerHTML = '';
+        let input = document.getElementById('n');
+        if (isNaN(parseInt(input.value))) {
+            result.innerHTML = "To nie jest liczba";
+            return false;
+        }
+        let isHappyNumber = imHappy(input.value);
+        if (isHappyNumber[0]) {
+            result.innerHTML = `<strong class="isHappy">${input.value} jest wesoła <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png" height="20" width="20">: </strong><br/>`;
+            result.innerHTML += isHappyNumber[1].join ` -><br/>`;
+        } else {
+            result.innerHTML = `<strong class="isUnHappy"> ${input.value} nie jest liczbą wesołą <img class="emoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png" height="20" width="20">:</strong><br/>`;
+            result.innerHTML += isHappyNumber[1].join ` -><br/>`;
+        }
+    })
+</script>
+<style>
+    .isUnHappy {
+        color: #a54444
+    }
+    
+    .isHappy {
+        color: #44a547
+    }
+    
+    .form {
+        max-width: 250px;
+        padding: 15px;
+    }
+    
+    .form input {
+        margin-bottom: 15px;
+    }
+    
+    .happyNumber {
+        padding: 30px;
+        background: #ced8f54f;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .happyNumber h3 {
+        display: block;
+        text-align: left;
+    }
+    
+    #result {
+        border: 5px dotted #c8dae6;
+        background: #fffeed;
+        padding: 10px;
+        margin: 15px;
+        width: calc(100% - 250px - 10px - 45px);
+        max-width: 100%;
+        text-align: left;
+        max-height: 350px;
+        overflow: auto
+    }
+    
+    @media all and (max-width:500px) {
+        #result {
+            width: 100%;
+            max-width: 100%
+        }
+    }
+</style>
+{% endraw %}
