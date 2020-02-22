@@ -53,7 +53,7 @@ class H wynik;
 ```
 Algorytm postępowania jest dość prosty. Co ciekawe, powyższe działania matematyczne na liczbach niewesołych doprowadzą nas do wyniku 4. Jeśli nie wierzysz, wypróbuj.  
 Suma kwadratów liczb niewesołych doprowadzając je do 1 cyfry będzie równa **4**, w większości przypadków ~~- nie sprawdzałam wszystkich liczb :wink: ~~  
-~~Jeśli znajdziesz liczbę niewesołą, której suma kwadratów nie jest równa 4 [**daj mi znać @.**](mailto:jozdowska.edyta@protonmail.com)~~
+~~Jeśli znajdziesz liczbę niewesołą, której suma kwadratów nie jest równa 4 [**daj mi znać @.**](mailto:jozdowska.edyta@protonmail.com)~~  
 Jednak natknęłam się na takową: **12587781** - liczba ta ostanią cyfrę, będącą wynikiem sumy potęg ma 2.
 
 {% include _posts/_examples/happyNumber.html %}
