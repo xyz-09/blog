@@ -6,10 +6,16 @@
         <button id="button" class="button">Oblicz</button>
     </div>
     <div id="result"><small>Wynik obliczeń</small></div>
+    <div style="margin-left:15px;padding:15px;background:#f6f6f6;width:100%">
+        <small>Spróbuj liczb np: <a class="try">1121</a>, <a class="try">496788</a>, <a class="try">655289706</a>, <a class="try">207830543655</a> - to są liczby wesołe</small><br/>
+        <small>Liczby niewesołe to np: <a class="try">6</a>, <a class="try">60</a>, <a class="try">45989</a>, <a class="try">3164543188</a>, <a class="try">62716820370707</a></small>
+    </div>
 </div>
+
 {% raw %}
 <script type="text/javascript">
     let result = document.getElementById('result');
+    let input = document.getElementById('n');
     const imHappy = (n) => {
         arr = [];
         while (n) {
@@ -27,7 +33,7 @@
     const button = document.getElementById('button');
     button.addEventListener('click', function(e) {
         result.innerHTML = '';
-        let input = document.getElementById('n');
+
         if (isNaN(parseInt(input.value))) {
             result.innerHTML = "To nie jest liczba";
             return false;
@@ -41,8 +47,22 @@
             result.innerHTML += isHappyNumber[1].join ` -><br/>`;
         }
     })
+    const tryNumber = document.getElementsByClassName("try")
+
+    for (let i = 0; i < tryNumber.length; i++) {
+        tryNumber[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            input.value = e.target.innerHTML;
+            button.click()
+
+        })
+    }
 </script>
 <style>
+    .happyNumber a {
+        cursor: pointer
+    }
+    
     .isUnHappy {
         color: #a54444
     }
