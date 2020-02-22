@@ -12,7 +12,7 @@ published: true
 - [Python - happyNumbers](#python---happynumbers)
 - [PHP - happyNumbers](#php---happynumbers)
 - [Javascript - happyNumbers](#javascript---happynumbers)
-- [Błąd dużych liczb? Nie tylko.](#b%c5%82%c4%85d-du%c5%bcych-liczb-nie-tylko)
+- [Błąd dużych liczb? Nie tylko](#b%c5%82%c4%85d-du%c5%bcych-liczb-nie-tylko)
 {:class='content_list'}
 
 
@@ -125,7 +125,7 @@ console.log(imHappy(n) ? `${n} :)` : `${n} :(`);
 ```
 Tutaj wyjaśnienia może wymagać jedynie **0** w reduce. Otórz na starcie interacji po tablicy `reduce()` pobiera  `a` i `b` jako pierwszy i drugi indeks tablicy, czyli `a = arr[0]` a `b = arr[1]`. Jeśli natomiast zainicjujemy ją z wartością np. 0, to na starcie naszych obliczeń zmienna `a = 0` a `b = arr[0]`.
 
-## Błąd dużych liczb? Nie tylko.
+## Błąd dużych liczb? Nie tylko
 Przy rozwiązywaniu tego zadania natknęłam się na pewien błąd. Warto takie rzeczy sobie zapisywać w pamięci. 
 Błąd odnosi się w tym przypadku do dużych liczb podawanych zarówno w `js` i w `php`. Ale o tym w moim wpisie odnośnie ["Double precision"](/double-precision.html)
 <br/><br/>
