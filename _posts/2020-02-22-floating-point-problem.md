@@ -51,7 +51,7 @@ Przekładając na polski. Liczby w `js` nie rozróżniają typów liczb np. `sho
 Oznacza to, że niektórych liczb całkowitych nie jesteśmy w stanie przedstawić w typie liczby bez utraty ich precyzji, stąd **9999999999999999** ≠ **10000000000000000**. 
 
 W `php` natomiast według dokumentacji:
->**If PHP encounters a number beyond the bounds of the integer type, it will be interpreted as a float instead.**  [^2].
+>If PHP encounters a number beyond the bounds of the integer type, it will be interpreted as a float instead. [^2].
 
 Co oznacza, że jeśli `php` napotka liczbę, która przekracza granicę liczby całkowitej w jakiej może być zapisana, zostanie ona zinterpretowana jako liczba zmiennoprzecinkowa. Tak właśnie się stało dla liczby **679927533571841532898** lub **1646476620141690717724578**. Liczby te są po prostu za duże.
 ```php
