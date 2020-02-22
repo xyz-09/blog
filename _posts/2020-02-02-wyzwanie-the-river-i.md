@@ -73,7 +73,7 @@ the meeting point.
 {:class="w50"}
 
 Na pierwszy rzut oka do zastosowania jest [digital root](../digital_root), jednak tylko w swojej pierwszej części odpowiedzialnej za sumowanie więc efektywny wzór matematyczny nie zda nam się na nic.
-{.clear}
+{:class="clear"}
 
 Zastanówmy się jak możemy wykonać zadanie:
 ```graph
