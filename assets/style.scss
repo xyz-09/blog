@@ -693,6 +693,12 @@ ul.content_list {
             background: #ffd5d5;
             color: #983a3a;
         }
+        &.summary {
+            background: #b1e2ff;
+            strong {
+                font-style: normal;
+            }
+        }
     }
     .you-may-like {
         margin: 1.8em .8em;

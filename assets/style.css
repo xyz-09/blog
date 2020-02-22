@@ -861,6 +861,14 @@ ul.content_list ul {
   color: #983a3a;
 }
 
+.post blockquote.summary {
+  background: #b1e2ff;
+}
+
+.post blockquote.summary strong {
+  font-style: normal;
+}
+
 .post .you-may-like {
   margin: 1.8em .8em;
   /*border-left: 2px solid $gray;*/

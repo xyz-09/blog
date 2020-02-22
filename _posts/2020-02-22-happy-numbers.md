@@ -39,7 +39,7 @@ Rozłóżmy algorytm obliczania liczb wesołych na czynniki pierwsze.
 
 ```graph
 graph TD
-A((n))-->C[Zsumuj kwadraty wszystkich cyfry<br/>składające się na liczbę n]
+A((n))-->C[Zsumuj kwadraty wszystkich cyfr<br/>składające się na liczbę n]
 G.->|nie|C
 C-->G{suma jest cyfrą<br/>i jej kwadrat jest cyfrą<br/>?}
 G.->|tak|D{cyfra == 1<br/>?}
@@ -100,7 +100,7 @@ function imHappy($n){
 var_dump(imHappy($n));
 ```
 
-Powyższe, główne obliczanie można by było napisać zamiast na `array_reduce()` to na połączeniu `array_sum()` i `array_map()`. Jednak ostatnio jakoś lubię reduce, choć wiem, że jest "najcięższy".
+Powyższe, główne obliczanie można by było napisać zamiast na `array_reduce()` na połączeniu `array_sum()` i `array_map()`. Jednak ostatnio jakoś lubię reduce, choć wiem, że jest "najcięższy".
 
 ```php
         $n = array_sum(array_map(function($a){          
@@ -123,11 +123,11 @@ const imHappy = (n) => {
 
 console.log(imHappy(n) ? `${n} :)` : `${n} :(`);
 ```
-Tutaj wyjaśnienia może wymagać jedynie **0** w reduce. Otórz na starcie interacji po tablicy `reduce()` pobiera  `a` i `b` jako pierwszy i drugi indeks tablicy, czyli `a = arr[0]` a `b = arr[1]`. Jeśli natomiast zainicjujemy ją z wartością np. 0, to na starcie naszych obliczeń zmienna `a = 0` a `b = arr[0]`.
+Tutaj wyjaśnienia może wymagać jedynie **0** w `reduce()`. Otórz na starcie interacji po tablicy `reduce()` pobiera  `a` i `b` jako pierwszy i drugi indeks tablicy, czyli `a = arr[0]` a `b = arr[1]`. Jeśli natomiast zainicjujemy ją z wartością np. 0, to na starcie naszych obliczeń zmienna `a = 0` a `b = arr[0]`.
 
 ## Błąd dużych liczb? Nie tylko
 Przy rozwiązywaniu tego zadania natknęłam się na pewien błąd. Warto takie rzeczy sobie zapisywać w pamięci. 
-Błąd odnosi się w tym przypadku do dużych liczb podawanych zarówno w `js` i w `php`. Ale o tym w moim wpisie odnośnie ["Double precision"](../double-precision.html)
+Błąd odnosi się w tym przypadku do dużych liczb podawanych zarówno w `js` i w `php`. Ale o tym w moim wpisie odnośnie ["Floating-point problem"](../floating-point-problem)
 <br/><br/>
 
 
