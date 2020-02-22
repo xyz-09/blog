@@ -21,7 +21,7 @@ Jakiś czas temu wspominałam, że biorę udział w ["bitwach programowania"](..
 W ramach jednego z zadań trzeba było napisać algorytm który obliczy **"liczby wesołe"**.  
 Wczoraj miałam z nimi właśnie "randkę" :wink:
 ## Wesołe liczby, czyli które?
-**Liczbą wesołą**[^1] jest taka liczba, której suma potęg poszczególnych cyfr, aż do jednej cyfry wynosi 1.  
+**Liczbą wesołą**[^1] jest taka liczba, której suma potęg poszczególnych cyfr, aż do kwadratu jednej cyfry wynosi 1.  
 Przykład:
 ```config
 23 
@@ -29,6 +29,7 @@ Przykład:
 2*2 + 3*3 = 4 + 9 = 13 ->
 1*1 + 3*3 = 1 + 9 = 10 -> 
 1*1 + 0*0 = 1
+1*1 = 1
 
 23 -> liczba wesoła, choć ja wolę nazywać je szczęśliwymi
 ``` 
@@ -40,7 +41,7 @@ Rozłóżmy algorytm obliczania liczb wesołych na czynniki pierwsze.
 graph TD
 A((n))-->C[Zsumuj kwadraty wszystkich cyfry<br/>składające się na liczbę n]
 G.->|nie|C
-C-->G{suma jest cyfrą<br/>?}
+C-->G{suma jest cyfrą<br/>i jej kwadrat jest cyfrą<br/>?}
 G.->|tak|D{cyfra == 1<br/>?}
 D.->|tak|E(Liczba jest wesoła)
 D.->|nie|F(Liczba nie jest wesoła)
@@ -52,9 +53,8 @@ classDef wynik fill:#d2e5fb,stroke:#96c5fb
 class H wynik;
 ```
 Algorytm postępowania jest dość prosty. Co ciekawe, powyższe działania matematyczne na liczbach niewesołych doprowadzą nas do wyniku 4. Jeśli nie wierzysz, wypróbuj.  
-~~Suma kwadratów liczb niewesołych doprowadzając je do 1 cyfry będzie równa **4**, w większości przypadków - nie sprawdzałam wszystkich liczb :wink:.~~  
-~~Jeśli znajdziesz liczbę niewesołą, której suma kwadratów nie jest równa 4 [**daj mi znać @.**](mailto:jozdowska.edyta@protonmail.com)~~  
-Jednak natknęłam się na takową: **12587781** - liczba ta ostanią cyfrę, będącą wynikiem sumy potęg ma 2 i jest liczbą niewesołą.
+Suma kwadratów liczb niewesołych doprowadzając je do kwadratu 1 cyfry będzie równa **4**. A ponieważ cyfra 4 jest liczbą niewesołą, możemy opuścić w tym momencie nasze obliczenia z wnioskiem, że liczba jest niewesoła.
+Należałoby to uwzględnić w naszym algorytmie.
 
 {% include _posts/_examples/happyNumber.html %}
 
@@ -69,7 +69,7 @@ def imHappy(n) :
         if (n == 1) : # 1 z racji bycia 1 jest wesoła
             return 1
         n = sum([int(i) ** 2 for i in str(n)]) 
-        if (n>1 and len(str(n))==1) : 
+        if (n == 4) : 
             return 0
     
 n = 23
@@ -91,7 +91,7 @@ function imHappy($n){
             return $a + ($b ** 2);
         });        
         
-        if($n > 1 && strlen($n) == 1) return false;
+        if($n == 4) return false;
     }
     return false;
 }
@@ -115,7 +115,7 @@ const imHappy = (n) => {
     while(n){
         if(n == 1) return true;
         n = (n + '').split``.reduce((a, b) => a + (b ** 2), 0);
-        if(n>1 && (n+'').length==1) return false
+        if(n == 4) return false
     }
     return false
 }
