@@ -848,6 +848,11 @@ ul.content_list ul {
   border-bottom: none;
 }
 
+.error {
+  background: #ffd5d5;
+  color: #983a3a;
+}
+
 .post blockquote {
   /*border-left: 2px solid $gray;*/
   padding: 0.1em 1em;
