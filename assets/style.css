@@ -2548,4 +2548,115 @@ button {
 input {
   width: 100%;
 }
+
+.language-graph svg {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Force table to not be like tables anymore */
+  table:not(.rouge-table) {
+    display: block;
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+	Label the data
+	*/
+  }
+  table:not(.rouge-table) thead,
+  table:not(.rouge-table) tbody,
+  table:not(.rouge-table) th,
+  table:not(.rouge-table) td,
+  table:not(.rouge-table) tr {
+    display: block;
+  }
+  table:not(.rouge-table) thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table:not(.rouge-table) tr {
+    margin-bottom: 30px;
+  }
+  table:not(.rouge-table) td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee !important;
+    border-right: none !important;
+    position: relative;
+    padding-left: 25% !important;
+    text-align: left !important;
+    padding-bottom: 15px !important;
+  }
+  table:not(.rouge-table) td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  table:not(.rouge-table) td:before {
+    content: attr(data-name) !important;
+    position: absolute !important;
+    top: 6px !important;
+    left: 30px !important;
+    text-align: center !important;
+    padding-right: 10px !important;
+    white-space: nowrap !important;
+    background: none !important;
+    height: initial !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  table:not(.rouge-table) {
+    width: 100%;
+  }
+  table:not(.rouge-table) thead th {
+    padding: 0;
+  }
+  table:not(.rouge-table) tbody tr td {
+    text-align: center;
+    padding: 0 !important;
+  }
+  table:not(.rouge-table) tbody tr td:before {
+    position: relative !important;
+    width: 100% !important;
+    text-align: center;
+    left: 0 !important;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-transform: uppercase;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  table:not(.rouge-table) tbody tr td strong {
+    margin-right: 0 !important;
+  }
+  table:not(.rouge-table) tbody tr td img {
+    margin: 15px 0;
+  }
+  table:not(.rouge-table) tbody tr button {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

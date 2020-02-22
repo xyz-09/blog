@@ -83,6 +83,30 @@ function launch_toast(text) {
         toast.className = toast.className.replace("show", "");
     }, 5000);
 }
+const table = document.getElementsByTagName('table');
+if (table) {
+
+    for (let i = 0; i < table.length; i++) {
+        if (table[i].classList.contains('rouge-table')) continue;
+        let th = table[i].getElementsByTagName('th');
+
+        let tr = table[i].getElementsByTagName('tr');
+
+        for (let i = 0; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName('td');
+
+            for (let z = 0; z < td.length; z++) {
+                console.log(td[z], th[z])
+
+                td[z].dataset.name = th[z].innerHTML
+
+            }
+
+        }
+    }
+}
+
+
 
 let classname = document.getElementsByClassName("archive-top-link");
 let topEl = document.getElementById('top');
