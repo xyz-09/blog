@@ -92,8 +92,6 @@ for (let i = 0; i < classname.length; i++) {
         scrollToY(topEl.offsetTop, 1500, 'easeInOutQuint');
     });
 }
-
-
 let codeBlock = document.querySelectorAll("div.highlighter-rouge")
 for (let i = 0; i < codeBlock.length; i++) {
     let lang = codeBlock[i].className.split(' ')[0].replace('language-', '');
