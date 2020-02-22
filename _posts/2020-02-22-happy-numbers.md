@@ -115,7 +115,7 @@ const imHappy = (n) => {
     while(n){
         if(n == 1) return true;
         n = (n + '').split``.reduce((a, b) => a + (b ** 2), 0);
-        if(n == 4) return false
+        if(n>1 && (n+'').length==1) return false
     }
     return false
 }
