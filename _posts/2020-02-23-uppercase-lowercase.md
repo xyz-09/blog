@@ -98,7 +98,7 @@ switchCaseBin("aBdEfZfv");
 ```
 Dla mnie jest to bardzo eleganckie rozwiązanie, szkoda, że ułomne.  
 
-**Uwaga!!!** Ta funkcja będzie działać prawidłowo tylko dla stringów bez polskich znaków diakrytycznych, czyli dla a-z i A-Z. Usuwa z ciągu znaków spacje, a to też ważne :smile:
+**Uwaga!!!** Ta funkcja będzie działać prawidłowo tylko dla stringów bez polskich znaków diakrytycznych, czyli dla a-z i A-Z. Usuwa też z ciągu znaków spacje, a to też ważne :smile:
 {:class="error"}
 
 
