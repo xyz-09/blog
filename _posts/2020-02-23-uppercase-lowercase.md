@@ -124,3 +124,4 @@ Powyższa funkcja będzie uniwersalna. Owszem. Tyle, że rozwiązanie na bitach 
 ### Demo kodów switchCaseBin i switchCaseAll
 {% include _posts/_examples/switchCase.html %}
 
+
