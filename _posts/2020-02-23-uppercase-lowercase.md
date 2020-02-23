@@ -116,7 +116,7 @@ Wpierw sprawdzić z jakim znakiem mamy do czynienia, potem odpowiednio go zamien
 ```js
 const switchCaseAll = (n) =>{    
     const checkIsUpper = (m) =>  m.toUpperCase() ==  m; 
-    return n.split``.map((a)=> checkIsUpper(a) ? a.toLowerCase() : a.toUpperCase() ).join``;
+    return n.split``.map((a) => checkIsUpper(a) ? a.toLowerCase() : a.toUpperCase() ).join``;
 }'a'
 ```
 Powyższa funkcja będzie uniwersalna. Owszem. Tyle, że rozwiązanie na bitach bardziej mi się podoba :smile:
