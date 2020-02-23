@@ -1,0 +1,78 @@
+<div class="happyNumber">
+    <div class="form">
+        <h3 style="padding-top:0">SwitchCase - live</h3>
+        <p>Przekonwertuj ciąg znaków:</p>
+        <input type="text" id="n" class="input" value="A ja Mam dziaBąga" placeholder="Wpisz tekst">
+        <button id="button" class="button">Konwertuj</button>
+    </div>
+    <div id="result"><small>Rezultat</small></div>
+
+</div>
+
+{% raw %}
+<script type="text/javascript">
+    let result = document.getElementById('result');
+    let input = document.getElementById('n');
+    const switchCaseBin = (n) =>
+        n.split ``.map((a) => String.fromCharCode(a.charCodeAt() ^ 32)).join ``;
+
+    const switchCaseAll = (n) => {
+        const checkIsUpper = (m) => m.toUpperCase() == m;
+        return n.split ``.map((a) => checkIsUpper(a) ? a.toLowerCase() : a.toUpperCase()).join ``;
+    }
+    const button = document.getElementById('button');
+    button.addEventListener('click', function(e) {
+        result.innerHTML = '';
+
+        let switchText = switchCaseBin(input.value);
+        let switchText1 = switchCaseAll(input.value);
+
+        result.innerHTML = `switchCaseBin: <strong>${switchText} </strong><br/>`
+        result.innerHTML += `switchCaseAll: <strong>${switchText1} </strong>`
+
+    })
+</script>
+<style>
+    .form {
+        max-width: 250px;
+        padding: 15px;
+    }
+    
+    .form input {
+        margin-bottom: 15px;
+    }
+    
+    .happyNumber {
+        padding: 30px;
+        background: #ced8f54f;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .happyNumber h3 {
+        display: block;
+        text-align: left;
+    }
+    
+    #result {
+        border: 5px dotted #c8dae6;
+        background: #fffeed;
+        padding: 10px;
+        margin: 15px;
+        width: calc(100% - 250px - 10px - 45px);
+        max-width: 100%;
+        text-align: left;
+        max-height: 350px;
+        overflow: auto
+    }
+    
+    @media all and (max-width:500px) {
+        #result {
+            width: 100%;
+            max-width: 100%
+        }
+    }
+</style>
+{% endraw %}
