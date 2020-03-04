@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zamiana dużych liter na małe i odwrotnie jednym rzutem
+title: Zamiana dużych liter na małe i odwrotnie - operacje bitowe
 date: 2020-02-23 14:22
 category: ["programowanie"]
 author: Jozdowska Edyta
