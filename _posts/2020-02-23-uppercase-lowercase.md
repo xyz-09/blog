@@ -5,7 +5,7 @@ date: 2020-02-23 14:22
 category: ["programowanie"]
 author: Jozdowska Edyta
 tags: ['js']
-excerpt: Szybka zamiana małych liter na duże, a dużych liter na małe
+excerpt: Szybka zamiana małych liter na duże, a dużych liter na małe poprzez operacje bitowe
 published: true
 ---
 
