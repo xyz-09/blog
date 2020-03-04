@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zamiana dużych liter na małe i odwrotnie - operacje bitowe
+title: Zamiana dużych liter na małe i odwrotnie na operacjach bitowych
 date: 2020-02-23 14:22
 category: ["programowanie"]
 author: Jozdowska Edyta
