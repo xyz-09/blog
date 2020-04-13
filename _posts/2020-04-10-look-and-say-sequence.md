@@ -13,7 +13,9 @@ published: true
 - [Look and say - kod Javascript](#look-and-say---kod-javascript)
 - [Look and say - demo](#look-and-say---demo)
 {:class='content_list'}
-
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 [*Lokk and say*](https://en.wikipedia.org/wiki/Look-and-say_sequence){:target="_blank"} jest ciągiem, który z angielskiego, jak sama nazwa wskazuje polega na opisaniu tego co się widzi. W języku polskim, ciąg ten znany jest bardziej jako "Ciąg Conway'a" opracowany i analizowany przez [John'a Conway'a](https://pl.wikipedia.org/wiki/John_Horton_Conway){:target="_blank"}.
 
@@ -39,7 +41,7 @@ Powyżej jest rozpisane dość szczegółowo i mało czytelnie, ale wiadomo już
 iteracja: 1, ciąg: 1 // początek ciągu
 iteracja: 2, ciąg: 1 1 // w wierszu powyżej widzę jedną jedynkę
 iteracja: 3, ciąg: 2 1 // w wierszu powyżej widzę dwie jedynki
-iteracja: 4, ciąg: 1 2 1 1 // w wierszu powyżej jedną dwójkę i jedną jedynkę
+iteracja: 4, ciąg: 1 2 1 1 // w wierszu powyżej widzę jedną dwójkę i jedną jedynkę
 iteracja: 5, ciąg: 1 1 1 2 2 1 // w wierszu powyżej widzę jedną jedynkę, 
                                // jedną dwójkę i dwie jedynki
 ```
@@ -61,7 +63,15 @@ Dla liczby **25** ciągiem przy **5** interacjach jest:
 ```conf
 25, 1 25, 1 1 1 25, 3 1 1 25, 1 3 2 1 1 25
 ```
-co można zapisać jako: ``d, 1 d, 1 1 1 d, 3 1 1 d, 1 3 2 1 1 d (...)`` gdzie ``d`` jest liczbą rozpoczynającą ciąg.
+co można zapisać jako: 
+
+{:.center} 
+$$
+\begin{align*}
+LookAndSay = d,\: 1 d,\: 1 1\;1 d,\: 3 1\;1 d,\: 1 3\;2 1\;1 d (...)\\
+ d\: -\: jest\: liczbą\: rozpoczynającą\: ciąg.
+\end{align*}
+$$
 
 # Look and say - kod Javascript
 Tyle z teorii, przejdźmy do kodu. Moje rozwiązanie bazuje na `js` i jest napisane tak by było jak najbardziej czytelne.
