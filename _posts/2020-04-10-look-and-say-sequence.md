@@ -120,3 +120,5 @@ console.log(lineSeq(number,line, true))
 # Look and say - demo
 {% include _posts/_examples/look-and-say.html %}
 
+Zastosowałam ten kod do rozwiązania zadania: [Connaway Sequence](https://www.codingame.com/ide/puzzle/conway-sequence){:target="_blank"}. Pełne rozwiązanie zadania [jest na moim Githubie](https://github.com/capo1/codinggames/blob/master/medium/js/medium-conaway-sequence.js){:target="_blank"}, gdzie zamieszczam swoje rozwiązania z CodingGame.
+
