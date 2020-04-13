@@ -18,6 +18,7 @@ published: true
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+
 [*Lokk and say*](https://en.wikipedia.org/wiki/Look-and-say_sequence){:target="_blank"} jest ciągiem, który z angielskiego, jak sama nazwa wskazuje polega na opisaniu tego co się widzi. W języku polskim, ciąg ten znany jest bardziej jako "Ciąg Conway'a" opracowany i analizowany przez [John'a Conway'a](https://pl.wikipedia.org/wiki/John_Horton_Conway){:target="_blank"}.
 
 
