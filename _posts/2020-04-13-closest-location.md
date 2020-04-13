@@ -76,7 +76,7 @@ Możemy, i to właśnie w kodzie zrobimy, rozbić całe równanie na składowe, 
 $$
 \begin{align*}
 d_x = A_{lon} - B_{lon} \\
-d_y = A_{lat} - B_{lon} \\ \\
+d_y = A_{lat} - B_{lat} \\ \\
 
  |AB| = \sqrt{ d_x^2 + d_y^2}
 \end{align*}
