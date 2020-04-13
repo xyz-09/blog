@@ -2655,4 +2655,32 @@ input {
     width: 50%;
   }
 }
+
+.offtopic {
+  font-size: .85em;
+  position: relative;
+  background: #e7e7e7;
+  padding: 15px;
+  border: 1px dotted #c5c5c5;
+  margin: 45px 0;
+}
+
+.offtopic:before, .offtopic:after {
+  background: #f3f2f2;
+  position: absolute;
+  left: 1em;
+  padding: 5px;
+  color: gray;
+  font-size: .75em;
+}
+
+.offtopic:before {
+  content: '-- OffTopic --';
+  top: -25px;
+}
+
+.offtopic:after {
+  content: '-- OffTopic --';
+  bottom: -25px;
+}
 /*# sourceMappingURL=style.css.map */
