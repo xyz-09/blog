@@ -12,6 +12,7 @@ published: true
 - [Look and say - przykład ciągu dla liczby większej niż 1](#look-and-say---przyk%c5%82ad-ci%c4%85gu-dla-liczby-wi%c4%99kszej-ni%c5%bc-1)
 - [Look and say - kod Javascript](#look-and-say---kod-javascript)
 - [Look and say - demo](#look-and-say---demo)
+- [Look and say (conaway sequence) na CodingGame](#look-and-say-conaway-sequence-na-codinggame)
 {:class='content_list'}
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -120,5 +121,6 @@ console.log(lineSeq(number,line, true))
 # Look and say - demo
 {% include _posts/_examples/look-and-say.html %}
 
+# Look and say (conaway sequence) na CodingGame
 Zastosowałam ten kod do rozwiązania zadania: [Connaway Sequence](https://www.codingame.com/ide/puzzle/conway-sequence){:target="_blank"}. Pełne rozwiązanie zadania [jest na moim Githubie](https://github.com/capo1/codinggames/blob/master/medium/js/medium-conaway-sequence.js){:target="_blank"}, gdzie zamieszczam swoje rozwiązania z CodingGame.
 
