@@ -2018,3 +2018,9 @@ input {
         bottom: -25px;
     }
 }
+
+//MATH Latex -- overflow
+span.mjx-chtml {
+    padding: 3px;
+    overflow: auto;
+}
