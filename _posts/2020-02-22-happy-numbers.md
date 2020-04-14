@@ -16,7 +16,7 @@ published: true
 {:class='content_list'}
 
 
-Jakiś czas temu wspominałam, że biorę udział w ["bitwach programowania"](../kategoria/bitwy%20programowania/) na portalu [CodingGames](https://www.codingame.com/){:target="_blank"}. Na tym samym portalu, prócz bitew, można rozwiązywać ciekawe zadania programistyczne.  
+Jakiś czas temu wspominałam, że biorę udział w ["bitwach programowania"](../kategoria/bitwy%20programowania/) na portalu [CodinGame](https://www.codingame.com/){:target="_blank"}. Na tym samym portalu, prócz bitew, można rozwiązywać ciekawe zadania programistyczne.  
 
 W ramach jednego z zadań trzeba było napisać algorytm który obliczy **"liczby wesołe"**.  
 Wczoraj miałam z nimi właśnie "randkę" :wink:

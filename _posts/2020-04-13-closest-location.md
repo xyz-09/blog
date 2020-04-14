@@ -16,11 +16,11 @@ published: true
 - [Odległość euklidesowa](#odleg%c5%82o%c5%9b%c4%87-euklidesowa)
 - [Najbliższy punkt dla danej lokalizacji w js](#najbli%c5%bcszy-punkt-dla-danej-lokalizacji-w-js)
 - [Przykład zastosowania funkcji closestLocation](#przyk%c5%82ad-zastosowania-funkcji-closestlocation)
-- [Defibrillators - rozwiązanie zadania z CodingGame](#defibrillators---rozwi%c4%85zanie-zadania-z-codinggame)
+- [Defibrillators - rozwiązanie zadania z CodinGame](#defibrillators---rozwi%c4%85zanie-zadania-z-codingame)
 {:class='content_list'}
 
 
-Ostatnio moje posty są głównie inspirowane zadaniami, które rozwiązuję w wolnym czasie na [CodingGames](https://www.codingame.com/){:target="_blank"}.  
+Ostatnio moje posty są głównie inspirowane zadaniami, które rozwiązuję w wolnym czasie na [CodinGame](https://www.codingame.com/){:target="_blank"}.  
 A, że są Święta i&nbsp;trwa narodowa izolacja z powodu koronawirusa, czasu tego jest sporo.  
 
 
@@ -156,5 +156,5 @@ Zobaczmy jak ten kod działa z danymi:
 
 Najbliższa lokalizacji: ``{'3.879483', '43.608177'}`` jest punkt o nazwie: **Maison de la Prevention Sante** o lokalizacji:  ``{'3.87952263361082', '43.6071285339217'}``
 
-# Defibrillators - rozwiązanie zadania z CodingGame
-Zastosowałam tą funkcję do rozwiązania zadania: [Defibrillators](https://www.codingame.com/ide/puzzle/defibrillators){:target="_blank"}. Pełne rozwiązanie zadania [jest na moim Githubie](https://github.com/capo1/codinggames/blob/master/easy/js/easy-defibrillators.js){:target="_blank"}, gdzie zamieszczam swoje rozwiązania z CodingGame.
+# Defibrillators - rozwiązanie zadania z CodinGame
+Zastosowałam tą funkcję do rozwiązania zadania: [Defibrillators](https://www.codingame.com/ide/puzzle/defibrillators){:target="_blank"}. Pełne rozwiązanie zadania [jest na moim Githubie](https://github.com/capo1/codinggames/blob/master/easy/js/easy-defibrillators.js){:target="_blank"}, gdzie zamieszczam swoje rozwiązania z CodinGame.
