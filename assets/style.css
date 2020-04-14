@@ -2683,4 +2683,9 @@ input {
   content: '-- OffTopic --';
   bottom: -25px;
 }
+
+span.mjx-chtml {
+  padding: 3px;
+  overflow: auto;
+}
 /*# sourceMappingURL=style.css.map */
