@@ -53,7 +53,7 @@ Można wyróżnić model, gdzie zarówno **prezentacja** jak i **przetwarzanie**
     include image.html 
     src="https://sketchviz.com/@capo1/82a731f9e584a00de80e8d3d66c86030/8dec5a27f64331ad12e54ccc4a7c4af2b70b3fc4.sketchy.png" 
     href="https://sketchviz.com/@capo1/82a731f9e584a00de80e8d3d66c86030/8dec5a27f64331ad12e54ccc4a7c4af2b70b3fc4.sketchy.png"
-    caption="Rysunek 1. Warstwy aplikacji Klient -> Serwer: <a href='//sketchviz.com/@capo1/82a731f9e584a00de80e8d3d66c86030' style='color:#555;'>Sketchviz</a> "
+    caption="Rysunek 1. Warstwy aplikacji Klient -> Serwer, <a href='//sketchviz.com/@capo1/82a731f9e584a00de80e8d3d66c86030' style='color:#555;'>Sketchviz</a> "
 %}
 
 Drugi model, starszy, polega na **przetwarzaniu danych po stronie serwera**, natomiast **po stronie klienta** odbywa się tylko **prezentacja danych**.
@@ -63,7 +63,7 @@ Drugi model, starszy, polega na **przetwarzaniu danych po stronie serwera**, nat
     include image.html 
     src="https://sketchviz.com/@capo1/d40d197633a987f418db8d45b77606cd/c28815f8f2b21f9a77e9876463fa8d85f5c84d2b.sketchy.png" 
     href="https://sketchviz.com/@capo1/d40d197633a987f418db8d45b77606cd/c28815f8f2b21f9a77e9876463fa8d85f5c84d2b.sketchy.png"
-    caption="Rysunek 2. Warstwy aplikacji Klient -> Serwer: <a href='//sketchviz.com/@capo1/d40d197633a987f418db8d45b77606cd' style='color:#555;'>Sketchviz</a> "
+    caption="Rysunek 2. Warstwy aplikacji Klient -> Serwer, <a href='//sketchviz.com/@capo1/d40d197633a987f418db8d45b77606cd' style='color:#555;'>Sketchviz</a> "
 %}
 
 W trzecim modelu **przetwarzanie** będzie się odbywało zarówno po stronie klienta, jak i po stronie serwera.
@@ -80,7 +80,7 @@ Budowa aplikacji będzie składać się w moim przypadku z katalogów i plików:
     include image.html 
     src="https://sketchviz.com/@capo1/66c8868cab282c00bf714e0e42f4e1eb/42388a5c3106dd7b8414ecbb220d1abbc65354cb.sketchy.png" 
     href="https://sketchviz.com/@capo1/66c8868cab282c00bf714e0e42f4e1eb/42388a5c3106dd7b8414ecbb220d1abbc65354cb.sketchy.png"
-    caption="Rysunek 2. Drzewo katalogów i plików aplikacji LookAndSayWithFlask  <a href='//sketchviz.com/@capo1/66c8868cab282c00bf714e0e42f4e1eb' style='color:#555;'>Sketchviz</a>"
+    caption="Rysunek 2. Drzewo katalogów i plików aplikacji LookAndSayWithFlask,  <a href='//sketchviz.com/@capo1/66c8868cab282c00bf714e0e42f4e1eb' style='color:#555;'>Sketchviz</a>"
 %}
 
 - **static/css** - W folderze `static` będą znajdować się wszystkie pliki statyczne typu ``.css``, ``.js``, ``images``. W tej przykładowej aplikacji jest jedynie `.css`
@@ -97,7 +97,7 @@ Rozrysujmy co z czym jest powiązane:
     include image.html 
     src="https://sketchviz.com/@capo1/7481f1bc3dab2d9cda2106131f2f2e1b/2bdf1819f8ad0f593201f5e73f23cd06792f79bb.sketchy.png" 
     href="https://sketchviz.com/@capo1/7481f1bc3dab2d9cda2106131f2f2e1b/2bdf1819f8ad0f593201f5e73f23cd06792f79bb.sketchy.png"
-    caption="Rysunek 3. Schemat działania aplikacji, utworzone dzięki: <a href='//sketchviz.com/@capo1/7481f1bc3dab2d9cda2106131f2f2e1b' style='color:#555;'>Sketchviz</a>"
+    caption="Rysunek 3. Schemat działania aplikacji, <a href='//sketchviz.com/@capo1/7481f1bc3dab2d9cda2106131f2f2e1b' style='color:#555;'>Sketchviz</a>"
 %}
 
 **Czarna strzałka** na powyższej grafice określa w jaki sposób dane podane przez użytkownika są przekazywane między poszczególnymi warstwami. Z **prezentacji** do **prztwarzania na serwerze** przesyłane są metodą **POST**.
