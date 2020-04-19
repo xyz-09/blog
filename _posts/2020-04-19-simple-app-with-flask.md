@@ -84,7 +84,7 @@ Budowa aplikacji będzie składać się w moim przypadku z katalogów i plików:
 %}
 
 - **static/css** - W folderze `static` będą znajdować się wszystkie pliki statyczne typu ``.css``, ``.js``, ``images``. W tej przykładowej aplikacji jest jedynie `.css`
-- **templates** - gdzie mamy wydzielony kod HTML podzielony na plik główny szablonu odpowiedzianlny za prezentację `index.html` oraz składowe zamieszczone w katalogu `components`. 
+- **templates** - gdzie mamy wydzielony kod HTML podzielony na plik główny szablonu odpowiedzialny za prezentację `index.html` oraz składowe zamieszczone w katalogu `components`. 
 - **_app.py_** - główny plik, odpowiedzialny za naszą aplikację.
 - **_lookAndSay.py_** - plik odpowiedzialny za obliczenie danych na serwerze.
  
