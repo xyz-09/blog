@@ -106,5 +106,5 @@ Rozrysujmy co z czym jest powiązane:
 
 **Szarą strzałką**{:style="color:gray"} oznaczyłam, te elementy, które są załączane do pliku `index.html` i które są ściśle odpowiedzialne za prezentację aplikacji użytkownikowi. 
 
-Niestety przyjaciel stwierdził, że jest to za trudne. Za dużo powiązań łączących pliki. Chciałby jak w pandoc'u, wpisuje funkcję np. lookAndSay i na tej podstawie by był generowany cały plik. Niestety, a może i stety - póki co nie jest to możliwe. Przynajmniej Frontednowcy wciąż mają pracę :smile: .
+Niestety przyjaciel stwierdził, że jest to za trudne. Za dużo powiązań łączących pliki. Chciałby jak w pandoc'u, wpisuje funkcję np. lookAndSay i na tej podstawie by był generowana cała aplikacja, że wszystkimi powiązaniami. Niestety, a może i stety - póki co nie jest to możliwe. Przynajmniej Frontednowcy wciąż mają pracę :smile: .
 {:.offtopic}
