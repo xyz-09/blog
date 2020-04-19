@@ -9,6 +9,7 @@ excerpt: Prosty przykład wykorzystania mikrofremowrk'a aplikacji webowych "Flas
 published: true
 ---
 
+
 - [Flask](#flask)
 - [Aplikacja webowa - podstawy](#aplikacja-webowa---podstawy)
 - [Składowe aplikacji](#sk%c5%82adowe-aplikacji)
