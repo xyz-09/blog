@@ -73,7 +73,7 @@ Schemat działania aplikacji jest prosty. Użytkownik w przeglądarce podaje dwi
 
 ## Składowe aplikacji
 W aplikacjach dąży się do rozdzielenia poszczególnych funkcji aplikacji na składowe, tak aby po pierwsze bardziej móc nad nimi "zapanować" w miarę rozrostu aplikacji, oraz by poszczególne elementy móc wykorzystywać kilkukrotnie, zarówno w ramach samej aplikacji, jak też kopiując je do innych aplikacji.  
-Budowa aplikacji będzie składać się w moim przypadku z katalogów:
+Budowa aplikacji będzie składać się w moim przypadku z katalogów i plików:
 
 {:.center}
 {%
