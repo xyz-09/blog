@@ -105,3 +105,6 @@ Rozrysujmy co z czym jest powiązane:
 **Niebieską strzałką**{:style="color:#0000ff"}  zaznaczona jest droga odpowiedzi, aż do części oznaczonej jako `result.html`, gdzie dane są wyświetlane jako wynik operacji wykonywanych na serwerze. Z serwera zwracana jest lista przypisana do zmiennej `result`, przez którą dzięki ``Jinja`` wykonywana jest loopa z wyświetleniem wyniku, dla każdej z interacji.  
 
 **Szarą strzałką**{:style="color:gray"} oznaczyłam, te elementy, które są załączane do pliku `index.html` i które są ściśle odpowiedzialne za prezentację aplikacji użytkownikowi. 
+
+Niestety przyjaciel stwierdził, że jest to za trudne. Za dużo powiązań łączących pliki. Chciałby jak w pandoc'u, wpisuje funkcję np. lookAndSay i na tej podstawie by był generowany cały plik. Niestety, a może i stety - póki co nie jest to możliwe. Przynajmniej Fronednowcy wciąż mają pracę :smile: .
+{:.offtopic}
