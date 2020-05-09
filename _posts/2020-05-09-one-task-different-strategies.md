@@ -89,7 +89,7 @@ let diff_bd = Math.sign(b - d), // 23 - 25 = Math.sign(-2) => -1
 // Math.sign zwraca wartość:
 // -1 dla wartości ujemnych
 // 0 dla wartości 0
-// 1 dla wartości plusowych
+// 1 dla wartości dodatnich
 // a w sumie o taką informację nam głównie chodzi
 
 m = ( 'N S'[diff_bd + 1] + 'W E'[diff_ac + 1] ).trim();
