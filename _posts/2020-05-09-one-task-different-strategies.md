@@ -113,10 +113,10 @@ Porównajmy oba kody:
 let [a, b, c, d] = [8, 23, 18, 25],
                m = '';
 
-if (b > d) m = 'S', d += 1;
-if (b < d) m = 'N', d -= 1;
-if (a > c) m += 'E', c += 1;
-if (a < c) m += 'W', c -= 1;
+if (b > d) m = 'S', d++;
+if (b < d) m = 'N', d--;
+if (a > c) m += 'E', c++;
+if (a < c) m += 'W', c--;
 
 
 
@@ -148,17 +148,17 @@ Jeśli idzie o ilość znaków użytych do naszego zadania to:
 `[a, b, c, d] = [8, 23, 18, 25],
             m = '';
 
-if (b > d) m = 'S', d += 1;
-if (b < d) m = 'N', d -= 1;
-if (a > c) m += 'E', c += 1;
-if (a < c) m += 'W', c -= 1;
+if (b > d) m = 'S', d++;
+if (b < d) m = 'N', d--;
+if (a > c) m += 'E', c++;
+if (a < c) m += 'W', c--;
 
 
 
 
 console.log(m)`.
 replace(/\r\n|\n|\r|\t|\s/gm,'').length
-// da nam 116 znaków
+// da nam 112 znaków
 ```
 {:class="w50"}
 
