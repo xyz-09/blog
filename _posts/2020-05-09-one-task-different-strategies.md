@@ -69,10 +69,10 @@ W standardowym, nieudziwnionym kodzie mielibyśmy mniej więcej taki zapis:
 ```js
 let [a, b, c, d] = [8, 23, 18, 25];
 let m = '';
-if (b > d) m = 'S', d += 1;
-if (b < d) m = 'N', d -= 1;
-if (a > c) m += 'E', c += 1;
-if (a < c) m += 'W', c -= 1;
+if (b > d) m = 'S', d++;
+if (b < d) m = 'N', d--;
+if (a > c) m += 'E', c++;
+if (a < c) m += 'W', c--;
 
 console.log(m)
 // OUTPUT => NW 
