@@ -58,7 +58,7 @@ let [a, b, c, d] = [8, 23, 18, 25];
 // a = 8, b = 23, c = 18, d = 25 
 ```
 
-Naszym zadaniem jest napisanie **jak najkrótszego kodu**, który będzie sprawdzał warunki (poniżej) i w zależności od wyniku poda odpowiednią wartość `S`, `N`, `E`, `W`, `SE`, `SW`, `NE` i `NW`. Gwoli ścisłości, nie ja to wymyśliłam. Jest to jedno z rozwiązań zadania [Power of Thor]("https://www.codingame.com/ide/puzzle/power-of-thor"){:target="_blank"} na codingames.  
+Naszym zadaniem jest napisanie **jak najkrótszego kodu**, który będzie sprawdzał warunki (poniżej) i w zależności od wyniku poda odpowiednią wartość `S`, `N`, `E`, `W`, `SE`, `SW`, `NE` i `NW`. Gwoli ścisłości, nie ja to wymyśliłam. Jest to jedno z rozwiązań zadania [Power of Thor](https://www.codingame.com/ide/puzzle/power-of-thor){:target="_blank"} na codingames.  
 I tak:
 1.  jeśli wartość `b` > `d` wypisz literę `S` i **zwiększ** wartość `d` o `1`, 
 2.  jeśli wartość `b` < `d` wypisz literę `N` i **zmniejsz** wartość `d` o `1`, 
