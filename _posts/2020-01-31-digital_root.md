@@ -84,7 +84,7 @@ To teraz `py`
 ```python
 n='941'
 while len(n) > 1:
-  n = str(sum([int(i) for i in n]))
+  n = str(sum(map(int,n)))
 print(n)
 ```
 Nie jest zbyt podobnie :rofl:  
@@ -122,9 +122,9 @@ Nie zmienia to faktu, że np. w `Python` wykonanie podobnej operacji, czyli doda
 ## .5.Porównanie długości kodu
 Zobaczmy w takim razie wyniki długości kodu *(potraktowałam wszelkie odstępy pomiędzy znakami używane dla czytelności, jako zbędne - i dostanę za to pewnie od przyjaciela po głowie, że to nie po pythonowsku :relaxed: :grin:)*:
 ```js
-//PYTHON=>47
+//PYTHON=>44
 console.log("Python", 
-`while len(n)>1:n=str(sum([int(i) for i in n]))`.length)
+`while len(n)>1:n=str(sum(map(int,n)))`.length)
 
 //PHP => 48
 console.log("PHP", 
@@ -144,7 +144,7 @@ n=n.split"".reduce((a,b)=>a*1+b*1+'')`.length)
 ```
 
 **And the winner is: Python :1st_place_medal: :1st_place_medal: :1st_place_medal:**   
-Wpierw wydawało mi się, że wygra `Ruby` lub `php`, jednak odnosząc się do uwagi w appendindex [^3], `Python` wygrywa o jeden znak.  
+Wpierw wydawało mi się, że wygra `Ruby` lub `php`, jednak po poprawieniu kodu zdecydowanie wygrywa `py`.  
 I wydawało by się, że już nic z tego tematu nie można wyciągnąć więcej. Otóż, dokładnie, wydawałoby się. 
 
 ## .6.Math
