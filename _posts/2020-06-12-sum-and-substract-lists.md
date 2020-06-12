@@ -93,8 +93,8 @@ print([i[0] - sum(i[1:]) for i in zip(*([a[c] for c,d in zip(b,b)]))])
 # OUTPUT: [0, -4, -7] 
 
 ```
-Usłyszałam, że powyższy kod nie będzie działał dla większej liczby indeksów niż dwa. **Będzie działać**  
-Usłyszałam, że powyższy kod działa jedynie dla 3 indeksów. **Działa na 2, 3 i więcej.**  
+Usłyszałam, że powyższy kod nie będzie działał dla większej liczby indeksów niż dwa. **Będzie działać!**  
+Usłyszałam, że powyższy kod działa jedynie dla 3 indeksów. **Działa na 2, 3 i więcej!**  
 
 Jedynym ograniczeniem, jest by długość tablic odejmowanych od siebie była identyczna, ale dla danych jak np. zestawienia, które porównujemy to nie problem **One będą miały taką samą długość**.  
 
