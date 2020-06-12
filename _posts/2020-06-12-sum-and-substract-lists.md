@@ -5,7 +5,7 @@ date: 2020-06-12 21:28
 category: [programowanie,python]
 author: Edyta Jozdowksa
 tags: [python]
-excerpt: 
+excerpt: Jednilinijkowy skrypt umożliwiający dodanie lub odjęcie tablic.
 published: true
 ---
 Jestem leniwa, przyznaję - jak każdy koder :smile: Dlatego wymyślam upraszczacze i piszę skrypty, które zautomatyzują moją pracę. 
