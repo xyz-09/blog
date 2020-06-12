@@ -83,7 +83,7 @@ Kolejnie znów je `zipujemy` by przekazać wartości dalej do kodu dla funkcji `
 
 **I jak dalej z tym żyć?** Okazuje się że można :wink:  
 ## Odejmowanie wartości tablicy po wskazanych w zmiennej `b` indeksach
-Zakładając, że każada wartość przekazywana dalej jest listą/tablicą i od pierwszej wartości odejmiemy sumę pozstałych wartości listy/tablicy otrzymamy poszukiwany wynik. Funkcję `sum` zamieniamy na działanie `[i[0] - sum(i[1:])` i otrzymujemy `[0, -4, -7]`. Zapewniam was, że to czary :wink::
+Zakładając, że każada wartość przekazywana dalej jest listą/tablicą i od pierwszej wartości odejmiemy sumę pozstałych wartości listy/tablicy otrzymamy poszukiwany wynik. Funkcję `sum` zamieniamy na działanie `i[0] - sum(i[1:])` i otrzymujemy `[0, -4, -7]`. Zapewniam was, że to czary :wink::
 ```py
 Dict = {"a":[1, 1, 1], "b": [2, 1, 5], "c": [1, 5, 8]}
 b = ["a", "c"]
