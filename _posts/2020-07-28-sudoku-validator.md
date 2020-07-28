@@ -13,7 +13,7 @@ Sudoku według [Wikipedii](https://pl.wikipedia.org/wiki/Sudoku){:target="_blank
 
 Wbrew pozorom nie jest to takie łatwe - sama gra nie pociąga mnie zbytnio, ale zadanie jakie ostatnio wykonywałam właśnie na sudoku - już tak :smile:.
 
-Zadaniem było sprawdzenie czy podany ciąg liczb - spełnia reguły gry - czyli w wierszu i kolumnie są cyfry od 1...9 oraz czy w subgridzie 3 x 3 są cyfry  od 1...9.
+Zadaniem było sprawdzenie, czy podany ciąg liczb - spełnia reguły gry - czyli w wierszu i kolumnie są cyfry od 1...9 oraz czy w subgridzie 3 x 3 są cyfry  od 1...9.
 
 Danymi wejściowymi był ciąg znaków reprezentujący wypełniony już diagram. Po 9 znaków w każdym wierszu. Powtarzany 9 razy:
 ```bash
