@@ -118,7 +118,7 @@ Najważniejszą część kodu mamy obmyśloną. Teraz wystarczy sprawdzić, czy 
 ## Zamiana wierszy na kolumny w `Python` i `php`
 
 
-Przejdźmy do kolumn. Zaczynając swoją przygodę z programowaniem niejednokrotnie człowiek zastanawia się jak przekształcić tablicę zawierającą wiersze na kolumny. Można wymyślać i interować po tablicy, zapisując wartość z poszczególnego wiersza do kolumny. Tylko po co. Pisać kod nalezy z głową. 
+Przejdźmy do kolumn. Zaczynając swoją przygodę z programowaniem niejednokrotnie człowiek zastanawia się jak przekształcić tablicę zawierającą wiersze na kolumny. Można wymyślać i interować po tablicy, zapisując wartość z poszczególnego wiersza do kolumny. Tylko po co. Pisać kod należy z głową. 
 
 ### Pythonowski, uwielbiany `zip`
 W `py` możemy użyć uwielbianą przeze mnie funkcję `zip`. 
