@@ -230,6 +230,7 @@ w =
 for i in range(len(w)):
   print([w[3*(i//3)+(j//3)][3*(i%3)+(j%3)] for j in range(9)])
 
+
 # OUTPUT:
 [4, 3, 5, 6, 8, 2, 8, 9, 7] 
 [2, 6, 9, 5, 7, 1, 1, 3, 4]
