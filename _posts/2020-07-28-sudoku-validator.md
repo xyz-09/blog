@@ -161,7 +161,7 @@ Służy on do "pakowania" i "wypakowywania" wartości np. z tablicy. O tym opera
 
 Na chwilę obecną zatrzymajmy się na tym, że z niego będziemy korzystać :smile:. 
 
-Jeszcze jedna uwaga, funkcja `array_map()` jako pierwszy ragument przyjmuje funkcję lub anonimową funkcję, jaka ma zostać użyta na kazdym z elemntów tablicy. W naszym przypadku, okreslimy ją na `null`, czyli nic nie musi wykonywać. Dzięki temu otrzymamy z wierszy kolumny :smile:. Kod jest następujący:
+Jeszcze jedna uwaga, funkcja `array_map()` jako pierwszy argument przyjmuje funkcję lub anonimową funkcję, jaka ma zostać użyta na każdym z elemntów tablicy. W naszym przypadku, określimy ją na `null`, czyli nic nie musi wykonywać. Dzięki temu możemy skorzystać z `array_map()` bez błędu i otrzymamy z wierszy kolumny :smile:. Kod jest następujący:
 ```php
 <?php
 $a = [[1, 2], [3, 4, 5], [5, 6, 7]];
