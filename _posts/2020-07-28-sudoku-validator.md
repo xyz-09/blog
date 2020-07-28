@@ -204,39 +204,21 @@ Kolejny krok walidacji wykonany. :smile:
 ## Otrzymanie subgrid'a 3 x 3
 Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3. 
 
-Wpierw napiszę o `pythonie`. 
-### extended slices w `py`
-W `py` mamy super opcję tzw. **extended slices**, co w wolnym tłumaczeniu oznacza *rozszerzone ucinanie*. 
-Odnosi się on do typu danych `dictionary`, `list` i `strings`. 
-
-Jego składnia jest następująca: obiekt[**start**:**stop**[:**krok**]], gdzie:
-- **start** - poczatkowy indeks ucinanego kawałka. Domyślnie jest to 0. Parametr ten jest opcjonalny.
-- **stop** - ostatni indeks ucinanego kawałka lub ilość elementów do przechwycenia. Domyślnie jest to długość obiektu. Parametr ten jest opcjonalny.
-- **krok** - krok ucinanego kawałka. Domyślnie jest on 1. Parametr ten jest opcjonalny.
-
-Parę przykładów wykorzystania **extended slices**:
-
+Wpierw napiszę o `pythonie`. Wykorzystam tutaj interację po liście z zastosowaniem tzw. **floor division** =  `//`, czyli dzielenia i zaokrąglenia wyniku w dół, oraz **operacji modulo** `%`.  Opiszę całość na przykładzie, gdyż tak jest prościej.
 ```py
+w = [
+  [4, 3, 5, 2, 6, 9, 7, 8, 1], 
+  [6, 8, 2, 5, 7, 1, 4, 9, 3], 
+  [8, 9, 7, 1, 3, 4, 5, 6, 2] 
 
-"ABCD":[0:2]
-# 'AB'
+]
+for i in range(len(w)):
+  print([w[3*(i//3)+(j//3)][3*(i%3)+(j%3)] for j in range(9)])
 
-"ABCD"[0:4:2]
-# 'AC' - bo krok jest określony na dwa
-
-"ABCD"[:3]
-# 'ABC' - tylko 3 pierwsze
-
-"ABCD"[1:3] lub "ABCD"[1:3:]
-# 'BC' - od 1 do 3
-
-"ABCD"[::] lub "ABCD"[:]
-# 'ABCD'
-
-"ABCD"[::-1]
-#'DCBA' - prosty sposób na revert tablicy ;), gdy krok jet minusowy
-
-[0, 1, 2, 3][::-1]
-# [3, 2, 1, 0]
+# OUTPUT:
+[4, 3, 5, 6, 8, 2, 8, 9, 7] 
+[2, 6, 9, 5, 7, 1, 1, 3, 4]
+[7, 8, 1, 4, 9, 3, 5, 6, 2]
 ```
+`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymalismy w jednym wierszu subgrida o wymiarze 3 x 3. Który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
 
