@@ -193,9 +193,10 @@ Array
         )
 
 )
+*/
 ?>
 ```
-*/
+
 
 Otrzymując z wierszy kolumny, jesteśmy w stanie sprawdzić, czy cyfry w tak przekształconej tablicy się powtarzają poprzez już wspomnianego **set-a** dla `py` lub `array_unique()` dla `php`.
 
