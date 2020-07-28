@@ -220,5 +220,22 @@ for i in range(len(w)):
 [2, 6, 9, 5, 7, 1, 1, 3, 4]
 [7, 8, 1, 4, 9, 3, 5, 6, 2]
 ```
-`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymalismy w jednym wierszu subgrida o wymiarze 3 x 3. Który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
+`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymalismy w jednym wierszu subgrida o wymiarze 3 x 3, który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
 
+Najlepiej rozumiem, kiedy mam zobrazowane dane zagadnienie. Wyświetlmy zatem jak powyższe równanie zachowuje się w pętli:
+```py
+w = 
+[
+  [4, 3, 5, 2, 6, 9, 7, 8, 1], 
+  [6, 8, 2, 5, 7, 1, 4, 9, 3], 
+  [8, 9, 7, 1, 3, 4, 5, 6, 2]
+]
+
+for i in range(len(w)):
+  print(*[3*i//3+j//3 for j in range(9)])
+
+# OUTPUT:
+# 0 0 0 1 1 1 2 2 2
+# 1 1 1 2 2 2 3 3 3
+# 2 2 2 3 3 3 4 4 4
+```
