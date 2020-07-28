@@ -35,3 +35,76 @@ true - dla poprawnie wypełnionego sudoku,
 false - gdy jest chociaż jeden błąd w wypełnionym diagramie
 
 ```
+Powyższy diagram jest poprawnie wypełnionym sudoku. 
+
+# Logika dla walidacji
+Musimy się zastanowić wpierw nad tym w jaki sposób należy sprawdzić wiersze, potem kolumny, a potem poddiagram wielkości 3x3. 
+
+Jak dla mnie najprostszym rozwiązaniem jakie ciśnie się od razu do głowy, to sprawdzić czy w wierszu występują duplikaty - jeśli któraś z liczb się powtórzyła, tzn. że diagram jest wypełniony niepoprawnie już w pierwszy  kroku sprawdzania. 
+
+W `py` jak i w `js` mamy do dyspozycji specjalny typ danych zwany **Set** - jest to obiekt, który przetrzymuje w sobie **TYLKO UNIKALNE WARTOŚCI**. 
+
+Przyjżyjmy się przykładowi. Załóżmy, że mamy listę / tablicę przypisaną do zmiennej **tablica**. Chcemy z niej otrzymać **set**:
+
+```py
+tablica = [1, 2, 1, 2]
+set_z_tablica = set(tablica)
+
+print(set_z_tablica)
+
+# OUTPUT:
+# {1, 2}
+```
+Tak sety nam się w walidacji sudoku przydadzą. Zobaczmy pierwszy wiersz naszych danych wejściowych:
+```py
+wiersz = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(set(wiersz))
+# OUTPUT:
+# {1, 2, 3, 4, 5, 6, 7, 8, 9}
+```
+No tak ale w taki sposób porównywanie jest bez sensu. Jeśli w naszym **set-cie** przekształconym z wiersza długość elementów będzie **równa 9** to znaczy, że wiersz jest wypełniony prawidłowo. Jeśli, któraś liczba się powtórzy, **set** będzie krószy, bo zduplikowana wartość wystąpi jedynie raz:
+```py
+wiersz = [8, 9, 1, 2, 3, 4, 5, 6,7]
+print(len(set(wiersz)))
+
+# OUTPUT:
+# 9 
+```
+Ok. Wspomniałam, że w `py` i w `js` i pewnie w jeszcze kilku innych językach programowania są **set-y**,a  co z `php`.
+
+Otórz w `php` też wstępują **set-y**, ale potrzebna jest do tego [dodatkowa biblioteka](https://www.php.net/manual/en/class.ds-set.php){:target="_blank"}. Jednak nie będzie ona dostępna wszędzie. Na szczęściw mamy dwie inne możliwości jesli chodzi o `php`. Albo wykorzystamy `array_unique()` albo `array_flip()`. 
+
+```php
+<?php
+
+$tablica = [1,2,1,2];
+print_r(array_unique($tablica));
+
+/* 
+OUTPUT: 
+Array
+(
+    [0] => 1
+    [1] => 2
+)
+*/
+```
+`array_unique()` działa dość intuicyjnie - tworzy nową tablicę, ze zmiennej, tylko z unikalnymi wartościami.
+`array_flip()` natomiast jest ciekawszym rozwiązaniem - zamienia on wartości na klucze i klucze na wartości. Wiemy, że w tablicy klucz nie mogą się powtarzać. Stąd, jeśli klucz się powtórzy - wartość zostanie nadpisana. Zobaczmy jak działa to w praktyce:
+```php
+<?php
+$tablica = [1, 2, 1, 2];
+print_r(array_flip($tablica));
+
+/*
+OUTPUT:
+Array
+(
+    [1] => 2
+    [2] => 3
+)
+*/
+```
+
+
+
