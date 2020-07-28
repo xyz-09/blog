@@ -213,7 +213,8 @@ Jego składnia jest następująca: obiekt[**start**:**stop**[:**krok**]], gdzie:
 - **start** - poczatkowy indeks ucinanego kawałka. Domyślnie jest to 0. Parametr ten jest opcjonalny.
 - **stop** - ostatni indeks ucinanego kawałka lub ilość elementów do przechwycenia. Domyślnie jest to długość obiektu. Parametr ten jest opcjonalny.
 - **krok** - krok ucinanego kawałka. Domyślnie jest on 1. Parametr ten jest opcjonalny.
-Parę przykładów wykorzystania:
+
+Parę przykładów wykorzystania **extended slices**:
 
 ```py
 
