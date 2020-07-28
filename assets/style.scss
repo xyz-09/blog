@@ -627,6 +627,15 @@ ul.content_list {
     font-size: small;
     transition: max-height .2s;
     margin-bottom: 30px;
+    code {
+        padding: 0;
+        font-size: inherit;
+        padding: 0;
+        font-size: inherit;
+        border: none;
+        background: transparent;
+        color: $blue
+    }
     &:hover {
         max-height: initial
     }

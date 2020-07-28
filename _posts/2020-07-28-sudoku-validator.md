@@ -8,6 +8,17 @@ tags: [php, python ]
 excerpt: Dwa skrypty na walidację sudoku napisane w pythonie i php oraz omówienie różnic między nimi.
 published: true
 ---
+- [Sudoku - na czym polega](#sudoku---na-czym-polega)
+- [Logika dla walidacji](#logika-dla-walidacji)
+- [Obiekt Set w `python`](#obiekt-set-w-python)
+- [`array_unique()` i `array_flip()` dla `php`](#array_unique-i-array_flip-dla-php)
+- [Zamiana wierszy na kolumny w `Python` i `php`](#zamiana-wierszy-na-kolumny-w-python-i-php)
+  - [Pythonowski, uwielbiany `zip`](#pythonowski-uwielbiany-zip)
+  - [`array_map()` dla `php` i `...` operator](#array_map-dla-php-i--operator)
+- [Otrzymanie subgrid'a 3 x 3](#otrzymanie-subgrida-3-x-3)
+{:class='content_list'}
+
+
 ## Sudoku - na czym polega
 Sudoku według [Wikipedii](https://pl.wikipedia.org/wiki/Sudoku){:target="_blank"} jest łamigłóką, w której zadaniem jest wypełnienie diagramu 9 × 9 w taki sposób, aby w każdym wierszu, w każdej kolumnie i w każdym z dziewięciu pogrubionych kwadratów 3 × 3 znalazło się po jednej cyfrze od 1 do 9. 
 
@@ -73,9 +84,9 @@ print(len(set(wiersz)))
 ```
 Ok. Wspomniałam, że w `py` i w `js` i pewnie w jeszcze kilku innych językach programowania są **set-y**,a  co z `php`.
 
-## array_unique() i array_flip() dla `php`
+## `array_unique()` i `array_flip()` dla `php`
 
-Otórz w `php` też wstępują **set-y**, ale potrzebna jest do tego [dodatkowa biblioteka](https://www.php.net/manual/en/class.ds-set.php){:target="_blank"}. Jednak nie będzie ona dostępna wszędzie. Na szczęściw mamy dwie inne możliwości jesli chodzi o `php`. Albo wykorzystamy `array_unique()` albo `array_flip()`. 
+Otórz w `php` też wstępują **set-y**, ale potrzebna jest do tego [dodatkowa biblioteka](https://www.php.net/manual/en/class.ds-set.php){:target="_blank"}. Jednak nie będzie ona dostępna wszędzie. Na szczęście mamy dwie inne możliwości jeśli chodzi o `php`. Albo wykorzystamy `array_unique()` albo `array_flip()`. 
 
 ```php
 <?php
@@ -161,7 +172,7 @@ Służy on do "pakowania" i "wypakowywania" wartości np. z tablicy. O tym opera
 
 Na chwilę obecną zatrzymajmy się na tym, że z niego będziemy korzystać :smile:. 
 
-Jeszcze jedna uwaga, funkcja `array_map()` jako pierwszy argument przyjmuje funkcję lub anonimową funkcję, jaka ma zostać użyta na każdym z elemntów tablicy. W naszym przypadku, określimy ją na `null`, czyli nic nie musi wykonywać. Dzięki temu możemy skorzystać z `array_map()` bez błędu i otrzymamy z wierszy kolumny :smile:. Kod jest następujący:
+Jeszcze jedna uwaga, funkcja `array_map()` jako pierwszy argument przyjmuje funkcję lub anonimową funkcję, jaka ma zostać użyta na każdym z elementów tablicy. W naszym przypadku, określimy ją na `null`, czyli nic nie musi wykonywać. Dzięki temu możemy skorzystać z `array_map()` bez błędu i otrzymamy z wierszy kolumny :smile:. Kod jest następujący:
 ```php
 <?php
 $a = [[1, 2], [3, 4, 5], [5, 6, 7]];
@@ -221,22 +232,41 @@ for i in range(len(w)):
 [2, 6, 9, 5, 7, 1, 1, 3, 4]
 [7, 8, 1, 4, 9, 3, 5, 6, 2]
 ```
-`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymalismy w jednym wierszu subgrida o wymiarze 3 x 3, który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
+`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymaliśmy w jednym wierszu subgrida o wymiarze 3 x 3, który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
 
 Najlepiej rozumiem, kiedy mam zobrazowane dane zagadnienie. Wyświetlmy zatem jak powyższe równanie zachowuje się w pętli:
 ```py
-w = 
-[
+w = [
   [4, 3, 5, 2, 6, 9, 7, 8, 1], 
   [6, 8, 2, 5, 7, 1, 4, 9, 3], 
   [8, 9, 7, 1, 3, 4, 5, 6, 2]
 ]
 
 for i in range(len(w)):
-  print(*[3*i//3+j//3 for j in range(9)])
+  print(*((3*(i//3)+(j//3),3*(i%3)+(j%3)) for j in range(9)))
 
 # OUTPUT:
-# 0 0 0 1 1 1 2 2 2
-# 1 1 1 2 2 2 3 3 3
-# 2 2 2 3 3 3 4 4 4
+# (0, 0) (0, 1) (0, 2) (1, 0) (1, 1) (1, 2) (2, 0) (2, 1) (2, 2)
+# (0, 3) (0, 4) (0, 5) (1, 3) (1, 4) (1, 5) (2, 3) (2, 4) (2, 5)
+# (0, 6) (0, 7) (0, 8) (1, 6) (1, 7) (1, 8) (2, 6) (2, 7) (2, 8)
+
+# Dane jakie trzymamy:
+# 4 3 5 6 8 2 8 9 7
+# 2 6 9 5 7 1 1 3 4
+# 7 8 1 4 9 3 5 6 2
 ```
+Mamy już w wierszu subgrida o wielkości 3 x 3. możemy poprzez `set-a` przyrównać go do **9** i walidacja zakończona :sunglasses:.
+Przejdźmy zatem do `php`. W tym podejściu ograniczyłam się do wychwycenia z input'a odpowiednich fragmentów:
+```php
+for ($i = 0; $i < 9; $i++){
+    foreach ($inputs as $j => $cell) {
+            $subgrids[
+                floor($i / 3) * 3 + floor($j / 3)
+            ][] = $cell;
+        }
+}
+
+```
+Podejście to bazuje na tej samej logice co `py`, jednak nie mamy tutaj dostępnych skrótów dla **floor division** więc musimy używać funkcji `floor`.
+
+Pełny kod dla [`py`](https://github.com/capo1/codinggames/blob/master/easy/py/easy-sudoku-generator.py){:target="_blank"}znajduje się na moim githubie poświęconemu [codingame](https://github.com/capo1/codinggames){:target="_blank"}. Tak samo zresztą jako kod [`php`](https://github.com/capo1/codinggames/blob/master/easy/php/easy-sudoku-validator.php){:target="_blank"}.

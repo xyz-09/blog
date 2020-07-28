@@ -794,6 +794,16 @@ ul.content_list {
   margin-bottom: 30px;
 }
 
+ul.content_list code {
+  padding: 0;
+  font-size: inherit;
+  padding: 0;
+  font-size: inherit;
+  border: none;
+  background: transparent;
+  color: #4183C4;
+}
+
 ul.content_list:hover {
   max-height: initial;
 }
