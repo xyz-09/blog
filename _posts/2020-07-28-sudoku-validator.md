@@ -38,7 +38,7 @@ false - gdy jest chociaż jeden błąd w wypełnionym diagramie
 Powyższy diagram jest poprawnie wypełnionym sudoku. 
 
 ## Logika dla walidacji
-Musimy się zastanowić wpierw nad tym, w jaki sposób należy sprawdzić wiersze, potem kolumny, a potem poddiagram wielkości 3 x 3. 
+Musimy się zastanowić wpierw nad tym, w jaki sposób sprawdzić wiersze, potem kolumny, a potem poddiagram wielkości 3 x 3. 
 
 Jak dla mnie, najprostszym rozwiązaniem jakie przychodzi do głowy, to sprawdzić czy w wierszu występują duplikaty - jeśli któraś z liczb się powtórzyła, tzn. że diagram jest wypełniony niepoprawnie już w pierwszy kroku sprawdzania. Podobną metodę stosujemy w koljenych krokach czyli dla kolumn, a potem do poddiagramu 3 x 3.
 
