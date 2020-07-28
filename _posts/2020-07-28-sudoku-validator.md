@@ -53,7 +53,7 @@ Powyższy diagram jest poprawnie wypełnionym sudoku.
 ## Logika dla walidacji
 Musimy się zastanowić wpierw nad tym, w jaki sposób sprawdzić wiersze, potem kolumny, a potem poddiagram wielkości 3 x 3. 
 
-Jak dla mnie, najprostszym rozwiązaniem jakie przychodzi do głowy, to sprawdzić czy w wierszu występują duplikaty - jeśli któraś z liczb się powtórzyła, tzn. że diagram jest wypełniony niepoprawnie już w pierwszy kroku sprawdzania. Podobną metodę stosujemy w kolejnych krokach, czyli dla kolumn, a potem do poddiagramu 3 x 3.
+Jak dla mnie, najprostszym rozwiązaniem jakie przychodzi do głowy, to sprawdzić czy w wierszu występują duplikaty - jeśli któraś z liczb się powtórzyła, tzn. że diagram jest wypełniony niepoprawnie już w pierwszym kroku sprawdzania. Podobną metodę stosujemy w kolejnych krokach, czyli dla kolumn, a potem do poddiagramu 3 x 3.
 
 ## Obiekt Set w `python`
 W `py` jak i w `js` mamy do dyspozycji specjalny typ danych zwany **Set** - jest to obiekt, który przetrzymuje w sobie **TYLKO UNIKALNE WARTOŚCI**. 
@@ -235,7 +235,12 @@ for i in range(len(w)):
 [2, 6, 9, 5, 7, 1, 1, 3, 4]
 [7, 8, 1, 4, 9, 3, 5, 6, 2]
 ```
-`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z **pierwszych trzech wartości wiersza pierwszego listy** `w`, kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. Ergo, otrzymaliśmy w jednym wierszu subgrida o wymiarze 3 x 3, który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
+`[4, 3, 5, 6, 8, 2, 8, 9, 7]` - ten wiersz składa się z:
+- **pierwszych trzech wartości wiersza pierwszego listy** `w`, 
+- kolejnych **3 pierwszych wartości wiersza drugiego** listy `w` oraz 
+- kolejnych **3 pierwszych wartości ostatniego wiersza listy** `w`. 
+ 
+Ergo, otrzymaliśmy w jednym wierszu subgrida o wymiarze 3 x 3, który możemy sprawdzić. Wiersz drugi naszego wyniku działania, jest przesunięciem o 3 pola wartości od początku wiersza i powtórzeniem operacji. 
 
 Najlepiej rozumiem, kiedy mam zobrazowane dane zagadnienie. Wyświetlmy zatem jak powyższe równanie zachowuje się w pętli:
 ```py
