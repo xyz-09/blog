@@ -206,12 +206,13 @@ Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3.
 
 Wpierw napiszę o `pythonie`. Wykorzystam tutaj interację po liście z zastosowaniem tzw. **floor division** =  `//`, czyli dzielenia i zaokrąglenia wyniku w dół, oraz **operacji modulo** `%`.  Opiszę całość na przykładzie, gdyż tak jest prościej.
 ```py
-w = [
+w = 
+[
   [4, 3, 5, 2, 6, 9, 7, 8, 1], 
   [6, 8, 2, 5, 7, 1, 4, 9, 3], 
   [8, 9, 7, 1, 3, 4, 5, 6, 2] 
-
 ]
+
 for i in range(len(w)):
   print([w[3*(i//3)+(j//3)][3*(i%3)+(j%3)] for j in range(9)])
 
