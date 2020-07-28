@@ -5,7 +5,7 @@ date: 2020-07-28
 category: [programowanie, php, python, "bitwy programowania"]
 author: Edyta Jozdowska
 tags: [php, python ]
-excerpt: 
+excerpt: Dwa skrypty na walidację sudoku napisane w pythonie i php oraz omówienie różnic między nimi.
 published: true
 ---
 # Sudoku - na czym polega
