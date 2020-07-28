@@ -225,18 +225,18 @@ Parę przykładów wykorzystania **extended slices**:
 # 'AC' - bo krok jest określony na dwa
 
 "ABCD"[:3]
-'ABC' - tylko 3 pierwsze
+# 'ABC' - tylko 3 pierwsze
 
 "ABCD"[1:3] lub "ABCD"[1:3:]
-'BC' - od 1 do 3
+# 'BC' - od 1 do 3
 
 "ABCD"[::] lub "ABCD"[:]
-'ABCD'
+# 'ABCD'
 
 "ABCD"[::-1]
-'DCBA' - prosty sposób na revert tablicy ;), gdy krok jet minusowy
+#'DCBA' - prosty sposób na revert tablicy ;), gdy krok jet minusowy
 
 [0, 1, 2, 3][::-1]
-[3, 2, 1, 0]
+# [3, 2, 1, 0]
 ```
 
