@@ -90,6 +90,7 @@ Array
 */
 ```
 `array_unique()` działa dość intuicyjnie - tworzy nową tablicę, ze zmiennej, tylko z unikalnymi wartościami.
+
 `array_flip()` natomiast jest ciekawszym rozwiązaniem - zamienia on wartości na klucze i klucze na wartości. Wiemy, że w tablicy klucz nie mogą się powtarzać. Stąd, jeśli klucz się powtórzy - wartość zostanie nadpisana. Zobaczmy jak działa to w praktyce:
 ```php
 <?php
@@ -109,6 +110,83 @@ Array
 )
 */
 ```
-Najważniejszą część kodu mamy obmyśloną. Teraz wystarczy sprawdzić, czy wynik z `array_unique()` lub `array_flip()` jest równy 9. Jeśli tak - to znaczy, że wiersz jest wypełniony prawidłowo. 
+Najważniejszą część kodu mamy obmyśloną. Teraz wystarczy sprawdzić, czy wynik z `array_unique()` lub `array_flip()` jest równy **9**. Jeśli tak - to znaczy, że wiersz jest wypełniony prawidłowo. 
 
+Przejdźmy do kolumn. Zaczynając swoją przygodę z programowaniem niejednokrotnie człowiek zastanawia się jak przekształcić tablicę zawierającą wiersze na kolumny. Można wymyślać i interować po tablicy, zapisując wartość z poszczególnego wiersza do kolumny. Tylko po co. Pisać kod nalezy z głową. W `py` możemy użyć uwielbianą przeze mnie funkcję `zip`. 
+Jej zastosowanie jest mniej więcej takie:
+```py
+row = [[1,2],[3,4]]
+print(*zip(*row))
+
+# OUTPUT:
+# (1, 3)(2, 4)
+```
+O to właśnie nam chodziło :smile:
+W `php` jest to trochę trudniejsze. Musimy skorzystać z `array_map()`. Czyli zastosowanie określonej funkcji do każdego z elementów tablicy, np.:
+```php
+<?php
+function square($n){
+    return ($n * $n);
+}
+
+$a = [[1, 2], [3 4, 5]];
+$b = array_map('square', $a);
+print_r($b);
+/*
+OUTPUT:
+Array
+(
+    [0] => 1
+    [1] => 4
+    [2] => 9
+    [3] => 16
+    [4] => 25
+)
+*/
+?>
+```
+Oraz z tak zwanego **splat operatora** lub w `js` nazywanego **spred operator**. 
+Służy on do "pakowania" i "wypakowywania" wartości np. z tablicy. O tym operatorze mogłby powstać oddzielny wpis. 
+
+Na chwilę obecną zatrzymajmy się na tym, że z niego będziemy korzystać :smile:. 
+
+Jeszcze jedna uwaga, funkcja `array_map()` jako pierwszy ragument przyjmuje funkcję lub anonimową funkcję, jaka ma zostać użyta na kazdym z elemntów tablicy. W naszym przypadku, okreslimy ją na `null`, czyli nic nie musi wykonywać. Dzięki temu otrzymamy z wierszy kolumny :smile:. Kod jest następujący:
+```php
+<?php
+$a = [[1, 2], [3, 4, 5], [5, 6, 7]];
+$b = array_map(null, ...$a);
+print_r($b);
+/*
+OUTPUT: 
+Array
+(
+    [0] => Array
+        (
+            [0] => 1
+            [1] => 3
+            [2] => 5
+        )
+
+    [1] => Array
+        (
+            [0] => 2
+            [1] => 4
+            [2] => 6
+        )
+
+    [2] => Array
+        (
+            [0] => 
+            [1] => 5
+            [2] => 7
+        )
+
+)
+?>
+```
+*/
+
+Otrzymując z wierszy kolumny, jesteśmy w stanie sprawdzić, czy cyfry w tak przekształconej tablicy się powtarzają poprzez już wspomnianego **set-a** dla `py` lub `array_unique()` dla `php`.
+
+Kolejny krok walidacji wykonany. Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3. 
 
