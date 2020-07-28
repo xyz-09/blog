@@ -204,3 +204,33 @@ Kolejny krok walidacji wykonany. :smile:
 ## Otrzymanie subgrid'a 3 x 3
 Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3. 
 
+Wpierw napiszę o `pythonie`. 
+### extended slices w `py`
+W `py` mamy super opcję tzw. **extended slices**, co w wolnym tłumaczeniu oznacza *rozszerzone ucinanie*. 
+Odnosi się on do typu danych `dictionary` i `list` i `strings`. Jego składnia jest następująca: obiekt[start:stop[:krok]]. Gdzie:
+- **start** - poczatkowy indeks ucinanego kawałka. Domyślnie jest to 0. Parametr ten jest opcjonalny.
+- **stop** - ostatni indeks ucinanego kawałka lub ilość elementów do przechwycenia. Domyślnie jest to długość obiektu. Parametr ten jest opcjonalny.
+- **krok** - krok ucinanego kawałka. Domyślnie jest on 1. Parametr ten jest opcjonalny.
+Parę przykładów wykorzystania:
+```py
+"ABCD"[0:2]
+# 'AB'
+
+"ABCD"[0:4:2]
+# 'AC' - bo krok jest określony na dwa
+
+"ABCD"[:3]
+'ABC' - tylko 3 pierwsze
+
+"ABCD"[1:3] lub "ABCD"[1:3:]
+'BC' - od 1 do 3
+
+"ABCD"[::] lub "ABCD"[:]
+'ABCD'
+
+"ABCD"[::-1]
+'DCBA' - prosty sposób na revert tablicy ;), gdy krok jet minusowy
+
+[0, 1, 2, 3][::-1]
+[3, 2, 1, 0]
+```
