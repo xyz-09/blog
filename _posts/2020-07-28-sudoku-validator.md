@@ -94,7 +94,7 @@ Array
 ```
 `array_unique()` działa dość intuicyjnie - tworzy nową tablicę, ze zmiennej, tylko z unikalnymi wartościami.
 
-`array_flip()` natomiast jest ciekawszym rozwiązaniem - zamienia on wartości na klucze i klucze na wartości. Wiemy, że w tablicy klucz nie mogą się powtarzać. Stąd, jeśli klucz się powtórzy - wartość zostanie nadpisana. Zobaczmy jak działa to w praktyce:
+`array_flip()` natomiast jest ciekawszym rozwiązaniem - zamienia on wartości na klucze i klucze na wartości. Wiemy, że w tablicy klucze nie mogą się powtarzać. Stąd, jeśli klucz się powtórzy - wartość zostanie nadpisana. Zobaczmy jak działa to w praktyce:
 ```php
 <?php
 $tablica = [1, 2, 1, 2];
