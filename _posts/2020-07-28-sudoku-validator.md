@@ -16,6 +16,8 @@ published: true
   - [Pythonowski, uwielbiany `zip`](#pythonowski-uwielbiany-zip)
   - [`array_map()` dla `php` i `...` operator](#array_map-dla-php-i--operator)
 - [Otrzymanie subgrid'a 3 x 3](#otrzymanie-subgrida-3-x-3)
+  - [Python 3 x 3](#python-3-x-3)
+  - [PHP 3 x 3](#php-3-x-3)
 {:class='content_list'}
 
 
@@ -208,11 +210,12 @@ Array
 ?>
 ```
 
-
 Otrzymując z wierszy kolumny, jesteśmy w stanie sprawdzić, czy cyfry w tak przekształconej tablicy się powtarzają poprzez już wspomnianego **set-a** dla `py` lub `array_unique()` dla `php`.
 
 Kolejny krok walidacji wykonany. :smile:
+
 ## Otrzymanie subgrid'a 3 x 3
+### Python 3 x 3
 Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3. 
 
 Wpierw napiszę o `pythonie`. Wykorzystam tutaj interację po liście z zastosowaniem tzw. **floor division** =  `//`, czyli dzielenia i zaokrąglenia wyniku w dół, oraz **operacji modulo** `%`.  Opiszę całość na przykładzie, gdyż tak jest prościej.
@@ -256,6 +259,8 @@ for i in range(len(w)):
 # 7 8 1 4 9 3 5 6 2
 ```
 Mamy już w wierszu subgrida o wielkości 3 x 3. możemy poprzez `set-a` przyrównać go do **9** i walidacja zakończona :sunglasses:.
+
+### PHP 3 x 3
 Przejdźmy zatem do `php`. W tym podejściu ograniczyłam się do wychwycenia z input'a odpowiednich fragmentów:
 ```php
 for ($i = 0; $i < 9; $i++){
