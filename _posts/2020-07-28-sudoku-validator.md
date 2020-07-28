@@ -199,6 +199,7 @@ Array
 
 
 Otrzymując z wierszy kolumny, jesteśmy w stanie sprawdzić, czy cyfry w tak przekształconej tablicy się powtarzają poprzez już wspomnianego **set-a** dla `py` lub `array_unique()` dla `php`.
+
 Kolejny krok walidacji wykonany. :smile:
 ## Otrzymanie subgrid'a 3 x 3
 Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3. 
