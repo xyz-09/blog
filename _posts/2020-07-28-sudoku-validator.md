@@ -20,7 +20,7 @@ published: true
 
 
 ## Sudoku - na czym polega
-Sudoku według [Wikipedii](https://pl.wikipedia.org/wiki/Sudoku){:target="_blank"} jest łamigłóką, w której zadaniem jest wypełnienie diagramu 9 × 9 w taki sposób, aby w każdym wierszu, w każdej kolumnie i w każdym z dziewięciu pogrubionych kwadratów 3 × 3 znalazło się po jednej cyfrze od 1 do 9. 
+Sudoku według [Wikipedii](https://pl.wikipedia.org/wiki/Sudoku){:target="_blank"} jest łamigłówką, w której zadaniem jest wypełnienie diagramu 9 × 9 w taki sposób, aby w każdym wierszu, w każdej kolumnie i w każdym z dziewięciu pogrubionych kwadratów 3 × 3 znalazło się po jednej cyfrze od 1 do 9. 
 
 Wbrew pozorom nie jest to takie łatwe - sama gra nie pociąga mnie zbytnio, ale zadanie jakie ostatnio wykonywałam właśnie na sudoku - już tak :smile:.
 
@@ -74,7 +74,7 @@ print(set(wiersz))
 # OUTPUT:
 # {1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
-No tak ale w taki sposób porównywanie jest bez sensu. Jeśli w naszym **set-cie** przekształconym z wiersza długość elementów będzie **równa 9** to znaczy, że wiersz jest wypełniony prawidłowo. Jeśli, któraś liczba się powtórzy, **set** będzie krószy, bo zduplikowana wartość wystąpi jedynie raz:
+No tak ale w taki sposób porównywanie jest bez sensu. Jeśli w naszym **set-cie** przekształconym z wiersza długość elementów będzie **równa 9** to znaczy, że wiersz jest wypełniony prawidłowo. Jeśli, któraś liczba się powtórzy, **set** będzie krótszy, bo zduplikowana wartość wystąpi jedynie raz:
 ```py
 wiersz = [8, 9, 1, 2, 3, 4, 5, 6,7]
 print(len(set(wiersz)))
