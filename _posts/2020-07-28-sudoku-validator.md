@@ -239,3 +239,4 @@ Parę przykładów wykorzystania **extended slices**:
 [0, 1, 2, 3][::-1]
 [3, 2, 1, 0]
 ```
+
