@@ -100,8 +100,8 @@ print_r(array_flip($tablica));
 OUTPUT:
 Array
 (
-    [1] => 2
-    [2] => 3
+    [1] => 2 // bo jedynka jest na pozycji 0 i 2 - więc wartością naszego array_flip dla 1 jest liczba 2
+    [2] => 3 // bo dwójka (jak wskazuje klucz powstałej tablicy) występuje na miejscu 1 i 3, stąd mamy [2] => 3
 )
 */
 ```
