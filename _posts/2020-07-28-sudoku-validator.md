@@ -207,7 +207,9 @@ Teraz musimy uzyskać z naszej tablicy subdiagram o wymiarze 3 x 3.
 Wpierw napiszę o `pythonie`. 
 ### extended slices w `py`
 W `py` mamy super opcję tzw. **extended slices**, co w wolnym tłumaczeniu oznacza *rozszerzone ucinanie*. 
-Odnosi się on do typu danych `dictionary` i `list` i `strings`. Jego składnia jest następująca: obiekt[start:stop[:krok]]. Gdzie:
+Odnosi się on do typu danych `dictionary`, `list` i `strings`. 
+
+Jego składnia jest następująca: obiekt[**start**:**stop**[:**krok**]], gdzie:
 - **start** - poczatkowy indeks ucinanego kawałka. Domyślnie jest to 0. Parametr ten jest opcjonalny.
 - **stop** - ostatni indeks ucinanego kawałka lub ilość elementów do przechwycenia. Domyślnie jest to długość obiektu. Parametr ten jest opcjonalny.
 - **krok** - krok ucinanego kawałka. Domyślnie jest on 1. Parametr ten jest opcjonalny.
