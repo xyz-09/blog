@@ -157,7 +157,7 @@ Array
 ?>
 ```
 Oraz z tak zwanego **splat operatora** lub w `js` nazywanego **spred operator**. 
-Służy on do "pakowania" i "wypakowywania" wartości np. z tablicy. O tym operatorze mogłby powstać oddzielny wpis. 
+Służy on do "pakowania" i "wypakowywania" wartości np. z tablicy. O tym operatorze mógłby powstać oddzielny wpis. 
 
 Na chwilę obecną zatrzymajmy się na tym, że z niego będziemy korzystać :smile:. 
 
