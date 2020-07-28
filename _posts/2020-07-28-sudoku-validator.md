@@ -217,7 +217,7 @@ Parę przykładów wykorzystania:
 
 ```py
 
-"ABCD"[0:2]
+"ABCD:[0:2]
 # 'AB'
 
 "ABCD"[0:4:2]
