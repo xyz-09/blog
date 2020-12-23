@@ -74,9 +74,17 @@
 #w::after,
 #h::after,
 #screen_w::after,
-#screen_h::after {
+#screen_h::after,
+#real_screen_w::after,
+#real_screen_h::after{
   content: 'px';
   font-size: 0.75em;
+}
+.physical{
+  float:left;
+}
+small{
+  font-size:.9rem
 }
 @media only screen and (min-width: 35rem) and (orientation: landscape) {
   #w,
@@ -125,8 +133,9 @@
         <abbr title="Device pixel ratio">DPR</abbr>: <span id="dpr"></span>
       </p>
       <p>
-        Rzeczywisty rozmiar ekranu: <span id="screen_w"></span> &times; <span id="screen_h"></span>
+        Rozmiar ekranu: <span id="screen_w"></span> &times; <span id="screen_h"></span>
       </p>
+      <p class="physical"><small>	Przypuszczalna rozdzielczość fizyczna: <span id="real_screen_w"></span> &times; <span id="real_screen_h"></span></small></p>
     </div>
   </article>
 </main>
