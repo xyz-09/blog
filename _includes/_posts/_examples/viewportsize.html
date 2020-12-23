@@ -1,0 +1,132 @@
+<style>:root {
+  --theme-background: #fff;
+  --theme-primary: #607D8B;
+  --theme-primary-darken: #4e606a;
+  --theme-color: var(--theme-background);
+  --theme-icon-fill: var(--theme-primary);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-background: #2a2a2a;
+    --theme-primary: #607D8B;
+    --theme-primary-darken: #4e606a;
+  }
+}
+.message {
+  display: none;
+  font-size: 0.95em;
+  padding: 0.25rem 0.75rem;
+  position: relative;
+}
+.message::after,
+.message::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.message::after {
+  background-color: #607D8B;
+  background-color: var(--theme-primary);
+  opacity: 0.2;
+}
+.message::before {
+  border-bottom: 2px solid;
+  border-bottom-color: #4e606a;
+  border-bottom-color: var(--theme-primary-darken);
+}
+.ie-legacy .message {
+  display: block;
+}
+.main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+.app {
+  color: #607D8B;
+  color: var(--theme-primary);
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+.app__title {
+  display: none;
+  margin: 0;
+  margin-bottom: 0.7em;
+}
+.dimensions{
+  font-size: 1.75em;
+  margin: 0;
+}
+.no-js .dimensions{
+  display: none;
+}
+#w,
+#h {
+  display: block;
+}
+#w::after,
+#h::after,
+#screen_w::after,
+#screen_h::after {
+  content: 'px';
+  font-size: 0.75em;
+}
+@media only screen and (min-width: 35rem) and (orientation: landscape) {
+  #w,
+  #h {
+    display: inline;
+  }
+}
+@media (min-width: 38rem) {
+  .app__title {
+    display: block;
+  }
+
+}
+@media only screen and (min-width: 72rem) {
+  .container {
+    margin: 0 auto;
+    width: 1024px;
+  }
+}
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}</style>
+<script async src="http://ej-app.pl/vs/assets/js/main.js"></script>
+
+<main class="container main">
+  <article class="app">
+    <h1 class="app__title">Wielkość Twojego obszaru wyświetlania przeglądarki to:</h1>
+    <noscript>
+      <p>Nie można okreslić ponieważ blokujesz js w przeglądarce!</p>
+    </noscript>
+    <p class="dimensions">
+      <span id="w"></span>
+      &times;
+      <span id="h"></span>
+    </p>
+    <hr />
+    <div class="additional">
+      <p>
+        <abbr title="Device pixel ratio">DPR</abbr>: <span id="dpr"></span>
+      </p>
+      <p>
+        Rzeczywisty rozmiar ekranu: <span id="screen_w"></span> &times; <span id="screen_h"></span>
+      </p>
+    </div>
+  </article>
+</main>
