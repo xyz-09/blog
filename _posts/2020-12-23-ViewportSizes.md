@@ -52,4 +52,4 @@ Jeśli jesteś ciekaw, jaki masz obszar wyświetlania, mam do tego narzędzie, k
 
 **DPR** - to w uproszeniu zastosowany zoom. Zmieniając swój zoom w przeglądarce ``CTRL + "+"`` lub ``CTRL + "-"`` zobaczysz jak powyższe parametry się zmieniają. 
 
-Ten skrypt stosuję, gdy potrzebne jest przedstawienie 1:1 zdjęcia, np w slajderze o bardzo wąskich kadrach, a zdarza mi się to bardzo często. Podaję wtedy linka do [skryptu mierzącego obszar wyświetlania użytkownika](http://ej-app.pl/vs/){:target="_blank"} i proszę o wysłanie informacji tam wyświetlonych. Naprawdę ułatwia pracę i oszczędza czas :wink: 
+Ten skrypt stosuję, gdy potrzebne jest przedstawienie 1:1 zdjęcia, np w slajderze o bardzo wąskich kadrach, a zdarza mi się to bardzo często. Podaję wtedy linka do [skryptu mierzącego obszar wyświetlania użytkownika](https://ej-app.pl/vs/){:target="_blank"} i proszę o wysłanie informacji tam wyświetlonych. Naprawdę ułatwia pracę i oszczędza czas :wink: 
