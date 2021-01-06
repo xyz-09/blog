@@ -23,6 +23,7 @@ W miarę rozwoju techniki i urządzeń, producenci prześcigają się w tworzeni
 ## Viewport sizes
 Upakowanie pikseli na ekranach rośnie - co zapewnia nam bardziej ostre zdjęcia, tyle, że same rozmiary ekranów nie zwiększają się. Bo któż by ze sobą "targał" laptopa dwukrotnie większego niż te, co są teraz. Mało poręczne. Stąd, mimo, że same **rozdzielczości się zwiększają**, **obszar wyświetlania pozostaje bez zmian**. A skoro pozostaje bez zmian, to coś z tym fantem trzeba zrobić. 
 
+
 ## Zoom na ratunek - tylko czy faktycznie?
 Każdy z nas na pewno spotkał się z tym, że zmieniając rozdzielczość swojego ekranu na wyższą, elementy wyświetlane na ekranie stawały się, po prostu mniejsze. Z tym samym problemem spotkali się twórcy przeglądarek. I tak samo jak w systemie np. windows 10, tak i w przeglądarce ustawia się wyższy zoom, czyli przybliżenie ekranu. Dokładniej, jeśli chodzi o przeglądarkę, zoom dziedziczony jest z ustawień systemowych. Elementy stają się wtedy większe.  W ten oto sposób, na ekranie o większym zagęszczeniu pikseli, jednak o podobnym fizycznym wymiarze, można przedstawić treść, która będzie dla użytkownika czytelna. 
 
@@ -49,6 +50,9 @@ Muszę przyznać, że trochę tęsknię za czasami, kiedy nie trzeba było ropat
 
 Jeśli jesteś ciekaw, jaki masz obszar wyświetlania, mam do tego narzędzie, które ułatwia mi pracę z klientami nietechnicznymi: 
 {% include _posts/_examples/viewportsize.html %}
+
+
+
 
 **DPR** - to w uproszeniu zastosowany zoom. Zmieniając swój zoom w przeglądarce ``CTRL + "+"`` lub ``CTRL + "-"`` zobaczysz jak powyższe parametry się zmieniają. 
 

@@ -2695,7 +2695,7 @@ input {
 }
 
 span.mjx-chtml {
-  padding: 3px;
-  overflow: auto;
+  padding: 0 3px;
+  overflow: visible;
 }
 /*# sourceMappingURL=style.css.map */
