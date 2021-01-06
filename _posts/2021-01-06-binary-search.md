@@ -13,7 +13,7 @@ published: true
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 ## Shadow of the Knight
-Shaodow of the Knight jest to tytuł puzzli na [CodingGame](https://www.codingame.com/){:target="_blank"}.  
+Shaodow of the Knight jest to tytuł puzzli na [CodinGame](https://www.codingame.com/){:target="_blank"}.  
 W skrócie gra ta polega na tym, że wcielasz się w Batmana i szukasz bomby w budynku, którą podłożył Joker.  
 Jeśli znajdziesz ją, nim ta wybuchnie - uratujesz wszystkich mieszkańców. 
 
@@ -232,5 +232,4 @@ nmax: 3 -> liczba: 8
 
 Brak dopasowania
 ```
-
 Wiedząc już jak działa **binary search** możesz spróbować rozwiązać [Epizod 1 - Shadow of the Knight](https://www.codingame.com/training/medium/shadows-of-the-knight-episode-1){:target="_blank"}. Opiszę go w swoim następnym wpisie :smile: 
