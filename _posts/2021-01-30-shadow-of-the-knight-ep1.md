@@ -8,7 +8,6 @@ tags: [php, "battle", "binary search", "algorytmy"]
 excerpt: 
 published: true
 ---
-## Wstęp
 W [poprzednim wpisie](/blog/binary-search){:target="blank"} opisywałam na czym polega algorytm binary search. Obiecałam również, że omówię rozwiązania dwóch gier na [CodinGame](https://www.codingame.com/){:target="blank"} ["Shadow of the Knight" epizod 1](https://www.codingame.com/ide/puzzle/shadows-of-the-knight-episode-1){:target="blank"} i ["Shadow of the Knight" epizod 2](https://www.codingame.com/training/expert/shadows-of-the-knight-episode-2){:target="blank"}. Niniejszy wpis odnosi się do części pierwszej zadania. 
 
 Nie będę przytaczać teorii algorytmu Binary search. To zrobiłam we wpisie [Wstęp do Shadow of the Knight - CodingGame - binary search](/blog/binary-search){:target="blank"}. Skupię sią natomiast na jego praktycznym zastosowaniu. 
@@ -30,7 +29,7 @@ Danymi wejściowymi są:
   * `DL` - do dołu i w lewo. 
 
 ## Rozwiązanie zadania binary search w grafikach
-Pierwsza grafika *Rysunek 1* przedstawia stan początkowy. Batman znajduje się na pozycji `[x, y] = [2,7]`, bomba zlokalizowana jest na pozycji `[x, y] = [8,4]`.  
+Pierwsza grafika *Rysunek 1* przedstawia stan początkowy. Batman znajduje się na pozycji `[x, y] = [2, 7]`, bomba zlokalizowana jest na pozycji `[x, y] = [8, 4]`.  
 Batman oczywiście nie wie gdzie jest bomba, więc początkowo, jego zakresem szukania jest cała plansza.  
 
 Jako, że z danych wejściowych dowiaduje się, że bomba jest gdzieś w kierunku `góra-prawo = UR` - ogranicza swój obszar wyszukiwania od swojej pozycji, do "ścian" budynku *Rysunek 2*. 
