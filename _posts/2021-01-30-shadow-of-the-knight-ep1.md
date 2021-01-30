@@ -8,6 +8,14 @@ tags: [php, "battle", "binary search", "algorytmy"]
 excerpt: 
 published: true
 ---
+- [Zadanie](#zadanie)
+- [Dane wejściowe](#dane-wejściowe)
+- [Rozwiązanie zadania binary search w grafikach](#rozwiązanie-zadania-binary-search-w-grafikach)
+  - [Znaleźliśmy bombę](#znaleźliśmy-bombę)
+- [Rozwiązanie binary search - kod php](#rozwiązanie-binary-search---kod-php)
+{:class='content_list'}
+
+
 W [poprzednim wpisie](/blog/binary-search){:target="blank"} opisywałam na czym polega algorytm binary search. Obiecałam również, że omówię rozwiązania dwóch gier na [CodinGame](https://www.codingame.com/){:target="blank"} ["Shadow of the Knight" epizod 1](https://www.codingame.com/ide/puzzle/shadows-of-the-knight-episode-1){:target="blank"} i ["Shadow of the Knight" epizod 2](https://www.codingame.com/training/expert/shadows-of-the-knight-episode-2){:target="blank"}. Niniejszy wpis odnosi się do części pierwszej zadania. 
 
 Nie będę przytaczać teorii algorytmu Binary search. To zrobiłam we wpisie [Wstęp do Shadow of the Knight - CodingGame - binary search](/blog/binary-search){:target="blank"}. Skupię sią natomiast na jego praktycznym zastosowaniu. 
