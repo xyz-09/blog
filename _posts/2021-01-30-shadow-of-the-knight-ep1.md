@@ -40,12 +40,12 @@ Dlaczego wykluczony jest wiersz i kolumna, w jakiej Batman stoi? - ponieważ wie
 <div style="display:flex;justify-content:space-evenly">
 {%
     include image.html 
-    src="/images/blog_images/bs/Batman-ep-1-01.png" 
+    src="/images/blog_images/bs/batman-ep-1-01.png" 
     caption="Rysunek 1. Batman, pozycja wyjściowa"
 %}
 {%
     include image.html 
-    src="/images/blog_images/bs/Batman-ep-1-02.png" 
+    src="/images/blog_images/bs/batman-ep-1-02.png" 
     caption="Rysunek 2. Batman, ograniczenie zakresu szukania"
 %}
 </div>
