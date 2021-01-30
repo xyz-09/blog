@@ -2,9 +2,9 @@
 layout: post
 title: Wstęp do Shadow of the Knight - CodingGame - binary search
 date: 2021-01-06 06:40
-category: [javascript, python,"bitwy programowania"]
+category: [python,"bitwy programowania"]
 author: Jozdowska Edyta
-tags: ["python", "js", "battle", "binary search"]
+tags: ["python", "battle", "binary search", "algorytmy"]
 excerpt: 
 published: true
 ---

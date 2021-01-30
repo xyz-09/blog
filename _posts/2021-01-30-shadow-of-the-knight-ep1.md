@@ -4,7 +4,7 @@ title: Shadow of the Knight - Episode 1 - binary search, simple
 date: 2021-01-30 08:46
 category: [php, "bitwy programowania"]
 author: Edyta Jozdowska
-tags: [php, algorytmy]
+tags: [php, "battle", "binary search", "algorytmy"]
 excerpt: 
 published: true
 ---
