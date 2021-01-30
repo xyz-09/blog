@@ -5,7 +5,7 @@ date: 2021-01-30 08:46
 category: [php, "bitwy programowania"]
 author: Edyta Jozdowska
 tags: [php, "battle", "binary search", "algorytmy"]
-excerpt: 
+excerpt: Rozwiązanie pierwszego epizodu "Shadow of the Knight" na CodinGame za pomocą algorytmu Binary Search.
 published: true
 ---
 - [Zadanie](#zadanie)
