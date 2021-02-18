@@ -15,7 +15,7 @@ Musimy odpowiednio przepisać przetwarzanie urli przez serwer by wszystkie zmian
 
 
 ## .htaccess dla głównej domeny/subdomeny
-```APACHE
+```apache
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -27,7 +27,7 @@ Musimy odpowiednio przepisać przetwarzanie urli przez serwer by wszystkie zmian
 ```
 
 ## .htaccess dla katalogu
-```APACHE
+```apache
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /subdirectoryName
