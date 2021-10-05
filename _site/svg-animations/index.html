@@ -402,10 +402,10 @@ W wyniku otrzymuję taki plik xml:</p>
 
 <ul>
   <li>
-<code class="language-plaintext highlighter-rouge">transform-box</code> zaś definiuje “kontener”, do którego będzie miała zastosowanie opcja <code class="language-plaintext highlighter-rouge">transform</code> i <code class="language-plaintext highlighter-rouge">transofrm-origin</code> - przyjmuje ona wartości <strong>content-box</strong>, <strong>border-box</strong>, <strong>fill-box</strong>, <strong>stroke-box</strong> i <strong>view-box</strong>. Probowałam jedynie <strong>content-box</strong> i <strong>fill-box</strong>. Ta druga odnośi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.</li>
+<code class="language-plaintext highlighter-rouge">transform-box</code> zaś definiuje “kontener”, do którego będzie miała zastosowanie opcja <code class="language-plaintext highlighter-rouge">transform</code> i <code class="language-plaintext highlighter-rouge">transofrm-origin</code> - przyjmuje ona wartości <strong>content-box</strong>, <strong>border-box</strong>, <strong>fill-box</strong>, <strong>stroke-box</strong> i <strong>view-box</strong>. Probowałam jedynie <strong>content-box</strong> i <strong>fill-box</strong>. Ta druga odnosi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.</li>
 </ul>
 
-<p>Teoria ogarnięta, można przystąpić do pisania css’a. Ja preferuję <code class="language-plaintext highlighter-rouge">ssas'a</code> z uwagi na jego przejżystość <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+<p>Teoria ogarnięta, można przystąpić do pisania css’a. Ja preferuję <code class="language-plaintext highlighter-rouge">sass'a</code> z uwagi na jego przejrzystość <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
 
 <div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
@@ -460,11 +460,11 @@ W wyniku otrzymuję taki plik xml:</p>
 
 <p>To pierwsza część kodu.</p>
 
-<p>Jedyne co wymaga tutaj wyjaśnienia to <code class="language-plaintext highlighter-rouge">overflow</code>. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić “poza obszar” widzialny svg - warto ją ustawić właśnie na <code class="language-plaintext highlighter-rouge">visible</code>, inaczej element może zostać ucięty w którymś momencie.</p>
+<p>Jedyne co wymaga tutaj wyjaśnienia to <code class="language-plaintext highlighter-rouge">overflow</code>. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje - schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić “poza obszar” widzialny svg - warto ją ustawić właśnie na <code class="language-plaintext highlighter-rouge">visible</code>, inaczej element może zostać ucięty w którymś momencie animacji.</p>
 
 <p>Druga rzecz - to ustawienie svg na absoluta. Ponieważ rodzic naszej ikony <code class="language-plaintext highlighter-rouge">.animated-icon</code> jest <strong>relatywny</strong> - <strong>absolut</strong>, będzie relatywny do kontenera przetrzymywanego przez rodzica, czyli do wymiarów <code class="language-plaintext highlighter-rouge">.animated-icon</code>.</p>
 
-<p>Kolejnie należy określić zachowanie naszych ikona na zdareznie <code class="language-plaintext highlighter-rouge">:hover</code></p>
+<p>Kolejnie należy określić zachowanie naszych ikon na zdarzenie <code class="language-plaintext highlighter-rouge">:hover</code></p>
 
 <div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
@@ -964,7 +964,7 @@ W wyniku otrzymuję taki plik xml:</p>
     </div>
 </div>
 
-<p>Podam jedynie kod sass odpowiedzialny za animację poszczególnych elementów:</p>
+<p>Podam jedynie kod <code class="language-plaintext highlighter-rouge">sass</code> odpowiedzialny za animację poszczególnych elementów:</p>
 <div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -1050,12 +1050,12 @@ W wyniku otrzymuję taki plik xml:</p>
 </pre></td>
 </tr></tbody></table></code></pre></div></div>
 
-<p>Połączenie css’a i svg do animacji daje parawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście <a href="../svg-i-css/">“SVG i css”</a></p>
+<p>Połączenie <code class="language-plaintext highlighter-rouge">css'a</code> i <code class="language-plaintext highlighter-rouge">svg</code> do animacji daje naprawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście <a href="../svg-i-css/">“SVG i css”</a></p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p><code class="language-plaintext highlighter-rouge">transform-origin</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="_blank">Dokumenatcja MDN Web Docs </a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+      <p><code class="language-plaintext highlighter-rouge">transform-origin</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="_blank">Dokumenatcja MDN Web Docs </a>git add . <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
   </ol>
 </div>

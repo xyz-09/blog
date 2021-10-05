@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2021-10-05T15:19:24+02:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Blog</title><subtitle>Edyta Jozdowska</subtitle><author><name>Jozdowska Edyta</name></author><entry><title type="html">Animacje svg</title><link href="http://localhost:4000/blog/svg-animations/" rel="alternate" type="text/html" title="Animacje svg" /><published>2021-10-05T00:00:00+02:00</published><updated>2021-10-05T00:00:00+02:00</updated><id>http://localhost:4000/blog/svg-animations</id><content type="html" xml:base="http://localhost:4000/blog/svg-animations/">&lt;p&gt;Dawno nie pisałam. Spowodowane jest to wieloma zmianami u mnie. Kilka współprac w trakcie - przez co brakuje czasu.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2021-10-05T15:26:48+02:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Blog</title><subtitle>Edyta Jozdowska</subtitle><author><name>Jozdowska Edyta</name></author><entry><title type="html">Animacje svg</title><link href="http://localhost:4000/blog/svg-animations/" rel="alternate" type="text/html" title="Animacje svg" /><published>2021-10-05T00:00:00+02:00</published><updated>2021-10-05T00:00:00+02:00</updated><id>http://localhost:4000/blog/svg-animations</id><content type="html" xml:base="http://localhost:4000/blog/svg-animations/">&lt;p&gt;Dawno nie pisałam. Spowodowane jest to wieloma zmianami u mnie. Kilka współprac w trakcie - przez co brakuje czasu.&lt;br /&gt;
 Jednakże, jestem bardzo zadowolona z ostatniego zlecenia, dlatego też postanowiłam napisać o nim, ku pamięci.&lt;/p&gt;
 
 &lt;p&gt;Polegało ono między innymi na wykonaniu animacji svg. Nie jest to nic niezwykłego - obecnie bardzo często na stronach widujemy takie elementy. Pisałam już o nich w poście &lt;a href=&quot;../svg-i-css/&quot;&gt;“SVG i css”&lt;/a&gt;. Jednak w takiej formie - ja wykonywałam je po raz pierwszy :smile:&lt;/p&gt;
@@ -243,10 +243,10 @@ W wyniku otrzymuję taki plik xml:&lt;/p&gt;
 &lt;iframe class=&quot;interactive&quot; height=&quot;390&quot; style=&quot;width:100%&quot; src=&quot;https://interactive-examples.mdn.mozilla.net/pages/css/transform-origin.html&quot; title=&quot;MDN Web Docs Interactive Example&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform-box&lt;/code&gt; zaś definiuje “kontener”, do którego będzie miała zastosowanie opcja &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform&lt;/code&gt; i &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transofrm-origin&lt;/code&gt; - przyjmuje ona wartości &lt;strong&gt;content-box&lt;/strong&gt;, &lt;strong&gt;border-box&lt;/strong&gt;, &lt;strong&gt;fill-box&lt;/strong&gt;, &lt;strong&gt;stroke-box&lt;/strong&gt; i &lt;strong&gt;view-box&lt;/strong&gt;. Probowałam jedynie &lt;strong&gt;content-box&lt;/strong&gt; i &lt;strong&gt;fill-box&lt;/strong&gt;. Ta druga odnośi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform-box&lt;/code&gt; zaś definiuje “kontener”, do którego będzie miała zastosowanie opcja &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform&lt;/code&gt; i &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transofrm-origin&lt;/code&gt; - przyjmuje ona wartości &lt;strong&gt;content-box&lt;/strong&gt;, &lt;strong&gt;border-box&lt;/strong&gt;, &lt;strong&gt;fill-box&lt;/strong&gt;, &lt;strong&gt;stroke-box&lt;/strong&gt; i &lt;strong&gt;view-box&lt;/strong&gt;. Probowałam jedynie &lt;strong&gt;content-box&lt;/strong&gt; i &lt;strong&gt;fill-box&lt;/strong&gt;. Ta druga odnosi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Teoria ogarnięta, można przystąpić do pisania css’a. Ja preferuję &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssas'a&lt;/code&gt; z uwagi na jego przejżystość :smile:&lt;/p&gt;
+&lt;p&gt;Teoria ogarnięta, można przystąpić do pisania css’a. Ja preferuję &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sass'a&lt;/code&gt; z uwagi na jego przejrzystość :smile:&lt;/p&gt;
 
 &lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -298,11 +298,11 @@ W wyniku otrzymuję taki plik xml:&lt;/p&gt;
 
 &lt;p&gt;To pierwsza część kodu.&lt;/p&gt;
 
-&lt;p&gt;Jedyne co wymaga tutaj wyjaśnienia to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;overflow&lt;/code&gt;. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić “poza obszar” widzialny svg - warto ją ustawić właśnie na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;visible&lt;/code&gt;, inaczej element może zostać ucięty w którymś momencie.&lt;/p&gt;
+&lt;p&gt;Jedyne co wymaga tutaj wyjaśnienia to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;overflow&lt;/code&gt;. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje - schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić “poza obszar” widzialny svg - warto ją ustawić właśnie na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;visible&lt;/code&gt;, inaczej element może zostać ucięty w którymś momencie animacji.&lt;/p&gt;
 
 &lt;p&gt;Druga rzecz - to ustawienie svg na absoluta. Ponieważ rodzic naszej ikony &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.animated-icon&lt;/code&gt; jest &lt;strong&gt;relatywny&lt;/strong&gt; - &lt;strong&gt;absolut&lt;/strong&gt;, będzie relatywny do kontenera przetrzymywanego przez rodzica, czyli do wymiarów &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.animated-icon&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Kolejnie należy określić zachowanie naszych ikona na zdareznie &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:hover&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Kolejnie należy określić zachowanie naszych ikon na zdarzenie &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:hover&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -790,7 +790,7 @@ W wyniku otrzymuję taki plik xml:&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Podam jedynie kod sass odpowiedzialny za animację poszczególnych elementów:&lt;/p&gt;
+&lt;p&gt;Podam jedynie kod &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sass&lt;/code&gt; odpowiedzialny za animację poszczególnych elementów:&lt;/p&gt;
 &lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
@@ -873,12 +873,12 @@ W wyniku otrzymuję taki plik xml:&lt;/p&gt;
             &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;120deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-32%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Połączenie css’a i svg do animacji daje parawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście &lt;a href=&quot;../svg-i-css/&quot;&gt;“SVG i css”&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Połączenie &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;css'a&lt;/code&gt; i &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svg&lt;/code&gt; do animacji daje naprawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście &lt;a href=&quot;../svg-i-css/&quot;&gt;“SVG i css”&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform-origin&lt;/code&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin&quot; target=&quot;_blank&quot;&gt;Dokumenatcja MDN Web Docs &lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform-origin&lt;/code&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin&quot; target=&quot;_blank&quot;&gt;Dokumenatcja MDN Web Docs &lt;/a&gt;git add . &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Edyta Jozdowska</name></author><category term="[&quot;frontend&quot;, &quot;inne&quot;]" /><category term="frontend" /><category term="sass" /><category term="animations" /><summary type="html">Dawno nie pisałam. Spowodowane jest to wieloma zmianami u mnie. Kilka współprac w trakcie - przez co brakuje czasu. Jednakże, jestem bardzo zadowolona z ostatniego zlecenia, dlatego też postanowiłam napisać o nim, ku pamięci.</summary></entry><entry><title type="html">Vue + htaccess</title><link href="http://localhost:4000/blog/vue+htaccess/" rel="alternate" type="text/html" title="Vue + htaccess" /><published>2021-02-18T14:37:00+01:00</published><updated>2021-02-18T14:37:00+01:00</updated><id>http://localhost:4000/blog/vue+htaccess</id><content type="html" xml:base="http://localhost:4000/blog/vue+htaccess/">&lt;h1 id=&quot;htaccess-dla-vue&quot;&gt;Htaccess dla Vue&lt;/h1&gt;

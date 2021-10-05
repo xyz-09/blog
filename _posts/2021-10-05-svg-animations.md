@@ -169,9 +169,9 @@ Sama animacja polega na tym, że duży kwadrat obraca się wokół własnej osi 
 - `transform-origin` [^1] - odpowia za punkt w jakim "przypięta" zostanie animacja. Zresztą, bardzo fajnie jest to zobrazowane w dokumentacji:
 <iframe class="interactive" height="390" style="width:100%" src="https://interactive-examples.mdn.mozilla.net/pages/css/transform-origin.html" title="MDN Web Docs Interactive Example" loading="lazy"></iframe>
 
-- `transform-box` zaś definiuje "kontener", do którego będzie miała zastosowanie opcja `transform` i `transofrm-origin` - przyjmuje ona wartości **content-box**, **border-box**, **fill-box**, **stroke-box** i **view-box**. Probowałam jedynie **content-box** i **fill-box**. Ta druga odnośi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.
+- `transform-box` zaś definiuje "kontener", do którego będzie miała zastosowanie opcja `transform` i `transofrm-origin` - przyjmuje ona wartości **content-box**, **border-box**, **fill-box**, **stroke-box** i **view-box**. Probowałam jedynie **content-box** i **fill-box**. Ta druga odnosi się, jak jej nazwa wskazuje do wypełnienia, w przypadku przykładu - do kwadratu.
 
-Teoria ogarnięta, można przystąpić do pisania css'a. Ja preferuję `ssas'a` z uwagi na jego przejżystość :smile:
+Teoria ogarnięta, można przystąpić do pisania css'a. Ja preferuję `sass'a` z uwagi na jego przejrzystość :smile:
 
 ```sass
 .animated-icon
@@ -201,11 +201,11 @@ Teoria ogarnięta, można przystąpić do pisania css'a. Ja preferuję `ssas'a` 
 
 To pierwsza część kodu.
 
-Jedyne co wymaga tutaj wyjaśnienia to `overflow`. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić "poza obszar" widzialny svg - warto ją ustawić właśnie na `visible`, inaczej element może zostać ucięty w którymś momencie.
+Jedyne co wymaga tutaj wyjaśnienia to `overflow`. Domyślnie svg ma ustawiony overflow na hidden, czyli wszystko co wystaje - schowaj. Ponieważ w niektórych przypadkach, animacja może wychodzić "poza obszar" widzialny svg - warto ją ustawić właśnie na `visible`, inaczej element może zostać ucięty w którymś momencie animacji.
 
 Druga rzecz - to ustawienie svg na absoluta. Ponieważ rodzic naszej ikony `.animated-icon` jest **relatywny** - **absolut**, będzie relatywny do kontenera przetrzymywanego przez rodzica, czyli do wymiarów `.animated-icon`.
 
-Kolejnie należy określić zachowanie naszych ikona na zdareznie `:hover`
+Kolejnie należy określić zachowanie naszych ikon na zdarzenie `:hover`
 
 ```sass
 .animated-icon
@@ -312,7 +312,7 @@ Poniżej jeszcze kilka przykładów wraz z kodem. Tym razem będą animowane tr�
 
 {% include _posts/_examples/svg-animations3-hover-simple.html %}
 
-Podam jedynie kod sass odpowiedzialny za animację poszczególnych elementów:
+Podam jedynie kod `sass` odpowiedzialny za animację poszczególnych elementów:
 ```sass
 svg
     .hide
@@ -356,6 +356,6 @@ svg
             transform: rotate(120deg) translate(10%, -32%)
 ```
 
-Połączenie css'a i svg do animacji daje parawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście ["SVG i css"](../svg-i-css/)
+Połączenie `css'a` i `svg` do animacji daje naprawdę dużo możliwości. Ciekawy efekt opisałam jakiś czas temu w poście ["SVG i css"](../svg-i-css/)
 
 [^1]: `transform-origin` [Dokumenatcja MDN Web Docs ](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin){:target="_blank"}
