@@ -1,0 +1,9 @@
+- name: Blog
+  link: 
+- name: O mnie
+  link: o-mnie
+- name: Folio
+  link: "https://ejapp.pl/folio/"
+  target: "_blank"
+- name: Szukaj
+  link: search

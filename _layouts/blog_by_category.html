@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+<h1>Artykuły według kategorii: {{page.category | upcase}}</h1>
+<div class="search_result">
+    {% if site.categories[page.category] %}
+        {% for post in site.categories[page.category] %}
+        <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+            <span class="archive-meta">
+                <time class="archive-date post_date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+                    {% include date.html date=post.date %}
+                </time>
+            </span>
+        </h3>
+        {% endfor %}
+    {% else %}
+        <p>Brak wpisów w tej kategorii.</p>
+    {% endif %}
+</div>

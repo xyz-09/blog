@@ -1,0 +1,20 @@
+{% if include.caption %}
+<figure>
+    {% if include.href %}
+    <a href="{% if include.href contains '://' %}{{ include.href }}{% else %} {{ site.baseurl }}{{ include.href }}{% endif %}" class="glightbox">
+        <img src="{% if include.src contains '://' %}{{ include.src }}{%else%} {{ site.baseurl }}{{ include.src }}{%endif%}" alt="Image: {{ include.caption }}">
+    </a>
+    {% else %}
+    <img src="{{ site.baseurl }}{{ include.src }}" alt="Image: {% if include.src contains '://' %}{{ include.src }}{%else%} {{ include.caption }}{%endif%}"> {% endif %}
+    <figcaption><span>{{ include.caption }}</span></figcaption>
+</figure>
+{% else %}
+<figure>
+    {% if include.href %}
+    <a href="{{ site.baseurl }}{{ include.href }}" class="glightbox">
+        <img src="{{ site.baseurl }}{{ include.src }}" alt="Image without caption">
+    </a>
+    {% else %}
+    <img src="{{ site.baseurl }}{{ include.src }}" alt="Image without caption"> {% endif %}
+</figure>
+{% endif %}

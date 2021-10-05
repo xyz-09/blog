@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    <p class="author_title">{{site.author}} · {% include date.html
+      date=page.date %}</p>
+    {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at |
+      date_to_xmlschema }}">(Updated:
+      {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}
+    <div class="post-meta">
+      <div class="cat">
+        {% if post %}
+        {% assign categories = post.categories %}
+        {% else %}
+        {% assign categories = page.categories %}
+        {% endif %}
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          {% for category in categories %}
+          <li>
+            <a href="{{site.baseurl}}/kategoria/{{category|slugize}}">
+              {{category}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        {% if post %}
+        {% assign tags = post.tags %}
+        {% else %}
+        {% assign tags = page.tags %}
+        {% endif %}
+        <ul class="tags_cnt">
+          {% for tag in tags %}
+          <li>
+            <a href="{{site.baseurl}}/tags/{{tag|slugize}}">
+              #{{tag}}{% unless forloop.last %},&nbsp;&nbsp;{% endunless %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      {{ content }}
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text={{ page.title
+          }}&url={{site.url}}{{site.baseurl}}{{page.url }}"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{site.baseurl}}{{page.url}}"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      {% include author.html %}
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      {% include related.html %}
+    </div>
+    <!--<div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>-->
+    {% include disqus.html %}
+  </article>

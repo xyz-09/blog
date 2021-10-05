@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<h3><a href="categories">Kategorie:</a></h3>
+<ul class="category"> 
+  {% for category in site.categories %}
+  <li>
+        <a href="{{site.baseurl}}/kategoria/{{ category | first}}/">
+            {{ category | first}}
+        </a></li>
+      
+
+{% endfor %}
+</ul>
+<div class="posts">
+  {% for post in paginator.posts %}
+  {%if post.published==true %}
+    <article class="post">
+        <time class="post_date">{% include date.html date=post.date %}</time>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <h1>{{ post.title }}</h1>
+      </a>
+      <br/>
+      <div class="tags main">
+        
+        {% for tag in post.tags %}
+
+        <a href="{{site.baseurl}}/tags/{{tag}}">#{{tag}}{% unless forloop.last %},&nbsp;{% endunless %}</a> 
+       
+        {% endfor %}
+      </div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Czytaj więcej</a>
+      {% endif %}
+    </article>
+  {% endfor %}
+
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Poprzednia</a>
+    {% else %}
+      <span>&laquo; Poprzednia</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{site.baseurl}}/">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Następna &raquo;</a>
+    {% else %}
+      <span>Następna &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

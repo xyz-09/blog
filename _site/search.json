@@ -13,24 +13,156 @@
   
     {
 
-      "title"    : "Sudoku Validator",
+      "title"    : "Vue + htaccess",
+      "url"      : "/blog/vue+htaccess/",
+      "category" : "programowanie, htaccess, vue",
+      "date"     : "2021-02-18",
+      "tags"     : "htaccess, vue, js",
+      "excerpt"     : "Dyrektywy w .htaccess by działał router w vue",
+      "content"  : "Htaccess dla Vue Aby działał router vue musimy ustaić odpowiednio .htaccess’a - inaczej po kliknięciu w link aplikacji, który zmienia stan aplikacji zobaczymy 404 error Musimy odpowiednio przepisać przetwarzanie urli..."
+    } ,
+  
+    {
+
+      "title"    : "Shadow of the Knight - Episode 1 - binary search, simple",
+      "url"      : "/blog/shadow-of-the-knight-ep1/",
+      "category" : "php, bitwy programowania",
+      "date"     : "2021-01-30",
+      "tags"     : "php, battle, binary search, algorytmy",
+      "excerpt"     : "Rozwiązanie pierwszego epizodu &quot;Shadow of the Knight&quot; na CodinGame za pomocą algorytmu Binary Search.",
+      "content"  : "Zadanie Dane wejściowe Rozwiązanie zadania binary search w grafikach Znaleźliśmy bombę Rozwiązanie binary search - kod php W poprzednim wpisie opisywałam na czym polega algorytm binary search. Obiecałam również, że..."
+    } ,
+  
+    {
+
+      "title"    : "Wstęp do Shadow of the Knight - CodingGame - binary search",
+      "url"      : "/blog/binary-search/",
+      "category" : "python, bitwy programowania",
+      "date"     : "2021-01-06",
+      "tags"     : "python, battle, binary search, algorytmy",
+      "excerpt"     : "Shadow of the Knight Shaodow of the Knight jest to tytuł puzzli na CodinGame. W skrócie gra ta polega na tym, że wcielasz się w Batmana i szukasz bomby w...",
+      "content"  : "Shadow of the Knight Shaodow of the Knight jest to tytuł puzzli na CodinGame. W skrócie gra ta polega na tym, że wcielasz się w Batmana i szukasz bomby w..."
+    } ,
+  
+    {
+
+      "title"    : "Walidacja sudoku",
       "url"      : "/blog/sudoku-validator/",
-      "category" : "",
+      "category" : "programowanie, php, python, bitwy programowania",
       "date"     : "2020-07-28",
-      "tags"     : "",
-      "excerpt"     : "layout: post title: Walidacja sudoku date: 2020-07-28 category: [programowanie, php, python, “bitwy programowania”] author: Edyta Jozdowska tags: [php, python ] excerpt: published: true — Sudoku - na czym polega Sudoku...",
-      "content"  : "layout: post title: Walidacja sudoku date: 2020-07-28 category: [programowanie, php, python, “bitwy programowania”] author: Edyta Jozdowska tags: [php, python ] excerpt: published: true — Sudoku - na czym polega Sudoku..."
+      "tags"     : "php, python",
+      "excerpt"     : "Dwa skrypty na walidację sudoku napisane w pythonie i php oraz omówienie różnic między nimi.",
+      "content"  : "Sudoku - na czym polega Logika dla walidacji Obiekt Set w python array_unique() i array_flip() dla php Zamiana wierszy na kolumny w Python i php Pythonowski, uwielbiany zip array_map() dla..."
+    } ,
+  
+    {
+
+      "title"    : "Działanie matematyczne liczb w tablicy po wskazanym indeksie",
+      "url"      : "/blog/substract-strings-by-index/",
+      "category" : "Pyton",
+      "date"     : "2020-07-22",
+      "tags"     : "py, python",
+      "excerpt"     : "Podczas pisania określonego zadania natykamy się na szereg pytań i pojedynczych zagadnień, które musimy wdrożyć by całość składała się w jedną funkcjonalność. Te pojedyncze zagadnienia mogą zainspirować nas lub innych...",
+      "content"  : "Podczas pisania określonego zadania natykamy się na szereg pytań i pojedynczych zagadnień, które musimy wdrożyć by całość składała się w jedną funkcjonalność. Te pojedyncze zagadnienia mogą zainspirować nas lub innych..."
     } ,
   
     {
 
       "title"    : "Zsumuj indeksy liter w alfabecie",
-      "url"      : "/blog/sum-letter-index-in-word/",
+      "url"      : "/blog/sum-all-letters-index-from-alphabet-in-word/",
       "category" : "programowanie, js, py",
       "date"     : "2020-06-24",
       "tags"     : "js, py",
       "excerpt"     : "Szybkie zadanie, szybki kod. Zsumuj indeksy liter w alfabecie w zadanym słowie",
       "content"  : "Szybkie zadanie, szybki kod. Zsumuj indeksy liter w alfabecie w zadanym słowie 1 2 3 4 TEST 1: Math -&amp;gt; 42 TEST 2: math -&amp;gt; 42 TEST 3: Thma -&amp;gt;..."
+    } ,
+  
+    {
+
+      "title"    : "Anagram",
+      "url"      : "/blog/anagrams/",
+      "category" : "programowanie, python",
+      "date"     : "2020-06-13",
+      "tags"     : "python",
+      "excerpt"     : "Anagram - wg. “Słownika współczesnego języka polskiego” jest to “wyraz utworzony przez przestawienie liter lub sylab innego wyrazu albo zdania”. Anagramem dla słowa kot będzie słowo kto. Tyle tytułem wstępu....",
+      "content"  : "Anagram - wg. “Słownika współczesnego języka polskiego” jest to “wyraz utworzony przez przestawienie liter lub sylab innego wyrazu albo zdania”. Anagramem dla słowa kot będzie słowo kto. Tyle tytułem wstępu...."
+    } ,
+  
+    {
+
+      "title"    : "Dodawanie i odejmowanie poszczególnych wartości tablicy",
+      "url"      : "/blog/sum-and-substract-lists/",
+      "category" : "programowanie, python",
+      "date"     : "2020-06-12",
+      "tags"     : "python",
+      "excerpt"     : "Jednolinijkowy skrypt umożliwiający dodanie lub odjęcie tablic.",
+      "content"  : "Jestem leniwa, przyznaję - jak każdy koder :smile: Dlatego wymyślam upraszczacze i piszę skrypty, które zautomatyzują moją pracę. Ostatnio zmierzyłam się z “problemem” automatycznego generowania wyników firmy, w której pracuję,..."
+    } ,
+  
+    {
+
+      "title"    : "Jedno zadanie, różne strategie",
+      "url"      : "/blog/one-task-different-strategies/",
+      "category" : "programowanie",
+      "date"     : "2020-05-09",
+      "tags"     : "js",
+      "excerpt"     : "Każdy z nas ma różne spojrzenie na świat, na politykę, na społeczeństwo, na miłość, przyjaźń, rodzinę …. można by wymieniać tak długo. Czasami spotkamy się w punkcie wspólnym z innymi,...",
+      "content"  : "Każdy z nas ma różne spojrzenie na świat, na politykę, na społeczeństwo, na miłość, przyjaźń, rodzinę …. można by wymieniać tak długo. Czasami spotkamy się w punkcie wspólnym z innymi,..."
+    } ,
+  
+    {
+
+      "title"    : "Prosta aplikacja z użyciem flask",
+      "url"      : "/blog/simple-app-with-flask/",
+      "category" : "python",
+      "date"     : "2020-04-19",
+      "tags"     : "python, flask",
+      "excerpt"     : "Prosty przykład wykorzystania mikrofremowrk&#39;a aplikacji webowych &quot;Flask&quot; dla pythona.",
+      "content"  : "Flask Aplikacja webowa - podstawy Składowe aplikacji Działanie aplikacji Ten post powstał na życzenie :smile: Mój przyjaciel poprosił mnie, abym napisała i wdrożyła bardzo prostą aplikację (choć słowo aplikacja może..."
+    } ,
+  
+    {
+
+      "title"    : "Najbliższa lokalizacja po lon i lat",
+      "url"      : "/blog/closest-location/",
+      "category" : "js",
+      "date"     : "2020-04-13",
+      "tags"     : "js, geolocalization",
+      "excerpt"     : "Znajdywanie najbliższej lokalizacji dla dwóch punktów po ich danych geograficznych.",
+      "content"  : "Najbliższy punkt dla lokalizacji Odległość euklidesowa Najbliższy punkt dla danej lokalizacji w js Przykład zastosowania funkcji closestLocation Defibrillators - rozwiązanie zadania z CodinGame Ostatnio moje posty są głównie inspirowane zadaniami,..."
+    } ,
+  
+    {
+
+      "title"    : "Look And Say Sequence",
+      "url"      : "/blog/look-and-say-sequence/",
+      "category" : "js, programowanie",
+      "date"     : "2020-04-10",
+      "tags"     : "js",
+      "excerpt"     : "Look and say czyli patrz i mów. Ciekawy ciąg matematyczny.",
+      "content"  : "Look and say - przykład ciągu dla liczby 1 Look and say - przykład ciągu dla liczby większej niż 1 Look and say - kod Javascript Look and say -..."
+    } ,
+  
+    {
+
+      "title"    : "Wydajny sposób by otrzymać ostatnią cyfrę z liczby potęgowanej",
+      "url"      : "/blog/efficient-way-to-get-last-digit-of-pow/",
+      "category" : "programowanie, js, python",
+      "date"     : "2020-02-29",
+      "tags"     : "js, python",
+      "excerpt"     : "Wydawałoby się, że jest to temat dość prosty. Mamy liczbę, podnosimy ją do potęgi, bierzemy ostatnią cyfrę i wszystko gra :smile:",
+      "content"  : "Wydawałoby się, że jest to temat dość prosty. Mamy liczbę, podnosimy ją do potęgi, bierzemy ostatnią cyfrę i wszystko gra :smile: No właśnie nie do końca jak się okazuje. Otórz,..."
+    } ,
+  
+    {
+
+      "title"    : "Zamiana dużych liter na małe i odwrotnie na operacjach bitowych",
+      "url"      : "/blog/uppercase-lowercase/",
+      "category" : "programowanie",
+      "date"     : "2020-02-23",
+      "tags"     : "js",
+      "excerpt"     : "Szybka zamiana małych liter na duże, a dużych liter na małe poprzez operacje bitowe",
+      "content"  : "Unicode Operacje bitowe Operator bitowej różnicy symetrycznej Binarna zamiana znaków Polskie znaki diakrytyczne Demo kodów switchCaseBin i switchCaseAll Podczas pisania kodu czasem potrzebujemy dokonać zamiany dużych liter na małe lub..."
     } ,
   
     {
