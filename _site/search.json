@@ -1,0 +1,300 @@
+[
+  
+    {
+
+      "title"    : "Animacje svg",
+      "url"      : "/blog/svg-animations/",
+      "category" : "frontend, inne",
+      "date"     : "2021-10-05",
+      "tags"     : "frontend, sass, animations",
+      "excerpt"     : "Dawno nie pisałam. Spowodowane jest to wieloma zmianami u mnie. Kilka współprac w trakcie - przez co brakuje czasu. Jednakże, jestem bardzo zadowolona z ostatniego zlecenia, dlatego też postanowiłam napisać...",
+      "content"  : "Dawno nie pisałam. Spowodowane jest to wieloma zmianami u mnie. Kilka współprac w trakcie - przez co brakuje czasu. Jednakże, jestem bardzo zadowolona z ostatniego zlecenia, dlatego też postanowiłam napisać..."
+    } ,
+  
+    {
+
+      "title"    : "Sudoku Validator",
+      "url"      : "/blog/sudoku-validator/",
+      "category" : "",
+      "date"     : "2020-07-28",
+      "tags"     : "",
+      "excerpt"     : "layout: post title: Walidacja sudoku date: 2020-07-28 category: [programowanie, php, python, “bitwy programowania”] author: Edyta Jozdowska tags: [php, python ] excerpt: published: true — Sudoku - na czym polega Sudoku...",
+      "content"  : "layout: post title: Walidacja sudoku date: 2020-07-28 category: [programowanie, php, python, “bitwy programowania”] author: Edyta Jozdowska tags: [php, python ] excerpt: published: true — Sudoku - na czym polega Sudoku..."
+    } ,
+  
+    {
+
+      "title"    : "Zsumuj indeksy liter w alfabecie",
+      "url"      : "/blog/sum-letter-index-in-word/",
+      "category" : "programowanie, js, py",
+      "date"     : "2020-06-24",
+      "tags"     : "js, py",
+      "excerpt"     : "Szybkie zadanie, szybki kod. Zsumuj indeksy liter w alfabecie w zadanym słowie",
+      "content"  : "Szybkie zadanie, szybki kod. Zsumuj indeksy liter w alfabecie w zadanym słowie 1 2 3 4 TEST 1: Math -&amp;gt; 42 TEST 2: math -&amp;gt; 42 TEST 3: Thma -&amp;gt;..."
+    } ,
+  
+    {
+
+      "title"    : "Floating-point problem",
+      "url"      : "/blog/floating-point-problem/",
+      "category" : "programowanie",
+      "date"     : "2020-02-22",
+      "tags"     : "js, php",
+      "excerpt"     : "Problem precyzyjności liczb zapisanych jako floating-point.",
+      "content"  : "Duże liczby w JS / PHP Dlaczego tak się dzieje? Floating-point precision Ten post został zainspirowany błędem na jaki natknęłam się rozwiązując zadanie odnośnie “HappyNumbers”. Zachęcam do przeczytania bo są..."
+    } ,
+  
+    {
+
+      "title"    : "Happy numbers",
+      "url"      : "/blog/happy-numbers/",
+      "category" : "bitwy programowania, php, js, python",
+      "date"     : "2020-02-22",
+      "tags"     : "php, js, python",
+      "excerpt"     : "O liczbach, które matematycy nazwali wesołymi, choć dla mnie są szczęśliwymi.",
+      "content"  : "Wesołe liczby, czyli które? Python - happyNumbers PHP - happyNumbers Javascript - happyNumbers Błąd dużych liczb? Nie tylko Jakiś czas temu wspominałam, że biorę udział w “bitwach programowania” na portalu..."
+    } ,
+  
+    {
+
+      "title"    : "Formatowanie liczb",
+      "url"      : "/blog/liczby/",
+      "category" : "bitwy programowania, php, js, python",
+      "date"     : "2020-02-03",
+      "tags"     : "python, js, php, battle",
+      "excerpt"     : "Niekiedy w bitwach programowania nie ma opisu zadania. Są jedynie pokazane testy i należy na ich podstawie domyśleć się, co należy zrobić. Na tym zadaniu poległam.",
+      "content"  : "Niekiedy w bitwach programowania nie ma opisu zadania. Są jedynie pokazane testy i należy na ich podstawie domyśleć się, co należy zrobić. Na poniższym zadaniu poległam. Do końca nie wiedziałam..."
+    } ,
+  
+    {
+
+      "title"    : "Wyzwanie? The River I",
+      "url"      : "/blog/wyzwanie-the-river-i/",
+      "category" : "bitwy programowania, php",
+      "date"     : "2020-02-02",
+      "tags"     : "php, battle",
+      "excerpt"     : "Ostatnie zadanie w codingGame o tytule River-I uświadomiło mi jedną, ważną rzecz. Czasem przekombinowanie prowadzi na manowce. Treść zadania brzmiała tak:",
+      "content"  : "Ostatnie zadanie w codingGame o tytule River-I uświadomiło mi jedną, ważną rzecz. Czasem przekombinowanie prowadzi na manowce. Treść zadania brzmiała tak: 1 2 3 4 5 6 7 8 9..."
+    } ,
+  
+    {
+
+      "title"    : "Leet speak",
+      "url"      : "/blog/leet-speak/",
+      "category" : "bitwy programowania, php, js, python",
+      "date"     : "2020-02-01",
+      "tags"     : "python, js, php, battle",
+      "excerpt"     : "Jak wspominałam we wpisie Digital root biorę udział w zawodach programowania na czas i długość kodu. Przyznam, że z czasem jest u mnie kiepsko, muszę się dobrze zastanowić co mam zrobić...",
+      "content"  : "Jak wspominałam we wpisie Digital root biorę udział w zawodach programowania na czas i długość kodu. Przyznam, że z czasem jest u mnie kiepsko, muszę się dobrze zastanowić co mam zrobić..."
+    } ,
+  
+    {
+
+      "title"    : "Digital root",
+      "url"      : "/blog/digital_root/",
+      "category" : "bitwy programowania, php, js, python",
+      "date"     : "2020-01-31",
+      "tags"     : "math, python, js, ruby, php, battle",
+      "excerpt"     : "Porównanie kodu dla digital root. Ot, przy piątku należy się każdemu z nas wytchnienie od codziennych spraw. Ja sobie pograłam. Oczywiście w gry z programowania.",
+      "content"  : "1.Digital Root 1.1.Przykład .1.PHP .2.Python .3.Ruby .4.Javascript .5.Porównanie długości kodu .6.Math .7.Debugowanie i wyświetlanie Dzisiaj przystąpiłam do zadania, które brzmiało: “W dowolnym języku programowania wykonaj digital root dla liczby plus..."
+    } ,
+  
+    {
+
+      "title"    : "Tymczasowe zapisanie loginu i hasła dla gita",
+      "url"      : "/blog/cache-git-credential/",
+      "category" : "git",
+      "date"     : "2020-01-06",
+      "tags"     : "git",
+      "excerpt"     : "Krótka informacja jak tymczasowo zapamiętać hasło i login dla githuba.",
+      "content"  : "1.Zapamiętanie loginu i hasła - słowa wstępu 2.Zapamiętanie loginu i hasła 1.Zapamiętanie loginu i hasła - słowa wstępu Jakiś czas temu odbyłam z przyjacielem rozmowę na temat mojego podejścia do..."
+    } ,
+  
+    {
+
+      "title"    : "Dodanie emotikon w jekyll&#39;u",
+      "url"      : "/blog/buzki-w-jekyll/",
+      "category" : "jekyll",
+      "date"     : "2020-01-05",
+      "tags"     : "jekyll, smiles, emoji",
+      "excerpt"     : "Zakochałam się. W emotikonach.",
+      "content"  : "1.Emotikony 2.Jemoji w jekyll Spis emotikonek 1.Emotikony Każdy współczesny człowiek wie co to są emotikony, nie muszę chyba tłumaczyć, a jeśli ktoś nie wie to wytłumaczenie znajduje się na wikipedii...."
+    } ,
+  
+    {
+
+      "title"    : "Testy automatyczne selenium i python cz2. - ustawienie CORS",
+      "url"      : "/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/",
+      "category" : "python, selenium",
+      "date"     : "2020-01-05",
+      "tags"     : "python, selenium, pytest",
+      "excerpt"     : "Krótko o SOP i CORS oraz o tym jak na linux&#39;sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez...",
+      "content"  : "1.SOP 2.Chrome bez SOP i CORS 3.WebDriver bez CORS i SOP 3.1.Środowisko testowe bez SOP 4.Słowem końcowym 1.SOP Same Origin Policy (SOP) - czyli natywny mechanizm przeglądarki polegający na zabezpieczeniu..."
+    } ,
+  
+    {
+
+      "title"    : "Testy automatyczne w Selenium i Pythonie - cz1. Uruchomienie środowiska testowego",
+      "url"      : "/blog/testy-automatyczne-selenium-i-python/",
+      "category" : "python, selenium",
+      "date"     : "2020-01-05",
+      "tags"     : "python, selenium, pytest",
+      "excerpt"     : "Jak zacząć przygodę z testami automatycznymi Selenium w Pythonie",
+      "content"  : "1.Testy automatyczne 2.Instalacja 2.1.Komendy instalacji pytest i selenium: 2.1.1.Kilka słów o instalacji 3.Uruchomienie środowiska testu 1.Testy automatyczne Testy automatyczne to inaczej sprawdzanie poprawności działania aplikacji w sposób zautomatyzowany. Wykształciła się..."
+    } ,
+  
+    {
+
+      "title"    : "Generowanie załącznika w locie by dołączyć go do email&#39;a - bez zapisu na dysku serwera.",
+      "url"      : "/blog/php-generowanie-za%C5%82%C4%85cznika-w-locie/",
+      "category" : "php",
+      "date"     : "2020-01-04",
+      "tags"     : "php",
+      "excerpt"     : "Skrypt php mający za zadanie wygenerowanie załącznika, który zostanie dołączony do wiadomości bez zapisywania czegokolwiek na serwerze.",
+      "content"  : "1.Wysyłanie maila z php 2.Klasa do wysyłania maila 3.Użycie 1.Wysyłanie maila z php Temat bardzo prosty. Bo co to znaczy wysłać maila w php? Mamy funkcję mail. Każdy co ma..."
+    } ,
+  
+    {
+
+      "title"    : "Walidacja formularza",
+      "url"      : "/blog/Walidacja-formularza/",
+      "category" : "js, frontend, php",
+      "date"     : "2019-12-30",
+      "tags"     : "js, forntend, form, validation, php",
+      "excerpt"     : "Krótki skrypt js mający za zadanie zwalidować formularz po stronie użytkownika i po stronie serwera.",
+      "content"  : "1.Walidacja formularza 2.Wbudowany mechanizm 3.Walidacja formularza FrontEnd 4.Walidacja formularza BackEnd 1.Walidacja formularza Jeszcze kilka lat temu aby zwalidować poprawność wypełnienia formularza trzeba było się trochę natrudzić. W czasach, gdy jQuery..."
+    } ,
+  
+    {
+
+      "title"    : "addEventListener fires only once",
+      "url"      : "/blog/addEventListener-fires-only-once/",
+      "category" : "js, frontend",
+      "date"     : "2019-12-26",
+      "tags"     : "js, frontend",
+      "excerpt"     : "Mimo wielu lat spędzonych z kodem, przychodzą takie chwile gdy stajesz podczas pisania i zastanawiasz się &quot;o co tutaj chodzi&quot;. Pomroczność jasna? Miałam tak ostatnio podczas pisania prostego validatora formularza....",
+      "content"  : "1.HTML DOM 2.addEventListener fires only once 1.HTML DOM Kiedy strona jest wczytywana w przeglądarkę tworzony jest tzw. DOM czyli Document Object Model strony. O tym powinien wiedzieć każdy, który ma..."
+    } ,
+  
+    {
+
+      "title"    : "Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia",
+      "url"      : "/blog/htaccess/",
+      "category" : "programowanie, htaccess",
+      "date"     : "2019-12-03",
+      "tags"     : "apatche, serwer, apatche",
+      "excerpt"     : "Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url&#39;i.",
+      "content"  : "1.htaccess co to jest 2.Co wykonamy za pomocą .htacess’a 3.Uprawnienia do pliku 4.Inne przydatne informacje 5.Flagi przekierowań i reguł stosowane poniżej: 6.REWRITE URL 6.1.Przekierowanie zewnętrznych url’i zawierających query string na..."
+    } ,
+  
+    {
+
+      "title"    : "Autoplay i polityka przeglądarek",
+      "url"      : "/blog/autoplay/",
+      "category" : "programowanie, frontend",
+      "date"     : "2019-12-02",
+      "tags"     : "php, frontend, js",
+      "excerpt"     : "Autoplay z punktu widzenia dev&#39;a i użytkownika",
+      "content"  : "1.Autoplay dla video 2.EDGE - zmora 1.Autoplay dla video Jak mocno uciążliwe są filmy odtwarzane z automatu, wie każdy, co więcej użytkuje sieci. Mnie osobiście denerwują filmy, które nie dość,..."
+    } ,
+  
+    {
+
+      "title"    : "Łączenie SVG i CSS",
+      "url"      : "/blog/svg-i-css/",
+      "category" : "scss, js, programowanie, grafika",
+      "date"     : "2019-11-25",
+      "tags"     : "css, scss, svg, grafika, animacja",
+      "excerpt"     : "Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm...",
+      "content"  : ".1.Bye, bye Flash .2.Punkt pierwszy - SVG Pamiętam jak do złożonych animacji wykorzystywało się Flash’a. Starsi użytkownicy powinni pamiętać, jak instalowało się dodatki Acrobat Flash do przeglądarki, by działały niektóre..."
+    } ,
+  
+    {
+
+      "title"    : "Sprawdzenie czy punkt jest zawarty w kwadracie",
+      "url"      : "/blog/test-punktu-zawartego-w-kwadracie/",
+      "category" : "programowanie, php",
+      "date"     : "2019-11-19",
+      "tags"     : "php",
+      "excerpt"     : "Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak...",
+      "content"  : "Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak..."
+    } ,
+  
+    {
+
+      "title"    : "Nadpisywanie scss dla Elements UI",
+      "url"      : "/blog/napisywanie-zmiennych-scss-dla-element-ui/",
+      "category" : "scss, vue, js",
+      "date"     : "2019-11-18",
+      "tags"     : "scss, vue, npm, frontend, js, javascript",
+      "excerpt"     : "Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów.",
+      "content"  : "1.Trochę teorii scss i budowy package’a Element UI 1.1.Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania. 2.Import wybranych tylko styli scss dla Element UI Pisząc ostatni projekt zdecydowałam się..."
+    } ,
+  
+    {
+
+      "title"    : "Gulp i Jekyll w jednym stali domu.",
+      "url"      : "/blog/gulp-i-jekyll-w-jednym/",
+      "category" : "jekyll, js",
+      "date"     : "2019-11-17",
+      "tags"     : "jekyll, gulp, node, npm, js, javascript",
+      "excerpt"     : "Automatyzacja Jekyll&#39;a przy użyciu gulp&#39;a. Bo życie należy sobie upraszczać.",
+      "content"  : "1.Synchronizacja 2.Uwaga na wersje narzędzi 3.Ustawienie package’ów dla npm 3.1.Krótki przepis na Gulpa z Jekyll’em - w 10 krokach 3.1.1.Final Step No 10 Gulp jest narzędziem do automatyzacji zadań. Dobrym..."
+    } ,
+  
+    {
+
+      "title"    : "Dynamiczne menu dla Jekyll&#39;a",
+      "url"      : "/blog/dynamiczne-menu/",
+      "category" : "jekyll, programowanie",
+      "date"     : "2019-11-11",
+      "tags"     : "liquid, ruby, yaml",
+      "excerpt"     : "Jak stworzyć dynamiczne menu w templecie Jekyll&#39;a. Jak wszystko w tym generatorze jest proste i przyjemne. Tym razem wykorzystamy Yaml.",
+      "content"  : "1.Prosty przepis na dynamiczne menu w Jekyll’u Stawiając tego bloga, spotkałam się z Jekyll’em po raz pierwszy. Jednak nie byłabym sobą, gdybym nie rozszerzyła templeta jakiego zainstalowałam o własne funkcjonalności...."
+    } ,
+  
+    {
+
+      "title"    : "i18ln w Jekyll dla daty",
+      "url"      : "/blog/i18ln-w-Jekyll-dla-daty/",
+      "category" : "programowanie, jekyll",
+      "date"     : "2019-11-11",
+      "tags"     : "jekyll, ruby",
+      "excerpt"     : "Wpis o tym jak zrobić tłumaczenie daty dla Jekyll&#39;a. Posługuję się językiem polskim jednak nic nie stoi na przeszkodzie by był to język francuski, niemiecki czy nawet hindi.",
+      "content"  : "1.Prosty przepis na dodanie i18Ln na podstawie daty 1.1.Krótsza forma powyższego kodu 2.Sposób użycia Stawiając tego bloga, spotkałam się z Jekyll’em po raz pierwszy. Jednak nie byłabym sobą, gdybym nie..."
+    } ,
+  
+    {
+
+      "title"    : "Kategorie i tagi w Jekyll",
+      "url"      : "/blog/kategorie-i-tagi-w-jekyll/",
+      "category" : "programowanie, jekyll",
+      "date"     : "2019-11-11",
+      "tags"     : "jekyll, ruby",
+      "excerpt"     : "Krótki opis jak stworzyć oddzielne podstrony dla kategorii i tagów w Jekyll&#39;u.",
+      "content"  : "1.Prosty przepis na Kategorie i Tagi w Jekyll Jekyll jest całkiem fajnym narzędziem. Z tego jednak powodu, że przeznaczony jest dla programistów wiele rzeczy musimy napisać sami. W dodatku, jeśli..."
+    } ,
+  
+    {
+
+      "title"    : "Jekyll jako ciekawe narzędzie statycznych stron www cz. 1",
+      "url"      : "/blog/2019-11-11-jekyll-ciekawe-narzedzie-statycznych-stron-www/",
+      "category" : "programowanie, jekyll",
+      "date"     : "2019-11-11",
+      "tags"     : "jekyll, ruby, yaml",
+      "excerpt"     : "Jekyll jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak Markdown, Liquid, HTML i CSS.",
+      "content"  : "1.Instalacja Jekyll jest to prosty, modułowy, generator stron statycznych. Do swojego działania wykorzystuje takie narzędzia jak Markdown, Liquid, HTML i CSS. Długie lata system blogowy kojarzył mi się z Wordpressem...."
+    } ,
+  
+    {
+
+      "title"    : "Jak zaczeła się moja przygoda z programowaniem",
+      "url"      : "/blog/2019-10-11-poczatek-przygody/",
+      "category" : "programowanie, inne",
+      "date"     : "2019-11-10",
+      "tags"     : "tips",
+      "excerpt"     : "Dawno, dawno temu, w nieznanym królestwie, za górami i lasami… (to oczywiście żart).",
+      "content"  : "Dawno, dawno temu, w nieznanym królestwie, za górami i lasami… (to oczywiście żart). 1 Początek 2 Drugie podejście 3 Technologia pędzi 4 Czasy obecne [2019 r] 1 Początek Programowaniem, czy..."
+    } 
+  
+]

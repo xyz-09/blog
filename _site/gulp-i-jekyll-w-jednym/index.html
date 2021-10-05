@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gulp i Jekyll w jednym stali domu. – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Gulp i Jekyll w jednym stali domu. | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Gulp i Jekyll w jednym stali domu." />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Automatyzacja Jekyll’a przy użyciu gulp’a. Bo życie należy sobie upraszczać." />
+<meta property="og:description" content="Automatyzacja Jekyll’a przy użyciu gulp’a. Bo życie należy sobie upraszczać." />
+<link rel="canonical" href="http://localhost:4000/blog/gulp-i-jekyll-w-jednym/" />
+<meta property="og:url" content="http://localhost:4000/blog/gulp-i-jekyll-w-jednym/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-17T20:10:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gulp i Jekyll w jednym stali domu." />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Gulp i Jekyll w jednym stali domu.","dateModified":"2019-11-17T20:10:00+01:00","datePublished":"2019-11-17T20:10:00+01:00","url":"http://localhost:4000/blog/gulp-i-jekyll-w-jednym/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/gulp-i-jekyll-w-jednym/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Automatyzacja Jekyll’a przy użyciu gulp’a. Bo życie należy sobie upraszczać.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Automatyzacja Jekyll'a przy użyciu gulp'a. Bo życie należy sobie upraszczać." />
+    <meta property="og:description" content="Automatyzacja Jekyll'a przy użyciu gulp'a. Bo życie należy sobie upraszczać." />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Gulp i Jekyll w jednym stali domu." />
+    <meta property="twitter:title" content="Gulp i Jekyll w jednym stali domu." />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/gulp-i-jekyll-w-jednym/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png" /></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/" >
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie" >
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/"  target="_blank" >
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search" >
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Gulp i Jekyll w jednym stali domu.</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 17 Listopad 2019</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/jekyll">
+              jekyll
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/js">
+              js
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/jekyll">
+              #jekyll,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/gulp">
+              #gulp,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/node">
+              #node,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/npm">
+              #npm,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/js">
+              #js,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/javascript">
+              #javascript
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <!-- TOC -->
+
+<ul class="content_list">
+  <li><a href="#1synchronizacja">1.Synchronizacja</a></li>
+  <li><a href="#2uwaga-na-wersje-narz%c4%99dzi">2.Uwaga na wersje narzędzi</a></li>
+  <li><a href="#3ustawienie-package%c3%b3w-dla-npm">3.Ustawienie package’ów dla npm</a>
+    <ul>
+      <li><a href="#31kr%c3%b3tki-przepis-na-gulpa-z-jekyllem---w-10-krokach">3.1.Krótki przepis na Gulpa z Jekyll’em - w 10 krokach</a>
+        <ul>
+          <li><a href="#311final-step-no-10">3.1.1.Final Step No 10</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<!-- /TOC -->
+
+<p><a href="https://en.wikipedia.org/wiki/Gulp.js">Gulp</a> jest narzędziem do automatyzacji zadań. Dobrym narzędziem, które poznałam niedawno. Żałuję, że tak późno.</p>
+
+<p>Wykorzystałam je do automatyzacji <a href="https://github.com/capo1/jekyll-js-sass-starter">mojego szkieletu Jekyll’a</a>.</p>
+
+<p>Wdrożyłam:</p>
+<ul>
+  <li>konwersję plików <code class="language-plaintext highlighter-rouge">.scss</code> do <code class="language-plaintext highlighter-rouge">.css</code>,</li>
+  <li>kompresję <code class="language-plaintext highlighter-rouge">.css</code>,</li>
+  <li>kompilowanie <code class="language-plaintext highlighter-rouge">.js</code> poprzez <a href="https://en.wikipedia.org/wiki/Babel_(compiler)">babel</a>,</li>
+  <li>kompresję <code class="language-plaintext highlighter-rouge">.js</code></li>
+  <li>kompresję obrazów,</li>
+  <li>synchronizację.</li>
+</ul>
+
+<h1 id="1synchronizacja">1.Synchronizacja</h1>
+<p><strong>Synchronizacja</strong> była moim początkowym założeniem. W momencie jak udało się ją ustawić, stwierdziłam, że to mało.<br />
+Nigdy nie umiałam poprzestać tylko na drobnych rzeczach, trzeba korzystać z dostępnych narzędzi w pełni.</p>
+
+<p>Od czego zaczęłam? <strong>Od tego, że jest różnica między kodem gulp’a w wersji 3 i wersji 4</strong>. Naprawdę, chwilę zajęło mi znalezienie tego :).
+Wersja oznaczona numerem 4.0.2 weszła w maju 2019 r. Czy to ma znaczenie? Trochę ma.</p>
+
+<p><br /></p>
+
+<h1 id="2uwaga-na-wersje-narzędzi">2.Uwaga na wersje narzędzi</h1>
+<p>Jeśli szukasz rozwiązania jakiegoś problemu w necie dużo informacji będzie miało odniesienie do starszych wersji.<br />A tutaj psikus - w wersji 4 zmieniono sposób “exportu” zadań jakie mają być wykonane przez gulp’a. Dla osoby nowej w temacie może być to trochę mylące. Dlatego tak ważne jest sprawdzenie jaką wersję narzędzia wykorzystujemy.</p>
+
+<p><br /></p>
+
+<h1 id="3ustawienie-packageów-dla-npm">3.Ustawienie package’ów dla npm</h1>
+<p>Aby ustawić wszystko potrzeba <a href="https://nodejs.org/en/">Noda</a>, i <a href="https://pl.wikipedia.org/wiki/Npm_(manager_pakiet%C3%B3w)">npm</a> zainstalowanego na naszym systemie.
+Przykładowy spis zależności dla npm to (to są packag’e, które ja wykorzystałam):</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="w">    </span><span class="nl">"devDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"@babel/core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^7.7.2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"@babel/preset-env"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^7.7.1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"@babel/register"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^7.7.0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"browser-sync"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.26.7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.0.2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-autoprefixer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7.0.1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-clean-css"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.2.0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-sass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.0.2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-util"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3.0.8"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-babel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^8.0.0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-newer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1.4.0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gulp-uglify"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3.0.2"</span><span class="w">
+    </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Po zainstalowaniu tych zależności możemy zacząć pisać plik konfiguracyjny dla gulp’a. Ja mam go nazwany <code class="language-plaintext highlighter-rouge">gulpfile.babel.js</code> i jest on przeznaczony pod instalację Jekyll’a.</p>
+
+<h2 id="31krótki-przepis-na-gulpa-z-jekyllem---w-10-krokach">3.1.Krótki przepis na Gulpa z Jekyll’em - w 10 krokach</h2>
+<ol>
+  <li>Import zależności
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">import</span> <span class="nx">gulp</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">spawn</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">child_process</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">browserSync</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">browser-sync</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">autoprefix</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-autoprefixer</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">minify</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-clean-css</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">sass</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-sass</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">imagemin</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-imagemin</span><span class="dl">"</span>
+<span class="k">import</span> <span class="nx">babel</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-babel</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">newer</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-newer</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">uglify</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">gulp-uglify</span><span class="dl">"</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Ustawiamy zmienne jakie będziemy wykorzystywać:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">siteRoot</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">_site</span><span class="dl">"</span><span class="p">;</span> <span class="c1">//katalog z wygenerowanymi statycznymi plikami Jekyll'a</span>
+<span class="kd">const</span> <span class="nx">mainStylesheet</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">_sass/main.scss</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// ścieżka dp głównego sass'a</span>
+<span class="kd">const</span> <span class="nx">imagesSource</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">./assets/img/**/*</span><span class="dl">"</span> <span class="c1">// wszystkie pliki katalogu i podkatalogach.</span>
+<span class="kd">const</span> <span class="nx">jsSource</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">./assets/js/**/*.js</span><span class="dl">"</span> <span class="c1">//wszystkie pliki w tym katalogu z danym rozszerzeniem</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Ustawiamy komendę rekompilacji Jekyll’a:
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">buildJekyll</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">browserSync</span><span class="p">.</span><span class="nx">notify</span><span class="p">(</span><span class="dl">"</span><span class="s2">Running: $ jekyll build</span><span class="dl">"</span><span class="p">);</span>
+ <span class="k">return</span> <span class="nx">spawn</span><span class="p">(</span><span class="nx">jekyll</span><span class="p">,</span> <span class="p">[</span><span class="dl">"</span><span class="s2">build</span><span class="dl">"</span><span class="p">]);</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Czyścimy katalog z wygenerowanymi wcześniej plikami w katalogu <code class="language-plaintext highlighter-rouge">_site</code>. Możemy choć nie musimy.
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">clean</span><span class="p">()</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="nx">del</span><span class="p">([</span><span class="s2">`./</span><span class="p">${</span><span class="nx">siteRoot</span><span class="p">}</span><span class="s2">/assets/`</span><span class="p">]);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Ustawiamy akcje dla plików <code class="language-plaintext highlighter-rouge">.scss</code>.<br />
+Do łączenia ze sobą akcji wykorzystujemy <code class="language-plaintext highlighter-rouge">pipe()</code>. Wytłumaczenia nie potrzeba. Kod sam mówi :)
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">compileStyles</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="nx">gulp</span>
+     <span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">mainStylesheet</span><span class="p">)</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span>
+         <span class="nx">sass</span><span class="p">({</span>
+             <span class="na">includePaths</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">scss</span><span class="dl">"</span><span class="p">],</span>
+             <span class="na">onError</span><span class="p">:</span> <span class="nx">browserSync</span><span class="p">.</span><span class="nx">notify</span>
+         <span class="p">})</span>
+     <span class="p">)</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span>
+         <span class="nx">autoprefix</span><span class="p">({</span>
+             <span class="na">browsers</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">last 2 versions</span><span class="dl">"</span><span class="p">],</span>
+             <span class="na">cascade</span><span class="p">:</span> <span class="kc">false</span>
+         <span class="p">})</span>
+     <span class="p">)</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">minify</span><span class="p">())</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="dl">"</span><span class="s2">assets/css/</span><span class="dl">"</span><span class="p">));</span><span class="c1">//katalog docelowy </span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Wykonujemy akcje na plikach <code class="language-plaintext highlighter-rouge">.js</code>.<br />
+<strong>Tutaj moja uwaga</strong>! Nie mam ustawień dla babel’a, gdyż są one w oddzielnym pliku konfiguracyjnym <code class="language-plaintext highlighter-rouge">.babelrc</code>. Jak go kasowałam i ustawiałam w <code class="language-plaintext highlighter-rouge">gulp....</code> wyskakiwało wiele błędów. Treść ustawień babela podam poniżej.
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">compileScripts</span><span class="p">()</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="p">(</span>
+     <span class="nx">gulp</span>
+     <span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">jsSource</span><span class="p">])</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">babel</span><span class="p">())</span><span class="c1">// przetłumacz kod na starsze wersje - to mi się chyba najbardziej podoba</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">uglify</span><span class="p">())</span><span class="c1">// minimalizuj i zmniejsz</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="dl">"</span><span class="s2">./_site/assets/js/</span><span class="dl">"</span><span class="p">))</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">stream</span><span class="p">())</span>
+ <span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p><strong>Plik <code class="language-plaintext highlighter-rouge">.babelrc</code></strong></p>
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w">
+  </span><span class="nl">"presets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+ </span><span class="p">[</span><span class="w">
+   </span><span class="s2">"@babel/preset-env"</span><span class="w">
+ </span><span class="p">]</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Akcje dla obrazów (gif’y, jpg, png i svg)
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">compileImages</span><span class="p">()</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="nx">gulp</span>
+     <span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">imagesSource</span><span class="p">)</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">newer</span><span class="p">(</span><span class="s2">`./</span><span class="p">${</span><span class="nx">siteRoot</span><span class="p">}</span><span class="s2">/assets/img`</span><span class="p">))</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span>
+         <span class="nx">imagemin</span><span class="p">([</span>
+             <span class="nx">imagemin</span><span class="p">.</span><span class="nx">gifsicle</span><span class="p">({</span> <span class="na">interlaced</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}),</span>
+             <span class="nx">imagemin</span><span class="p">.</span><span class="nx">jpegtran</span><span class="p">({</span> <span class="na">progressive</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}),</span>
+             <span class="nx">imagemin</span><span class="p">.</span><span class="nx">optipng</span><span class="p">({</span> <span class="na">optimizationLevel</span><span class="p">:</span> <span class="mi">5</span> <span class="p">}),</span>
+             <span class="nx">imagemin</span><span class="p">.</span><span class="nx">svgo</span><span class="p">({</span>
+                 <span class="na">plugins</span><span class="p">:</span> <span class="p">[{</span>
+                     <span class="na">removeViewBox</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                     <span class="na">collapseGroups</span><span class="p">:</span> <span class="kc">true</span>
+                 <span class="p">}]</span>
+             <span class="p">})</span>
+         <span class="p">])</span>
+     <span class="p">)</span>
+     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="dl">"</span><span class="s2">./_site/assets/img</span><span class="dl">"</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Skompiluj Jekyll’a, style i skrypty.<br />
+<strong>Uwaga na kolejność</strong>. Wykonywanie serii następuje w tej kolejności jaka jest podana. Jeśli umieścimy  <code class="language-plaintext highlighter-rouge">buildJekyll</code> na końcu, niestety nasze <code class="language-plaintext highlighter-rouge">.js</code> i obrazy zostaną nadpisane. <strong>Zajęło mi pól godziny dojście do tego, dlaczego moje <code class="language-plaintext highlighter-rouge">.js</code> nie są skompilowane</strong> :)
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">buildSite</span> <span class="o">=</span> <span class="nx">done</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="dl">"</span><span class="s2">./assets/img/**/*</span><span class="dl">"</span><span class="p">,</span> <span class="nx">images</span><span class="p">);</span>
+
+ <span class="nx">gulp</span><span class="p">.</span><span class="nx">series</span><span class="p">(</span><span class="nx">compileStyles</span><span class="p">,</span> <span class="nx">buildJekyll</span><span class="p">,</span> <span class="nx">compileScripts</span><span class="p">,</span> <span class="nx">compileImages</span><span class="p">)(</span><span class="nx">done</span><span class="p">);</span>
+ <span class="c1">//Kolejność jest ważna.</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>Start serwera i synchronizacji.
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">startServer</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="nx">browserSync</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
+     <span class="na">files</span><span class="p">:</span> <span class="p">[</span><span class="nx">siteRoot</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">/**</span><span class="dl">"</span><span class="p">],</span>
+     <span class="na">port</span><span class="p">:</span> <span class="mi">4000</span><span class="p">,</span>
+     <span class="na">open</span><span class="p">:</span> <span class="dl">"</span><span class="s2">local</span><span class="dl">"</span><span class="p">,</span>
+     <span class="na">server</span><span class="p">:</span> <span class="p">{</span>
+         <span class="na">baseDir</span><span class="p">:</span> <span class="nx">siteRoot</span>
+     <span class="p">}</span>
+ <span class="p">});</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="311final-step-no-10">3.1.1.Final Step No 10</h3>
+<p>Zbuduj wszystkie zależności, rozpocznij obserwowanie zmian w folderach i  synchronizację. Połącz też ze sobą wszystkie akcje i wyeksportuj.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">serve</span> <span class="o">=</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">series</span><span class="p">(</span><span class="nx">buildSite</span><span class="p">,</span> <span class="nx">startServer</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">watch</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="dl">"</span><span class="s2">**/*.scss</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">**/**/*.scss</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">**/*.html</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">**/*.md</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">**/*.yml</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">!_site/**/*</span><span class="dl">"</span>
+        <span class="p">],</span>
+        <span class="nx">buildSite</span>
+    <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">build</span> <span class="o">=</span> <span class="nx">done</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">gulp</span><span class="p">.</span><span class="nx">parallel</span><span class="p">(</span><span class="nx">serve</span><span class="p">,</span> <span class="nx">watch</span><span class="p">)(</span><span class="nx">done</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">build</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Naszą instalację możemy uruchomić jedną komendą <code class="language-plaintext highlighter-rouge">GULP</code> w katalogu głównym.</p>
+
+<p><strong>Tak i to wszystko</strong>, a zajęło mi to trochę czasu. Uczymy się przez całe życie.</p>
+
+<p>Można też dołączyć <code class="language-plaintext highlighter-rouge">webpacka</code>, ale o tym innym razem.</p>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Gulp i Jekyll w jednym stali domu.&url=http://localhost:4000/gulp-i-jekyll-w-jednym/"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/gulp-i-jekyll-w-jednym/"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br/>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/sum-letter-index-in-word/">
+                <div class="rel">
+                    <h5>Zsumuj indeksy liter w alfabecie <time class="post_date">24 Czerwiec 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/floating-point-problem/">
+                <div class="rel">
+                    <h5>Floating-point problem <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/happy-numbers/">
+                <div class="rel">
+                    <h5>Happy numbers <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/liczby/">
+                <div class="rel">
+                    <h5>Formatowanie liczb <time class="post_date">03 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+          
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on November 17, 2019
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  </article>
+                <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
+            </div>
+
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/gulp-i-jekyll-w-jednym/',
+		  'title': 'Gulp i Jekyll w jednym stali domu.'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+
+</html>

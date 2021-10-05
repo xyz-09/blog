@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testy automatyczne selenium i python cz2. - ustawienie CORS – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Testy automatyczne selenium i python cz2. - ustawienie CORS | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Testy automatyczne selenium i python cz2. - ustawienie CORS" />
+<meta name="author" content="Jozdowska Edyta" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Krótko o SOP i CORS oraz o tym jak na linux’sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych." />
+<meta property="og:description" content="Krótko o SOP i CORS oraz o tym jak na linux’sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych." />
+<link rel="canonical" href="http://localhost:4000/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/" />
+<meta property="og:url" content="http://localhost:4000/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-05T18:20:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Testy automatyczne selenium i python cz2. - ustawienie CORS" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Testy automatyczne selenium i python cz2. - ustawienie CORS","dateModified":"2020-01-05T18:20:00+01:00","datePublished":"2020-01-05T18:20:00+01:00","url":"http://localhost:4000/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/"},"author":{"@type":"Person","name":"Jozdowska Edyta"},"description":"Krótko o SOP i CORS oraz o tym jak na linux’sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Krótko o SOP i CORS oraz o tym jak na linux'sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych." />
+    <meta property="og:description" content="Krótko o SOP i CORS oraz o tym jak na linux'sie uruchomić środowisko testowe bez zabezpieczeń sieciowych. Kilka słów jest też o tym, jak uruchomić Chrome jako przeglądarkę również bez zabezpieczeń sieciowych." />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Testy automatyczne selenium i python cz2. - ustawienie CORS" />
+    <meta property="twitter:title" content="Testy automatyczne selenium i python cz2. - ustawienie CORS" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png"></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/">
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie">
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/" target="_blank">
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search">
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Testy automatyczne selenium i python cz2. - ustawienie CORS</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 05 Styczeń 2020</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:  
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/python">
+              python
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/selenium">
+              selenium
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:  
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/python">
+              #python,  
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/selenium">
+              #selenium,  
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/pytest">
+              #pytest
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <!-- TOC -->
+
+<ul class="content_list">
+  <li><a href="#1sop">1.SOP</a></li>
+  <li><a href="#2chrome-bez-sop-i-cors">2.Chrome bez SOP i CORS</a></li>
+  <li>
+<a href="#3webdriver-bez-cors-i-sop">3.WebDriver bez CORS i SOP</a>
+    <ul>
+      <li><a href="#31%c5%9arodowisko-testowe-bez-sop">3.1.Środowisko testowe bez SOP</a></li>
+    </ul>
+  </li>
+  <li><a href="#4s%c5%82owem-ko%c5%84cowym">4.Słowem końcowym</a></li>
+</ul>
+<!-- /TOC -->
+
+<h1 id="1sop">1.SOP</h1>
+<p><strong>S</strong>ame <strong>O</strong>rigin <strong>P</strong>olicy (<strong>SOP</strong>) - czyli natywny mechanizm przeglądarki polegający na zabezpieczeniu wymiany danych przez aplikację (stronę) w obrębie tej samej i tylko tej samej domeny (origin - tego samego pochodzenia).</p>
+
+<p><strong>C</strong>ross-<strong>O</strong>rigin <strong>R</strong>esource <strong>S</strong>haring (<strong>CORS</strong>) jest mechanizmem umożliwiającym współdzielenie danych pomiędzy różnymi serwerami/aplikacjami/stronami, czyli między źródłami/biorcami o różnym pochodzeniu.</p>
+
+<p>Przyjżyjmy się kilku adresom:</p>
+<ul>
+  <li>
+<strong>http://domena.com</strong> i <strong>http://domena.com</strong><strong style="color:green">/strona/1</strong> - te dwa adresy mają <strong>to samo pochodzenie</strong> (wspólny protokół, host i port) <img class="emoji" title=":green_heart:" alt=":green_heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f49a.png" height="20" width="20">
+</li>
+  <li>
+<strong style="color:red">https</strong><strong>://domena.com</strong> i <strong style="color:red">http</strong><strong>://domena.com</strong> - mają <strong>różne protokoły</strong>, a zarazem <strong>różne pochodzenie</strong> <img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20">
+</li>
+  <li>
+<strong>http://domena.com</strong><strong style="color:red">:4000</strong> i <strong>http://domena.com</strong> - mają <strong>różne porty</strong>, a zarazem <strong>różne pochodzenie</strong> <img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20">
+</li>
+  <li>
+<strong>http://domena.com</strong> i <strong>http://</strong><strong style="color:red">subdomena</strong><strong>.domena.com</strong> - mają <strong>różne hosty</strong>, a zarazem <strong>różne pochodzenie</strong> <img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20">
+</li>
+</ul>
+
+<p>Dzięki CORS i odpowiedniemu ustawieniu serwera możemy dopuścić do określonych źródeł danych wskazanych w polityce CORS serwery/domeny i pozwolić im na komunikację. Czyli zamiast <img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"> byłoby <img class="emoji" title=":green_heart:" alt=":green_heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f49a.png" height="20" width="20">. Tak to się odbywa na produkcji, a na developmencie?</p>
+
+<p>Uruchamiając w odpowiedni sposób przeglądarkę lub uruchamiając odpowiedni dodatek do przeglądarki cały ten mechanizm (SOP/CORS) zostaje “pominięty”. <strong>Nie polegajmy więc jedynie na SOP i CORS jako zabezpieczeniu</strong>, ale to poza tematem.</p>
+
+<p>Czemu o tym wspominam. Cóż mam trochę pomieszane instalacje i serwer apatche mam gdzie indziej, generowane strony np. z Jekyll’a mam gdzie indziej, a jakoś muszę łączyć ze sobą np. hosty na różnych portach http://localhost i http://localhost:4000. Oczywiście mogłabym ustawić wszystko w jednym miejscu, dostosować porty etc. Mogłabym, ale wiem, że nie muszę. Wyłączenie CORS <img class="emoji" title=":japanese_goblin:" alt=":japanese_goblin:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47a.png" height="20" width="20"> sprawia, że nie muszę w ogóle o tym myśleć. Ma to swoje plusy i minusy, nad którymi nie będę się pochylać.</p>
+
+<h1 id="2chrome-bez-sop-i-cors">2.Chrome bez SOP i CORS</h1>
+<p>Wpierw w jaki sposób można uruchomić przeglądarkę <code class="language-plaintext highlighter-rouge">Chrome</code> bez SOP i CORS. Okazuje się, że w bardzo prosty sposób.</p>
+<ol>
+  <li>Uruchamiamy terminal.</li>
+  <li>Sprawdzamy gdzie jesteśmy poprzez wpisanie
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">pwd</span> <span class="c"># (PrintWorkingDirectory)</span>
+
+<span class="c"># odpowiedź na terminalu np:  /home/nazwa użytkownika</span>
+</pre></td>
+</tr></tbody></table></code></pre></div>    </div>
+    <p>czyli wyświetl ścieżkę do obecnego (tu gdzie jest terminal) katalogu.</p>
+  </li>
+  <li>Wpisujemy
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">mkdir </span>tmp <span class="c"># (Make Directory)</span>
+</pre></td>
+</tr></tbody></table></code></pre></div>    </div>
+    <p>by utworzyć w miejscu gdzie jesteśmy folder o nazwie tmp. Możemy sprawdzić wpisując np <code class="language-plaintext highlighter-rouge">ls -a | grep tmp</code>. Jeśli wyświetli nam <code class="language-plaintext highlighter-rouge">tmp</code> katalog został utworzony. A po co ten katalog? Podczas uruchamiania przeglądarki Chrome z nieaktywnymi zabezpieczeniami wymagane jest wskazanie katalogu. I ten nowo utworzony katalog wskażemy w kolejnym kroku.</p>
+  </li>
+  <li>Komenda służąca do uruchomienia z terminala Chrome to <code class="language-plaintext highlighter-rouge">google-chrome</code>. Aby uruchomić ją w trybie bez zabezpieczeń musimy użyć flagi <strong>- -disable-web-security</strong> i wskazać <strong>- -user-data-dir</strong> katalog na dane (ten co utworzyliśmy w kroku 3). Cała komenda wygląda następująco:
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>google-chrome <span class="nt">--user-data-dir</span><span class="o">=</span><span class="s2">"~/tmp"</span> <span class="nt">--diable-web-security</span>
+</pre></td>
+</tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Uruchomi nam się nowa instacja Chrome z uwagą, że</p>
+<blockquote>
+  <p>Użyto nieobsługiwanej flagi wiersza poleceń –disable-web-security. Ma to negatywny wpływ na stabilność i zabezpieczenia</p>
+</blockquote>
+
+<p>OH MY GOSH <img class="emoji" title=":flushed:" alt=":flushed:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f633.png" height="20" width="20"> straszny komunikat. No cóż ten tryb jest przydatny <img class="emoji" title=":sunglasses:" alt=":sunglasses:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png" height="20" width="20">.</p>
+
+<h1 id="3webdriver-bez-cors-i-sop">3.WebDriver bez CORS i SOP</h1>
+<p>Musimy wziąć jedno pod uwagę. Uruchamiając przeglądarkę z <code class="language-plaintext highlighter-rouge">Pythona</code> poprzez driver do testów <code class="language-plaintext highlighter-rouge">Selenium</code> musimy wskazać w jakim trybie ta przeglądarka ma się uruchomić.<br>
+<strong>Domyślnie uruchomiona zostanie w trybie normalnym</strong>, czyli mechanizmy zabezpieczeń będą funkcjonować normalnie. Czasem jednak faktycznie przydaje się uruchomienie z pominięciem zabezpieczeń (<strong>tylko do celów testowych</strong>, można sobie nieźle namieszać i koniec końców zostanie nam jedynie stwierdzenie):</p>
+<blockquote>
+  <p>“ale jak to, u mnie działa” <img class="emoji" title=":laughing:" alt=":laughing:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f606.png" height="20" width="20"></p>
+</blockquote>
+
+<h2 id="31środowisko-testowe-bez-sop">3.1.Środowisko testowe bez SOP</h2>
+<p>Wróćmy jednak jak to zrobić, czyli środowisko testowe bez SOP.<br>
+<a href="../testy-automatyczne-selenium-i-python/">W poprzednim wpisie</a> wskazywałam jak uruchomić z poziomu pythona środowisko do testów.<br>
+Rozszerzymy trochę kod z tego posta poprzez dodanie do drivera odpowiednich flag:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td>
+<td class="rouge-code"><pre><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="n">chrome_options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+<span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"test-type"</span><span class="p">)</span> 
+<span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"--disable-web-security"</span><span class="p">)</span> <span class="c1"># zabezpieczenia webowe nieaktywne
+</span>
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="n">Chrome</span><span class="p">(</span><span class="s">'/ścieżka/do/rozpakowanego/drivera'</span><span class="p">,</span><span class="n">options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+<span class="n">driver</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://link.jaki.chcemy testować "</span><span class="p">)</span>
+<span class="n">driver</span><span class="p">.</span><span class="n">quit</span><span class="p">()</span> <span class="c1"># zamknij przeglądarkę po wykonaniu testów
+</span>
+<span class="c1"># ----- Możemy jeszcze dodać inne opcje np. otwórz okno w określonym rozmiarze:
+</span><span class="n">chrome_options</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"--window-size=1920,1080"</span><span class="p">)</span>
+<span class="p">...</span>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://cs.chromium.org/chromium/src/base/base_switches.cc?l=115-121" target="_blank">Spis dostępnych flag dla chromium</a></p>
+
+<h1 id="4słowem-końcowym">4.Słowem końcowym</h1>
+<p><strong>Wyłączenie zabezpieczeń przeglądarki wydaje się słabym pomysłem.</strong><br>
+Tak, wiem. Nie jest to tryb do surfowania po sieci <img class="emoji" title=":smiley:" alt=":smiley:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png" height="20" width="20"><br>
+Także w testowaniu może nam utrudnić. Musimy pamiętać w jakim celu wyłączamy zabezpieczenia. Po sprawdzeniu tego, co chcieliśmy, <strong>powinniśmy wrócić do trybu normalnego</strong> <img class="emoji" title=":cop:" alt=":cop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f46e.png" height="20" width="20">.</p>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Testy%20automatyczne%20selenium%20i%20python%20cz2.%20-%20ustawienie%20CORS&amp;url=http://localhost:4000/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/" target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/" target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/happy-numbers/">
+                <div class="rel">
+                    <h5>Happy numbers <time class="post_date">22 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/liczby/">
+                <div class="rel">
+                    <h5>Formatowanie liczb <time class="post_date">03 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/leet-speak/">
+                <div class="rel">
+                    <h5>Leet speak <time class="post_date">01 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/digital_root/">
+                <div class="rel">
+                    <h5>Digital root <time class="post_date">31 Styczeń 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+          
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on January  5, 2020
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+</div>
+
+  
+                <a style="float:right" href="#top" class="archive-top-link">↑</a>
+            </div>
+
+        </article>
+</div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/testy-automatyczne-selenium-i-python-cz2-ustawienie-cors/',
+		  'title': 'Testy automatyczne selenium i python cz2. - ustawienie CORS'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</div></body>
+
+</html>

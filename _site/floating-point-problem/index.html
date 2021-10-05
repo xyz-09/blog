@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Floating-point problem – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Floating-point problem | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Floating-point problem" />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Problem precyzyjności liczb zapisanych jako floating-point." />
+<meta property="og:description" content="Problem precyzyjności liczb zapisanych jako floating-point." />
+<link rel="canonical" href="http://localhost:4000/blog/floating-point-problem/" />
+<meta property="og:url" content="http://localhost:4000/blog/floating-point-problem/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-22T10:21:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Floating-point problem" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Floating-point problem","dateModified":"2020-02-22T10:21:00+01:00","datePublished":"2020-02-22T10:21:00+01:00","url":"http://localhost:4000/blog/floating-point-problem/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/floating-point-problem/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Problem precyzyjności liczb zapisanych jako floating-point.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Problem precyzyjności liczb zapisanych jako floating-point." />
+    <meta property="og:description" content="Problem precyzyjności liczb zapisanych jako floating-point." />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Floating-point problem" />
+    <meta property="twitter:title" content="Floating-point problem" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/floating-point-problem/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png"></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/">
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie">
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/" target="_blank">
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search">
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Floating-point problem</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 22 Luty 2020</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:  
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/programowanie">
+              programowanie
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:  
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/js">
+              #js,  
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/php">
+              #php
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <ul class="content_list">
+  <li><a href="#du%c5%bce-liczby-w-js--php">Duże liczby w JS / PHP</a></li>
+  <li><a href="#dlaczego-tak-si%c4%99-dzieje">Dlaczego tak się dzieje?</a></li>
+  <li><a href="#floating-point-precision">Floating-point precision</a></li>
+</ul>
+
+<p>Ten post został zainspirowany błędem na jaki natknęłam się rozwiązując zadanie odnośnie <a href="../happy-numbers/">“HappyNumbers”</a>. Zachęcam do przeczytania bo są to naprawdę fajne liczby i zasługują na swoje miano wesołych <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">.</p>
+
+<p>Rozwiązując wyżej wspomniane  zadanie w <code class="language-plaintext highlighter-rouge">js</code> i w <code class="language-plaintext highlighter-rouge">php</code> natknęłam się na błąd, który uniemożliwiał mi przejście wszystkich testów  sprawdzających poprawność kodu.<br>
+Otóż liczby, które powinny być wesołe były niewesołe. Byłam pewna, że kod jest poprawny, działał w <code class="language-plaintext highlighter-rouge">pythonie</code>, skąd więc rozbieżność?</p>
+
+<h2 id="duże-liczby-w-js--php">Duże liczby w JS / PHP</h2>
+<p>Spróbujmy wyświelić liczbę <strong>16525534153749833</strong> w <code class="language-plaintext highlighter-rouge">js</code> jako liczbę. Rezultatem będzie: <strong>16525534153749832</strong> <img class="emoji" title=":thinking:" alt=":thinking:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png" height="20" width="20">. Jakim cudem?<br>
+To samo się dzieje dla liczby: <strong>2712939616709395196 ≠ 2712939616709395000</strong> oraz dla liczby<br>
+ <strong>9244681613480703 ≠ 9244681613480704</strong>. <strong>9999999999999999</strong> ≠ <strong>10000000000000000</strong><br>
+ Wyświetlane jest zupełnie inna liczba niż podawana.</p>
+
+<blockquote class="summary">
+  <p>Wniosek: <strong>Istnieją liczby, które podawane typem jako liczby nie są możliwe do wyświetlenia / użycia</strong> np. w przeglądarce.</p>
+</blockquote>
+
+<p>Stąd do mojego algorytmu trafiały nie te liczby. Zapisując powyższe jako stringi, nie ma problemu. Poniżej pen z przykładami:</p>
+
+<iframe height="380" style="width: 100%;" scrolling="no" title="yLNVpzL" src="https://codepen.io/ejo/embed/yLNVpzL?height=265&amp;theme-id=default&amp;default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/ejo/pen/yLNVpzL">yLNVpzL</a> by ejo
+  (<a href="https://codepen.io/ejo">@ejo</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>Zobaczmy <code class="language-plaintext highlighter-rouge">php</code></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">var_dump</span><span class="p">(</span><span class="mi">679927533571841532898</span><span class="p">);</span>
+
+<span class="c1">// float(6.7992753357184E+20)</span>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
+
+<h2 id="dlaczego-tak-się-dzieje">Dlaczego tak się dzieje?</h2>
+
+<p>Zobaczmy dokumentację:</p>
+<blockquote>
+  <p>In JavaScript, Number is a numeric data type in the double-precision 64-bit floating point format (IEEE 754). In other programming languages different numeric types can exist, for examples: Integers, Floats, Doubles, or Bignums <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+</blockquote>
+
+<p>Przekładając na polski. Liczby w <code class="language-plaintext highlighter-rouge">js</code> nie rozróżniają typów liczb np. <code class="language-plaintext highlighter-rouge">short</code>, <code class="language-plaintext highlighter-rouge">long</code>, <code class="language-plaintext highlighter-rouge">floating-point</code>, <code class="language-plaintext highlighter-rouge">integer</code> itp., jak większość języków programowania. <strong>PODAWANE SĄ ZAWSZE</strong> jako 64-bitowy <code class="language-plaintext highlighter-rouge">floating-point</code>.</p>
+
+<p>Oznacza to, że niektórych liczb całkowitych nie jesteśmy w stanie przedstawić w typie liczby bez utraty ich precyzji, stąd <strong>9999999999999999</strong> ≠ <strong>10000000000000000</strong>.</p>
+
+<p>W <code class="language-plaintext highlighter-rouge">php</code> natomiast według dokumentacji:</p>
+<blockquote>
+  <p>If PHP encounters a number beyond the bounds of the integer type, it will be interpreted as a float instead. <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+</blockquote>
+
+<p>Co oznacza, że jeśli <code class="language-plaintext highlighter-rouge">php</code> napotka liczbę, która przekracza granicę liczby całkowitej w jakiej może być zapisana, zostanie ona zinterpretowana jako liczba zmiennoprzecinkowa. Tak właśnie się stało dla liczby <strong>679927533571841532898</strong> lub <strong>1646476620141690717724578</strong>. Liczby te są po prostu za duże.</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">var_dump</span><span class="p">(</span><span class="mi">1646476620141690717724578</span><span class="p">);</span>
+<span class="c1">//float(6.7992753357184E+20)</span>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
+<h2 id="floating-point-precision">Floating-point precision</h2>
+<p>Temat precyzyjności <code class="language-plaintext highlighter-rouge">floating-point</code> bardziej jest znany do wykonywania obliczeń z liczbami po przecinku np:  0.1 + 0.2</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre><span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span> <span class="o">=&gt;</span> <span class="mf">0.30000000000000004</span>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
+<p>Czy to w <code class="language-plaintext highlighter-rouge">py</code>, czy w <code class="language-plaintext highlighter-rouge">js</code> czy <code class="language-plaintext highlighter-rouge">php</code>.</p>
+
+<p>Baaaardzo dokładnie jest na ten temat napisane <a href="https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html" target="_blank">What every computer Scientist should know about floating-point arithmetic.</a></p>
+
+<p>Ta nieprecyzyjność jest mi znana. Jednak nie odniosłabym jej nigdy do problemu reprezentacji liczby całkowitej <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">.<br><br></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number" target="_blank">Dokumentacja JS - Numbers</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://www.php.net/manual/en/language.types.integer.php" target="_blank">Dokumentacja php - Integers</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Floating-point%20problem&amp;url=http://localhost:4000/floating-point-problem/" target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/floating-point-problem/" target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/sum-letter-index-in-word/">
+                <div class="rel">
+                    <h5>Zsumuj indeksy liter w alfabecie <time class="post_date">24 Czerwiec 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/happy-numbers/">
+                <div class="rel">
+                    <h5>Happy numbers <time class="post_date">22 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/liczby/">
+                <div class="rel">
+                    <h5>Formatowanie liczb <time class="post_date">03 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/wyzwanie-the-river-i/">
+                <div class="rel">
+                    <h5>Wyzwanie? The River I <time class="post_date">02 Luty 2020</time>
+</h5>
+                    
+                </div>
+            </a>  
+        
+        
+          
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on February 22, 2020
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+</div>
+
+  
+                <a style="float:right" href="#top" class="archive-top-link">↑</a>
+            </div>
+
+        </article>
+</div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/floating-point-problem/',
+		  'title': 'Floating-point problem'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</div></body>
+
+</html>

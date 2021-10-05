@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia" />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url’i." />
+<meta property="og:description" content="Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url’i." />
+<link rel="canonical" href="http://localhost:4000/blog/htaccess/" />
+<meta property="og:url" content="http://localhost:4000/blog/htaccess/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-03T15:16:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia","dateModified":"2019-12-03T15:16:00+01:00","datePublished":"2019-12-03T15:16:00+01:00","url":"http://localhost:4000/blog/htaccess/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/htaccess/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url’i.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url'i." />
+    <meta property="og:description" content="Htaccess - najczęściej wykorzystywane dyrektywy, i opcje przepisywania url'i." />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia" />
+    <meta property="twitter:title" content="Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/htaccess/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png" /></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/" >
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie" >
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/"  target="_blank" >
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search" >
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 03 Grudzień 2019</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/programowanie">
+              programowanie
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/htaccess">
+              htaccess
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/apatche">
+              #apatche,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/serwer">
+              #serwer,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/apatche">
+              #apatche
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <!-- TOC -->
+
+<ul class="content_list">
+  <li><a href="#1htaccess-co-to-jest">1.htaccess co to jest</a></li>
+  <li><a href="#2co-wykonamy-za-pomoc%c4%85-htacessa">2.Co wykonamy za pomocą .htacess’a</a></li>
+  <li><a href="#3uprawnienia-do-pliku">3.Uprawnienia do pliku</a></li>
+  <li><a href="#4inne-przydatne-informacje">4.Inne przydatne informacje</a></li>
+  <li><a href="#5flagi-przekierowa%c5%84-i-regu%c5%82-stosowane-poni%c5%bcej">5.Flagi przekierowań i reguł stosowane poniżej:</a></li>
+  <li><a href="#6rewrite-url">6.REWRITE URL</a>
+    <ul>
+      <li><a href="#61przekierowanie-zewn%c4%99trznych-urli-zawieraj%c4%85cych-query-string-na-ten-sam-adres--seo">6.1.Przekierowanie zewnętrznych url’i zawierających query string na ten sam adres // SEO</a></li>
+      <li><a href="#62ustawienie-wersji-j%c4%99zykowej-w-zale%c5%bcno%c5%9bci-od-ustawie%c5%84-przegl%c4%85darki-poprzez-env">6.2.Ustawienie wersji językowej w zależności od ustawień przeglądarki poprzez env</a></li>
+      <li><a href="#63dost%c4%99p-zabroniony-pr%c3%b3cz-fopen-php">6.3.Dostęp zabroniony, prócz <code class="language-plaintext highlighter-rouge">fopen()</code> PHP</a></li>
+      <li><a href="#64przepisanie-podkre%c5%9blnik%c3%b3w-%22%22-na-my%c5%9blniki-%22-%22-seo">6.4.Przepisanie podkreślników “_” na myślniki “-“// SEO</a></li>
+      <li><a href="#65pozw%c3%b3l-tylko-na-okre%c5%9blone-metody-po%c5%82%c4%85czenia-np-get-i-put">6.5.Pozwól tylko na określone metody połączenia np GET i PUT</a></li>
+      <li><a href="#66przekierowanie-http-na-https-i-z-www-na-bez-www">6.6.Przekierowanie http na https i z www na bez www</a></li>
+      <li><a href="#67usuni%c4%99cie-rozszerzenia-pliku-z-urla">6.7.Usunięcie rozszerzenia pliku z url’a</a></li>
+      <li><a href="#68usuni%c4%99cie-uko%c5%9bnika-z-urla">6.8.Usunięcie ukośnika z url’a</a></li>
+      <li><a href="#69blokada-dost%c4%99pu-do-htaccess">6.9.Blokada dostępu do .htaccess</a></li>
+    </ul>
+  </li>
+  <li><a href="#blokada-dost%c4%99pu-do-okre%c5%9blonego-pliku-np-do-wp-configphp">Blokada dostępu do określonego pliku np do <code class="language-plaintext highlighter-rouge">wp-config.php</code></a>
+    <ul>
+      <li><a href="#blokada-dost%c4%99pu-do-pliku-xmlrpc">Blokada dostępu do pliku XMLRPC</a></li>
+      <li><a href="#zwi%c4%99kszenie-limitu-pami%c4%99ci-php">Zwiększenie limitu pamięci php</a></li>
+      <li><a href="#ustawienie-maksymalnej-wielko%c5%9bci-wysy%c5%82anych-plik%c3%b3w">Ustawienie maksymalnej wielkości wysyłanych plików</a></li>
+      <li><a href="#przekierowanie-301-starych-stron-na-nowe">Przekierowanie 301 starych stron na nowe</a></li>
+      <li><a href="#ukrywanie-listowania-plik%c3%b3w-w-folderze">Ukrywanie listowania plików w folderze</a></li>
+      <li><a href="#ustawianie-strony-b%c5%82%c4%99d%c3%b3w">Ustawianie strony błędów</a></li>
+      <li><a href="#blokowanie-adres%c3%b3w-ip">Blokowanie adresów IP</a></li>
+      <li><a href="#kolejno%c5%9b%c4%87-sprawdzania-pliku-g%c5%82%c3%b3wnego---przydatne-przy-ustawianiu-np-strony-maintance">Kolejność sprawdzania pliku głównego - przydatne przy ustawianiu np. strony maintance</a></li>
+      <li><a href="#zmiana-sposobu-wy%c5%9bwietlania-przez-serwer-pliku-np-wy%c5%9bwietlaj-txt-jako-html">Zmiana sposobu wyświetlania przez serwer pliku np. wyświetlaj txt jako html</a></li>
+      <li><a href="#wska%c5%bc-jakie-dokumenty-maj%c4%85-by%c4%87-od-razu-pobierane-a-nie-wy%c5%9bwietlane-w-przegl%c4%85darce">Wskaż jakie dokumenty mają być od razu pobierane a nie wyświetlane w przeglądarce</a></li>
+      <li><a href="#przekierowanie-subdomeny-na-katalog">Przekierowanie subdomeny na katalog</a></li>
+    </ul>
+  </li>
+</ul>
+<!-- /TOC -->
+
+<h1 id="1htaccess-co-to-jest">1.htaccess co to jest</h1>
+<p>Plik .htaccess jest domyślnym plikiem, za pomocą, którego można zmieniać ustawienia serwera Apatche. Nie musi się on tak koniecznie nazywać. Administrator serwera ma prawo ustawić taką nazwę jaką chce np. <code class="language-plaintext highlighter-rouge">.settings</code>. Zwyczajowo jednak jego nazwa brzmi <code class="language-plaintext highlighter-rouge">.htaccess</code>, co bardzo ułatwia innym developerom pracę - nie muszą szukać jak nazwać plik, w którym mogą dodać dyrektywy i odpowiednio ustawić i zabezpieczyć serwer.</p>
+
+<h1 id="2co-wykonamy-za-pomocą-htacessa">2.Co wykonamy za pomocą .htacess’a</h1>
+<p>W pliku <code class="language-plaintext highlighter-rouge">.htaccess</code> podawane są dodatkowe ustawienia serwera, które obowiązują, poczynając od folderu, a co za tym idzie adresu, w którym się znajduje i działa na wszystkie podkatalogi i “podlinki”. 
+Ustawienia te w głównej mierze będą dotyczyć przekierowań adresów url na tzw. SEO friendly, czyli przyjazne dla robotów wyszukujących i użytkowników. Będą tam też określone zasady dostępu do pliku/ów, katalogów, opcje wyświetlania w oknie przeglądarki zawartości serwera i inne.</p>
+
+<h1 id="3uprawnienia-do-pliku">3.Uprawnienia do pliku</h1>
+<p>Plik .htaccess powinien mieć ustawienia uprawnień tzw. chmod na 644, co umożliwia jego edycję jedynie po połączeniu się protokołem FTP / SFTP / SSH - czyli nikt nie zmieni jego zawartości z poziomu przeglądarki.</p>
+
+<h1 id="4inne-przydatne-informacje">4.Inne przydatne informacje</h1>
+<p>Komentarze w htaccess oznaczane są hashem #. Kolejność zapisywanych dyrektyw ma znaczenie, wykonywane są one od góry do dołu. Czasem się zdarzy, że zapisane w pliku <code class="language-plaintext highlighter-rouge">.htaccess</code> dyrektywy zapętlą nasz serwer, trzeba więc na to uważać. Każdy błąd w .htaccess (choć nie tylko) wyświetla w przeglądarce <strong>kod błędu nr 500</strong> - Internal Server Error.</p>
+
+<p>Poniżej zamieszczam najczęściej wykorzystywane reguły .htaccess - przepisywanie url i podstawowe ustawienia, w kolejności od najbardziej przydatnych do najmniej :)</p>
+
+<h1 id="5flagi-przekierowań-i-reguł-stosowane-poniżej">5.Flagi przekierowań i reguł stosowane poniżej:</h1>
+<p>[<strong>R</strong>] - <em>Redirect</em> [<strong>R=kod</strong>] - Redirect z kodem np. 301 /<em>Moved Permanently</em>/ - przekieruj link według podanej wartości
+[<strong>L</strong>] <em>Last rule</em> – oznacza, że ta linijka jest ostatnią linijką przekierowania i dalsze nie będą wykonywane do czasu podania nowego warunku przekierowania
+[<strong>NC</strong>] <em>No case</em> – ignoruje fakt, czy adres jest pisany wielkimi, czy małymi literami
+[<strong>QSA</strong>] <em>Euery string append</em> – powoduje dodanie na końcu całego zapytania query string</p>
+
+<p>Rzadziej wykorzystywane:
+[<strong>F</strong>] <em>Force URL to be forbidden</em> – zwraca błąd 403
+[<strong>S=liczba</strong>] <em>Skip next rule(s)</em> – pomija zapisaną liczbę reguł
+[<strong>N</strong>] next round – przetwarzanie od początku
+[<strong>T = MIME type</strong>] <em>Force MIME type</em> – ustawienie typu MIME</p>
+
+<h1 id="6rewrite-url">6.REWRITE URL</h1>
+<p>Do przepisania adresów poprzez .htaccess musi być aktywny mod_rewrite na serwerze. Czy jest on aktywny można sprawdzić poprzez <code class="language-plaintext highlighter-rouge">echo php_info()</code>. W sekcji pliku konfiguracyjnego PHP można sprawdzić czy moduł znajduje się na liście. Jego obecność z dużym prawdopodobieństwem oznacza, że moduł działa. Aby uniknąć komunikatów o błędzie serwera z tytułu nie działającego mod_rewrite, warto nasze dyrektywy zawierać w znacznik <code class="language-plaintext highlighter-rouge">&lt;IfModule mod_rewrite.c&gt;...&lt;/IfModule&gt;</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mod_rewrite</code> uruchamiamy poprzez wpisanie, splaszając dyrektywę - uruchom silnik przepisywania i podążaj za <strong>dowiązaniami symbolicznymi</strong> -&gt; (upraszczając dowiązaniem symbolicznym nazywa się skrót do pliku, który traktowany jest jako plik fizyczny - często stosowane w unixowych systemach plików).</p>
+
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteEngine</span> <span class="ss">On</span>
+<span class="nc">Options</span> +FollowSymLinks
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Niektóre serwery wymagają do działania modułu rewrite podania <code class="language-plaintext highlighter-rouge">RewriteBase /</code> Przy specyficznych ustawieniach serwera jest to pełna ścieżka do katalogu w drzewie katalogów naszego serwera.</p>
+
+<h2 id="61przekierowanie-zewnętrznych-urli-zawierających-query-string-na-ten-sam-adres--seo">6.1.Przekierowanie zewnętrznych url’i zawierających query string na ten sam adres // SEO</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{THE_REQUEST} ^[A-Z]+ /.*\ HTTP
+<span class="nc">RewriteCond</span> %{QUERY_STRING} !^$
+<span class="nc">RewriteRule</span> .* https://www.domena.com%{REQUEST_URI}? [R=301, L]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="62ustawienie-wersji-językowej-w-zależności-od-ustawień-przeglądarki-poprzez-env">6.2.Ustawienie wersji językowej w zależności od ustawień przeglądarki poprzez env</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{HTTP:Accept-Language} ^.*(de|es|fr|it|ja|ru|en).*$ [NC]
+<span class="nc">RewriteRule</span> ^(.*)$ - [env=prefer-language:%1]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>lub</p>
+
+<p>Przekierowanie na odpowiedni link lub katalog</p>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{HTTP:Accept-Language} ^pl [NC]
+<span class="nc">RewriteRule</span> ^$ /pl/? [L,R=301]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="63dostęp-zabroniony-prócz-fopen-php">6.3.Dostęp zabroniony, prócz <code class="language-plaintext highlighter-rouge">fopen()</code> PHP</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteEngine</span> <span class="ss">On</span>
+<span class="nc">RewriteBase</span> /
+<span class="nc">RewriteCond</span> %{THE_REQUEST} ^.+$ [NC]
+<span class="nc">RewriteRule</span> .* - [F,L]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="64przepisanie-podkreślników-_-na-myślniki---seo">6.4.Przepisanie podkreślników “_” na myślniki “-“// SEO</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="nc">Options</span> +FollowSymLinks
+<span class="nc">RewriteEngine</span> <span class="ss">On</span>
+<span class="nc">RewriteBase</span> /
+
+<span class="nc">RewriteRule</span> !\.(html|php)$ - [S=4]
+<span class="nc">RewriteRule</span> ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4-$5 [E=uscor:Yes]
+<span class="nc">RewriteRule</span> ^([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4 [E=uscor:Yes]
+<span class="nc">RewriteRule</span> ^([^_]*)_([^_]*)_(.*)$ $1-$2-$3 [E=uscor:Yes]
+<span class="nc">RewriteRule</span> ^([^_]*)_(.*)$ $1-$2 [E=uscor:Yes]
+
+<span class="nc">RewriteCond</span> %{ENV:uscor} ^Yes$
+<span class="nc">RewriteRule</span> (.*) http://d.com/$1 [R=301,L]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="65pozwól-tylko-na-określone-metody-połączenia-np-get-i-put">6.5.Pozwól tylko na określone metody połączenia np GET i PUT</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{REQUEST_METHOD} !^(GET|PUT)
+<span class="nc">RewriteRule</span> .* - [F]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="66przekierowanie-http-na-https-i-z-www-na-bez-www">6.6.Przekierowanie http na https i z www na bez www</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{HTTPS} <span class="ss">off</span>
+<span class="c"># RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]</span>
+<span class="nc">RewriteCond</span> %{HTTPS} <span class="ss">off</span> [OR]
+<span class="nc">RewriteCond</span> %{HTTP_HOST} ^www\. [NC]
+<span class="nc">RewriteCond</span> %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+<span class="nc">RewriteRule</span> ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="67usunięcie-rozszerzenia-pliku-z-urla">6.7.Usunięcie rozszerzenia pliku z url’a</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{REQUEST_FILENAME} !-f
+<span class="nc">RewriteCond</span> %{REQUEST_FILENAME} !-d
+<span class="nc">RewriteRule</span> ^(.+[^/])$ $1.html
+<span class="err">```</span>htaccess
+
+<span class="c">## 6.8.Usunięcie ukośnika z url'a</span>
+<span class="err">```</span>apache
+<span class="nc">RewriteRule</span> ^(.*)/$ http://%{HTTP_HOST}/$1
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="69blokada-dostępu-do-htaccess">6.9.Blokada dostępu do .htaccess</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre> <span class="p">&lt;</span><span class="nl">files</span><span class="sr"> ~ "^.*\.([Hh][Tt][Aa])"</span><span class="p">&gt;
+</span> <span class="nc">order</span> allow,deny
+ <span class="nc">deny</span> <span class="ss">from</span> <span class="ss">all</span>
+ <span class="nc">satisfy</span> <span class="ss">all</span>
+ <span class="p">&lt;/</span><span class="nl">files</span><span class="p">&gt;
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h1 id="blokada-dostępu-do-określonego-pliku-np-do-wp-configphp">Blokada dostępu do określonego pliku np do <code class="language-plaintext highlighter-rouge">wp-config.php</code></h1>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre> <span class="p">&lt;</span><span class="nl">files</span><span class="sr"> wp-config.php</span><span class="p">&gt;
+</span> <span class="nc">order</span> allow,deny
+ <span class="nc">deny</span> <span class="ss">from</span> <span class="ss">all</span>
+ <span class="p">&lt;/</span><span class="nl">files</span><span class="p">&gt;
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="blokada-dostępu-do-pliku-xmlrpc">Blokada dostępu do pliku XMLRPC</h2>
+<p>Plik ten służy do publikowania treści w Wordpresie za pomocą API i zewnętrznych programów.</p>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>  <span class="p">&lt;</span><span class="nl">files</span><span class="sr"> xmlrpc.php</span><span class="p">&gt;
+</span>   <span class="nc">order</span> deny,allow
+   <span class="nc">deny</span> <span class="ss">from</span> <span class="ss">all</span>
+  <span class="p">&lt;/</span><span class="nl">files</span><span class="p">&gt;
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="zwiększenie-limitu-pamięci-php">Zwiększenie limitu pamięci php</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>php_value memory_limit 128M
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="ustawienie-maksymalnej-wielkości-wysyłanych-plików">Ustawienie maksymalnej wielkości wysyłanych plików</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> php_value upload_max_filesize 128M
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="przekierowanie-301-starych-stron-na-nowe">Przekierowanie 301 starych stron na nowe</h2>
+
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>
+<span class="c"># 7.zwykłe przekierowanie</span>
+<span class="nc">Redirect</span> 301 /stara-podstrona /nowa-podstrona
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="ukrywanie-listowania-plików-w-folderze">Ukrywanie listowania plików w folderze</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nc">Options</span> <span class="ss">All</span> -Indexes
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="ustawianie-strony-błędów">Ustawianie strony błędów</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">ErrorDocument</span> 403 /403.html
+<span class="nc">ErrorDocument</span> 500 /500.html
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="blokowanie-adresów-ip">Blokowanie adresów IP</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">Order</span> Allow,Deny
+<span class="nc">Allow</span> <span class="ss">from</span> <span class="ss">all</span>
+<span class="nc">Deny</span> <span class="ss">from</span> 12.148.209.196
+<span class="nc">Deny</span> <span class="ss">from</span> 87.207.112.205
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="kolejność-sprawdzania-pliku-głównego---przydatne-przy-ustawianiu-np-strony-maintance">Kolejność sprawdzania pliku głównego - przydatne przy ustawianiu np. strony maintance</h2>
+<pre><code class="language-.htasscess">DirectoryIndex index.html index.php error.html
+</code></pre>
+
+<h2 id="zmiana-sposobu-wyświetlania-przez-serwer-pliku-np-wyświetlaj-txt-jako-html">Zmiana sposobu wyświetlania przez serwer pliku np. wyświetlaj txt jako html</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nc">AddType</span> text/html .txt
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="wskaż-jakie-dokumenty-mają-być-od-razu-pobierane-a-nie-wyświetlane-w-przeglądarce">Wskaż jakie dokumenty mają być od razu pobierane a nie wyświetlane w przeglądarce</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nc">AddType</span> application/octet-stream .pdf .gz
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="przekierowanie-subdomeny-na-katalog">Przekierowanie subdomeny na katalog</h2>
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{HTTP_HOST} sub.domena.pl
+<span class="nc">RewriteCond</span> %{REQUEST_URI} !sub/
+<span class="nc">RewriteRule</span> (.*) sub/ [L]
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>lub - dla wielu adresów, by nie powielać zmieniając jedynie jeden parametr (wykorzystanie wyrażeń regularnych)</p>
+
+<div class="language-apache highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">RewriteCond</span> %{HTTP_HOST} strona.pl [NC]
+
+<span class="c"># 8.bez pustego znaku</span>
+<span class="nc">RewriteCond</span> %{REQUEST_URI} ^(.+)/$ 
+<span class="ss">RewriteRule</span> .* http://%1.strona.pl [L]
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia&url=http://localhost:4000/htaccess/"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/htaccess/"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br/>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+    
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on December  3, 2019
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  </article>
+                <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
+            </div>
+
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/htaccess/',
+		  'title': 'Htacces - najbardziej przydatne dyrektywy przepisywania i ustawienia'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+
+</html>

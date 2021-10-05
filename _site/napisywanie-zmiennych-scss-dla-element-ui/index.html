@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nadpisywanie scss dla Elements UI – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Nadpisywanie scss dla Elements UI | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Nadpisywanie scss dla Elements UI" />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów." />
+<meta property="og:description" content="Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów." />
+<link rel="canonical" href="http://localhost:4000/blog/napisywanie-zmiennych-scss-dla-element-ui/" />
+<meta property="og:url" content="http://localhost:4000/blog/napisywanie-zmiennych-scss-dla-element-ui/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-18T11:39:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Nadpisywanie scss dla Elements UI" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Nadpisywanie scss dla Elements UI","dateModified":"2019-11-18T11:39:00+01:00","datePublished":"2019-11-18T11:39:00+01:00","url":"http://localhost:4000/blog/napisywanie-zmiennych-scss-dla-element-ui/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/napisywanie-zmiennych-scss-dla-element-ui/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów." />
+    <meta property="og:description" content="Nadpisywanie zmiennych zdeklarowanych w Elements UI dla Vue i import styli tylko pojedynczych komponentów." />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Nadpisywanie scss dla Elements UI" />
+    <meta property="twitter:title" content="Nadpisywanie scss dla Elements UI" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/napisywanie-zmiennych-scss-dla-element-ui/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png" /></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/" >
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie" >
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/"  target="_blank" >
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search" >
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Nadpisywanie scss dla Elements UI</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 18 Listopad 2019</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/scss">
+              scss
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/vue">
+              vue
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/js">
+              js
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/scss">
+              #scss,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/vue">
+              #vue,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/npm">
+              #npm,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/frontend">
+              #frontend,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/js">
+              #js,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/javascript">
+              #javascript
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <!-- TOC -->
+
+<ul class="content_list">
+  <li><a href="#1troch%c4%99-teorii-scss-i-budowy-packagea-element-ui">1.Trochę teorii scss i budowy package’a Element UI</a>
+    <ul>
+      <li><a href="#11uzbrojeni-w-podstawow%c4%85-wiedz%c4%99-mo%c5%bcemy-zabra%c4%87-si%c4%99-do-zadania">1.1.Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.</a></li>
+    </ul>
+  </li>
+  <li><a href="#2import-wybranych-tylko-styli-scss-dla-element-ui">2.Import wybranych tylko styli <code class="language-plaintext highlighter-rouge">scss</code> dla Element UI</a></li>
+</ul>
+<!-- /TOC -->
+
+<p>Pisząc ostatni projekt zdecydowałam się na użycie gotowego już komponentu dla Vue <a href="https://element.eleme.io/#/en-US">Elements UI</a>.
+Jest on bardzo wygodny do szybkiego zrobienia app z wykorzystaniem już napisanych komponentów i stylów. <em>Ma jednak poważną wadę</em>. Zresztą dotyczy to większości spredefiniowanych elementów.</p>
+
+<p>Według dokumenatcji powinniśmy zaimplementować style Element UI w naszym projekcie poprzez:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="c1">//NIE DODAWAJ TEJ LINII</span>
+<span class="k">import</span> <span class="dl">"</span><span class="s2">element-ui/lib/theme-chalk/index.css</span><span class="dl">"</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Importujemy więc do naszego projektu już skompilowane style z <code class="language-plaintext highlighter-rouge">.scss</code> do <code class="language-plaintext highlighter-rouge">.css</code>. Nadpisywanie tak zaimplementowanego pliku jest dość pracochłonne. By wprowadzić poważniejsze zmiany, musimy nadpisać styl elementów zwykłym kodem <code class="language-plaintext highlighter-rouge">css</code>.
+Co więc możemy zrobić innego?</p>
+
+<p>Pierwsza i naważniejsza rzecz - <strong>NIE DODAWAĆ</strong> do naszego projektu całego <code class="language-plaintext highlighter-rouge">index.css</code>, tak jak podają w instrukcji. <strong>Zamiast tego</strong> możemy ułożyć własny import, w dodatku tylko z tymi stylami, jakich komponentów używamy. Własna implementacja będzie miała wpływ na zmniejszenie wielkości importowanych plików, co uważam za plus.</p>
+
+<p>Z całego Element UI korzystam we wspomnianym na wstępie projekcie jedynie z <strong>column, card, button, messageBox, alert, dialog</strong> i jedynie te style chciałabym zaimplementować - (optymalizacja zawsze na pierwszym miejscu).</p>
+
+<p>W dodatku chciałabym zmienić <code class="language-plaintext highlighter-rouge">breakpoints</code> (punkty łamania układu i zachowywania elementów, w zależności od wielkości urządzenia, na jakim są wyświetlane) dla mojej app. No kto widział aby xs ustawiać na wartość <strong>768px</strong>.</p>
+
+<p>Po krótkim researchu w necie, wielu próbach, w końcu się udało. Należało zrobić mniej więcej tak:</p>
+
+<h1 id="1trochę-teorii-scss-i-budowy-packagea-element-ui">1.Trochę teorii scss i budowy package’a Element UI</h1>
+
+<p>Jak to w node wszystkie package z jakich korzysta nasz projekt znajdziemy w folderze <code class="language-plaintext highlighter-rouge">node_modules</code>. Każdy, kto miał choć chwilę styczności z Node i npm o tym wie.</p>
+
+<p>W tym folderze też znajdziemy <code class="language-plaintext highlighter-rouge">src</code> dla Element UI. Bezpośrednia ścieżka to: <code class="language-plaintext highlighter-rouge">node_modules\element-ui\packages\theme-chalk\src\</code>. Tutaj są wszystkie pliki, które nas interesują.</p>
+
+<p>Przeglądając plik ze zmiennymi - ponieważ to on był dla mnie najważniejszy - czyli <code class="language-plaintext highlighter-rouge">node_modules\element-ui\packages\theme-chalk\src\common\var.scss</code> zauważyłam, że wszystkie zmienne są określone jako <code class="language-plaintext highlighter-rouge">!deafult</code>. Co to oznacza w <code class="language-plaintext highlighter-rouge">scss</code>?</p>
+
+<p>W <a href="https://sass-lang.com/documentation#variable_defaults_">dokumentacji sass’a</a> możemy przeczytać,</p>
+
+<blockquote>
+  <p>You can assign to variables if they aren’t already assigned by adding the !default flag to the end of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, but if it doesn’t have a value yet, it will be given one.</p>
+</blockquote>
+
+<p>Czyli zmienna zdefiniowana jako <code class="language-plaintext highlighter-rouge">!deafult</code> będzie wykorzystywana, wtedy i tylko wtedy gdy wcześniej nie zostanie zdefiniowana zmienna “zwykła” o tej samej nazwie.
+Czyli, jeżeli mamy zmienną w naszych plikach scss zdefiniowaną jako:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$bg</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>A następnie dodamy:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$bg</span><span class="p">:</span> <span class="mh">#ff0</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>To nasz element któremu nadamy kolor tła w ten sposób:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$bg</span><span class="p">;</span> <span class="c1">//będzie miał tło czarne, a nie żółte</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Będzie zakolorowany na czarno, a nie na żółto.</p>
+
+<p>W momencie jeśli usuniemy deklarację tła jako <code class="language-plaintext highlighter-rouge">#000</code> nasz element zakoloruje się na żółto.</p>
+
+<p>Będzie on żółty również wtedy, gdy zmienimy kolejność, czyli wpierw zdefiniujemy zmienną jako <code class="language-plaintext highlighter-rouge">!default</code>, użyjemy jej przypisując do elementu <code class="language-plaintext highlighter-rouge">.div</code>, a następnie zdefiniujemy jako zwykłą zmienną - naturalny cykl. Dopiero nadpisując ponownie przypisanie tła do elementu znów zakoloruje nam go na <code class="language-plaintext highlighter-rouge">#000</code>.</p>
+
+<h3 id="11uzbrojeni-w-podstawową-wiedzę-możemy-zabrać-się-do-zadania">1.1.Uzbrojeni w podstawową wiedzę możemy zabrać się do zadania.</h3>
+
+<h1 id="2import-wybranych-tylko-styli-scss-dla-element-ui">2.Import wybranych tylko styli <code class="language-plaintext highlighter-rouge">scss</code> dla Element UI</h1>
+
+<ol>
+  <li>W naszym głównym pliku ze stylami nazwijmy go jako <code class="language-plaintext highlighter-rouge">base.scss</code> definiujemy zmienną z czcionką o wartości <code class="language-plaintext highlighter-rouge">~element-ui/packages/theme-chalk/src/fonts</code>, inaczej wyskoczy nam błąd:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Can't resolve './fonts/element-icons.ttf'
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Następnie deklarujemy wszystkie te zmienne, jakie chcemy nadpisać.<br />
+Dla mnie były to <code class="language-plaintext highlighter-rouge">breakpointy</code>. Oczywiście w tym fragmencie, kolejność deklaracji nie ma znaczenia.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nv">$--sm</span><span class="p">:</span> <span class="m">350px</span><span class="p">;</span>
+<span class="nv">$--md</span><span class="p">:</span> <span class="m">450px</span><span class="p">;</span>
+<span class="nv">$--lg</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>
+<span class="nv">$--xl</span><span class="p">:</span> <span class="m">1920px</span><span class="p">;</span>
+<span class="nv">$--font-path</span><span class="p">:</span><span class="s2">"~element-ui/packages/theme-chalk/src/fonts"</span><span class="p">;</span>
+<span class="nc">.</span>
+<span class="nc">.</span>
+<span class="nc">.</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>Importujemy pliki <code class="language-plaintext highlighter-rouge">.scss</code> Element UI zaczynając od <code class="language-plaintext highlighter-rouge">base.scss</code>. Pamiętajmy, że wszystkie powyżej zdeklarowane zmienne zostaną nadpisane naszymi wartościami. Jak jakiejś nie zdefiniowaliśmy zostanie użyta zmienna domyślna określona przez autorów Element UI.</li>
+</ol>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/base.scss"</span><span class="p">;</span>
+<span class="c1">//dalej wszystkie style tych komponentów, jakie wykorzystujemy</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/card"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/col.scss"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/dialog.scss"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/message-box.scss"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/alert.scss"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/card.scss"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"~element-ui/packages/theme-chalk/src/button.scss"</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>No i jak to z <code class="language-plaintext highlighter-rouge">.scss</code> bywa, nasz plik <code class="language-plaintext highlighter-rouge">base.scss</code> importujemy do głównego pliku projektu <code class="language-plaintext highlighter-rouge">App.vue</code> poprzez:</li>
+</ol>
+
+<div class="language-vue highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;</span><span class="k">style</span> <span class="na">lang=</span><span class="s">"scss"</span><span class="nt">&gt;</span>
+<span class="c1">//ścieżka do naszego base </span>
+<span class="k">@import</span> <span class="s2">"@/scss/base.scss"</span><span class="p">;</span>
+<span class="nt">&lt;/</span><span class="k">style</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Nadpisywanie scss dla Elements UI&url=http://localhost:4000/napisywanie-zmiennych-scss-dla-element-ui/"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/napisywanie-zmiennych-scss-dla-element-ui/"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br/>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+        
+            <a href="/blog/svg-animations/">
+                <div class="rel">
+                    <h5>Animacje svg <time class="post_date">05 Październik 2021</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/sum-letter-index-in-word/">
+                <div class="rel">
+                    <h5>Zsumuj indeksy liter w alfabecie <time class="post_date">24 Czerwiec 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/floating-point-problem/">
+                <div class="rel">
+                    <h5>Floating-point problem <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/happy-numbers/">
+                <div class="rel">
+                    <h5>Happy numbers <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+          
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on November 18, 2019
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  </article>
+                <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
+            </div>
+
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/napisywanie-zmiennych-scss-dla-element-ui/',
+		  'title': 'Nadpisywanie scss dla Elements UI'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sprawdzenie czy punkt jest zawarty w kwadracie – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Sprawdzenie czy punkt jest zawarty w kwadracie | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Sprawdzenie czy punkt jest zawarty w kwadracie" />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod. Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić." />
+<meta property="og:description" content="Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod. Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić." />
+<link rel="canonical" href="http://localhost:4000/blog/test-punktu-zawartego-w-kwadracie/" />
+<meta property="og:url" content="http://localhost:4000/blog/test-punktu-zawartego-w-kwadracie/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-19T14:04:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sprawdzenie czy punkt jest zawarty w kwadracie" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Sprawdzenie czy punkt jest zawarty w kwadracie","dateModified":"2019-11-19T14:04:00+01:00","datePublished":"2019-11-19T14:04:00+01:00","url":"http://localhost:4000/blog/test-punktu-zawartego-w-kwadracie/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/test-punktu-zawartego-w-kwadracie/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod. Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.
+Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić.
+
+" />
+    <meta property="og:description" content="Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.
+Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić.
+
+" />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Sprawdzenie czy punkt jest zawarty w kwadracie" />
+    <meta property="twitter:title" content="Sprawdzenie czy punkt jest zawarty w kwadracie" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/test-punktu-zawartego-w-kwadracie/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png" /></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/" >
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie" >
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/"  target="_blank" >
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search" >
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Sprawdzenie czy punkt jest zawarty w kwadracie</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 19 Listopad 2019</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/programowanie">
+              programowanie
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/php">
+              php
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/php">
+              #php
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <p>Ten post powstał przez przypadek :). Przygotowuję właśnie post na temat szukania, czy punkt jest zawarty w wielokącie wypukłym i wklęsłym. Chciałabym temat potraktować poważnie i zawrzeć podstawy matematyczne jak i sam kod.<br />
+Jednak post rozrósł mi się do tego stopnia, że postanowiłam go podzielić.</p>
+
+<p>Ten fragment, który właśnie czytasz dotyczy znacznie prostszego przypadku, gdy szukamy naszego punktu w kwadracie. Rozpatrzenie tego przypadku, pozwoli nam lepiej zrozumieć sam zapis kodu w trudniejszych wariantach.</p>
+
+<p>Do czego to może mieć odniesienie? Choćby do pracy z danymi na mapach, które często wykonuję.</p>
+
+<p>Od czego zaczynamy? Jak zazwyczaj, bez teorii nie ruszymy dalej.</p>
+
+<h1 id="teoria">Teoria</h1>
+<p>Nie będę przytaczać definicji punktu, ani kwadratu. To jak tłumaczyć, że 2 + 2 jest 4. Nie mam zamiaru wypisywać tutaj na to dowodu matematycznego. 
+Pierwsze nie znam go, a drugie podobno jest baaaardzo długi ;)</p>
+
+<p>Ze szkoły powinniśmy wiedzieć też, jaki jest zapis współrzędnych obiektów w układzie kartezjańskim. Jeśli nie, niech poniższy obrazek <em>(Rysunek 1)</em> posłuży jako wytłumaczenie.</p>
+
+<figure class="center">
+    
+    <img src="/blog/images/pointInSquare.jpg" alt="Image: Rysunek 1. Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków" /> 
+    <figcaption><span>Rysunek 1. Kwadrat i punkt w układzie kartezjańskim, współrzędne wierzchołków</span></figcaption>
+</figure>
+
+<p>Ogólne założenie jest takie. Należy sprawdzić, czy współrzędne punktu <strong>P</strong> oznaczone jako <code class="language-plaintext highlighter-rouge">[px, py]</code> są większe lub równe od początku obszaru oznaczonego jako <code class="language-plaintext highlighter-rouge">[x1, y1]</code>, a mniejsze lub równe od końca obszaru w układzie oznaczone jako <code class="language-plaintext highlighter-rouge">[x2, y2]</code>.</p>
+
+<p>Wybrałam <code class="language-plaintext highlighter-rouge">PHP</code> jako język dla mojego testu.
+Może być to jednak równie <code class="language-plaintext highlighter-rouge">Python</code>, jak też <code class="language-plaintext highlighter-rouge">JS</code>.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?php</span>
+<span class="c1">// *** Very simple Class to check </span>
+<span class="c1">// *** that point is on square or on border</span>
+
+<span class="kd">class</span> <span class="nc">pointInSquare</span> <span class="p">{</span> 
+<span class="c1">//$vertexA = array(x1,y1)</span>
+ <span class="k">public</span> <span class="nv">$vertexA</span><span class="p">;</span>
+
+<span class="c1">// $vertexB = array(x2,y2)</span>
+ <span class="k">public</span> <span class="nv">$vertexB</span><span class="p">;</span>
+
+<span class="c1">// $point = array(xp, yp)</span>
+ <span class="k">public</span> <span class="nv">$point</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="nv">$vA</span><span class="p">,</span> <span class="nv">$vB</span><span class="p">,</span> <span class="nv">$p</span><span class="p">){</span>
+       <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexA</span> <span class="o">=</span> <span class="nv">$vA</span><span class="p">;</span>
+       <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexB</span> <span class="o">=</span> <span class="nv">$vB</span><span class="p">;</span>
+       <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span> <span class="o">=</span>  <span class="nv">$p</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+   <span class="k">function</span> <span class="n">init</span><span class="p">(){</span>  
+       <span class="c1">// return boolean</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">valiParameters</span><span class="p">()){</span>
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">checkPointInSquare</span><span class="p">();</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">"Some parameters are invalid.</span><span class="se">\n</span><span class="s2">
+                  Check, that they are an arrays of only two elements (x,y) values"</span><span class="p">;</span>
+            <span class="k">exit</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>       
+
+    <span class="k">function</span> <span class="n">checkPointInSquare</span><span class="p">(){</span>
+        <span class="c1">//return boolean</span>
+        <span class="c1">// main body of class, the essential check that point by px and py is in square</span>
+    
+        <span class="k">return</span>   <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexA</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;&amp;</span>
+                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexB</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&amp;&amp;</span>
+                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexA</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span>
+                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexB</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="n">valiParameters</span><span class="p">(){</span>    
+        <span class="c1">//return boolean</span>
+
+        <span class="k">return</span>  <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">arrayOfTwo</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexA</span><span class="p">)</span> <span class="o">&amp;&amp;</span> 
+                <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">arrayOfTwo</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">vertexB</span><span class="p">)</span> <span class="o">&amp;&amp;</span> 
+                <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">arrayOfTwo</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">point</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    
+    <span class="k">function</span> <span class="n">arrayOfTwo</span><span class="p">(</span><span class="nv">$el</span><span class="p">){</span>
+        <span class="c1">// retun boolean</span>
+        <span class="c1">// validation for values</span>
+        
+        <span class="k">return</span> <span class="nb">is_array</span><span class="p">(</span><span class="nv">$el</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$el</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="n">__desrtuct</span><span class="p">(){</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="nv">$test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">pointInSquare</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]);</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$test</span><span class="o">-&gt;</span><span class="nf">init</span><span class="p">());</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>W późniejszym czasie dodam kod w <code class="language-plaintext highlighter-rouge">JS</code> i w <code class="language-plaintext highlighter-rouge">PYTHON</code>.</p>
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Sprawdzenie czy punkt jest zawarty w kwadracie&url=http://localhost:4000/test-punktu-zawartego-w-kwadracie/"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/test-punktu-zawartego-w-kwadracie/"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br/>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/floating-point-problem/">
+                <div class="rel">
+                    <h5>Floating-point problem <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/happy-numbers/">
+                <div class="rel">
+                    <h5>Happy numbers <time class="post_date">22 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/liczby/">
+                <div class="rel">
+                    <h5>Formatowanie liczb <time class="post_date">03 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/wyzwanie-the-river-i/">
+                <div class="rel">
+                    <h5>Wyzwanie? The River I <time class="post_date">02 Luty 2020</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+          
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on November 19, 2019
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  </article>
+                <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
+            </div>
+
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/test-punktu-zawartego-w-kwadracie/',
+		  'title': 'Sprawdzenie czy punkt jest zawarty w kwadracie'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+
+</html>

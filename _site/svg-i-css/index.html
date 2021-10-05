@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Łączenie SVG i CSS – Blog – Edyta Jozdowska</title>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Łączenie SVG i CSS | Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Łączenie SVG i CSS" />
+<meta name="author" content="Edyta Jozdowska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm animacji czyli animation" />
+<meta property="og:description" content="Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm animacji czyli animation" />
+<link rel="canonical" href="http://localhost:4000/blog/svg-i-css/" />
+<meta property="og:url" content="http://localhost:4000/blog/svg-i-css/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-25T11:38:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Łączenie SVG i CSS" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Łączenie SVG i CSS","dateModified":"2019-11-25T11:38:00+01:00","datePublished":"2019-11-25T11:38:00+01:00","url":"http://localhost:4000/blog/svg-i-css/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/svg-i-css/"},"author":{"@type":"Person","name":"Edyta Jozdowska"},"description":"Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm animacji czyli animation","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+     <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm animacji czyli animation" />
+    <meta property="og:description" content="Jednym z moich ulubionych elementów frontu, jest zabawa animacją. W tym wpisie pokażę, jak można połączyć grafikę wektorową i zanimować ją poprzez wbudowane w css (czyli de facto przeglądarkę) mechanizm animacji czyli animation" />
+    
+    <meta name="author" content="Blog" />
+
+    
+    <meta property="og:title" content="Łączenie SVG i CSS" />
+    <meta property="twitter:title" content="Łączenie SVG i CSS" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/logo.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/logo.png"/>
+    
+    <meta property="og:site_name" content="Edyta Jozdowska"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/svg-i-css/" />
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <div class="wrapper-container" id="top">
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="/blog/" class="site-avatar"><img src="/blog/images/logo.png" /></a>
+
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="/blog/">Blog</a></h1>
+                        <p class="site-description">Edyta Jozdowska</p>
+                    </div>
+
+                    <nav class="link-effect">
+                        
+                        <a href="/blog/" >
+                            <span>Blog</span>
+                        </a>
+                        
+                        <a href="/blog/o-mnie" >
+                            <span>O mnie</span>
+                        </a>
+                        
+                        <a href="http://zuvpsndv.wirt08.biznes-host.pl/folio/"  target="_blank" >
+                            <span>Folio</span>
+                        </a>
+                        
+                        <a href="/blog/search" >
+                            <span>Szukaj</span>
+                        </a>
+                        
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper-main">
+
+            <div id="main" role="main" class="container">
+                <article class="post detailed">
+  <h1>Łączenie SVG i CSS</h1>
+
+  <div>
+    <p class="author_title">Jozdowska Edyta · 25 Listopad 2019</p>
+    
+    <div class="post-meta">
+      <div class="cat">
+        
+        Kategorie:&nbsp;&nbsp;
+        <ul class="category">
+          
+          <li>
+            <a href="/blog/kategoria/scss">
+              scss
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/js">
+              js
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/programowanie">
+              programowanie
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/kategoria/grafika">
+              grafika
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tags">
+        Tagi:&nbsp;&nbsp;
+        
+        <ul class="tags_cnt">
+          
+          <li>
+            <a href="/blog/tags/css">
+              #css,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/scss">
+              #scss,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/svg">
+              #svg,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/grafika">
+              #grafika,&nbsp;&nbsp;
+            </a>
+          </li>
+          
+          <li>
+            <a href="/blog/tags/animacja">
+              #animacja
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <!-- TOC -->
+
+<ul class="content_list">
+  <li><a href="#1bye-bye-flash">.1.Bye, bye Flash</a></li>
+  <li><a href="#2punkt-pierwszy---svg">.2.Punkt pierwszy - SVG</a></li>
+</ul>
+<!-- /TOC -->
+
+<p>Pamiętam jak do złożonych animacji wykorzystywało się Flash’a. Starsi użytkownicy powinni pamiętać, jak instalowało się dodatki Acrobat Flash do przeglądarki, by działały niektóre elementy lub nawet całe strony. 
+Pisanie w ActionScript nie należało do najprzyjemniejszych. Ustawianie animacji “prawie” klatka po klatce - też nie, choć Flash starał się ułatwić ten proces, jak tylko mógł. Umówmy się. Flash nie był do tego. Gry wykonane w nim, sterowanie filmem - to było przeznaczenie flash’a, a nie pojedyncze animacje, czy reklamy.</p>
+
+<h2 id="1bye-bye-flash">.1.Bye, bye Flash</h2>
+<p>Flash odszedł. Moim zdanie to dobrze. Dzisiaj wykorzystujemy i łączymy ze sobą techniki, które nie wymagają dodatków w przeglądarce, by cieszyć nasze oko. Oczywiście, taki sam efekt możemy osiągnąć wykorzystując jedynie <code class="language-plaintext highlighter-rouge">JavaScript</code>, tylko po co. Staram się do zwykłych zadań nie wykorzystywać <code class="language-plaintext highlighter-rouge">JS</code>, lub wykorzystywać go jak najmniej, w myśl zasady, że do zerwania jednego źdźbła nie potrzebuję kombajna, który zaora całe pole.</p>
+
+<p>Do dzisiejszej animacji wykorzystam SVG, CSS i troszkę JS.</p>
+
+<h2 id="2punkt-pierwszy---svg">.2.Punkt pierwszy - SVG</h2>
+<p>Zacznę od vectora <code class="language-plaintext highlighter-rouge">svg</code>. Ten kto nie wie, co to svg zachęcam do zapoznania się z <a href="https://pl.wikipedia.org/wiki/Scalable_Vector_Graphics">wpisem na wikipedii</a>{target=”_blank”}.
+Do wykonywania grafiki użytkowej i plików wektorowych używam <a href="https://inkscape.org/">Inkscape</a>. 
+W Inkscape tworzę pole tekstowe z treścią np. “POST”. Wybieram dość grubą czcionkę, gdyż będę animowała głównie krawędzie liter. Cały tekst przekształcam w krzywe, a sam plik zapisuję jako <code class="language-plaintext highlighter-rouge">zoptymalizowany SVG</code>. 
+Do dalszej konwersji, z wygody lub też z lenistwa używam aplikacji <a href="https://icomoon.io/app">icomoon</a>, która “standaryzuje “ mi mój plik svg, usuwa ewentualne grupy i przelicza wszystkie ścieżki tak aby móc wprost go użyć, dzięki czemu z zapisu inkscape otrzymuję taki vector:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">"1.1"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">width=</span><span class="s">"122"</span> <span class="na">height=</span><span class="s">"32"</span> <span class="na">viewBox=</span><span class="s">"0 0 122 32"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- P --&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M0 0.559h13.201q5.888 0 9.028 2.624 3.161 2.603 3.161 7.437 0 4.855-3.161 7.479-3.14 2.603-9.028 2.603h-5.247v10.701h-7.954zM7.954 6.323v8.615h4.4q2.314 0 3.574-1.116 1.26-1.136 1.26-3.202t-1.26-3.181-3.574-1.116z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+<span class="c">&lt;!-- O --&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M45.079 5.756q-3.636 0-5.64 2.686t-2.004 7.561q0 4.855 2.004 7.541t5.64 2.686q3.657 0 5.66-2.686t2.004-7.541q0-4.876-2.004-7.561t-5.66-2.686zM45.079-0.008q7.437 0 11.652 4.256t4.214 11.755q0 7.479-4.214 11.734t-11.652 4.256q-7.417 0-11.652-4.256-4.214-4.256-4.214-11.734 0-7.499 4.214-11.755 4.235-4.256 11.652-4.256z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+<span class="c">&lt;!-- S --&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M88.399 1.519v6.528q-2.541-1.136-4.958-1.715t-4.565-0.578q-2.851 0-4.214 0.785t-1.363 2.438q0 1.24 0.909 1.942 0.93 0.682 3.347 1.178l3.388 0.682q5.144 1.033 7.313 3.14t2.169 5.991q0 5.103-3.037 7.603-3.016 2.479-9.234 2.479-2.934 0-5.888-0.558t-5.908-1.653v-6.714q2.954 1.57 5.702 2.376 2.768 0.785 5.33 0.785 2.603 0 3.987-0.868t1.384-2.479q0-1.446-0.95-2.231-0.93-0.785-3.739-1.405l-3.078-0.682q-4.628-0.992-6.776-3.161-2.128-2.169-2.128-5.846 0-4.607 2.975-7.086t8.553-2.479q2.541 0 5.227 0.393 2.686 0.372 5.557 1.136z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+<span class="c">&lt;!-- T --&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M93.752 0.559h28.427v6.012h-10.226v24.832h-7.954v-24.832h-10.247z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Nad powyższym wektorem trzeba trochę popracować. Moim założeniem jest przesunięcie liter i sekwencyjna ich animacja dzięki css.</p>
+
+<p>W powyższym SVG, każdy element <code class="language-plaintext highlighter-rouge">path</code> to poszczególna litera. Kopiuję <code class="language-plaintext highlighter-rouge">path</code> razy 3 i grupuję je w znacznik <code class="language-plaintext highlighter-rouge">g</code> tak aby był jako, taki porządek i by można było sterować nimi z css’a. 
+Dodaje klasę odpowiadającą za kolor i ewentualne przesunięcie poszczególnych liter: <code class="language-plaintext highlighter-rouge">color1</code>, <code class="language-plaintext highlighter-rouge">color2</code>, <code class="language-plaintext highlighter-rouge">color3</code>. Mniej więcej wygląda to tak:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;svg</span>  <span class="na">version=</span><span class="s">"1.1"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">width=</span><span class="s">"125"</span> <span class="na">height=</span><span class="s">"40"</span> <span class="na">viewBox=</span><span class="s">"0 0 125 40"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- litera P --&gt;</span>
+<span class="nt">&lt;g</span> <span class="na">class=</span><span class="s">"letter"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;g&gt;</span>
+        <span class="nt">&lt;path</span> <span class="na">class=</span><span class="s">"color1"</span> <span class="na">d=</span><span class="s">"M0 0.559h13.201q5.888 0 9.028 2.624 3.161 2.603 3.161 7.437 0 4.855-3.161 7.479-3.14 2.603-9.028 2.603h-5.247v10.701h-7.954zM7.954 6.323v8.615h4.4q2.314 0 3.574-1.116 1.26-1.136 1.26-3.202t-1.26-3.181-3.574-1.116z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+     <span class="nt">&lt;/g&gt;</span>
+      <span class="nt">&lt;g&gt;</span>
+        <span class="nt">&lt;path</span> <span class="na">class=</span><span class="s">"color2"</span> <span class="na">d=</span><span class="s">"M0 0.559h13.201q5.888 0 9.028 2.624 3.161 2.603 3.161 7.437 0 4.855-3.161 7.479-3.14 2.603-9.028 2.603h-5.247v10.701h-7.954zM7.954 6.323v8.615h4.4q2.314 0 3.574-1.116 1.26-1.136 1.26-3.202t-1.26-3.181-3.574-1.116z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+     <span class="nt">&lt;/g&gt;</span>
+      <span class="nt">&lt;g&gt;</span>
+        <span class="nt">&lt;path</span> <span class="na">class=</span><span class="s">"color3"</span> <span class="na">d=</span><span class="s">"M0 0.559h13.201q5.888 0 9.028 2.624 3.161 2.603 3.161 7.437 0 4.855-3.161 7.479-3.14 2.603-9.028 2.603h-5.247v10.701h-7.954zM7.954 6.323v8.615h4.4q2.314 0 3.574-1.116 1.26-1.136 1.26-3.202t-1.26-3.181-3.574-1.116z"</span><span class="nt">&gt;&lt;/path&gt;</span>
+     <span class="nt">&lt;/g&gt;</span>
+<span class="err">&lt;</span>/g
+.
+.
+.
+<span class="nt">&lt;/svg&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Aby nadać efekt rysowania, będziemy zmieniać jedynie wartości `    stroke-dasharray<code class="language-plaintext highlighter-rouge"> i </code>stroke-dashoffset`. Nie będę rozpisywać się dokładnie. Wystarczy, że zamieszczę poniżej kod z działającą już animacją.</p>
+
+<p>Style dla naszego vectora to:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+</pre></td><td class="rouge-code"><pre><span class="nv">$firstColor</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span>
+<span class="nv">$secondColor</span><span class="p">:</span><span class="mh">#e91e63</span><span class="p">;</span>
+<span class="nv">$thirdColor</span><span class="p">:</span><span class="mh">#00BCD4</span><span class="p">;</span>
+<span class="nv">$bgColor</span><span class="p">:</span> <span class="mh">#454545</span><span class="p">;</span>
+
+<span class="nt">body</span><span class="p">{</span><span class="nl">background</span><span class="p">:</span><span class="nv">$bgColor</span> <span class="p">}</span>
+
+<span class="nt">svg</span><span class="p">{</span>
+  <span class="nt">position</span><span class="nd">:absolute</span><span class="p">;</span>
+  <span class="nt">margin</span><span class="nd">:auto</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nt">transform</span><span class="nd">:scale</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span><span class="p">;</span>
+  <span class="nt">path</span><span class="p">{</span>
+    <span class="nt">fill</span><span class="nd">:none</span><span class="p">;</span>
+    <span class="na">stroke-width</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nc">.color1</span> <span class="p">{</span>
+      <span class="na">stroke</span><span class="p">:</span> <span class="nv">$firstColor</span><span class="p">;</span>
+          <span class="nl">animation-delay</span><span class="p">:</span> <span class="mi">.2s</span><span class="p">;</span>
+        <span class="nt">transform</span><span class="nd">:translate3d</span><span class="o">(</span><span class="nt">1px</span> <span class="o">,</span><span class="nt">1px</span><span class="o">,</span><span class="nt">0</span><span class="o">)</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">&amp;</span><span class="nc">.color2</span> <span class="p">{</span>
+      <span class="nt">transform</span><span class="nd">:translate3d</span><span class="o">(</span><span class="nt">2px</span> <span class="o">,</span><span class="nt">2px</span><span class="o">,</span><span class="nt">0</span><span class="o">)</span><span class="p">;</span>
+      <span class="na">stroke</span><span class="p">:</span> <span class="nv">$secondColor</span><span class="p">;</span>
+      <span class="nl">animation-delay</span><span class="p">:</span> <span class="mi">.5s</span><span class="p">;</span>
+      <span class="nl">z-index</span><span class="p">:</span> <span class="m">9999</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">&amp;</span><span class="nc">.color3</span> <span class="p">{</span>
+      <span class="nt">transform</span><span class="nd">:translate3d</span><span class="o">(</span><span class="nt">2px</span> <span class="o">,</span><span class="nt">2px</span><span class="o">,</span><span class="nt">0</span><span class="o">)</span><span class="p">;</span>
+      <span class="na">stroke</span><span class="p">:</span> <span class="nv">$thirdColor</span><span class="p">;</span>
+      <span class="nl">animation-delay</span><span class="p">:</span> <span class="mi">.6s</span><span class="p">;</span>
+     <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">{</span>
+  <span class="k">&amp;</span><span class="nc">.animate</span> <span class="nt">path</span><span class="p">{</span>
+    <span class="nt">animation-name</span><span class="nd">:stroke</span><span class="p">;</span>
+    <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="nl">animation-duration</span><span class="p">:</span><span class="m">5s</span><span class="p">;</span>
+    <span class="nt">animation-direction</span><span class="nd">:alternate</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@keyframes</span> <span class="nt">stroke</span> <span class="p">{</span>
+  <span class="nt">from</span> <span class="p">{</span>
+    <span class="na">stroke-dasharray</span><span class="p">:</span> <span class="m">20</span><span class="p">;</span>
+    <span class="na">stroke-dashoffset</span><span class="p">:</span> <span class="m">0px</span>
+  <span class="p">}</span>
+  <span class="nt">to</span> <span class="p">{</span>
+    <span class="na">stroke-dasharray</span><span class="p">:</span><span class="m">600</span><span class="p">;</span>
+  <span class="na">stroke-dashoffset</span><span class="p">:</span><span class="m">200px</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Kod <code class="language-plaintext highlighter-rouge">JS</code> jak widać dodany jest jedynie po to by rozpocząć animację od nowa</strong></p>
+
+<iframe src="https://codesandbox.io/embed/static-6mti1?fontsize=14&amp;hidenavigation=1&amp;theme=dark&amp;view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="static" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+
+    </div>
+
+    <div class="share">
+      <p>
+        <span class="share-box">Podziel się:</span>
+        <a href="http://twitter.com/share?text=Łączenie SVG i CSS&url=http://localhost:4000/svg-i-css/"
+          target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/svg-i-css/"
+          target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="author">        
+      <div class="avatar">
+    <figure style="background-image: url('/blog/images/me.jpg');"></figure>
+</div>
+<div>
+    <h3>Jozdowska Edyta * FullStack Developer</h3>
+    <p>Pisanie kodu jest moją pasją. Zajmuję się tym od przeszło 10 lat, z większą lub mniejszą intensywnością.<br/>Piszę kod w PHP, JS, SCSS i Python. Nie stronię też od poznawania nowych, lub jak kto woli starych rozwiązań jak Jekyll oraz innych języków
+        np. Java.</p>
+    <a href="../o-mnie">więcej o mnie</a>
+
+</div>
+    </div>
+    <div class="related">
+      <h4>Powiązane posty:</h4>
+      <div class="rect">
+    
+    
+    
+    <!-- powiązanie po tagach -->
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+        
+            <a href="/blog/napisywanie-zmiennych-scss-dla-element-ui/">
+                <div class="rel">
+                    <h5>Nadpisywanie scss dla Elements UI <time class="post_date">18 Listopad 2019</time></h5>
+                    
+                </div>
+            </a>  
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+      
+      
+        
+        
+      
+    
+  </div>
+    </div>
+    <!--<div class="date">
+    Written on November 25, 2019
+  </div>-->
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'capo1-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  </article>
+                <a style="float:right" href="#top" class="archive-top-link">&#8593;</a>
+            </div>
+
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    
+<a href="mailto:jozdowska.edyta@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/capo1/blog"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/edyta-jozdowska-tyrlik"><i class="svg-icon linkedin"></i></a>
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+
+
+
+
+
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="/blog/assets/flow.js"></script>
+   -->
+    <script async src="/blog/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        let cnt1 = document.getElementsByClassName('language-graph');
+        if (cnt1) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js');
+            document.body.appendChild(s);
+            var config = {
+                startOnLoad: true,
+                flowchart: {
+                    useMaxWidth: false,
+                    htmlLabels: true,
+                    curve: 'linear',
+                },
+                securityLevel: 'loose',
+            };
+
+            s.onload = () => {
+                mermaid.initialize(config);
+                Array.from(cnt1).forEach((el, i) => {
+                    el.parentNode.classList.add('hasDiagram')
+
+                    let insertSvg = function(svgCode, bindFunctions) {
+                        el.innerHTML = svgCode;
+                    };
+                    let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
+                    mermaid.mermaidAPI.render(`graphDiv${i}`, graphDef, insertSvg);
+                });
+            }
+
+
+
+
+        };
+
+        let zadanie = document.getElementsByClassName('language-Zadanie')[0]
+        if (zadanie) zadanie.parentNode.classList.add('zadanie');
+    </script>
+    <script>
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+        /* let cnt = document.getElementsByClassName('language-flow')[0];
+         var diagram = flowchart.parse(cnt.innerHTML.replace(new RegExp('&gt;', "gi"), '>'));
+         var t = document.createElement('div')
+         t.id = "diagram"
+         cnt.parentNode.insertBefore(t, cnt);
+         cnt.parentNode.classList.add('hasDiagram')
+         diagram.drawSVG('diagram', {
+             'x': 0,
+             'y': 0,
+             'line-width': 2,
+             'line-length': 50,
+             'text-margin': 15,
+             'font-size': 11,
+             'font-color': '#020202',
+             'line-color': '#020202',
+             'element-color': 'black',
+             'fill': 'white',
+             'yes-text': 'tak',
+             'no-text': 'nie',
+             'arrow-end': 'block',
+             'scale': 1,
+             // style symbol types
+             'symbols': {
+                 'start': {
+                     'class': 'start-element',
+                     'font-color': '#020202',
+                     'element-color': '#020202',
+                     'fill': '#f7f7f7'
+                 },
+                 'end': {
+                     'class': 'end-element',
+                     'element-color': '#020202',
+                     "fill": "#d4e1f5"
+                 }
+             },
+             // even flowstate support ;-)
+             'flowstate': {
+                 'past': {
+                     'fill': '#CCCCCC',
+                     'font-size': 12
+                 },
+                 'current': {
+                     'fill': '#f9ecec',
+                 },
+                 'future': {
+                     'fill': '#FFFF99'
+                 },
+                 'request': {
+                     'fill': 'blue'
+                 },
+                 'invalid': {
+                     'fill': '#444444'
+                 },
+                 'approved': {
+                     'fill': '#58C4A3',
+                     'font-size': 12,
+                     'yes-text': 'APPROVED',
+                     'no-text': 'n/a'
+                 },
+                 'rejected': {
+                     'fill': '#C45879',
+                     'font-size': 12,
+                     'yes-text': 'n/a',
+                     'no-text': 'REJECTED'
+                 }
+             }
+         });*/
+    </script>
+    <div id="toast">
+        <div id="desc">A notification message..</div>
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-151550688-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/svg-i-css/',
+		  'title': 'Łączenie SVG i CSS'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+
+</html>
