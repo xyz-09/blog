@@ -1,0 +1,226 @@
+{% raw %}
+<style>
+ .animations{
+     flex-wrap:wrap
+ }
+
+    /** end helpers **/
+    .animated-icon .triangle-big {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        z-index: 0;
+        transform-box: fill-box;
+    }
+
+    .animated-icon:hover .triangle-big {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+    .animated-icon:hover svg .triangle-small {
+        transform-box: fill-box;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+    }
+
+    .animated-icon:hover svg.triangle-small {
+        -webkit-transform: translateX(-70%);
+        transform: translateX(-70%);
+    }
+
+    .animated-icon:hover svg.triangle-small path {
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+
+    svg .hide {
+        opacity: 0;
+    }
+
+    svg .fly-in-top {
+        transform-box: border-box;
+        -webkit-transform: rotate(50deg) translate(10%, -120%);
+        transform: rotate(50deg) translate(10%, -120%);
+        -webkit-transform-origin: right center;
+        transform-origin: right center;
+    }
+
+    svg .fly-in-right {
+        -webkit-transform: translateX(120%);
+        transform: translateX(120%);
+        -webkit-transform-origin: right center;
+        transform-origin: right center;
+    }
+
+    svg .fly-in-left {
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+        -webkit-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    svg .fade-in-up {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    svg .from-center {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: scale(0.6) translateY(35%);
+        transform: scale(0.6) translateY(35%);
+    }
+
+    svg .rotate {
+        -webkit-transform: translate(8%, 0);
+        transform: translate(8%, 0);
+    }
+
+    svg:hover .hide {
+        opacity: 1;
+    }
+
+    svg:hover .fly-in-top {
+        -webkit-transform: rotate(0deg) translateX(0);
+        transform: rotate(0deg) translateX(0);
+    }
+
+    svg:hover .fly-in-right {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    svg:hover .fade-in-up {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    svg:hover .move-x {
+        -webkit-transform: translateX(-10%);
+        transform: translateX(-10%);
+    }
+
+    svg:hover .fly-in-left {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    svg:hover .from-center {
+        -webkit-transform: scale(1) translateY(0%);
+        transform: scale(1) translateY(0%);
+    }
+
+    svg:hover .rotate {
+        -webkit-transform: rotate(120deg) translate(10%, -32%);
+        transform: rotate(120deg) translate(10%, -32%);
+    }
+</style>
+{% endraw %}
+<div class="animations">
+    <div class="box">
+        <div class="animated-icon">
+            <svg version="1.1" viewBox="0 0 37.013357 31.379055" height="118.598" width="139.89301">
+                <path d="M 16.976838,2.0357324 -0.00533822,31.379054 H 33.901231 Z"
+                    style="fill:#26509b;fill-opacity:1;stroke:none;stroke-width:0.59387147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path d="m 23.681729,14.142918 -9.718941,16.972742 19.498356,0.0027 z"
+                    style="fill:#fcffff;fill-opacity:1;stroke:#ebedf2;stroke-width:0.52023143;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                <path d="m 25.779004,17.104646 -8.149621,14.274408 17.240551,-0.0039 z"
+                    style="fill:#d04343;fill-opacity:1;stroke:none;stroke-width:0.59387147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path class="hide fly-in-top" d="m 24.745189,11.8482 -11.378048,19.520644 23.461887,0.01021 z"
+                    style="fill:#789ad9;fill-opacity:1;stroke:none;stroke-width:0.81052744px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            </svg>
+            
+        </div>
+        fly-in-top
+    </div>
+    <div class="box">
+        <div class="animated-icon">
+            <svg version="1.1" viewBox="0 0 37.013357 31.379055" height="118.598" width="139.89301">
+                <path d="M 17.639845,0.89933856 0,31.379054 h 35.219678 z"
+                    style="fill:#f0d63c;fill-opacity:1;stroke:none;stroke-width:0.6168707px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path d="M 22.391046,9.1342653 9.0599184,31.379054 H 35.219678 Z"
+                    style="fill:#f03c3c;fill-opacity:1;stroke:none;stroke-width:0.6168707px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path d="m 26.450358,16.166349 -8.829075,15.212705 17.598395,-0.0054 z"
+                    style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.6168707px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path class="hide fly-in-right" d="m 24.745189,11.8482 -11.378048,19.520644 23.461887,0.01021 z"
+                    style="fill:#789ad9;fill-opacity:1;stroke:none;stroke-width:0.81052744px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            </svg>
+           
+        </div>
+        fly-in-right
+    </div>
+    <div class="box">
+        <div class="animated-icon">
+            <svg version="1.1" viewBox="0 0 41.463385 26.379055" height="118.598" width="156.71201">
+                <path d="M 18.174487,0.19540461 0,31.598923 h 36.287142 z"
+                    style="fill:#f03c3c;fill-opacity:1;stroke:none;stroke-width:0.63556725px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path d="M 23.069688,8.6799213 9.3345147,31.598923 H 36.287142 Z"
+                    style="fill:#5a7cbc;fill-opacity:1;stroke:none;stroke-width:0.63556725px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path d="m 27.252034,15.925139 -9.096671,15.673784 18.131779,-0.0055 z"
+                    style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.63556725px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path class="hide fade-in-up" style="fill:#789ad9;stroke-width:0.84601939"
+                    d="M 18.098893,8.5283978e-4 36.197787,31.598832 H 0 Z" data-name="Path 298" />
+                <path class="hide fade-in-up" style="fill:#5a7cbc;stroke-width:0.84601939"
+                    d="M 27.82404,7.9879485 41.478207,31.600403 14.136161,31.598924 Z" />
+            </svg>
+        </div>
+        fly-in-up
+    </div>
+    <div class="box">
+        <div class="animated-icon">
+            <svg width="156.71201" height="119.429" viewBox="0 0 41.463385 26.379055" version="1.1">
+                <g class="move-x" transform="translate(-0.18981651,-0.37302536)">
+                    <path
+                        style="fill:#26509b;fill-opacity:1;stroke:none;stroke-width:0.63708025px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="M 18.34603,0.38698028 0.18981651,31.971949 36.595194,31.968283 Z" />
+                    <path
+                        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.64660412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="M 23.660122,8.6549507 9.6864278,31.971949 l 27.5888442,0.0015 z" />
+                    <path
+                        style="fill:#f03c3c;fill-opacity:1;stroke:none;stroke-width:0.64660412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="m 27.915094,16.031544 -9.295046,15.932099 18.655224,0.0098 z" />
+                </g>
+                <path class="hide fly-in-left" d="M 27.82404,7.999 42.487083,31.9999 14.156161,31.99999 Z"
+                    style="fill:#5a7cbc;fill-opacity:1;stroke-width:1.16865492" />
+            </svg>
+        </div>
+        fly-in-left, move-x
+    </div>
+    <div class="box">
+        <div class="animated-icon">
+            <svg width="156.71201" height="119.429" viewBox="0 0 41.463385 26.379055" version="1.1">
+                <g transform="translate(-0.45361297)" id="g841">
+                    <path
+                        style="fill:#f03c3c;fill-opacity:1;stroke:none;stroke-width:0.63968289px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="M 18.745783,-0.00851234 0.45361297,31.598363 H 36.975744 Z" />
+                    <path
+                        style="fill:#f0d53c;fill-opacity:1;stroke:none;stroke-width:0.63968289px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="M 23.672692,8.5309476 9.8485761,31.598363 H 36.975744 Z" />
+                    <path
+                        style="fill:#f03c3c;fill-opacity:1;stroke:none;stroke-width:0.43304083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="m 30.819711,20.9246 -6.19798,10.679264 12.354013,-0.0038 z" />
+                </g>
+                <path class="from-center hide" data-name="Path 298"
+                    d="M 18.29217,-0.00851234 36.522131,31.598363 0,31.598832 Z"
+                    style="fill:#789ad9;stroke-width:0.84728688" />
+                <path class="from-center hide" d="M 31.58952,14.746975 41.463414,31.59968 H 21.714782 Z"
+                    style="fill:#97b8f4;stroke-width:0.84601939" />
+            </svg>
+        </div>
+        from-center
+    </div>
+    <div class="box">
+        <div class="animated-icon">
+            <svg width="139.89301" height="118.598" viewBox="0 0 41.463385 26.379055" version="1.1">
+                <g class="rotate">
+                    <path id="path1738-20" d="M 18.274521,0.68414302 0.68810651,31.071553 H 35.801129 Z"
+                        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ebebeb;stroke-width:0.61500245px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                    <path d="M 25.326297,12.202996 14.17771,31.412295 36.399458,31.405595 Z"
+                        style="fill:#ffed83;fill-opacity:1;stroke:none;stroke-width:0.77893138px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                </g>
+            </svg>
+        </div>
+        rotate
+    </div>
+</div>

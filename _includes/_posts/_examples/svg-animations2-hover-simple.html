@@ -1,0 +1,117 @@
+{% raw %}
+<style>
+.animated-icon {
+	position: relative;
+	width: 150px;
+	height: 150px;
+    margin: 15px;
+}
+
+.animated-icon.smaller {
+	width: 80px;
+	height: 80px;
+}
+
+.animated-icon svg {
+	overflow: visible;
+	position: absolute;
+	transition: all .2s;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+}
+
+.animated-icon svg path, .animated-icon svg g {
+	transition: all .2s;
+	transform-box: fill-box;
+	transform-origin: center center;
+}
+.square  path.bigSquare,.square path.smallSquare {
+  transition: all .2s linear
+} 
+.animated-icon:hover .bigSquare {
+	transform: translateX(15%);
+	transform: rotate(90deg);
+}
+
+.animated-icon:hover .smallSquare {
+	transform-box: fill-box;
+	transform-origin: center;
+	transform: translateX(-280%) rotate(720deg);
+}
+.animated-icon .bigSquare {
+	fill: #99dde2;
+}
+
+.blue .smallSquare {
+	fill: #26509b;
+}
+
+.green .smallSquare {
+	fill: #55b555;
+}
+
+.light-blue .smallSquare {
+	fill: #789ad9;
+}
+
+.yellow .smallSquare {
+	fill: #ffed83;
+}
+
+.orange .smallSquare {
+	fill: #f0783c;
+}
+
+.purple .smallSquare {
+	fill: #ab3070;
+}
+.animations {
+    display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+</style>
+{% endraw %}
+<div class="animations">
+    <div class="animated-icon blue">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+        <div class="animated-icon green">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+        <div class="animated-icon light-blue">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+        <div class="animated-icon yellow">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+        <div class="animated-icon orange">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+        <div class="animated-icon purple">
+        <svg width="139.89301" height="118.598" viewBox="0 0 37.013357 31.379055">
+            <path class="bigSquare" d="M -9.9e-7,31.379054 V -6.3470066e-5 H 31.379117 V 31.379054 Z" style="stroke-width:0.84015954" />
+            <path class="smallSquare" d="M 25.39887,31.379054 V 19.764689 h 11.614365 v 11.614365 z" style="stroke-width:0.84015954" />
+          </svg>
+        </div>
+</div>
