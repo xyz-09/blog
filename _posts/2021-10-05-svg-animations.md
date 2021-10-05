@@ -21,7 +21,7 @@ Animacja miała być na zdarzenie hover myszki i wyglądać między innymi w tak
 {:.center}
 {%
     include image.html
-    src="/images/blog_images/svg/svg-animation.gif"
+    src="/images/blog_images/svg-animations/svg-animations.gif"
     caption="Animacje svg"
 %}
 
