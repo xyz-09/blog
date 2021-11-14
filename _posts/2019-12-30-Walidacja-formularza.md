@@ -29,7 +29,7 @@ Jeśli mamy zaprojektowany graficznie formularz z przemyślaną obsługą błęd
 
 Poniżej zamieszczam pełną walidację `js` z wykorzystaniem wbudowanego mechanizmu z przeglądarki z możliwością nadania własnego wyglądu.
 
-# 3.Walidacja formularza FrontEnd
+# 3.Walidacja formularza FrontEnd [JS]
 <p class="codepen" data-height="670" data-theme-id="dark" data-default-tab="html,result" data-user="ejo" data-slug-hash="YzPxmbJ" style="height: 670px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YzPxmbJ">
   <span>See the Pen <a href="https://codepen.io/ejo/pen/YzPxmbJ">
   YzPxmbJ</a> by ejo (<a href="https://codepen.io/ejo">@ejo</a>)
@@ -55,6 +55,13 @@ Potrzebny plik z podstawowymi funkcjami dla obsługi formularza po stronie serwe
     $content .= "$content_base\n";
     return $content;
   }
+
+  //Walidacja pól
+  $name = removeCRLF(removeHtml($_POST["name"]));
+  $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+  $phone = removeHtml($_POST["tel"]);
+  $text = removeHtml($_POST['msg']);
+  $agree = removeHtml($_POST['agree']);
 ?>
 ```
 
