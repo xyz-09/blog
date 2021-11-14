@@ -6,7 +6,7 @@ category: [frontend, inne]
 author: Edyta Jozdowska
 tags: [js]
 tags: [frontend, "code-rewiev"]
-excerpt:
+excerpt: Biorę na tapet obcy kod i zastanawiam się jak można go zmienić by był lepszy. 
 published: true
 ---
 
