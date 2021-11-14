@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Walidacja formularza
+title: Walidacja formularza w js i php + wysłanie danych e-mailem
 date: 2019-12-30 08:30
 category: [js, frontend, php]
 author: Edyta Jozdowska
