@@ -10,6 +10,7 @@ excerpt: Biorę na tapet obcy kod i zastanawiam się jak można go zmienić by b
 published: true
 ---
 
+
 # Code rewiev - czyli co tutaj jest nie tak
 
 Do postu na ten temat natchnął mnie niedziałający kod, który ostatnio dostałam do zdebugowania. Dotyczył on prostej walidacji formularza. Postanowiłam wskazać, co w tym kodzie jest moim zdaniem "nie tak". Na marginesie chciałabym zaznaczyć, że to moja subiektywna opinia, każdy może mieć inną. Na końcu tego wpisu zamieszczę swoją wersję i przeprowadzę porównanie, w tym wydajnościowe.
