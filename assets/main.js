@@ -96,8 +96,6 @@ if (table) {
             let td = tr[i].getElementsByTagName('td');
 
             for (let z = 0; z < td.length; z++) {
-                console.log(td[z], th[z])
-
                 td[z].dataset.name = th[z].innerHTML
 
             }
