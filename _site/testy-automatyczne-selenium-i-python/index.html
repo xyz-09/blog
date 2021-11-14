@@ -36,22 +36,23 @@
 <meta property="og:url" content="/blog" />
 
     <link rel="stylesheet" type="text/css" href="/blog/assets/style.css?ver=1.5" />.
-    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska" href="/blog/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Blog - Edyta Jozdowska"
+        href="/blog/feed.xml" />
     <link rel="canonical" href="http://localhost:4000/testy-automatyczne-selenium-i-python/" />
     <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9T1GC34KM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9T1GC34KM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-R9T1GC34KM');
-</script>
-<!-- End Google Tag Manager -->
+        gtag('config', 'G-R9T1GC34KM');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -429,7 +430,7 @@ Drugi przypadek = użyj <code class="language-plaintext highlighter-rouge">pip3<
                 Array.from(cnt1).forEach((el, i) => {
                     el.parentNode.classList.add('hasDiagram')
 
-                    let insertSvg = function(svgCode, bindFunctions) {
+                    let insertSvg = function (svgCode, bindFunctions) {
                         el.innerHTML = svgCode;
                     };
                     let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
