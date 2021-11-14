@@ -30,7 +30,7 @@
       "date"     : "2021-02-18",
       "tags"     : "htaccess, vue, js",
       "excerpt"     : "Dyrektywy w .htaccess by działał router w vue",
-      "content"  : "Htaccess dla Vue Aby działał router vue musimy ustaić odpowiednio .htaccess’a - inaczej po kliknięciu w link aplikacji, który zmienia stan aplikacji zobaczymy 404 error Musimy odpowiednio przepisać przetwarzanie urli..."
+      "content"  : "Htaccess dla Vue Aby działał router vue musimy ustawić odpowiednio .htaccess’a - inaczej po kliknięciu w link aplikacji, który zmienia stan aplikacji zobaczymy 404 error Musimy odpowiednio przepisać przetwarzanie urli..."
     } ,
   
     {

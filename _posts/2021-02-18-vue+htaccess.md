@@ -10,8 +10,8 @@ published: true
 ---
 
 # Htaccess dla Vue 
-Aby działał router vue musimy ustaić odpowiednio .htaccess'a - inaczej po kliknięciu w link aplikacji, który zmienia stan aplikacji zobaczymy `404 error`
-Musimy odpowiednio przepisać przetwarzanie urli przez serwer by wszystkie zmiany kierował do pliku `index.html`, choć czasami mi się zdarza z vue stosować plik `index.php` - ale to już na marginesie. Wspominam ponieważ się da :smile:
+Aby działał router vue musimy ustawić odpowiednio .htaccess'a - inaczej po kliknięciu w link aplikacji, który zmienia stan aplikacji zobaczymy `404 error`
+Musimy odpowiednio przepisać przetwarzanie urli przez serwer by wszystkie zmiany kierowały do pliku `index.html`, choć czasami mi się zdarza z vue stosować plik `index.php` - ale to już na marginesie. Wspominam ponieważ się da :smile:
 
 
 ## .htaccess dla głównej domeny/subdomeny
