@@ -1,10 +1,10 @@
 "use strict";
 
-window.requestAnimFrame = (function() {
+window.requestAnimFrame = (function () {
     return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
-        function(callback) {
+        function (callback) {
             window.setTimeout(callback, 1000 / 60);
         };
 })();
@@ -21,13 +21,13 @@ function scrollToY(scrollTargetY, speed, easing) {
 
     // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
     var easingEquations = {
-        easeOutSine: function(pos) {
+        easeOutSine: function (pos) {
             return Math.sin(pos * (Math.PI / 2));
         },
-        easeInOutSine: function(pos) {
+        easeInOutSine: function (pos) {
             return (-0.5 * (Math.cos(Math.PI * pos) - 1));
         },
-        easeInOutQuint: function(pos) {
+        easeInOutQuint: function (pos) {
             if ((pos /= 0.5) < 1) {
                 return 0.5 * Math.pow(pos, 5);
             }
@@ -79,7 +79,7 @@ function launch_toast(text) {
     toast.className = "show";
     let desc = toast.querySelector('#desc');
     desc.innerHTML = text;
-    setTimeout(function() {
+    setTimeout(function () {
         toast.className = toast.className.replace("show", "");
     }, 5000);
 }
@@ -133,9 +133,9 @@ for (let i = 0; i < codeBlock.length; i++) {
         if (copyToClipBoard(text.innerHTML.replace(/<\/?span[^>]*>/g, ""))) {
             copy.innerHTML = copyText + ' &#10004;'
             setTimeout(() => {
-                    copy.innerHTML = copyText
-                }, 1200)
-                // launch_toast("Ko")
+                copy.innerHTML = copyText
+            }, 1200)
+            // launch_toast("Ko")
         }
     });
     codeBlock[i].appendChild(copy);
@@ -148,7 +148,7 @@ for (let item of images) {
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const id = decodeURI(this.getAttribute('href').split('#')[1]).toLowerCase();
         const yOffset = -30;
@@ -158,3 +158,85 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         window.scrollTo({ top: y, behavior: 'smooth' });
     });
 });
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function checkCookie(gdprBox) {
+    var gdpr = getCookie("gdpr");
+    if (gdpr != "") {
+        gdprBox.style.display = "none";
+    } else {
+        gdprBox.style.display = "block";
+        if (gdpr != "" && gdpr != null) {
+            setCookie("gdpr", 1, 1);
+        }
+    }
+}
+function whichAnimationEvent() {
+    var t,
+        el = document.createElement("fakeelement");
+
+    var animations = {
+        "animation": "animationend",
+        "OAnimation": "oAnimationEnd",
+        "MozAnimation": "animationend",
+        "WebkitAnimation": "webkitAnimationEnd"
+    }
+
+    for (t in animations) {
+        if (el.style[t] !== undefined) {
+            return animations[t];
+        }
+    }
+}
+class Gdpr {
+    constructor(element) {
+        this.params = {
+            element: document.getElementById(element)
+        }
+        this.init();
+    }
+    init() {
+        checkCookie(this.params.element);
+        this.click();
+    }
+    click() {
+        let th = this;
+        document.getElementById('gdpr-link').addEventListener("click", function (e) {
+            e.preventDefault();
+            th.params.element
+                .classList.add("bottom");
+            var animationEvent = whichAnimationEvent();
+
+            th.params.element.addEventListener(
+                animationEvent,
+                function () {
+                    th.params.element.style.display = "none";
+                }
+            );
+            setCookie("gdpr", 1, 1);
+            return false;
+        });
+    }
+}
+new Gdpr('gdpr');
