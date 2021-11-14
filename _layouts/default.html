@@ -2,16 +2,28 @@
 <html>
 
 <head>
-    <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description
+        }}</title>
     {% seo %} {% include meta.html %}
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css?ver=1.5" />.
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+        href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9T1GC34KM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-R9T1GC34KM');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -20,7 +32,8 @@
         <div class="wrapper-masthead">
             <div class="container">
                 <header class="masthead clearfix">
-                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" /></a>
+                    <a href="{{ site.baseurl }}/" class="site-avatar"><img
+                            src="{{ site.baseurl }}{{ site.avatar }}" /></a>
 
                     <div class="site-info">
                         <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -29,8 +42,10 @@
 
                     <nav class="link-effect">
                         {% for item in site.data.navigation %}
-                        <a {% if item.link contains '://' %}href="{{item.link}}" {% else %}href="{{ site.baseurl }}/{{ item.link  }}" {% endif %}{% if item.target%} target="{{item.target}}" {%endif %}{% assign url=item.link | append: "/" | prepend: "/" %}{% if page.url==url
-                            %}style="color: #c5c5c5;" {% endif %}>
+                        <a {% if item.link contains '://' %}href="{{item.link}}" {% else
+                            %}href="{{ site.baseurl }}/{{ item.link  }}" {% endif %}{% if item.target%}
+                            target="{{item.target}}" {%endif %}{% assign url=item.link | append: "/" | prepend: "/" %}{%
+                            if page.url==url %}style="color: #c5c5c5;" {% endif %}>
                             <span>{{ item.name }}</span>
                         </a>
                         {% endfor %}
@@ -82,7 +97,7 @@
                 Array.from(cnt1).forEach((el, i) => {
                     el.parentNode.classList.add('hasDiagram')
 
-                    let insertSvg = function(svgCode, bindFunctions) {
+                    let insertSvg = function (svgCode, bindFunctions) {
                         el.innerHTML = svgCode;
                     };
                     let graphDef = el.innerHTML.replace(new RegExp('&amp;', "gi"), '&').replace(new RegExp('&gt;', "gi"), '>').replace(new RegExp('&lt;', "gi"), '<')
