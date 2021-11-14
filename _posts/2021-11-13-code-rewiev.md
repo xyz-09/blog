@@ -2,10 +2,10 @@
 layout: post
 title: Code rewiev
 date: 2021-11-13 12:31
-category: [frontend, inne]
+category: [frontend,js, inne]
 author: Edyta Jozdowska
 tags: [js]
-tags: [frontend, "code-rewiev"]
+tags: [frontend, "code-rewiev", "JS"]
 excerpt: Biorę na tapet obcy kod i zastanawiam się jak można go zmienić by był lepszy. 
 published: true
 ---
