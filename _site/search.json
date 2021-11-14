@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Code rewiev",
+      "url"      : "/blog/code-rewiev/",
+      "category" : "frontend, inne",
+      "date"     : "2021-11-13",
+      "tags"     : "frontend, code-rewiev",
+      "excerpt"     : "Code rewiev - czyli co tutaj jest nie tak",
+      "content"  : "Code rewiev - czyli co tutaj jest nie tak Do postu na ten temat natchnął mnie niedziałający kod, który ostatnio dostałam do zdebugowania. Dotyczył on prostej walidacji formularza. Postanowiłam wskazać,..."
+    } ,
+  
+    {
+
       "title"    : "Animacje svg",
       "url"      : "/blog/svg-animations/",
       "category" : "frontend, inne",

@@ -683,9 +683,18 @@ ul.content_list {
 }
 
 .error {
+    display:inline-block;
     padding: 1em 1em;
     background: #ffd5d5;
     color: #983a3a;
+    font-weight: bold;
+}
+
+.success {
+    display:inline-block;
+    padding: 1em 1em;
+    background: #d5ffdb;
+    color: #3b6316;
     font-weight: bold;
 }
 

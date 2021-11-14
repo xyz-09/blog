@@ -133,15 +133,10 @@ Przykład trywialny - zmieńmy kolor naszego kwadratu (dużego) na inny podczas 
 .square
     path
         transition: all .2s linear
-<<<<<<< HEAD
-        &.bigSquare  fill: #99dde2
-        &.smallSquare  fill: #bcedf0
-=======
         &.bigSquare  
             fill: #99dde2
         &.smallSquare  
             fill: #bcedf0
->>>>>>> 7b90ec6... new post
 
     &:hover
         path.bigSquare
@@ -149,11 +144,6 @@ Przykład trywialny - zmieńmy kolor naszego kwadratu (dużego) na inny podczas 
         path.smallSquare
             fill:pink
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 7b90ec6... new post
 ```
 
 Wynikiem powyższego - jak najedziemy kursorem na obraz - duży kwadrat zmieni swój kolor na czerwony, a mały na różowy.
