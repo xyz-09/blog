@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code rewiev
+title: Code rewiev walidacji formularza w JS
 date: 2021-11-13 12:31
 category: [frontend,js, inne]
 author: Edyta Jozdowska
