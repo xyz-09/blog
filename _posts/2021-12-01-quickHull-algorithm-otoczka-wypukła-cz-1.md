@@ -182,6 +182,6 @@ W tym momecie nie zostało nam więcej punktów do sprawdzenia. Przejdźmy więc
 </div>
 </div>
 
-Całkiem sprawnie poszło - tyle, że rozpisywanie tego zajeło trochę czasu. Na szczęście mamy programowanie i rekursję, która powyżej rozpisane kroki wykona nam znacznie, znacznie szybciej :smile:. ALe o tym będzie w moim następnym wpisie.
+Całkiem sprawnie poszło - tyle, że rozpisywanie tego zajeło trochę czasu. Na szczęście mamy programowanie i rekursję, która powyżej rozpisane kroki wykona nam znacznie, znacznie szybciej :smile:. Ale o tym będzie w częsci drugiej.
 
 [^1]: [https://en.wikipedia.org/wiki/Convex_hull_algorithms](https://en.wikipedia.org/wiki/Convex_hull_algorithms)
