@@ -2289,3 +2289,47 @@ span.mjx-chtml {
         transform: translateY(80px)
     }
 }
+.row{
+    display:flex;
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-between;
+}
+.col-4,.col-6{
+    padding: 15px;
+}
+
+@media (max-width: 769px) {
+    .col-6{
+        max-width:100%;
+        flex-basis:100%
+    }
+}
+
+@media (min-width: 770px) {
+    .col-6{
+        max-width:50%;
+        flex-basis:50%
+    }
+}
+@media (max-width: 399px) {
+    .col-4{
+        max-width:100%;
+        flex-basis:100%
+    }
+}
+@media (min-width: 400px) {
+    .col-4{
+        max-width:50%;
+        flex-basis:50%
+    }
+}
+
+@media (min-width: 769px) {
+    .col-4{
+        max-width:33.33%;
+        flex-basis:33.33%
+    }
+}

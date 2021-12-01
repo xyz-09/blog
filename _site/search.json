@@ -2,12 +2,23 @@
   
     {
 
+      "title"    : "Algorytm QuickHull do obliczenia otoczki wypukłej (convex hull) cz. 1",
+      "url"      : "/blog/quickHull-algorithm-otoczka-wypuk%C5%82a-cz-1/",
+      "category" : "js, algorytmy, programowanie",
+      "date"     : "2021-12-01",
+      "tags"     : "js, algorytmy",
+      "excerpt"     : "Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS.",
+      "content"  : "Prolog Post ten skłąda się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej Quick Hull. Częścią drugą będzie ubranie poniższego w kod JS. Otoczka wypukła..."
+    } ,
+  
+    {
+
       "title"    : "Code rewiev walidacji formularza w JS",
       "url"      : "/blog/code-rewiev-walidacja-formularza-js/",
       "category" : "frontend, js, inne",
       "date"     : "2021-11-13",
       "tags"     : "frontend, code-rewiev, JS",
-      "excerpt"     : "Biorę na tapet obcy kod w js i zastanawiam się jak można go zmienić by był lepszy.",
+      "excerpt"     : "Biorę na tapet obcy kod w js i zastanawiam się jak można go zmienić, by był lepszy.",
       "content"  : "Code rewiev - czyli co tutaj jest nie tak Do postu na ten temat natchnął mnie niedziałający kod, który ostatnio dostałam do zdebugowania. Dotyczył on prostej walidacji formularza. Postanowiłam wskazać,..."
     } ,
   

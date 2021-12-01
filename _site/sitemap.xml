@@ -161,6 +161,10 @@
 <lastmod>2021-11-13T12:31:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/quickHull-algorithm-otoczka-wypuk%C5%82a-cz-1/</loc>
+<lastmod>2021-12-01T10:23:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/404</loc>
 </url>
 <url>
@@ -183,6 +187,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/tags/algorytmy/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/kategoria/algorytmy/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/tags/animacja/</loc>
@@ -299,6 +306,15 @@
 <loc>http://localhost:4000/blog/kategoria/jekyyl/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/blog/kategoria/js,%20algorytmy,%20metamtyka/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/kategoria/js,%20algorytmy,%20programowanie/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/kategoria/js,%20algorytmy/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog/kategoria/js,%20frontend/</loc>
 </url>
 <url>
@@ -318,6 +334,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/tags/memoization/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/tags/metamtyka/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/tags/node/</loc>
