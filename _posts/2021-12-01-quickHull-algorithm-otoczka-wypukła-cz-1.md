@@ -14,7 +14,7 @@ published: true
 </script>
 
 ## Prolog
-Post ten skłąda się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej **Quick Hull**. Częścią drugą będzie ubranie poniższego w kod JS.
+Post ten składa się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej **Quick Hull**. Częścią drugą będzie ubranie poniższego w kod JS.
 
 ## Otoczka wypukła - definicja
 Otoczka wypukła *(ang: convex hull)* jest takim wielokątem, że każdy punkt ze zbioru leży albo w jego wętrzu, albo na jego brzegu. Zakładając, że mamy punkty o numerach od 0 do 13 należące do zbioru **Q**, jak na poniższym schemacie - otoczką **H** będzie wielokąt wyznaczony przez punkty [0, 2, 4, 6, 3, 5]
@@ -49,11 +49,11 @@ $$
 </div>
 </div>
 
-Jest dość dużo algorytmów, które pomagają wyznaczyć otoczkę wypukłą [^1]. Jedne są mniej skomplikowane inne trochę bardziej. Ich [złożoność obliczeniowa **O**](https://en.wikipedia.org/wiki/Big_O_notation) waha się od `O(n log n)` do `O(n²)` w najgorszych przypadkach. 
+Jest dość dużo algorytmów, które pomagają wyznaczyć otoczkę wypukłą [^1]. Jedne są mniej skomplikowane inne trochę bardziej. Ich [złożoność obliczeniowa **O**](https://en.wikipedia.org/wiki/Big_O_notation){:target="_blank"} waha się od `O(n log n)` do `O(n²)` w najgorszych przypadkach. 
 
 Zastosowanie praktyczne jakie mi przychodzi na myśl dla otoczki wypukłej to gry choć pewnie nie tylko :smile:
 
-Zauważyłam, że najczęściej wykorzystywany jest **Algorytm Grahama** do tłumaczenia zagadnień algorytmu wyznaczania otoczki wypukłej - choć ciężko mi powiedzieć dlaczego. Do mnie on nie "przemówił". Natomiast bardzo podszedł mi algorytm **QuickHull**, na którym właśnie skupię się w moim wpisie.
+Zauważyłam, że najczęściej wykorzystywany jest **Algorytm Grahama** do omawiania zagadnień algorytmu wyznaczania otoczki wypukłej - choć ciężko mi powiedzieć dlaczego. Do mnie on nie "przemówił". Natomiast bardzo podszedł mi algorytm **QuickHull**, na którym właśnie skupię się w moim wpisie.
 
 ## Quick Hull - na czym polega
 Algorytm **Quick Hull** polega na wyznaczaniu w zbiorze skrajnych punktów, łączeniu ich ze sobą, dzieleniu przestrzeni na dwie częsci, sprawdzeniu maksymalnej odległości od granicy części i tak rekursywnie, aż nie zostanie nam żaden punkt do sprawdzenia. 
@@ -74,7 +74,7 @@ Rozpisując powyższy gif przedstawiający wyliczanie otoczki algorytmem QuickHu
     caption="Krok 1 - Quick hull"
 %}
 
-<strong>Krok 1</strong>- Wyznaczamy dwa skrajne punkty w przestrzeni (takie które będą miały min x, a potem y, a także max x i y). Na moim przykładzie są to punkty `3` i `2` i łączymy je prostą dzielącą nasz zbiór na dwie części:
+<strong>Krok 1</strong>- Wyznaczamy dwa skrajne punkty w przestrzeni (takie które będą miały min x, a potem y, a także max x i y). Na moim przykładzie są to punkty `3` i `2` i łączymy je prostą dzielącą nasz zbiór na dwie części (jak na obrazku powyżej).
 </div>
 <div class="col-6">
 {%
@@ -83,7 +83,7 @@ Rozpisując powyższy gif przedstawiający wyliczanie otoczki algorytmem QuickHu
     caption="Krok 2 - Quick hull"
 %}
 
-<strong>Krok 2</strong> - Sprawdzamy, który punkt jest najdalej oddalony od naszej prostej - w moim przypadku jest to `6`
+<strong>Krok 2</strong> - Sprawdzamy, który punkt jest najdalej oddalony od naszej prostej - w moim przypadku jest to `6`.
 </div>
 <div class="col-6">
 {%
