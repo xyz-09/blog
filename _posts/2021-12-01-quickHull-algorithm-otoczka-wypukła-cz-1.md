@@ -132,7 +132,7 @@ Rozpisując powyższy gif przedstawiający wyliczanie otoczki algorytmem QuickHu
     caption="Krok 7 - Quick hull"
 %}
 
-<strong>Krok 7</strong> - Sprawdzamy punkty w drugą stronę. Szukamy tego, który ma max odległość od lini `6` i `2`. W moim przypadku jest to `0`.
+<strong>Krok 7</strong> - Sprawdzamy punkty w drugą stronę. Szukamy tego, który ma max odległość od lini `3` i `2`. W moim przypadku jest to `0`.
 
 </div>
 <div class="col-6">
@@ -143,7 +143,7 @@ Rozpisując powyższy gif przedstawiający wyliczanie otoczki algorytmem QuickHu
     caption="Krok 8 - Quick hull"
 %}
 
-<strong>Krok 8</strong> - Łączymy ze sobą punkty `6`, `2` i `0` w trójkąt. Wszystkie punkty wewnątrz wykluczamy z otoczki, czyli, mamy pewność, że `[9, 13, 11]` <strong>NIE NALEŻĄ</strong> do otoczki (są to punkty zaznaczone na niebiesko). Te zaznaczone na żółto `[5, 10]` są kandydatami do otoczki. 
+<strong>Krok 8</strong> - Łączymy ze sobą punkty `3`, `2` i `0` w trójkąt. Wszystkie punkty wewnątrz wykluczamy z otoczki, czyli, mamy pewność, że `[9, 13, 11]` <strong>NIE NALEŻĄ</strong> do otoczki (są to punkty zaznaczone na niebiesko). Te zaznaczone na żółto `[5, 10]` są kandydatami do otoczki. 
 
 </div>
 <div class="col-6">
