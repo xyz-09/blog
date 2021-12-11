@@ -5,7 +5,7 @@ date: 2021-12-01 10:23
 category: [js, algorytmy, programowanie]
 author: Edyta Jozdowska
 tags: ['js', 'algorytmy']
-excerpt: Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS.
+excerpt: Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS. Część pierwsza - wytłumaczenie działania algorytmu
 published: true
 ---
 
@@ -74,7 +74,7 @@ Rozpisując powyższy gif przedstawiający wyliczanie otoczki algorytmem QuickHu
     caption="Krok 1 - Quick hull"
 %}
 
-<strong>Krok 1</strong>- Wyznaczamy dwa skrajne punkty w przestrzeni (takie które będą miały min x, a potem y, a także max x i y). Na moim przykładzie są to punkty `3` i `2` i łączymy je prostą dzielącą nasz zbiór na dwie części (jak na obrazku powyżej).
+<strong>Krok 1</strong>- Wyznaczamy dwa skrajne punkty w przestrzeni (takie które będą miały min x i max(x)). Na moim przykładzie są to punkty `3` i `2` i łączymy je prostą dzielącą nasz zbiór na dwie części (jak na obrazku powyżej).
 </div>
 <div class="col-6">
 {%

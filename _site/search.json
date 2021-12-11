@@ -2,13 +2,24 @@
   
     {
 
+      "title"    : "Algorytm QuickHull do obliczenia otoczki wypukłej (convex hull) cz. 2",
+      "url"      : "/blog/algorytm-quickhull-otoczka-wypukla-cz2/",
+      "category" : "js, algorytmy, programowanie",
+      "date"     : "2021-12-11",
+      "tags"     : "js, algorytmy",
+      "excerpt"     : "Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS. Część druga, kod JS dla otoczki.",
+      "content"  : "Prolog Post ten składa się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej algorytmem Quick Hull. Częścią drugą, czyli ten post jest ubranie algorytmu w..."
+    } ,
+  
+    {
+
       "title"    : "Algorytm QuickHull do obliczenia otoczki wypukłej (convex hull) cz. 1",
       "url"      : "/blog/quickHull-algorithm-otoczka-wypuk%C5%82a-cz-1/",
       "category" : "js, algorytmy, programowanie",
       "date"     : "2021-12-01",
       "tags"     : "js, algorytmy",
-      "excerpt"     : "Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS.",
-      "content"  : "Prolog Post ten skłąda się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej Quick Hull. Częścią drugą będzie ubranie poniższego w kod JS. Otoczka wypukła..."
+      "excerpt"     : "Wyznaczanie otoczki wypukłej korzystając z algorytmu Quick Hull i JS. Część pierwsza - wytłumaczenie działania algorytmu",
+      "content"  : "Prolog Post ten składa się z dwóch części. Część pierwsza jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej Quick Hull. Częścią drugą będzie ubranie poniższego w kod JS. Otoczka wypukła..."
     } ,
   
     {
