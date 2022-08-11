@@ -25,7 +25,7 @@ class ValueObject {
     this.#id = id;
     return this;
   };
-  // przypominam, że jest to równozanczne z getId = function(id){ return this.id }
+  // przypominam, że jest to równozanczne z getId = function(id){ return this.#id }
   getId = () => this.#id; 
 
   // tak, też można w skrócie to zapisać
