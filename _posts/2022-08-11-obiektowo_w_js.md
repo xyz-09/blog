@@ -8,7 +8,7 @@ tags: ["js"]
 excerpt: Krótka klasa w js i jej podstawowe zachowanie
 published: true
 ---
-
+Klasy w js
 ```javascript
 const { log } = console; 
 
