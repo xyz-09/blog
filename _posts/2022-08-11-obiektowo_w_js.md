@@ -30,6 +30,8 @@ class ValueObject {
 
   // tak, też można w skrócie to zapisać
   setTitle = (title) => this.#title = title
+  
+  //prywatna metoda poprzedzona hashem
   #getTitle = () => this.#title;
   getPrivateTitle = () => this.#getTitle();
 
