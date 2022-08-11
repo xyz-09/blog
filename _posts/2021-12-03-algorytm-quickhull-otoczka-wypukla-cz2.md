@@ -12,7 +12,7 @@ published: true
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-## Prolog
+## Prolog --
 
 Post ten składa się z dwóch części. [Część pierwsza](../quickHull-algorithm-otoczka-wypukła-cz-1) jest wytłumaczeniem samego algorytmu do obliczenia otoczki wypukłej algorytmem **Quick Hull**. Częścią drugą, czyli ten post jest ubranie algorytmu w kod JS.
 
