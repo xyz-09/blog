@@ -19,3 +19,10 @@ Stwierdziłam, że jest to dobre miejsce - na zamieszczenie takich krótkich kom
 ```bash 
 sudo update-alternatives --config php
 ```
+
+# Composer update wyrzuca błąd w Compiler.php (Laravel) "Please provide a valid cache path."
+```bash
+cd storage/
+mkdir -p framework/{sessions,views,cache}
+chmod -R 775 framework
+```
