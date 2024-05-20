@@ -6,7 +6,7 @@ category: [js]
 author: Edyta Jozdowska
 tags: [graphs, memoization, recursion]
 excerpt: O teorii graphów kierowanych.
-published: false
+published: true
 ---
 
 Dziwny tytuł jak na programowanie, prawda :smile:  
