@@ -4,7 +4,7 @@ title: Svg to stl using scad
 date: 2025-04-30
 category: [3d]
 author: Edyta Jozdowska
-tags: ["3d"]
+tags: ["3d", "openscad"]
 excerpt: Preparing an object outline in Inkscape, importing into OpenSCAD, and exporting to STL
 published: true
 ---
