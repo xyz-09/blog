@@ -9,7 +9,7 @@ excerpt: Preparing an object outline in Inkscape, importing into OpenSCAD, and e
 published: true
 ---
 # Short review 
-
+<!-- TOC -->
 This workflow allows you to:
 - [Extract an outline from an SVG in Inkscape](#1-prepare-the-outline-in-inkscape)
 - Set stroke width and convert the stroke to a standalone path  
@@ -17,7 +17,8 @@ This workflow allows you to:
 - [Install OpenSCAD](#3-install-openscad)
 - [Import the DXF into OpenSCAD](#4-import-the-dxf-and-generate-the-model-in-openscad)
 - [Export the final model to an STL file](#5-export-to-stl)
-
+{:class='content_list'}
+<!-- /TOC -->
 # 1. Prepare the outline in Inkscape
 
 1. **Open the SVG file**  
