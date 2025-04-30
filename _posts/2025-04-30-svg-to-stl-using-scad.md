@@ -10,7 +10,7 @@ published: true
 ---
 
 
-# Short review **
+# Short review 
 
 This workflow allows you to:
 - Extract an outline from an SVG in Inkscape  
