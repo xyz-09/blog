@@ -52,7 +52,6 @@ sudo apt install openscad
 ### Windows
 Visit  [https://openscad.org/downloads.html(https://openscad.org/downloads.html](https://openscad.org/downloads.html(https://openscad.org/downloads.html){:target="_blank"}
 
-
 Download the MSI installer and run it.
 
 ## 4. Import the DXF and generate the model in OpenSCAD
