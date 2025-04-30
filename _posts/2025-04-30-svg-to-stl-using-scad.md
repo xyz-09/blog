@@ -14,12 +14,12 @@ published: true
 <!-- TOC -->
 
 - This workflow allows you to:
-- [Extract an outline from an SVG in Inkscape](#1-prepare-the-outline-in-inkscape)
-- Set stroke width and convert the stroke to a standalone path  
-- [Export the path to DXF (AutoCAD R14)](#2-export-to-dxf-autocad-r14)
-- [Install OpenSCAD](#3-install-openscad)
-- [Import the DXF into OpenSCAD](#4-import-the-dxf-and-generate-the-model-in-openscad)
-- [Export the final model to an STL file](#5-export-to-stl)
+- [1. Prepare the outline in Inkscape](#1-prepare-the-outline-in-inkscape)
+- 1.1 Set stroke width and convert the stroke to a standalone path  
+- [2. Export the path to DXF (AutoCAD R14)](#2-export-to-dxf-autocad-r14)
+- [3. Install OpenSCAD](#3-install-openscad)
+- [4. Import the DXF into OpenSCAD](#4-import-the-dxf-and-generate-the-model-in-openscad)
+- [5. Export the final model to an STL file](#5-export-to-stl)
 {:class='content_list'}
 
 <!-- /TOC -->
