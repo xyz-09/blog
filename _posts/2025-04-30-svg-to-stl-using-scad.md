@@ -8,8 +8,6 @@ tags: ["3d"]
 excerpt: Preparing an object outline in Inkscape, importing into OpenSCAD, and exporting to STL
 published: true
 ---
-
-
 # Short review 
 
 This workflow allows you to:
@@ -36,8 +34,6 @@ This workflow allows you to:
 2. File → Save As…  
 3. Choose **Desktop Cutting Plotter (AutoCAD R14) (*.dxf)**.  
 4. Save as `file.dxf` in the same folder as your `.scad` script.
-
----
 
 ## 3. Install OpenSCAD
 
