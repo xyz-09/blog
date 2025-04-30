@@ -11,11 +11,12 @@ published: true
 # Short review 
 
 This workflow allows you to:
-- Extract an outline from an SVG in Inkscape  
+- [Extract an outline from an SVG in Inkscape](#1-prepare-the-outline-in-inkscape)
 - Set stroke width and convert the stroke to a standalone path  
-- Export the path to DXF (AutoCAD R14)  
-- Import the DXF into OpenSCAD  
-- Export the final model to an STL file
+- [Export the path to DXF (AutoCAD R14)](#2-export-to-dxf-autocad-r14)
+- [Install OpenSCAD](#3-install-openscad)
+- [Import the DXF into OpenSCAD](#4-import-the-dxf-and-generate-the-model-in-openscad)
+- [Export the final model to an STL file](#5-export-to-stl)
 
 # 1. Prepare the outline in Inkscape
 
@@ -43,11 +44,12 @@ sudo apt update
 sudo apt install openscad
 ```
 ### Windows
-Visit [https://www.openscad.org/downloads.html]
+Visit  [https://openscad.org/downloads.html(https://openscad.org/downloads.html](https://openscad.org/downloads.html(https://openscad.org/downloads.html){:target="_blank"}
+
 
 Download the MSI installer and run it.
 
-## Import the DXF and generate the model in OpenSCAD
+## 4. Import the DXF and generate the model in OpenSCAD
 Create a file `dfx-to-stl.scad` with the following content:
 
 ```scad
@@ -70,7 +72,7 @@ where:
 * `$fn = 100;` — smoothness of curves and edges.
 * `extrude_height` — extrusion height in millimeters.
 
-## Export to STL
+## 5. Export to STL
 1. In OpenSCAD, choose Design → Compile and Render (CGAL) (F6).
 2. After rendering, select File → Export → Export as STL.
 3. Save as `result.stl`.
