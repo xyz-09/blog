@@ -50,7 +50,7 @@ sudo apt update
 sudo apt install openscad
 ```
 ### Windows
-Visit: [https://openscad.org/downloads.html(https://openscad.org/downloads.html](https://openscad.org/downloads.html(https://openscad.org/downloads.html){:target="_blank"}
+Visit: [https://openscad.org/downloads.html]https://openscad.org/downloads.html(https://openscad.org/downloads.html){:target="_blank"}
 
 Download the MSI installer and run it.
 
