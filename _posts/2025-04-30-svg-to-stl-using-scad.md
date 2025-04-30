@@ -12,7 +12,7 @@ published: true
 
 <!-- TOC -->
 
-This workflow allows you to:
+- This workflow allows you to:
 - [Extract an outline from an SVG in Inkscape](#1-prepare-the-outline-in-inkscape)
 - Set stroke width and convert the stroke to a standalone path  
 - [Export the path to DXF (AutoCAD R14)](#2-export-to-dxf-autocad-r14)
