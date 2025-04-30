@@ -8,7 +8,6 @@ tags: ["3d", "openscad"]
 excerpt: Preparing an object outline in Inkscape, importing into OpenSCAD, and exporting to STL
 published: true
 ---
-
 # Short review 
 
 <!-- TOC -->
