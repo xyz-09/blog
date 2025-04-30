@@ -12,7 +12,6 @@ published: true
 # Short review 
 
 <!-- TOC -->
-
 - This workflow allows you to:
 - [1. Prepare the outline in Inkscape](#1-prepare-the-outline-in-inkscape)
 - 1.1 Set stroke width and convert the stroke to a standalone path  
@@ -21,7 +20,6 @@ published: true
 - [4. Import the DXF into OpenSCAD](#4-import-the-dxf-and-generate-the-model-in-openscad)
 - [5. Export the final model to an STL file](#5-export-to-stl)
 {:class='content_list'}
-
 <!-- /TOC -->
 
 # 1. Prepare the outline in Inkscape
